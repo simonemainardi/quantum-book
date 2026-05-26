@@ -24,13 +24,13 @@ Whenever a later chapter says "phase", "basis", "projection", "gate", or "unitar
 A complex number has the form:
 
 $$
-z = a + ib,
+z = a + ib
 $$
 
 where:
 
 $$
-i^2 = -1.
+i^2 = -1
 $$
 
 The number \(a\) is the real part. The number \(b\) is the imaginary part.
@@ -38,19 +38,19 @@ The number \(a\) is the real part. The number \(b\) is the imaginary part.
 The magnitude is:
 
 $$
-|z| = \sqrt{a^2 + b^2}.
+|z| = \sqrt{a^2 + b^2}
 $$
 
 The squared magnitude is:
 
 $$
-|z|^2 = a^2 + b^2.
+|z|^2 = a^2 + b^2
 $$
 
 Quantum probabilities come from squared magnitudes:
 
 $$
-P = |\psi|^2.
+P = |\psi|^2
 $$
 
 This is why a complex amplitude can be negative, imaginary, or phase-shifted, while the final probability remains a nonnegative real number.
@@ -87,7 +87,7 @@ points left.
 This matters because amplitudes can cancel as vectors:
 
 $$
-1 + (-1) = 0.
+1 + (-1) = 0
 $$
 
 They can also cancel after rotating through phases, not only by being literally positive and negative real numbers.
@@ -99,9 +99,9 @@ The trigonometric functions \(\cos\theta\) and \(\sin\theta\) are coordinates on
 If a point lies on a circle of radius 1 at angle \(\theta\), then:
 
 $$
-x = \cos\theta,
+x = \cos\theta
 \qquad
-y = \sin\theta.
+y = \sin\theta
 $$
 
 The identity:
@@ -123,7 +123,7 @@ $$
 as amplitude magnitudes. The squared magnitudes add to 1:
 
 $$
-\cos^2\frac{\theta}{2} + \sin^2\frac{\theta}{2} = 1.
+\cos^2\frac{\theta}{2} + \sin^2\frac{\theta}{2} = 1
 $$
 
 That is exactly what we need for probabilities to sum to 1.
@@ -133,7 +133,7 @@ That is exactly what we need for probabilities to sum to 1.
 Euler's formula is the bridge between trigonometry and complex phase:
 
 $$
-e^{i\phi} = \cos\phi + i\sin\phi.
+e^{i\phi} = \cos\phi + i\sin\phi
 $$
 
 This says that \(e^{i\phi}\) is a unit-length complex number at angle \(\phi\).
@@ -141,7 +141,7 @@ This says that \(e^{i\phi}\) is a unit-length complex number at angle \(\phi\).
 Its magnitude is always 1:
 
 $$
-|e^{i\phi}| = 1.
+|e^{i\phi}| = 1
 $$
 
 So multiplying an amplitude by \(e^{i\phi}\) changes its direction in the complex plane without changing its magnitude.
@@ -155,13 +155,13 @@ That is phase.
 Suppose:
 
 $$
-\psi = e^{i\phi}.
+\psi = e^{i\phi}
 $$
 
 Then:
 
 $$
-|\psi|^2 = |e^{i\phi}|^2 = 1.
+|\psi|^2 = |e^{i\phi}|^2 = 1
 $$
 
 So if you look only at this one amplitude's magnitude, the phase does not change the probability.
@@ -177,7 +177,7 @@ For example:
 $$
 \left|\frac{1 + e^{i\phi}}{2}\right|^2
 =
-\cos^2\frac{\phi}{2}.
+\cos^2\frac{\phi}{2}
 $$
 
 At \(\phi = 0\), this equals 1. At \(\phi = \pi\), this equals 0.
@@ -197,13 +197,13 @@ $$
 \begin{pmatrix}
 1 \\
 0
-\end{pmatrix},
+\end{pmatrix}
 \qquad
 |1\rangle =
 \begin{pmatrix}
 0 \\
 1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 A general qubit is:
@@ -215,7 +215,7 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The coefficients \(\alpha\) and \(\beta\) are complex amplitudes.
@@ -223,7 +223,7 @@ The coefficients \(\alpha\) and \(\beta\) are complex amplitudes.
 The normalization condition is:
 
 $$
-|\alpha|^2 + |\beta|^2 = 1.
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 This condition ensures that measurement probabilities sum to 1.
@@ -239,29 +239,29 @@ For qubits, the most important bases are:
 The Z basis:
 
 $$
-|0\rangle,
+|0\rangle
 \qquad
-|1\rangle.
+|1\rangle
 $$
 
 The X basis:
 
 $$
 |+\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}},
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle - |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
 The Y basis:
 
 $$
 |+i\rangle =
-\frac{|0\rangle + i|1\rangle}{\sqrt{2}},
+\frac{|0\rangle + i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
-\frac{|0\rangle - i|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - i|1\rangle}{\sqrt{2}}
 $$
 
 Read these as:
@@ -284,7 +284,7 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 then:
@@ -293,25 +293,25 @@ $$
 \langle \psi| =
 \begin{pmatrix}
 \alpha^* & \beta^*
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The star means complex conjugate:
 
 $$
-(a + ib)^* = a - ib.
+(a + ib)^* = a - ib
 $$
 
 The amplitude for state \(|\psi\rangle\) to be found in basis state \(|\phi\rangle\) is:
 
 $$
-\langle \phi|\psi\rangle.
+\langle \phi|\psi\rangle
 $$
 
 The probability is:
 
 $$
-P(\phi) = |\langle \phi|\psi\rangle|^2.
+P(\phi) = |\langle \phi|\psi\rangle|^2
 $$
 
 This is how we compute measurement probabilities in any basis.
@@ -325,13 +325,13 @@ U =
 \begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 It acts on a state vector:
 
 $$
-U|\psi\rangle.
+U|\psi\rangle
 $$
 
 For example, if:
@@ -341,7 +341,7 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 then:
@@ -351,7 +351,7 @@ U|\psi\rangle =
 \begin{pmatrix}
 a\alpha + b\beta \\
 c\alpha + d\beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 Notice the sums. Matrix multiplication is one place where amplitudes naturally recombine.
@@ -365,13 +365,13 @@ Notice the sums. Matrix multiplication is one place where amplitudes naturally r
 Suppose:
 
 $$
-U|0\rangle = a|0\rangle + c|1\rangle,
+U|0\rangle = a|0\rangle + c|1\rangle
 $$
 
 and:
 
 $$
-U|1\rangle = b|0\rangle + d|1\rangle.
+U|1\rangle = b|0\rangle + d|1\rangle
 $$
 
 Then:
@@ -381,7 +381,7 @@ U =
 \begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The first column is \(U|0\rangle\). The second column is \(U|1\rangle\).
@@ -395,7 +395,7 @@ Quantum evolution without measurement is represented by unitary matrices.
 A matrix \(U\) is unitary if:
 
 $$
-U^\dagger U = I.
+U^\dagger U = I
 $$
 
 Here \(U^\dagger\) is the conjugate transpose of \(U\).
@@ -407,19 +407,19 @@ The practical meaning is:
 If:
 
 $$
-|\alpha|^2 + |\beta|^2 = 1,
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 then after applying a unitary gate:
 
 $$
-|\psi'\rangle = U|\psi\rangle,
+|\psi'\rangle = U|\psi\rangle
 $$
 
 the new amplitudes still satisfy:
 
 $$
-|\alpha'|^2 + |\beta'|^2 = 1.
+|\alpha'|^2 + |\beta'|^2 = 1
 $$
 
 That is why ordinary gates are reversible. Measurement is the non-unitary step where a classical outcome is produced.
@@ -432,21 +432,21 @@ If a state is:
 
 $$
 |\psi\rangle =
-\alpha |0\rangle + \beta |1\rangle,
+\alpha |0\rangle + \beta |1\rangle
 $$
 
 then measurement in the Z basis gives:
 
 $$
-P(0) = |\alpha|^2,
+P(0) = |\alpha|^2
 \qquad
-P(1) = |\beta|^2.
+P(1) = |\beta|^2
 $$
 
 More generally, if measuring in a basis containing \(|\phi\rangle\):
 
 $$
-P(\phi) = |\langle \phi|\psi\rangle|^2.
+P(\phi) = |\langle \phi|\psi\rangle|^2
 $$
 
 This is the formula that connects all the later examples:
@@ -464,12 +464,11 @@ Keep this compact map nearby:
 | Concept | Formula | Meaning |
 |---|---|---|
 | Complex number | \(z=a+ib\) | amplitude with direction and magnitude |
-| Magnitude | \(|z|=\sqrt{a^2+b^2}\) | length in complex plane |
-| Probability | \(P=|\psi|^2\) | squared amplitude magnitude |
+| Magnitude | \(\lvert z\rvert=\sqrt{a^2+b^2}\) | length in complex plane |
+| Probability | \(P=\lvert\psi\rvert^2\) | squared amplitude magnitude |
 | Phase | \(e^{i\phi}\) | unit rotation in complex plane |
-| Qubit | \(|\psi\rangle=\alpha|0\rangle+\beta|1\rangle\) | two complex amplitudes |
-| Normalization | \(|\alpha|^2+|\beta|^2=1\) | total probability equals 1 |
-| Inner product | \(\langle \phi|\psi\rangle\) | amplitude of overlap |
-| Matrix gate | \(U|\psi\rangle\) | linear transformation of amplitudes |
+| Qubit | \(\lvert\psi\rangle=\alpha\lvert0\rangle+\beta\lvert1\rangle\) | two complex amplitudes |
+| Normalization | \(\lvert\alpha\rvert^2+\lvert\beta\rvert^2=1\) | total probability equals 1 |
+| Inner product | \(\langle \phi\vert\psi\rangle\) | amplitude of overlap |
+| Matrix gate | \(U\lvert\psi\rangle\) | linear transformation of amplitudes |
 | Unitary | \(U^\dagger U=I\) | probability-preserving evolution |
-

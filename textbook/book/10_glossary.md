@@ -15,7 +15,7 @@ A geometric representation of a single-qubit pure state. The coordinates of the 
 $$
 (r_x,r_y,r_z)
 =
-(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta).
+(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
 $$
 
 ## Born Rule
@@ -23,15 +23,15 @@ $$
 The rule that turns quantum amplitudes into probabilities:
 
 $$
-P(\phi)=|\langle \phi|\psi\rangle|^2.
+P(\phi)=|\langle \phi|\psi\rangle|^2
 $$
 
 For Z-basis qubit measurement:
 
 $$
-P(0)=|\alpha|^2,
+P(0)=|\alpha|^2
 \qquad
-P(1)=|\beta|^2.
+P(1)=|\beta|^2
 $$
 
 ## Bra
@@ -43,7 +43,7 @@ $$
 \begin{pmatrix}
 \alpha\\
 \beta
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 then:
@@ -52,7 +52,7 @@ $$
 \langle \psi| =
 \begin{pmatrix}
 \alpha^* & \beta^*
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 ## Computational Basis
@@ -60,9 +60,9 @@ $$
 The standard qubit basis:
 
 $$
-|0\rangle,
+|0\rangle
 \qquad
-|1\rangle.
+|1\rangle
 $$
 
 Also called the Z basis.
@@ -74,7 +74,7 @@ The interference term that appears when squaring a sum:
 $$
 |A+B|^2
 =
-|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B).
+|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B)
 $$
 
 The cross term can be positive or negative.
@@ -88,7 +88,7 @@ A transformation applied to a quantum state. In ideal single-qubit theory, gates
 A phase factor multiplying the whole state:
 
 $$
-e^{i\gamma}|\psi\rangle.
+e^{i\gamma}|\psi\rangle
 $$
 
 Global phase does not change measurement probabilities.
@@ -103,15 +103,15 @@ H =
 \begin{pmatrix}
 1 & 1\\
 1 & -1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 It maps:
 
 $$
-|0\rangle \mapsto |+\rangle,
+|0\rangle \mapsto |+\rangle
 \qquad
-|1\rangle \mapsto |-\rangle.
+|1\rangle \mapsto |-\rangle
 $$
 
 It also recombines amplitudes by forming sums and differences.
@@ -121,7 +121,7 @@ It also recombines amplitudes by forming sums and differences.
 The overlap amplitude:
 
 $$
-\langle \phi|\psi\rangle.
+\langle \phi|\psi\rangle
 $$
 
 Its squared magnitude gives the probability of finding \(|\psi\rangle\) as \(|\phi\rangle\).
@@ -135,7 +135,7 @@ The effect produced when amplitudes add before probabilities are computed. Inter
 A quantum state vector, written:
 
 $$
-|\psi\rangle.
+|\psi\rangle
 $$
 
 ## Measurement
@@ -147,7 +147,7 @@ The process that produces a classical outcome from a quantum state. In the ideal
 The angle of a complex amplitude. A phase factor is written:
 
 $$
-e^{i\phi}.
+e^{i\phi}
 $$
 
 Relative phase affects interference.
@@ -158,13 +158,13 @@ A two-dimensional quantum state:
 
 $$
 |\psi\rangle =
-\alpha|0\rangle + \beta|1\rangle,
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 with:
 
 $$
-|\alpha|^2 + |\beta|^2 = 1.
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 ## Relative Phase
@@ -186,7 +186,7 @@ One execution and measurement of a quantum circuit. Many shots are used to estim
 A linear combination of basis states:
 
 $$
-\alpha|0\rangle + \beta|1\rangle.
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 The word is useful only when remembered together with amplitudes and measurement basis.
@@ -196,7 +196,7 @@ The word is useful only when remembered together with amplitudes and measurement
 A probability-preserving matrix:
 
 $$
-U^\dagger U = I.
+U^\dagger U = I
 $$
 
 Ideal quantum gates are unitary.
@@ -207,10 +207,10 @@ The basis:
 
 $$
 |+\rangle =
-\frac{|0\rangle+|1\rangle}{\sqrt{2}},
+\frac{|0\rangle+|1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle-|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle-|1\rangle}{\sqrt{2}}
 $$
 
 It reveals the cosine component of relative phase.
@@ -221,10 +221,10 @@ The basis:
 
 $$
 |+i\rangle =
-\frac{|0\rangle+i|1\rangle}{\sqrt{2}},
+\frac{|0\rangle+i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
-\frac{|0\rangle-i|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle-i|1\rangle}{\sqrt{2}}
 $$
 
 It reveals the sine component of relative phase.
@@ -234,9 +234,9 @@ It reveals the sine component of relative phase.
 The computational basis:
 
 $$
-|0\rangle,
+|0\rangle
 \qquad
-|1\rangle.
+|1\rangle
 $$
 
 It directly reads the component magnitudes \(|\alpha|^2\) and \(|\beta|^2\).

@@ -13,13 +13,13 @@ $$
 \begin{pmatrix}
 1 \\
 0
-\end{pmatrix},
+\end{pmatrix}
 \qquad
 |1\rangle =
 \begin{pmatrix}
 0 \\
 1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 These are also called the computational basis or Z basis.
@@ -28,7 +28,7 @@ A general pure qubit state is:
 
 $$
 |\psi\rangle =
-\alpha |0\rangle + \beta |1\rangle.
+\alpha |0\rangle + \beta |1\rangle
 $$
 
 In column-vector form:
@@ -38,13 +38,13 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The amplitudes \(\alpha\) and \(\beta\) are complex numbers, and they must satisfy:
 
 $$
-|\alpha|^2 + |\beta|^2 = 1.
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 This is the normalization rule from [Section 2.6](02_math_prerequisites.md#26-vectors).
@@ -63,9 +63,9 @@ $$
 in the Z basis, the Born rule gives:
 
 $$
-P(0) = |\alpha|^2,
+P(0) = |\alpha|^2
 \qquad
-P(1) = |\beta|^2.
+P(1) = |\beta|^2
 $$
 
 The device returns one classical bit: 0 or 1.
@@ -80,7 +80,7 @@ $$
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
-e^{i\phi}\sin\frac{\theta}{2}|1\rangle.
+e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 $$
 
 This is the most important formula in the chapter.
@@ -89,10 +89,10 @@ The angle \(\theta\) controls the Z-basis probabilities:
 
 $$
 P(0) =
-\cos^2\frac{\theta}{2},
+\cos^2\frac{\theta}{2}
 \qquad
 P(1) =
-\sin^2\frac{\theta}{2}.
+\sin^2\frac{\theta}{2}
 $$
 
 The angle \(\phi\) is the relative phase between the \(|0\rangle\) and \(|1\rangle\) components.
@@ -109,7 +109,7 @@ If every amplitude is multiplied by the same phase:
 
 $$
 |\psi'\rangle =
-e^{i\gamma}|\psi\rangle,
+e^{i\gamma}|\psi\rangle
 $$
 
 then all measurement probabilities are unchanged:
@@ -119,7 +119,7 @@ $$
 =
 |e^{i\gamma}\langle \phi|\psi\rangle|^2
 =
-|\langle \phi|\psi\rangle|^2.
+|\langle \phi|\psi\rangle|^2
 $$
 
 But the relative phase in:
@@ -139,29 +139,29 @@ The six most useful single-qubit reference states are:
 Z basis:
 
 $$
-|0\rangle,
+|0\rangle
 \qquad
-|1\rangle.
+|1\rangle
 $$
 
 X basis:
 
 $$
 |+\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}},
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle - |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
 Y basis:
 
 $$
 |+i\rangle =
-\frac{|0\rangle + i|1\rangle}{\sqrt{2}},
+\frac{|0\rangle + i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
-\frac{|0\rangle - i|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - i|1\rangle}{\sqrt{2}}
 $$
 
 Pronunciation:
@@ -195,15 +195,15 @@ $$
 corresponds to a point on a sphere with coordinates:
 
 $$
-r_x = \sin\theta\cos\phi,
+r_x = \sin\theta\cos\phi
 $$
 
 $$
-r_y = \sin\theta\sin\phi,
+r_y = \sin\theta\sin\phi
 $$
 
 $$
-r_z = \cos\theta.
+r_z = \cos\theta
 $$
 
 The vector:
@@ -228,19 +228,19 @@ The poles are:
 $$
 \theta = 0
 \quad\Rightarrow\quad
-|\psi\rangle = |0\rangle.
+|\psi\rangle = |0\rangle
 $$
 
 $$
 \theta = \pi
 \quad\Rightarrow\quad
-|\psi\rangle \sim |1\rangle.
+|\psi\rangle \sim |1\rangle
 $$
 
 The equator contains equal Z-basis probabilities:
 
 $$
-P(0) = P(1) = \frac{1}{2}.
+P(0) = P(1) = \frac{1}{2}
 $$
 
 But different equator points have different phases:
@@ -248,25 +248,25 @@ But different equator points have different phases:
 $$
 \phi = 0
 \quad\Rightarrow\quad
-|+\rangle,
+|+\rangle
 $$
 
 $$
 \phi = \pi
 \quad\Rightarrow\quad
-|-\rangle,
+|-\rangle
 $$
 
 $$
 \phi = \frac{\pi}{2}
 \quad\Rightarrow\quad
-|+i\rangle,
+|+i\rangle
 $$
 
 $$
 \phi = \frac{3\pi}{2}
 \quad\Rightarrow\quad
-|-i\rangle.
+|-i\rangle
 $$
 
 So two states can have identical Z-basis probabilities and still be different quantum states.
@@ -278,7 +278,7 @@ This was one of the central points in the original conversation.
 Take:
 
 $$
-\theta = 60^\circ.
+\theta = 60^\circ
 $$
 
 Then:
@@ -288,7 +288,7 @@ $$
 =
 \cos 30^\circ
 =
-\frac{\sqrt{3}}{2},
+\frac{\sqrt{3}}{2}
 $$
 
 and:
@@ -298,7 +298,7 @@ $$
 =
 \sin 30^\circ
 =
-\frac{1}{2}.
+\frac{1}{2}
 $$
 
 So:
@@ -307,7 +307,7 @@ $$
 P(0) =
 \left(\frac{\sqrt{3}}{2}\right)^2
 =
-\frac{3}{4},
+\frac{3}{4}
 $$
 
 and:
@@ -316,7 +316,7 @@ $$
 P(1) =
 \left(\frac{1}{2}\right)^2
 =
-\frac{1}{4}.
+\frac{1}{4}
 $$
 
 Those probabilities do not depend on \(\phi\).
@@ -326,19 +326,19 @@ But the states:
 $$
 \frac{\sqrt{3}}{2}|0\rangle
 +
-\frac{1}{2}|1\rangle,
+\frac{1}{2}|1\rangle
 $$
 
 $$
 \frac{\sqrt{3}}{2}|0\rangle
 +
-i\frac{1}{2}|1\rangle,
+i\frac{1}{2}|1\rangle
 $$
 
 $$
 \frac{\sqrt{3}}{2}|0\rangle
 -
-\frac{1}{2}|1\rangle,
+\frac{1}{2}|1\rangle
 $$
 
 and:
@@ -381,7 +381,7 @@ A qubit state is:
 
 $$
 |\psi\rangle =
-\alpha|0\rangle + \beta|1\rangle.
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 A useful parameterization is:
@@ -390,14 +390,14 @@ $$
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
-e^{i\phi}\sin\frac{\theta}{2}|1\rangle.
+e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 $$
 
 The Bloch vector is:
 
 $$
 \vec r =
-(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta).
+(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
 $$
 
 Z measurement sees \(r_z\). X measurement sees \(r_x\). Y measurement sees \(r_y\). This is the topic of the next chapter.

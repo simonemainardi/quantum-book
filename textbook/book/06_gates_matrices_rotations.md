@@ -21,13 +21,13 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 A gate \(U\) produces:
 
 $$
-|\psi'\rangle = U|\psi\rangle.
+|\psi'\rangle = U|\psi\rangle
 $$
 
 Because \(U\) is linear:
@@ -35,7 +35,7 @@ Because \(U\) is linear:
 $$
 U(\alpha|0\rangle + \beta|1\rangle)
 =
-\alpha U|0\rangle + \beta U|1\rangle.
+\alpha U|0\rangle + \beta U|1\rangle
 $$
 
 That is why knowing what a gate does to \(|0\rangle\) and \(|1\rangle\) determines the whole gate.
@@ -49,13 +49,13 @@ That is why knowing what a gate does to \(|0\rangle\) and \(|1\rangle\) determin
 Suppose:
 
 $$
-U|0\rangle = a|0\rangle + c|1\rangle,
+U|0\rangle = a|0\rangle + c|1\rangle
 $$
 
 and:
 
 $$
-U|1\rangle = b|0\rangle + d|1\rangle.
+U|1\rangle = b|0\rangle + d|1\rangle
 $$
 
 Then:
@@ -65,7 +65,7 @@ U =
 \begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 ![Hadamard matrix columns](../figures/10_hadamard_matrix_columns.svg)
@@ -80,7 +80,7 @@ H =
 \begin{pmatrix}
 1 & 1 \\
 1 & -1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 It acts on the computational basis as:
@@ -89,7 +89,7 @@ $$
 H|0\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 =
-|+\rangle,
+|+\rangle
 $$
 
 and:
@@ -98,15 +98,15 @@ $$
 H|1\rangle =
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
 =
-|-\rangle.
+|-\rangle
 $$
 
 It also maps back:
 
 $$
-H|+\rangle = |0\rangle,
+H|+\rangle = |0\rangle
 \qquad
-H|-\rangle = |1\rangle.
+H|-\rangle = |1\rangle
 $$
 
 This is why applying \(H\) before Z readout implements X-basis measurement.
@@ -119,7 +119,7 @@ Apply \(H\) to:
 
 $$
 |\psi\rangle =
-\alpha|0\rangle + \beta|1\rangle.
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 Using matrix multiplication:
@@ -140,19 +140,19 @@ H|\psi\rangle =
 \begin{pmatrix}
 \alpha + \beta \\
 \alpha - \beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The new \(|0\rangle\) amplitude is:
 
 $$
-\frac{\alpha+\beta}{\sqrt{2}}.
+\frac{\alpha+\beta}{\sqrt{2}}
 $$
 
 The new \(|1\rangle\) amplitude is:
 
 $$
-\frac{\alpha-\beta}{\sqrt{2}}.
+\frac{\alpha-\beta}{\sqrt{2}}
 $$
 
 So \(H\) explicitly creates sums and differences of amplitudes. It is a recombination gate.
@@ -160,7 +160,7 @@ So \(H\) explicitly creates sums and differences of amplitudes. It is a recombin
 If \(\alpha = 1/\sqrt{2}\) and \(\beta = -1/\sqrt{2}\), then:
 
 $$
-\alpha+\beta = 0,
+\alpha+\beta = 0
 $$
 
 and the \(|0\rangle\) output disappears.
@@ -174,7 +174,7 @@ X =
 \begin{pmatrix}
 0 & 1 \\
 1 & 0
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 $$
@@ -182,7 +182,7 @@ Y =
 \begin{pmatrix}
 0 & -i \\
 i & 0
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 $$
@@ -190,15 +190,15 @@ Z =
 \begin{pmatrix}
 1 & 0 \\
 0 & -1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 Their basic actions are:
 
 $$
-X|0\rangle = |1\rangle,
+X|0\rangle = |1\rangle
 \qquad
-X|1\rangle = |0\rangle.
+X|1\rangle = |0\rangle
 $$
 
 So \(X\) is the quantum analogue of a bit flip.
@@ -208,7 +208,7 @@ The \(Z\) gate leaves \(|0\rangle\) unchanged and flips the sign of \(|1\rangle\
 $$
 Z(\alpha|0\rangle + \beta|1\rangle)
 =
-\alpha|0\rangle - \beta|1\rangle.
+\alpha|0\rangle - \beta|1\rangle
 $$
 
 This is a phase flip. It does not change Z-basis probabilities, but it changes future interference.
@@ -224,7 +224,7 @@ S =
 \begin{pmatrix}
 1 & 0 \\
 0 & i
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 It acts as:
@@ -232,7 +232,7 @@ It acts as:
 $$
 S(\alpha|0\rangle + \beta|1\rangle)
 =
-\alpha|0\rangle + i\beta|1\rangle.
+\alpha|0\rangle + i\beta|1\rangle
 $$
 
 It adds a relative phase of \(\pi/2\) to the \(|1\rangle\) component.
@@ -244,7 +244,7 @@ S^\dagger =
 \begin{pmatrix}
 1 & 0 \\
 0 & -i
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The \(S^\dagger\) gate is used when converting Y-basis information into Z-basis readout.
@@ -255,17 +255,17 @@ Single-qubit rotations are usually written:
 
 $$
 R_x(\theta) =
-e^{-i\theta X/2},
+e^{-i\theta X/2}
 $$
 
 $$
 R_y(\theta) =
-e^{-i\theta Y/2},
+e^{-i\theta Y/2}
 $$
 
 $$
 R_z(\theta) =
-e^{-i\theta Z/2}.
+e^{-i\theta Z/2}
 $$
 
 Their matrices are:
@@ -276,7 +276,7 @@ R_x(\theta)
 \begin{pmatrix}
 \cos(\theta/2) & -i\sin(\theta/2) \\
 -i\sin(\theta/2) & \cos(\theta/2)
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 $$
@@ -285,7 +285,7 @@ R_y(\theta)
 \begin{pmatrix}
 \cos(\theta/2) & -\sin(\theta/2) \\
 \sin(\theta/2) & \cos(\theta/2)
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 $$
@@ -294,7 +294,7 @@ R_z(\theta)
 \begin{pmatrix}
 e^{-i\theta/2} & 0 \\
 0 & e^{i\theta/2}
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 These gates rotate the Bloch vector around the X, Y, and Z axes.
@@ -320,14 +320,14 @@ The Bloch sphere is therefore not just a teaching picture. It is also a control 
 Every ideal gate above is unitary:
 
 $$
-U^\dagger U = I.
+U^\dagger U = I
 $$
 
 This means:
 
 $$
 \|U|\psi\rangle\|^2 =
-\||\psi\rangle\|^2.
+\||\psi\rangle\|^2
 $$
 
 In ordinary language:
@@ -354,7 +354,7 @@ $$
 \begin{pmatrix}
 \alpha+\beta \\
 \alpha-\beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 If the phases line up, one output is reinforced. If they oppose, one output is cancelled.

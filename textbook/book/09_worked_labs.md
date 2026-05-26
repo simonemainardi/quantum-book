@@ -9,23 +9,23 @@ The examples use ordinary Python complex numbers and matrix multiplication.
 Compute:
 
 $$
-\psi_1 = e^{i0},
+\psi_1 = e^{i0}
 \qquad
-\psi_2 = e^{i\pi}.
+\psi_2 = e^{i\pi}
 $$
 
 Since:
 
 $$
-e^{i0}=1,
+e^{i0}=1
 \qquad
-e^{i\pi}=-1,
+e^{i\pi}=-1
 $$
 
 we have:
 
 $$
-\psi_1+\psi_2 = 0.
+\psi_1+\psi_2 = 0
 $$
 
 Python:
@@ -58,25 +58,25 @@ Consider:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
 The amplitudes are:
 
 $$
-\alpha = \frac{1}{\sqrt{2}},
+\alpha = \frac{1}{\sqrt{2}}
 \qquad
-\beta = \frac{e^{i\phi}}{\sqrt{2}}.
+\beta = \frac{e^{i\phi}}{\sqrt{2}}
 $$
 
 Z-basis probabilities:
 
 $$
-P(0) = |\alpha|^2 = \frac{1}{2},
+P(0) = |\alpha|^2 = \frac{1}{2}
 $$
 
 $$
-P(1) = |\beta|^2 = \frac{1}{2}.
+P(1) = |\beta|^2 = \frac{1}{2}
 $$
 
 Python:
@@ -99,7 +99,7 @@ For the same state:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}},
+\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
 the X-basis \(+\) amplitude is:
@@ -107,7 +107,7 @@ the X-basis \(+\) amplitude is:
 $$
 \langle +|\psi\rangle
 =
-\frac{1 + e^{i\phi}}{2}.
+\frac{1 + e^{i\phi}}{2}
 $$
 
 So:
@@ -116,7 +116,7 @@ $$
 P(+) =
 \left|
 \frac{1 + e^{i\phi}}{2}
-\right|^2.
+\right|^2
 $$
 
 Python:
@@ -150,27 +150,27 @@ $$
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
-e^{i\phi}\sin\frac{\theta}{2}|1\rangle,
+e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 $$
 
 with:
 
 $$
-\theta = 60^\circ.
+\theta = 60^\circ
 $$
 
 The Bloch components are:
 
 $$
-r_x = \sin\theta\cos\phi,
+r_x = \sin\theta\cos\phi
 $$
 
 $$
-r_y = \sin\theta\sin\phi,
+r_y = \sin\theta\sin\phi
 $$
 
 $$
-r_z = \cos\theta.
+r_z = \cos\theta
 $$
 
 Python:
@@ -214,7 +214,7 @@ H =
 \begin{pmatrix}
 1 & 1 \\
 1 & -1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 Python:
@@ -339,7 +339,7 @@ dist/quantum-computing-practical-textbook.md
 
    $$
    |\psi\rangle =
-   \frac{|0\rangle - |1\rangle}{\sqrt{2}},
+   \frac{|0\rangle - |1\rangle}{\sqrt{2}}
    $$
 
    compute \(P(0)\), \(P(1)\), \(P(+)\), and \(P(-)\).
@@ -348,7 +348,7 @@ dist/quantum-computing-practical-textbook.md
 
    $$
    |\psi\rangle =
-   \frac{|0\rangle + i|1\rangle}{\sqrt{2}},
+   \frac{|0\rangle + i|1\rangle}{\sqrt{2}}
    $$
 
    compute \(P(+i)\) and \(P(-i)\).

@@ -9,7 +9,7 @@
 In a classical model, if two mutually exclusive ways lead to an event, probabilities add:
 
 $$
-P = P_1 + P_2.
+P = P_1 + P_2
 $$
 
 Since probabilities are nonnegative real numbers, they cannot cancel.
@@ -17,29 +17,29 @@ Since probabilities are nonnegative real numbers, they cannot cancel.
 In a quantum model, each alternative contributes a complex amplitude:
 
 $$
-\psi = \psi_1 + \psi_2.
+\psi = \psi_1 + \psi_2
 $$
 
 Only after adding amplitudes do we compute probability:
 
 $$
-P = |\psi|^2.
+P = |\psi|^2
 $$
 
 That order matters. If
 
 $$
-\psi_1 = 1,
+\psi_1 = 1
 \qquad
-\psi_2 = -1,
+\psi_2 = -1
 $$
 
 then
 
 $$
-\psi = \psi_1 + \psi_2 = 0,
+\psi = \psi_1 + \psi_2 = 0
 \qquad
-P = |\psi|^2 = 0.
+P = |\psi|^2 = 0
 $$
 
 Two possible contributions produced an impossible outcome.
@@ -73,7 +73,7 @@ This is why the earlier website phrase "programmable interference machine" is st
 The cancellation is not:
 
 $$
-P_1 + P_2 = 0.
+P_1 + P_2 = 0
 $$
 
 That would be impossible if both probabilities are positive.
@@ -81,13 +81,13 @@ That would be impossible if both probabilities are positive.
 The cancellation is:
 
 $$
-\psi_1 + \psi_2 = 0.
+\psi_1 + \psi_2 = 0
 $$
 
 Then probability is computed afterward:
 
 $$
-P = |\psi_1 + \psi_2|^2 = 0.
+P = |\psi_1 + \psi_2|^2 = 0
 $$
 
 This distinction is the key to the rest of the book. Later, in [Math and Algebra Prerequisites](02_math_prerequisites.md), we will make precise what complex amplitudes and magnitudes mean. For now, keep the physical sequence in mind:
@@ -141,23 +141,23 @@ That fourth lesson is the bridge to qubits.
 Use two basis states:
 
 $$
-|L\rangle = \text{the left path},
+|L\rangle = \text{the left path}
 \qquad
-|R\rangle = \text{the right path}.
+|R\rangle = \text{the right path}
 $$
 
 If the illumination is balanced, the state just after the slits can be approximated by:
 
 $$
 |\psi\rangle =
-\frac{|L\rangle + |R\rangle}{\sqrt{2}}.
+\frac{|L\rangle + |R\rangle}{\sqrt{2}}
 $$
 
 That is the same mathematical pattern as a qubit in a superposition:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 $$
 
 The labels are different, but the structure is the same: two basis alternatives, each with an amplitude.
@@ -171,15 +171,15 @@ For this book, we do not need to solve every philosophical question about quantu
 Before measurement:
 
 $$
-|\psi\rangle = \alpha |0\rangle + \beta |1\rangle.
+|\psi\rangle = \alpha |0\rangle + \beta |1\rangle
 $$
 
 At measurement in the computational basis:
 
 $$
-P(0) = |\alpha|^2,
+P(0) = |\alpha|^2
 \qquad
-P(1) = |\beta|^2.
+P(1) = |\beta|^2
 $$
 
 After measurement, the device reports one classical result, either 0 or 1.

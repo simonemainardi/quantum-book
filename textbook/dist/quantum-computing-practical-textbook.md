@@ -95,7 +95,7 @@ A quantum computer is a programmable interference machine: it stores complex amp
 In a classical model, if two mutually exclusive ways lead to an event, probabilities add:
 
 $$
-P = P_1 + P_2.
+P = P_1 + P_2
 $$
 
 Since probabilities are nonnegative real numbers, they cannot cancel.
@@ -103,29 +103,29 @@ Since probabilities are nonnegative real numbers, they cannot cancel.
 In a quantum model, each alternative contributes a complex amplitude:
 
 $$
-\psi = \psi_1 + \psi_2.
+\psi = \psi_1 + \psi_2
 $$
 
 Only after adding amplitudes do we compute probability:
 
 $$
-P = |\psi|^2.
+P = |\psi|^2
 $$
 
 That order matters. If
 
 $$
-\psi_1 = 1,
+\psi_1 = 1
 \qquad
-\psi_2 = -1,
+\psi_2 = -1
 $$
 
 then
 
 $$
-\psi = \psi_1 + \psi_2 = 0,
+\psi = \psi_1 + \psi_2 = 0
 \qquad
-P = |\psi|^2 = 0.
+P = |\psi|^2 = 0
 $$
 
 Two possible contributions produced an impossible outcome.
@@ -159,7 +159,7 @@ This is why the earlier website phrase "programmable interference machine" is st
 The cancellation is not:
 
 $$
-P_1 + P_2 = 0.
+P_1 + P_2 = 0
 $$
 
 That would be impossible if both probabilities are positive.
@@ -167,13 +167,13 @@ That would be impossible if both probabilities are positive.
 The cancellation is:
 
 $$
-\psi_1 + \psi_2 = 0.
+\psi_1 + \psi_2 = 0
 $$
 
 Then probability is computed afterward:
 
 $$
-P = |\psi_1 + \psi_2|^2 = 0.
+P = |\psi_1 + \psi_2|^2 = 0
 $$
 
 This distinction is the key to the rest of the book. Later, in [Math and Algebra Prerequisites](02_math_prerequisites.md), we will make precise what complex amplitudes and magnitudes mean. For now, keep the physical sequence in mind:
@@ -227,23 +227,23 @@ That fourth lesson is the bridge to qubits.
 Use two basis states:
 
 $$
-|L\rangle = \text{the left path},
+|L\rangle = \text{the left path}
 \qquad
-|R\rangle = \text{the right path}.
+|R\rangle = \text{the right path}
 $$
 
 If the illumination is balanced, the state just after the slits can be approximated by:
 
 $$
 |\psi\rangle =
-\frac{|L\rangle + |R\rangle}{\sqrt{2}}.
+\frac{|L\rangle + |R\rangle}{\sqrt{2}}
 $$
 
 That is the same mathematical pattern as a qubit in a superposition:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 $$
 
 The labels are different, but the structure is the same: two basis alternatives, each with an amplitude.
@@ -257,15 +257,15 @@ For this book, we do not need to solve every philosophical question about quantu
 Before measurement:
 
 $$
-|\psi\rangle = \alpha |0\rangle + \beta |1\rangle.
+|\psi\rangle = \alpha |0\rangle + \beta |1\rangle
 $$
 
 At measurement in the computational basis:
 
 $$
-P(0) = |\alpha|^2,
+P(0) = |\alpha|^2
 \qquad
-P(1) = |\beta|^2.
+P(1) = |\beta|^2
 $$
 
 After measurement, the device reports one classical result, either 0 or 1.
@@ -329,13 +329,13 @@ Whenever a later chapter says "phase", "basis", "projection", "gate", or "unitar
 A complex number has the form:
 
 $$
-z = a + ib,
+z = a + ib
 $$
 
 where:
 
 $$
-i^2 = -1.
+i^2 = -1
 $$
 
 The number \(a\) is the real part. The number \(b\) is the imaginary part.
@@ -343,19 +343,19 @@ The number \(a\) is the real part. The number \(b\) is the imaginary part.
 The magnitude is:
 
 $$
-|z| = \sqrt{a^2 + b^2}.
+|z| = \sqrt{a^2 + b^2}
 $$
 
 The squared magnitude is:
 
 $$
-|z|^2 = a^2 + b^2.
+|z|^2 = a^2 + b^2
 $$
 
 Quantum probabilities come from squared magnitudes:
 
 $$
-P = |\psi|^2.
+P = |\psi|^2
 $$
 
 This is why a complex amplitude can be negative, imaginary, or phase-shifted, while the final probability remains a nonnegative real number.
@@ -392,7 +392,7 @@ points left.
 This matters because amplitudes can cancel as vectors:
 
 $$
-1 + (-1) = 0.
+1 + (-1) = 0
 $$
 
 They can also cancel after rotating through phases, not only by being literally positive and negative real numbers.
@@ -404,9 +404,9 @@ The trigonometric functions \(\cos\theta\) and \(\sin\theta\) are coordinates on
 If a point lies on a circle of radius 1 at angle \(\theta\), then:
 
 $$
-x = \cos\theta,
+x = \cos\theta
 \qquad
-y = \sin\theta.
+y = \sin\theta
 $$
 
 The identity:
@@ -428,7 +428,7 @@ $$
 as amplitude magnitudes. The squared magnitudes add to 1:
 
 $$
-\cos^2\frac{\theta}{2} + \sin^2\frac{\theta}{2} = 1.
+\cos^2\frac{\theta}{2} + \sin^2\frac{\theta}{2} = 1
 $$
 
 That is exactly what we need for probabilities to sum to 1.
@@ -438,7 +438,7 @@ That is exactly what we need for probabilities to sum to 1.
 Euler's formula is the bridge between trigonometry and complex phase:
 
 $$
-e^{i\phi} = \cos\phi + i\sin\phi.
+e^{i\phi} = \cos\phi + i\sin\phi
 $$
 
 This says that \(e^{i\phi}\) is a unit-length complex number at angle \(\phi\).
@@ -446,7 +446,7 @@ This says that \(e^{i\phi}\) is a unit-length complex number at angle \(\phi\).
 Its magnitude is always 1:
 
 $$
-|e^{i\phi}| = 1.
+|e^{i\phi}| = 1
 $$
 
 So multiplying an amplitude by \(e^{i\phi}\) changes its direction in the complex plane without changing its magnitude.
@@ -460,13 +460,13 @@ That is phase.
 Suppose:
 
 $$
-\psi = e^{i\phi}.
+\psi = e^{i\phi}
 $$
 
 Then:
 
 $$
-|\psi|^2 = |e^{i\phi}|^2 = 1.
+|\psi|^2 = |e^{i\phi}|^2 = 1
 $$
 
 So if you look only at this one amplitude's magnitude, the phase does not change the probability.
@@ -482,7 +482,7 @@ For example:
 $$
 \left|\frac{1 + e^{i\phi}}{2}\right|^2
 =
-\cos^2\frac{\phi}{2}.
+\cos^2\frac{\phi}{2}
 $$
 
 At \(\phi = 0\), this equals 1. At \(\phi = \pi\), this equals 0.
@@ -502,13 +502,13 @@ $$
 \begin{pmatrix}
 1 \\
 0
-\end{pmatrix},
+\end{pmatrix}
 \qquad
 |1\rangle =
 \begin{pmatrix}
 0 \\
 1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 A general qubit is:
@@ -520,7 +520,7 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The coefficients \(\alpha\) and \(\beta\) are complex amplitudes.
@@ -528,7 +528,7 @@ The coefficients \(\alpha\) and \(\beta\) are complex amplitudes.
 The normalization condition is:
 
 $$
-|\alpha|^2 + |\beta|^2 = 1.
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 This condition ensures that measurement probabilities sum to 1.
@@ -544,29 +544,29 @@ For qubits, the most important bases are:
 The Z basis:
 
 $$
-|0\rangle,
+|0\rangle
 \qquad
-|1\rangle.
+|1\rangle
 $$
 
 The X basis:
 
 $$
 |+\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}},
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle - |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
 The Y basis:
 
 $$
 |+i\rangle =
-\frac{|0\rangle + i|1\rangle}{\sqrt{2}},
+\frac{|0\rangle + i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
-\frac{|0\rangle - i|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - i|1\rangle}{\sqrt{2}}
 $$
 
 Read these as:
@@ -589,7 +589,7 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 then:
@@ -598,25 +598,25 @@ $$
 \langle \psi| =
 \begin{pmatrix}
 \alpha^* & \beta^*
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The star means complex conjugate:
 
 $$
-(a + ib)^* = a - ib.
+(a + ib)^* = a - ib
 $$
 
 The amplitude for state \(|\psi\rangle\) to be found in basis state \(|\phi\rangle\) is:
 
 $$
-\langle \phi|\psi\rangle.
+\langle \phi|\psi\rangle
 $$
 
 The probability is:
 
 $$
-P(\phi) = |\langle \phi|\psi\rangle|^2.
+P(\phi) = |\langle \phi|\psi\rangle|^2
 $$
 
 This is how we compute measurement probabilities in any basis.
@@ -630,13 +630,13 @@ U =
 \begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 It acts on a state vector:
 
 $$
-U|\psi\rangle.
+U|\psi\rangle
 $$
 
 For example, if:
@@ -646,7 +646,7 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 then:
@@ -656,7 +656,7 @@ U|\psi\rangle =
 \begin{pmatrix}
 a\alpha + b\beta \\
 c\alpha + d\beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 Notice the sums. Matrix multiplication is one place where amplitudes naturally recombine.
@@ -670,13 +670,13 @@ Notice the sums. Matrix multiplication is one place where amplitudes naturally r
 Suppose:
 
 $$
-U|0\rangle = a|0\rangle + c|1\rangle,
+U|0\rangle = a|0\rangle + c|1\rangle
 $$
 
 and:
 
 $$
-U|1\rangle = b|0\rangle + d|1\rangle.
+U|1\rangle = b|0\rangle + d|1\rangle
 $$
 
 Then:
@@ -686,7 +686,7 @@ U =
 \begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The first column is \(U|0\rangle\). The second column is \(U|1\rangle\).
@@ -700,7 +700,7 @@ Quantum evolution without measurement is represented by unitary matrices.
 A matrix \(U\) is unitary if:
 
 $$
-U^\dagger U = I.
+U^\dagger U = I
 $$
 
 Here \(U^\dagger\) is the conjugate transpose of \(U\).
@@ -712,19 +712,19 @@ The practical meaning is:
 If:
 
 $$
-|\alpha|^2 + |\beta|^2 = 1,
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 then after applying a unitary gate:
 
 $$
-|\psi'\rangle = U|\psi\rangle,
+|\psi'\rangle = U|\psi\rangle
 $$
 
 the new amplitudes still satisfy:
 
 $$
-|\alpha'|^2 + |\beta'|^2 = 1.
+|\alpha'|^2 + |\beta'|^2 = 1
 $$
 
 That is why ordinary gates are reversible. Measurement is the non-unitary step where a classical outcome is produced.
@@ -737,21 +737,21 @@ If a state is:
 
 $$
 |\psi\rangle =
-\alpha |0\rangle + \beta |1\rangle,
+\alpha |0\rangle + \beta |1\rangle
 $$
 
 then measurement in the Z basis gives:
 
 $$
-P(0) = |\alpha|^2,
+P(0) = |\alpha|^2
 \qquad
-P(1) = |\beta|^2.
+P(1) = |\beta|^2
 $$
 
 More generally, if measuring in a basis containing \(|\phi\rangle\):
 
 $$
-P(\phi) = |\langle \phi|\psi\rangle|^2.
+P(\phi) = |\langle \phi|\psi\rangle|^2
 $$
 
 This is the formula that connects all the later examples:
@@ -769,15 +769,14 @@ Keep this compact map nearby:
 | Concept | Formula | Meaning |
 |---|---|---|
 | Complex number | \(z=a+ib\) | amplitude with direction and magnitude |
-| Magnitude | \(|z|=\sqrt{a^2+b^2}\) | length in complex plane |
-| Probability | \(P=|\psi|^2\) | squared amplitude magnitude |
+| Magnitude | \(\lvert z\rvert=\sqrt{a^2+b^2}\) | length in complex plane |
+| Probability | \(P=\lvert\psi\rvert^2\) | squared amplitude magnitude |
 | Phase | \(e^{i\phi}\) | unit rotation in complex plane |
-| Qubit | \(|\psi\rangle=\alpha|0\rangle+\beta|1\rangle\) | two complex amplitudes |
-| Normalization | \(|\alpha|^2+|\beta|^2=1\) | total probability equals 1 |
-| Inner product | \(\langle \phi|\psi\rangle\) | amplitude of overlap |
-| Matrix gate | \(U|\psi\rangle\) | linear transformation of amplitudes |
+| Qubit | \(\lvert\psi\rangle=\alpha\lvert0\rangle+\beta\lvert1\rangle\) | two complex amplitudes |
+| Normalization | \(\lvert\alpha\rvert^2+\lvert\beta\rvert^2=1\) | total probability equals 1 |
+| Inner product | \(\langle \phi\vert\psi\rangle\) | amplitude of overlap |
+| Matrix gate | \(U\lvert\psi\rangle\) | linear transformation of amplitudes |
 | Unitary | \(U^\dagger U=I\) | probability-preserving evolution |
-
 # 3. Double Slit and Amplitudes
 
 The double-slit experiment is where the physical and mathematical stories meet.
@@ -800,15 +799,15 @@ These correspond to different measurement bases.
 The which-slit basis is:
 
 $$
-|L\rangle,
+|L\rangle
 \qquad
-|R\rangle.
+|R\rangle
 $$
 
 The screen-position basis is a set of states:
 
 $$
-|x\rangle,
+|x\rangle
 $$
 
 where \(x\) labels a detector position on the screen.
@@ -823,15 +822,15 @@ Assume the two slits are equally illuminated. A simple state after the slits is:
 
 $$
 |\psi\rangle =
-\frac{|L\rangle + |R\rangle}{\sqrt{2}}.
+\frac{|L\rangle + |R\rangle}{\sqrt{2}}
 $$
 
 If you measure in the which-slit basis, the amplitudes are:
 
 $$
-\langle L|\psi\rangle = \frac{1}{\sqrt{2}},
+\langle L|\psi\rangle = \frac{1}{\sqrt{2}}
 \qquad
-\langle R|\psi\rangle = \frac{1}{\sqrt{2}}.
+\langle R|\psi\rangle = \frac{1}{\sqrt{2}}
 $$
 
 By the Born rule from [Section 2.12](02_math_prerequisites.md#212-the-born-rule):
@@ -840,7 +839,7 @@ $$
 P(L) =
 \left|\frac{1}{\sqrt{2}}\right|^2
 =
-\frac{1}{2},
+\frac{1}{2}
 $$
 
 and:
@@ -849,7 +848,7 @@ $$
 P(R) =
 \left|\frac{1}{\sqrt{2}}\right|^2
 =
-\frac{1}{2}.
+\frac{1}{2}
 $$
 
 There is no interference in this measurement because the alternatives are distinct outcomes. We do not add the left-path amplitude to the right-path amplitude when asking "which slit?"
@@ -868,7 +867,7 @@ $$
 \langle x|L\rangle
 +
 \langle x|R\rangle
-\right).
+\right)
 $$
 
 This expression is the crucial difference.
@@ -881,13 +880,13 @@ The amplitude for outcome \(x\) is a sum of two contributions:
 Each contribution is a complex number. In a simplified wave model:
 
 $$
-\langle x|L\rangle \propto e^{ikr_L(x)},
+\langle x|L\rangle \propto e^{ikr_L(x)}
 $$
 
 and:
 
 $$
-\langle x|R\rangle \propto e^{ikr_R(x)}.
+\langle x|R\rangle \propto e^{ikr_R(x)}
 $$
 
 Here:
@@ -905,7 +904,7 @@ The screen probability is:
 $$
 P(x)
 =
-|\langle x|\psi\rangle|^2.
+|\langle x|\psi\rangle|^2
 $$
 
 Substitute the expression above:
@@ -918,15 +917,15 @@ P(x)
 \langle x|L\rangle
 +
 \langle x|R\rangle
-\right|^2.
+\right|^2
 $$
 
 Let:
 
 $$
-A = \langle x|L\rangle,
+A = \langle x|L\rangle
 \qquad
-B = \langle x|R\rangle.
+B = \langle x|R\rangle
 $$
 
 Then:
@@ -934,7 +933,7 @@ Then:
 $$
 |A+B|^2
 =
-|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B).
+|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B)
 $$
 
 The last term is the interference term.
@@ -942,13 +941,13 @@ The last term is the interference term.
 It can be positive, producing a bright band. It can be negative, producing a dark band. At a dark fringe:
 
 $$
-A + B \approx 0,
+A + B \approx 0
 $$
 
 so:
 
 $$
-P(x) \approx 0.
+P(x) \approx 0
 $$
 
 This is not probability cancellation. It is amplitude cancellation before probability is computed.
@@ -962,7 +961,7 @@ This is not probability cancellation. It is amplitude cancellation before probab
 Compare:
 
 $$
-|e^{i\phi}|^2 = 1.
+|e^{i\phi}|^2 = 1
 $$
 
 No phase dependence.
@@ -980,7 +979,7 @@ In fact:
 $$
 |1 + e^{i\phi}|^2
 =
-2 + 2\cos\phi.
+2 + 2\cos\phi
 $$
 
 So:
@@ -1001,22 +1000,22 @@ $$
 has the same structure as:
 
 $$
-\frac{|0\rangle + |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 $$
 
 Now insert a relative phase:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
 If we measure in the Z basis \(\{|0\rangle, |1\rangle\}\), the probabilities are:
 
 $$
-P(0) = \frac{1}{2},
+P(0) = \frac{1}{2}
 \qquad
-P(1) = \frac{1}{2},
+P(1) = \frac{1}{2}
 $$
 
 regardless of \(\phi\).
@@ -1027,10 +1026,10 @@ But if we measure in the X basis:
 
 $$
 |+\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}},
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle - |1\rangle}{\sqrt{2}},
+\frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
 then the amplitude for \(+\) is:
@@ -1038,7 +1037,7 @@ then the amplitude for \(+\) is:
 $$
 \langle +|\psi\rangle
 =
-\frac{1 + e^{i\phi}}{2}.
+\frac{1 + e^{i\phi}}{2}
 $$
 
 The probability is:
@@ -1049,7 +1048,7 @@ P(+) =
 \frac{1 + e^{i\phi}}{2}
 \right|^2
 =
-\cos^2\frac{\phi}{2}.
+\cos^2\frac{\phi}{2}
 $$
 
 At \(\phi = \pi\), this is zero.
@@ -1120,13 +1119,13 @@ $$
 \begin{pmatrix}
 1 \\
 0
-\end{pmatrix},
+\end{pmatrix}
 \qquad
 |1\rangle =
 \begin{pmatrix}
 0 \\
 1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 These are also called the computational basis or Z basis.
@@ -1135,7 +1134,7 @@ A general pure qubit state is:
 
 $$
 |\psi\rangle =
-\alpha |0\rangle + \beta |1\rangle.
+\alpha |0\rangle + \beta |1\rangle
 $$
 
 In column-vector form:
@@ -1145,13 +1144,13 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The amplitudes \(\alpha\) and \(\beta\) are complex numbers, and they must satisfy:
 
 $$
-|\alpha|^2 + |\beta|^2 = 1.
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 This is the normalization rule from [Section 2.6](02_math_prerequisites.md#26-vectors).
@@ -1170,9 +1169,9 @@ $$
 in the Z basis, the Born rule gives:
 
 $$
-P(0) = |\alpha|^2,
+P(0) = |\alpha|^2
 \qquad
-P(1) = |\beta|^2.
+P(1) = |\beta|^2
 $$
 
 The device returns one classical bit: 0 or 1.
@@ -1187,7 +1186,7 @@ $$
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
-e^{i\phi}\sin\frac{\theta}{2}|1\rangle.
+e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 $$
 
 This is the most important formula in the chapter.
@@ -1196,10 +1195,10 @@ The angle \(\theta\) controls the Z-basis probabilities:
 
 $$
 P(0) =
-\cos^2\frac{\theta}{2},
+\cos^2\frac{\theta}{2}
 \qquad
 P(1) =
-\sin^2\frac{\theta}{2}.
+\sin^2\frac{\theta}{2}
 $$
 
 The angle \(\phi\) is the relative phase between the \(|0\rangle\) and \(|1\rangle\) components.
@@ -1216,7 +1215,7 @@ If every amplitude is multiplied by the same phase:
 
 $$
 |\psi'\rangle =
-e^{i\gamma}|\psi\rangle,
+e^{i\gamma}|\psi\rangle
 $$
 
 then all measurement probabilities are unchanged:
@@ -1226,7 +1225,7 @@ $$
 =
 |e^{i\gamma}\langle \phi|\psi\rangle|^2
 =
-|\langle \phi|\psi\rangle|^2.
+|\langle \phi|\psi\rangle|^2
 $$
 
 But the relative phase in:
@@ -1246,29 +1245,29 @@ The six most useful single-qubit reference states are:
 Z basis:
 
 $$
-|0\rangle,
+|0\rangle
 \qquad
-|1\rangle.
+|1\rangle
 $$
 
 X basis:
 
 $$
 |+\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}},
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle - |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
 Y basis:
 
 $$
 |+i\rangle =
-\frac{|0\rangle + i|1\rangle}{\sqrt{2}},
+\frac{|0\rangle + i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
-\frac{|0\rangle - i|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - i|1\rangle}{\sqrt{2}}
 $$
 
 Pronunciation:
@@ -1302,15 +1301,15 @@ $$
 corresponds to a point on a sphere with coordinates:
 
 $$
-r_x = \sin\theta\cos\phi,
+r_x = \sin\theta\cos\phi
 $$
 
 $$
-r_y = \sin\theta\sin\phi,
+r_y = \sin\theta\sin\phi
 $$
 
 $$
-r_z = \cos\theta.
+r_z = \cos\theta
 $$
 
 The vector:
@@ -1335,19 +1334,19 @@ The poles are:
 $$
 \theta = 0
 \quad\Rightarrow\quad
-|\psi\rangle = |0\rangle.
+|\psi\rangle = |0\rangle
 $$
 
 $$
 \theta = \pi
 \quad\Rightarrow\quad
-|\psi\rangle \sim |1\rangle.
+|\psi\rangle \sim |1\rangle
 $$
 
 The equator contains equal Z-basis probabilities:
 
 $$
-P(0) = P(1) = \frac{1}{2}.
+P(0) = P(1) = \frac{1}{2}
 $$
 
 But different equator points have different phases:
@@ -1355,25 +1354,25 @@ But different equator points have different phases:
 $$
 \phi = 0
 \quad\Rightarrow\quad
-|+\rangle,
+|+\rangle
 $$
 
 $$
 \phi = \pi
 \quad\Rightarrow\quad
-|-\rangle,
+|-\rangle
 $$
 
 $$
 \phi = \frac{\pi}{2}
 \quad\Rightarrow\quad
-|+i\rangle,
+|+i\rangle
 $$
 
 $$
 \phi = \frac{3\pi}{2}
 \quad\Rightarrow\quad
-|-i\rangle.
+|-i\rangle
 $$
 
 So two states can have identical Z-basis probabilities and still be different quantum states.
@@ -1385,7 +1384,7 @@ This was one of the central points in the original conversation.
 Take:
 
 $$
-\theta = 60^\circ.
+\theta = 60^\circ
 $$
 
 Then:
@@ -1395,7 +1394,7 @@ $$
 =
 \cos 30^\circ
 =
-\frac{\sqrt{3}}{2},
+\frac{\sqrt{3}}{2}
 $$
 
 and:
@@ -1405,7 +1404,7 @@ $$
 =
 \sin 30^\circ
 =
-\frac{1}{2}.
+\frac{1}{2}
 $$
 
 So:
@@ -1414,7 +1413,7 @@ $$
 P(0) =
 \left(\frac{\sqrt{3}}{2}\right)^2
 =
-\frac{3}{4},
+\frac{3}{4}
 $$
 
 and:
@@ -1423,7 +1422,7 @@ $$
 P(1) =
 \left(\frac{1}{2}\right)^2
 =
-\frac{1}{4}.
+\frac{1}{4}
 $$
 
 Those probabilities do not depend on \(\phi\).
@@ -1433,19 +1432,19 @@ But the states:
 $$
 \frac{\sqrt{3}}{2}|0\rangle
 +
-\frac{1}{2}|1\rangle,
+\frac{1}{2}|1\rangle
 $$
 
 $$
 \frac{\sqrt{3}}{2}|0\rangle
 +
-i\frac{1}{2}|1\rangle,
+i\frac{1}{2}|1\rangle
 $$
 
 $$
 \frac{\sqrt{3}}{2}|0\rangle
 -
-\frac{1}{2}|1\rangle,
+\frac{1}{2}|1\rangle
 $$
 
 and:
@@ -1488,7 +1487,7 @@ A qubit state is:
 
 $$
 |\psi\rangle =
-\alpha|0\rangle + \beta|1\rangle.
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 A useful parameterization is:
@@ -1497,14 +1496,14 @@ $$
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
-e^{i\phi}\sin\frac{\theta}{2}|1\rangle.
+e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 $$
 
 The Bloch vector is:
 
 $$
 \vec r =
-(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta).
+(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
 $$
 
 Z measurement sees \(r_z\). X measurement sees \(r_x\). Y measurement sees \(r_y\). This is the topic of the next chapter.
@@ -1526,19 +1525,19 @@ The reason is not mysterious. A measurement basis determines which amplitudes ar
 Measuring in the Z basis means asking:
 
 $$
-\{|0\rangle, |1\rangle\}.
+\{|0\rangle, |1\rangle\}
 $$
 
 Measuring in the X basis means asking:
 
 $$
-\{|+\rangle, |-\rangle\}.
+\{|+\rangle, |-\rangle\}
 $$
 
 Measuring in the Y basis means asking:
 
 $$
-\{|+i\rangle, |-i\rangle\}.
+\{|+i\rangle, |-i\rangle\}
 $$
 
 The physical detector may still report a bit, but by applying a rotation before measurement, we can make that bit correspond to a different basis.
@@ -1550,38 +1549,38 @@ This is covered operationally in [Circuits and Readout](07_circuits_and_readout.
 From [Section 2.8](02_math_prerequisites.md#28-inner-products), the amplitude for observing basis state \(|\phi\rangle\) is:
 
 $$
-\langle \phi|\psi\rangle.
+\langle \phi|\psi\rangle
 $$
 
 The probability is:
 
 $$
 P(\phi) =
-|\langle \phi|\psi\rangle|^2.
+|\langle \phi|\psi\rangle|^2
 $$
 
 For Z measurement:
 
 $$
-P(0) = |\langle 0|\psi\rangle|^2,
+P(0) = |\langle 0|\psi\rangle|^2
 \qquad
-P(1) = |\langle 1|\psi\rangle|^2.
+P(1) = |\langle 1|\psi\rangle|^2
 $$
 
 For X measurement:
 
 $$
-P(+) = |\langle +|\psi\rangle|^2,
+P(+) = |\langle +|\psi\rangle|^2
 \qquad
-P(-) = |\langle -|\psi\rangle|^2.
+P(-) = |\langle -|\psi\rangle|^2
 $$
 
 For Y measurement:
 
 $$
-P(+i) = |\langle +i|\psi\rangle|^2,
+P(+i) = |\langle +i|\psi\rangle|^2
 \qquad
-P(-i) = |\langle -i|\psi\rangle|^2.
+P(-i) = |\langle -i|\psi\rangle|^2
 $$
 
 The same state can give different distributions in these bases.
@@ -1594,13 +1593,13 @@ $$
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
-e^{i\phi}\sin\frac{\theta}{2}|1\rangle.
+e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 $$
 
 Set:
 
 $$
-\theta = 60^\circ.
+\theta = 60^\circ
 $$
 
 Then:
@@ -1608,11 +1607,11 @@ Then:
 $$
 \cos\frac{\theta}{2}
 =
-\frac{\sqrt{3}}{2},
+\frac{\sqrt{3}}{2}
 \qquad
 \sin\frac{\theta}{2}
 =
-\frac{1}{2}.
+\frac{1}{2}
 $$
 
 So:
@@ -1621,7 +1620,7 @@ $$
 |\psi\rangle =
 0.866|0\rangle
 +
-0.5e^{i\phi}|1\rangle.
+0.5e^{i\phi}|1\rangle
 $$
 
 The magnitudes are fixed. Only the relative phase changes.
@@ -1632,13 +1631,13 @@ The Bloch vector is:
 
 $$
 \vec r =
-(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta).
+(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
 $$
 
 Write:
 
 $$
-\vec r = (r_x,r_y,r_z).
+\vec r = (r_x,r_y,r_z)
 $$
 
 For \(\theta = 60^\circ\):
@@ -1646,54 +1645,54 @@ For \(\theta = 60^\circ\):
 $$
 \sin\theta =
 \frac{\sqrt{3}}{2}
-\approx 0.866,
+\approx 0.866
 $$
 
 and:
 
 $$
 \cos\theta =
-\frac{1}{2}.
+\frac{1}{2}
 $$
 
 Therefore:
 
 $$
-r_z = 0.5,
+r_z = 0.5
 $$
 
 $$
-r_x = 0.866\cos\phi,
+r_x = 0.866\cos\phi
 $$
 
 $$
-r_y = 0.866\sin\phi.
+r_y = 0.866\sin\phi
 $$
 
 The measurement probabilities are:
 
 $$
 P(Z=0) =
-\frac{1+r_z}{2},
+\frac{1+r_z}{2}
 \qquad
 P(Z=1) =
-\frac{1-r_z}{2}.
+\frac{1-r_z}{2}
 $$
 
 $$
 P(X=+) =
-\frac{1+r_x}{2},
+\frac{1+r_x}{2}
 \qquad
 P(X=-) =
-\frac{1-r_x}{2}.
+\frac{1-r_x}{2}
 $$
 
 $$
 P(Y=+i) =
-\frac{1+r_y}{2},
+\frac{1+r_y}{2}
 \qquad
 P(Y=-i) =
-\frac{1-r_y}{2}.
+\frac{1-r_y}{2}
 $$
 
 This is what "choosing an axis" means mathematically: you choose which component of the Bloch vector becomes the measurement bias.
@@ -1706,13 +1705,13 @@ In Z measurement:
 
 $$
 P(Z=0) =
-\frac{1+r_z}{2}.
+\frac{1+r_z}{2}
 $$
 
 For our state:
 
 $$
-r_z = 0.5.
+r_z = 0.5
 $$
 
 So:
@@ -1721,14 +1720,14 @@ $$
 P(Z=0) =
 \frac{1+0.5}{2}
 =
-0.75,
+0.75
 $$
 
 and:
 
 $$
 P(Z=1) =
-0.25.
+0.25
 $$
 
 This does not depend on \(\phi\).
@@ -1743,32 +1742,32 @@ For X measurement:
 
 $$
 P(X=+) =
-\frac{1+r_x}{2}.
+\frac{1+r_x}{2}
 $$
 
 But:
 
 $$
-r_x = \sin\theta\cos\phi.
+r_x = \sin\theta\cos\phi
 $$
 
 For \(\theta = 60^\circ\):
 
 $$
 P(X=+) =
-\frac{1 + 0.866\cos\phi}{2}.
+\frac{1 + 0.866\cos\phi}{2}
 $$
 
 At \(\phi = 0\):
 
 $$
-P(X=+) \approx 0.933.
+P(X=+) \approx 0.933
 $$
 
 At \(\phi = \pi\):
 
 $$
-P(X=+) \approx 0.067.
+P(X=+) \approx 0.067
 $$
 
 This swing is interference.
@@ -1783,7 +1782,7 @@ $$
 \cos\frac{\theta}{2}
 +
 e^{i\phi}\sin\frac{\theta}{2}
-\right).
+\right)
 $$
 
 That is a sum. When you square its magnitude, a cross term appears, and that cross term depends on \(\cos\phi\).
@@ -1794,32 +1793,32 @@ For Y measurement:
 
 $$
 P(Y=+i) =
-\frac{1+r_y}{2}.
+\frac{1+r_y}{2}
 $$
 
 But:
 
 $$
-r_y = \sin\theta\sin\phi.
+r_y = \sin\theta\sin\phi
 $$
 
 For \(\theta = 60^\circ\):
 
 $$
 P(Y=+i) =
-\frac{1 + 0.866\sin\phi}{2}.
+\frac{1 + 0.866\sin\phi}{2}
 $$
 
 At \(\phi = \frac{\pi}{2}\):
 
 $$
-P(Y=+i) \approx 0.933.
+P(Y=+i) \approx 0.933
 $$
 
 At \(\phi = \frac{3\pi}{2}\):
 
 $$
-P(Y=+i) \approx 0.067.
+P(Y=+i) \approx 0.067
 $$
 
 So Y measurement sees the sine component of phase, shifted by 90 degrees relative to X.
@@ -1833,7 +1832,7 @@ This diagram summarizes the key contrast.
 In Z measurement, the amplitude for outcome \(0\) is:
 
 $$
-\langle 0|\psi\rangle = \alpha.
+\langle 0|\psi\rangle = \alpha
 $$
 
 It selects one component.
@@ -1843,7 +1842,7 @@ In X measurement, the amplitude for outcome \(+\) is:
 $$
 \langle +|\psi\rangle
 =
-\frac{\alpha + \beta}{\sqrt{2}}.
+\frac{\alpha + \beta}{\sqrt{2}}
 $$
 
 It adds components.
@@ -1853,7 +1852,7 @@ In Y measurement, the amplitude for outcome \(+i\) is:
 $$
 \langle +i|\psi\rangle
 =
-\frac{\alpha - i\beta}{\sqrt{2}}.
+\frac{\alpha - i\beta}{\sqrt{2}}
 $$
 
 It also adds components, but with a phase shift.
@@ -1916,13 +1915,13 @@ $$
 \begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 A gate \(U\) produces:
 
 $$
-|\psi'\rangle = U|\psi\rangle.
+|\psi'\rangle = U|\psi\rangle
 $$
 
 Because \(U\) is linear:
@@ -1930,7 +1929,7 @@ Because \(U\) is linear:
 $$
 U(\alpha|0\rangle + \beta|1\rangle)
 =
-\alpha U|0\rangle + \beta U|1\rangle.
+\alpha U|0\rangle + \beta U|1\rangle
 $$
 
 That is why knowing what a gate does to \(|0\rangle\) and \(|1\rangle\) determines the whole gate.
@@ -1944,13 +1943,13 @@ That is why knowing what a gate does to \(|0\rangle\) and \(|1\rangle\) determin
 Suppose:
 
 $$
-U|0\rangle = a|0\rangle + c|1\rangle,
+U|0\rangle = a|0\rangle + c|1\rangle
 $$
 
 and:
 
 $$
-U|1\rangle = b|0\rangle + d|1\rangle.
+U|1\rangle = b|0\rangle + d|1\rangle
 $$
 
 Then:
@@ -1960,7 +1959,7 @@ U =
 \begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 ![Hadamard matrix columns](../figures/10_hadamard_matrix_columns.svg)
@@ -1975,7 +1974,7 @@ H =
 \begin{pmatrix}
 1 & 1 \\
 1 & -1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 It acts on the computational basis as:
@@ -1984,7 +1983,7 @@ $$
 H|0\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 =
-|+\rangle,
+|+\rangle
 $$
 
 and:
@@ -1993,15 +1992,15 @@ $$
 H|1\rangle =
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
 =
-|-\rangle.
+|-\rangle
 $$
 
 It also maps back:
 
 $$
-H|+\rangle = |0\rangle,
+H|+\rangle = |0\rangle
 \qquad
-H|-\rangle = |1\rangle.
+H|-\rangle = |1\rangle
 $$
 
 This is why applying \(H\) before Z readout implements X-basis measurement.
@@ -2014,7 +2013,7 @@ Apply \(H\) to:
 
 $$
 |\psi\rangle =
-\alpha|0\rangle + \beta|1\rangle.
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 Using matrix multiplication:
@@ -2035,19 +2034,19 @@ H|\psi\rangle =
 \begin{pmatrix}
 \alpha + \beta \\
 \alpha - \beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The new \(|0\rangle\) amplitude is:
 
 $$
-\frac{\alpha+\beta}{\sqrt{2}}.
+\frac{\alpha+\beta}{\sqrt{2}}
 $$
 
 The new \(|1\rangle\) amplitude is:
 
 $$
-\frac{\alpha-\beta}{\sqrt{2}}.
+\frac{\alpha-\beta}{\sqrt{2}}
 $$
 
 So \(H\) explicitly creates sums and differences of amplitudes. It is a recombination gate.
@@ -2055,7 +2054,7 @@ So \(H\) explicitly creates sums and differences of amplitudes. It is a recombin
 If \(\alpha = 1/\sqrt{2}\) and \(\beta = -1/\sqrt{2}\), then:
 
 $$
-\alpha+\beta = 0,
+\alpha+\beta = 0
 $$
 
 and the \(|0\rangle\) output disappears.
@@ -2069,7 +2068,7 @@ X =
 \begin{pmatrix}
 0 & 1 \\
 1 & 0
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 $$
@@ -2077,7 +2076,7 @@ Y =
 \begin{pmatrix}
 0 & -i \\
 i & 0
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 $$
@@ -2085,15 +2084,15 @@ Z =
 \begin{pmatrix}
 1 & 0 \\
 0 & -1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 Their basic actions are:
 
 $$
-X|0\rangle = |1\rangle,
+X|0\rangle = |1\rangle
 \qquad
-X|1\rangle = |0\rangle.
+X|1\rangle = |0\rangle
 $$
 
 So \(X\) is the quantum analogue of a bit flip.
@@ -2103,7 +2102,7 @@ The \(Z\) gate leaves \(|0\rangle\) unchanged and flips the sign of \(|1\rangle\
 $$
 Z(\alpha|0\rangle + \beta|1\rangle)
 =
-\alpha|0\rangle - \beta|1\rangle.
+\alpha|0\rangle - \beta|1\rangle
 $$
 
 This is a phase flip. It does not change Z-basis probabilities, but it changes future interference.
@@ -2119,7 +2118,7 @@ S =
 \begin{pmatrix}
 1 & 0 \\
 0 & i
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 It acts as:
@@ -2127,7 +2126,7 @@ It acts as:
 $$
 S(\alpha|0\rangle + \beta|1\rangle)
 =
-\alpha|0\rangle + i\beta|1\rangle.
+\alpha|0\rangle + i\beta|1\rangle
 $$
 
 It adds a relative phase of \(\pi/2\) to the \(|1\rangle\) component.
@@ -2139,7 +2138,7 @@ S^\dagger =
 \begin{pmatrix}
 1 & 0 \\
 0 & -i
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 The \(S^\dagger\) gate is used when converting Y-basis information into Z-basis readout.
@@ -2150,17 +2149,17 @@ Single-qubit rotations are usually written:
 
 $$
 R_x(\theta) =
-e^{-i\theta X/2},
+e^{-i\theta X/2}
 $$
 
 $$
 R_y(\theta) =
-e^{-i\theta Y/2},
+e^{-i\theta Y/2}
 $$
 
 $$
 R_z(\theta) =
-e^{-i\theta Z/2}.
+e^{-i\theta Z/2}
 $$
 
 Their matrices are:
@@ -2171,7 +2170,7 @@ R_x(\theta)
 \begin{pmatrix}
 \cos(\theta/2) & -i\sin(\theta/2) \\
 -i\sin(\theta/2) & \cos(\theta/2)
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 $$
@@ -2180,7 +2179,7 @@ R_y(\theta)
 \begin{pmatrix}
 \cos(\theta/2) & -\sin(\theta/2) \\
 \sin(\theta/2) & \cos(\theta/2)
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 $$
@@ -2189,7 +2188,7 @@ R_z(\theta)
 \begin{pmatrix}
 e^{-i\theta/2} & 0 \\
 0 & e^{i\theta/2}
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 These gates rotate the Bloch vector around the X, Y, and Z axes.
@@ -2215,14 +2214,14 @@ The Bloch sphere is therefore not just a teaching picture. It is also a control 
 Every ideal gate above is unitary:
 
 $$
-U^\dagger U = I.
+U^\dagger U = I
 $$
 
 This means:
 
 $$
 \|U|\psi\rangle\|^2 =
-\||\psi\rangle\|^2.
+\||\psi\rangle\|^2
 $$
 
 In ordinary language:
@@ -2249,7 +2248,7 @@ $$
 \begin{pmatrix}
 \alpha+\beta \\
 \alpha-\beta
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 If the phases line up, one output is reinforced. If they oppose, one output is cancelled.
@@ -2294,7 +2293,7 @@ In equations:
 
 $$
 |\psi_{\text{out}}\rangle =
-U_n \cdots U_2 U_1 |\psi_{\text{in}}\rangle.
+U_n \cdots U_2 U_1 |\psi_{\text{in}}\rangle
 $$
 
 Then measurement converts the final amplitudes into classical outcome probabilities.
@@ -2306,15 +2305,15 @@ The order matters. Measurement too early destroys the phase relationships that l
 Many real devices naturally measure something equivalent to the Z basis:
 
 $$
-\{|0\rangle, |1\rangle\}.
+\{|0\rangle, |1\rangle\}
 $$
 
 This gives:
 
 $$
-P(0) = |\alpha|^2,
+P(0) = |\alpha|^2
 \qquad
-P(1) = |\beta|^2.
+P(1) = |\beta|^2
 $$
 
 But a state can contain information in phase, which Z readout may not see.
@@ -2331,18 +2330,18 @@ The X basis is:
 
 $$
 |+\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}},
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle - |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
 Hadamard maps:
 
 $$
-H|+\rangle = |0\rangle,
+H|+\rangle = |0\rangle
 \qquad
-H|-\rangle = |1\rangle.
+H|-\rangle = |1\rangle
 $$
 
 Therefore, to measure in X:
@@ -2360,10 +2359,10 @@ The Y basis is:
 
 $$
 |+i\rangle =
-\frac{|0\rangle + i|1\rangle}{\sqrt{2}},
+\frac{|0\rangle + i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
-\frac{|0\rangle - i|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle - i|1\rangle}{\sqrt{2}}
 $$
 
 To measure in Y, one common circuit is:
@@ -2390,13 +2389,13 @@ For:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}},
+\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
 Z measurement gives:
 
 $$
-P(0) = P(1) = \frac{1}{2}.
+P(0) = P(1) = \frac{1}{2}
 $$
 
 No phase dependence.
@@ -2410,7 +2409,7 @@ H|\psi\rangle =
 (1+e^{i\phi})|0\rangle
 +
 (1-e^{i\phi})|1\rangle
-\right].
+\right]
 $$
 
 Now:
@@ -2421,7 +2420,7 @@ P(0) =
 \frac{1+e^{i\phi}}{2}
 \right|^2
 =
-\cos^2\frac{\phi}{2}.
+\cos^2\frac{\phi}{2}
 $$
 
 The final bit still says 0 or 1. But the frequency of 0 across many repetitions depends on the phase.
@@ -2437,7 +2436,7 @@ Each repetition is often called a shot.
 If the true probability is:
 
 $$
-P(0) = 0.75,
+P(0) = 0.75
 $$
 
 then 1000 shots might produce approximately:
@@ -2456,35 +2455,35 @@ This is why quantum programming outputs histograms and expectation values, not h
 For a single qubit, the expectation values of Pauli observables are connected to the Bloch vector:
 
 $$
-\langle Z\rangle = r_z,
+\langle Z\rangle = r_z
 $$
 
 $$
-\langle X\rangle = r_x,
+\langle X\rangle = r_x
 $$
 
 $$
-\langle Y\rangle = r_y.
+\langle Y\rangle = r_y
 $$
 
 The measurement probabilities are:
 
 $$
-P(Z=0)=\frac{1+\langle Z\rangle}{2},
+P(Z=0)=\frac{1+\langle Z\rangle}{2}
 \qquad
-P(Z=1)=\frac{1-\langle Z\rangle}{2}.
+P(Z=1)=\frac{1-\langle Z\rangle}{2}
 $$
 
 Similarly:
 
 $$
-P(X=+)=\frac{1+\langle X\rangle}{2},
+P(X=+)=\frac{1+\langle X\rangle}{2}
 $$
 
 and:
 
 $$
-P(Y=+i)=\frac{1+\langle Y\rangle}{2}.
+P(Y=+i)=\frac{1+\langle Y\rangle}{2}
 $$
 
 This is why measuring along different axes reconstructs different components of the state.
@@ -2494,7 +2493,7 @@ This is why measuring along different axes reconstructs different components of 
 Start with:
 
 $$
-|0\rangle.
+|0\rangle
 $$
 
 Apply \(H\):
@@ -2503,7 +2502,7 @@ $$
 H|0\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 =
-|+\rangle.
+|+\rangle
 $$
 
 Apply \(Z\):
@@ -2512,13 +2511,13 @@ $$
 Z|+\rangle =
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
 =
-|-\rangle.
+|-\rangle
 $$
 
 Apply \(H\) again:
 
 $$
-H|-\rangle = |1\rangle.
+H|-\rangle = |1\rangle
 $$
 
 So the circuit:
@@ -2538,7 +2537,7 @@ But if the middle \(Z\) were absent:
 then:
 
 $$
-H H |0\rangle = |0\rangle,
+H H |0\rangle = |0\rangle
 $$
 
 so the circuit returns 0 with probability 1.
@@ -2644,14 +2643,14 @@ Imagine a qubit prepared in an equal superposition:
 
 $$
 |+\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 $$
 
 Suppose the environment causes the \(|1\rangle\) component to acquire a phase:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
 The phase \(\phi\) may depend on a magnetic field, electric field, acceleration, time, or another physical quantity.
@@ -2659,13 +2658,13 @@ The phase \(\phi\) may depend on a magnetic field, electric field, acceleration,
 Z measurement alone gives:
 
 $$
-P(0)=P(1)=\frac{1}{2}.
+P(0)=P(1)=\frac{1}{2}
 $$
 
 But applying \(H\) before measurement gives:
 
 $$
-P(0)=\cos^2\frac{\phi}{2}.
+P(0)=\cos^2\frac{\phi}{2}
 $$
 
 So a tiny physical phase shift becomes a measurable change in output frequency.
@@ -2702,7 +2701,7 @@ The state is still described as:
 
 $$
 |\psi\rangle =
-\alpha|0\rangle + \beta|1\rangle.
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 Control pulses change \(\alpha\), \(\beta\), and their relative phase. Measurement typically distinguishes the two basis states through a coupled readout resonator.
@@ -2736,17 +2735,17 @@ The physical hardware is very different from superconducting circuits, but the v
 A photonic qubit can be encoded in polarization:
 
 $$
-|H\rangle,
+|H\rangle
 \qquad
-|V\rangle,
+|V\rangle
 $$
 
 or in paths/modes:
 
 $$
-|L\rangle,
+|L\rangle
 \qquad
-|R\rangle.
+|R\rangle
 $$
 
 This connects directly to the double-slit discussion.
@@ -2785,7 +2784,7 @@ $$
 or:
 
 $$
-R_y(x).
+R_y(x)
 $$
 
 The circuit then entangles, rotates, and measures. The resulting measurement statistics depend on how phases and amplitudes recombine.
@@ -2838,23 +2837,23 @@ The examples use ordinary Python complex numbers and matrix multiplication.
 Compute:
 
 $$
-\psi_1 = e^{i0},
+\psi_1 = e^{i0}
 \qquad
-\psi_2 = e^{i\pi}.
+\psi_2 = e^{i\pi}
 $$
 
 Since:
 
 $$
-e^{i0}=1,
+e^{i0}=1
 \qquad
-e^{i\pi}=-1,
+e^{i\pi}=-1
 $$
 
 we have:
 
 $$
-\psi_1+\psi_2 = 0.
+\psi_1+\psi_2 = 0
 $$
 
 Python:
@@ -2887,25 +2886,25 @@ Consider:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
 The amplitudes are:
 
 $$
-\alpha = \frac{1}{\sqrt{2}},
+\alpha = \frac{1}{\sqrt{2}}
 \qquad
-\beta = \frac{e^{i\phi}}{\sqrt{2}}.
+\beta = \frac{e^{i\phi}}{\sqrt{2}}
 $$
 
 Z-basis probabilities:
 
 $$
-P(0) = |\alpha|^2 = \frac{1}{2},
+P(0) = |\alpha|^2 = \frac{1}{2}
 $$
 
 $$
-P(1) = |\beta|^2 = \frac{1}{2}.
+P(1) = |\beta|^2 = \frac{1}{2}
 $$
 
 Python:
@@ -2928,7 +2927,7 @@ For the same state:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}},
+\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
 the X-basis \(+\) amplitude is:
@@ -2936,7 +2935,7 @@ the X-basis \(+\) amplitude is:
 $$
 \langle +|\psi\rangle
 =
-\frac{1 + e^{i\phi}}{2}.
+\frac{1 + e^{i\phi}}{2}
 $$
 
 So:
@@ -2945,7 +2944,7 @@ $$
 P(+) =
 \left|
 \frac{1 + e^{i\phi}}{2}
-\right|^2.
+\right|^2
 $$
 
 Python:
@@ -2979,27 +2978,27 @@ $$
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
-e^{i\phi}\sin\frac{\theta}{2}|1\rangle,
+e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 $$
 
 with:
 
 $$
-\theta = 60^\circ.
+\theta = 60^\circ
 $$
 
 The Bloch components are:
 
 $$
-r_x = \sin\theta\cos\phi,
+r_x = \sin\theta\cos\phi
 $$
 
 $$
-r_y = \sin\theta\sin\phi,
+r_y = \sin\theta\sin\phi
 $$
 
 $$
-r_z = \cos\theta.
+r_z = \cos\theta
 $$
 
 Python:
@@ -3043,7 +3042,7 @@ H =
 \begin{pmatrix}
 1 & 1 \\
 1 & -1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 Python:
@@ -3168,7 +3167,7 @@ dist/quantum-computing-practical-textbook.md
 
    $$
    |\psi\rangle =
-   \frac{|0\rangle - |1\rangle}{\sqrt{2}},
+   \frac{|0\rangle - |1\rangle}{\sqrt{2}}
    $$
 
    compute \(P(0)\), \(P(1)\), \(P(+)\), and \(P(-)\).
@@ -3177,7 +3176,7 @@ dist/quantum-computing-practical-textbook.md
 
    $$
    |\psi\rangle =
-   \frac{|0\rangle + i|1\rangle}{\sqrt{2}},
+   \frac{|0\rangle + i|1\rangle}{\sqrt{2}}
    $$
 
    compute \(P(+i)\) and \(P(-i)\).
@@ -3222,7 +3221,7 @@ A geometric representation of a single-qubit pure state. The coordinates of the 
 $$
 (r_x,r_y,r_z)
 =
-(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta).
+(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
 $$
 
 ## Born Rule
@@ -3230,15 +3229,15 @@ $$
 The rule that turns quantum amplitudes into probabilities:
 
 $$
-P(\phi)=|\langle \phi|\psi\rangle|^2.
+P(\phi)=|\langle \phi|\psi\rangle|^2
 $$
 
 For Z-basis qubit measurement:
 
 $$
-P(0)=|\alpha|^2,
+P(0)=|\alpha|^2
 \qquad
-P(1)=|\beta|^2.
+P(1)=|\beta|^2
 $$
 
 ## Bra
@@ -3250,7 +3249,7 @@ $$
 \begin{pmatrix}
 \alpha\\
 \beta
-\end{pmatrix},
+\end{pmatrix}
 $$
 
 then:
@@ -3259,7 +3258,7 @@ $$
 \langle \psi| =
 \begin{pmatrix}
 \alpha^* & \beta^*
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 ## Computational Basis
@@ -3267,9 +3266,9 @@ $$
 The standard qubit basis:
 
 $$
-|0\rangle,
+|0\rangle
 \qquad
-|1\rangle.
+|1\rangle
 $$
 
 Also called the Z basis.
@@ -3281,7 +3280,7 @@ The interference term that appears when squaring a sum:
 $$
 |A+B|^2
 =
-|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B).
+|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B)
 $$
 
 The cross term can be positive or negative.
@@ -3295,7 +3294,7 @@ A transformation applied to a quantum state. In ideal single-qubit theory, gates
 A phase factor multiplying the whole state:
 
 $$
-e^{i\gamma}|\psi\rangle.
+e^{i\gamma}|\psi\rangle
 $$
 
 Global phase does not change measurement probabilities.
@@ -3310,15 +3309,15 @@ H =
 \begin{pmatrix}
 1 & 1\\
 1 & -1
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 It maps:
 
 $$
-|0\rangle \mapsto |+\rangle,
+|0\rangle \mapsto |+\rangle
 \qquad
-|1\rangle \mapsto |-\rangle.
+|1\rangle \mapsto |-\rangle
 $$
 
 It also recombines amplitudes by forming sums and differences.
@@ -3328,7 +3327,7 @@ It also recombines amplitudes by forming sums and differences.
 The overlap amplitude:
 
 $$
-\langle \phi|\psi\rangle.
+\langle \phi|\psi\rangle
 $$
 
 Its squared magnitude gives the probability of finding \(|\psi\rangle\) as \(|\phi\rangle\).
@@ -3342,7 +3341,7 @@ The effect produced when amplitudes add before probabilities are computed. Inter
 A quantum state vector, written:
 
 $$
-|\psi\rangle.
+|\psi\rangle
 $$
 
 ## Measurement
@@ -3354,7 +3353,7 @@ The process that produces a classical outcome from a quantum state. In the ideal
 The angle of a complex amplitude. A phase factor is written:
 
 $$
-e^{i\phi}.
+e^{i\phi}
 $$
 
 Relative phase affects interference.
@@ -3365,13 +3364,13 @@ A two-dimensional quantum state:
 
 $$
 |\psi\rangle =
-\alpha|0\rangle + \beta|1\rangle,
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 with:
 
 $$
-|\alpha|^2 + |\beta|^2 = 1.
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 ## Relative Phase
@@ -3393,7 +3392,7 @@ One execution and measurement of a quantum circuit. Many shots are used to estim
 A linear combination of basis states:
 
 $$
-\alpha|0\rangle + \beta|1\rangle.
+\alpha|0\rangle + \beta|1\rangle
 $$
 
 The word is useful only when remembered together with amplitudes and measurement basis.
@@ -3403,7 +3402,7 @@ The word is useful only when remembered together with amplitudes and measurement
 A probability-preserving matrix:
 
 $$
-U^\dagger U = I.
+U^\dagger U = I
 $$
 
 Ideal quantum gates are unitary.
@@ -3414,10 +3413,10 @@ The basis:
 
 $$
 |+\rangle =
-\frac{|0\rangle+|1\rangle}{\sqrt{2}},
+\frac{|0\rangle+|1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle-|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle-|1\rangle}{\sqrt{2}}
 $$
 
 It reveals the cosine component of relative phase.
@@ -3428,10 +3427,10 @@ The basis:
 
 $$
 |+i\rangle =
-\frac{|0\rangle+i|1\rangle}{\sqrt{2}},
+\frac{|0\rangle+i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
-\frac{|0\rangle-i|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle-i|1\rangle}{\sqrt{2}}
 $$
 
 It reveals the sine component of relative phase.
@@ -3441,9 +3440,9 @@ It reveals the sine component of relative phase.
 The computational basis:
 
 $$
-|0\rangle,
+|0\rangle
 \qquad
-|1\rangle.
+|1\rangle
 $$
 
 It directly reads the component magnitudes \(|\alpha|^2\) and \(|\beta|^2\).

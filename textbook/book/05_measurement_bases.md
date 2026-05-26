@@ -15,19 +15,19 @@ The reason is not mysterious. A measurement basis determines which amplitudes ar
 Measuring in the Z basis means asking:
 
 $$
-\{|0\rangle, |1\rangle\}.
+\{|0\rangle, |1\rangle\}
 $$
 
 Measuring in the X basis means asking:
 
 $$
-\{|+\rangle, |-\rangle\}.
+\{|+\rangle, |-\rangle\}
 $$
 
 Measuring in the Y basis means asking:
 
 $$
-\{|+i\rangle, |-i\rangle\}.
+\{|+i\rangle, |-i\rangle\}
 $$
 
 The physical detector may still report a bit, but by applying a rotation before measurement, we can make that bit correspond to a different basis.
@@ -39,38 +39,38 @@ This is covered operationally in [Circuits and Readout](07_circuits_and_readout.
 From [Section 2.8](02_math_prerequisites.md#28-inner-products), the amplitude for observing basis state \(|\phi\rangle\) is:
 
 $$
-\langle \phi|\psi\rangle.
+\langle \phi|\psi\rangle
 $$
 
 The probability is:
 
 $$
 P(\phi) =
-|\langle \phi|\psi\rangle|^2.
+|\langle \phi|\psi\rangle|^2
 $$
 
 For Z measurement:
 
 $$
-P(0) = |\langle 0|\psi\rangle|^2,
+P(0) = |\langle 0|\psi\rangle|^2
 \qquad
-P(1) = |\langle 1|\psi\rangle|^2.
+P(1) = |\langle 1|\psi\rangle|^2
 $$
 
 For X measurement:
 
 $$
-P(+) = |\langle +|\psi\rangle|^2,
+P(+) = |\langle +|\psi\rangle|^2
 \qquad
-P(-) = |\langle -|\psi\rangle|^2.
+P(-) = |\langle -|\psi\rangle|^2
 $$
 
 For Y measurement:
 
 $$
-P(+i) = |\langle +i|\psi\rangle|^2,
+P(+i) = |\langle +i|\psi\rangle|^2
 \qquad
-P(-i) = |\langle -i|\psi\rangle|^2.
+P(-i) = |\langle -i|\psi\rangle|^2
 $$
 
 The same state can give different distributions in these bases.
@@ -83,13 +83,13 @@ $$
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
-e^{i\phi}\sin\frac{\theta}{2}|1\rangle.
+e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 $$
 
 Set:
 
 $$
-\theta = 60^\circ.
+\theta = 60^\circ
 $$
 
 Then:
@@ -97,11 +97,11 @@ Then:
 $$
 \cos\frac{\theta}{2}
 =
-\frac{\sqrt{3}}{2},
+\frac{\sqrt{3}}{2}
 \qquad
 \sin\frac{\theta}{2}
 =
-\frac{1}{2}.
+\frac{1}{2}
 $$
 
 So:
@@ -110,7 +110,7 @@ $$
 |\psi\rangle =
 0.866|0\rangle
 +
-0.5e^{i\phi}|1\rangle.
+0.5e^{i\phi}|1\rangle
 $$
 
 The magnitudes are fixed. Only the relative phase changes.
@@ -121,13 +121,13 @@ The Bloch vector is:
 
 $$
 \vec r =
-(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta).
+(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
 $$
 
 Write:
 
 $$
-\vec r = (r_x,r_y,r_z).
+\vec r = (r_x,r_y,r_z)
 $$
 
 For \(\theta = 60^\circ\):
@@ -135,54 +135,54 @@ For \(\theta = 60^\circ\):
 $$
 \sin\theta =
 \frac{\sqrt{3}}{2}
-\approx 0.866,
+\approx 0.866
 $$
 
 and:
 
 $$
 \cos\theta =
-\frac{1}{2}.
+\frac{1}{2}
 $$
 
 Therefore:
 
 $$
-r_z = 0.5,
+r_z = 0.5
 $$
 
 $$
-r_x = 0.866\cos\phi,
+r_x = 0.866\cos\phi
 $$
 
 $$
-r_y = 0.866\sin\phi.
+r_y = 0.866\sin\phi
 $$
 
 The measurement probabilities are:
 
 $$
 P(Z=0) =
-\frac{1+r_z}{2},
+\frac{1+r_z}{2}
 \qquad
 P(Z=1) =
-\frac{1-r_z}{2}.
+\frac{1-r_z}{2}
 $$
 
 $$
 P(X=+) =
-\frac{1+r_x}{2},
+\frac{1+r_x}{2}
 \qquad
 P(X=-) =
-\frac{1-r_x}{2}.
+\frac{1-r_x}{2}
 $$
 
 $$
 P(Y=+i) =
-\frac{1+r_y}{2},
+\frac{1+r_y}{2}
 \qquad
 P(Y=-i) =
-\frac{1-r_y}{2}.
+\frac{1-r_y}{2}
 $$
 
 This is what "choosing an axis" means mathematically: you choose which component of the Bloch vector becomes the measurement bias.
@@ -195,13 +195,13 @@ In Z measurement:
 
 $$
 P(Z=0) =
-\frac{1+r_z}{2}.
+\frac{1+r_z}{2}
 $$
 
 For our state:
 
 $$
-r_z = 0.5.
+r_z = 0.5
 $$
 
 So:
@@ -210,14 +210,14 @@ $$
 P(Z=0) =
 \frac{1+0.5}{2}
 =
-0.75,
+0.75
 $$
 
 and:
 
 $$
 P(Z=1) =
-0.25.
+0.25
 $$
 
 This does not depend on \(\phi\).
@@ -232,32 +232,32 @@ For X measurement:
 
 $$
 P(X=+) =
-\frac{1+r_x}{2}.
+\frac{1+r_x}{2}
 $$
 
 But:
 
 $$
-r_x = \sin\theta\cos\phi.
+r_x = \sin\theta\cos\phi
 $$
 
 For \(\theta = 60^\circ\):
 
 $$
 P(X=+) =
-\frac{1 + 0.866\cos\phi}{2}.
+\frac{1 + 0.866\cos\phi}{2}
 $$
 
 At \(\phi = 0\):
 
 $$
-P(X=+) \approx 0.933.
+P(X=+) \approx 0.933
 $$
 
 At \(\phi = \pi\):
 
 $$
-P(X=+) \approx 0.067.
+P(X=+) \approx 0.067
 $$
 
 This swing is interference.
@@ -272,7 +272,7 @@ $$
 \cos\frac{\theta}{2}
 +
 e^{i\phi}\sin\frac{\theta}{2}
-\right).
+\right)
 $$
 
 That is a sum. When you square its magnitude, a cross term appears, and that cross term depends on \(\cos\phi\).
@@ -283,32 +283,32 @@ For Y measurement:
 
 $$
 P(Y=+i) =
-\frac{1+r_y}{2}.
+\frac{1+r_y}{2}
 $$
 
 But:
 
 $$
-r_y = \sin\theta\sin\phi.
+r_y = \sin\theta\sin\phi
 $$
 
 For \(\theta = 60^\circ\):
 
 $$
 P(Y=+i) =
-\frac{1 + 0.866\sin\phi}{2}.
+\frac{1 + 0.866\sin\phi}{2}
 $$
 
 At \(\phi = \frac{\pi}{2}\):
 
 $$
-P(Y=+i) \approx 0.933.
+P(Y=+i) \approx 0.933
 $$
 
 At \(\phi = \frac{3\pi}{2}\):
 
 $$
-P(Y=+i) \approx 0.067.
+P(Y=+i) \approx 0.067
 $$
 
 So Y measurement sees the sine component of phase, shifted by 90 degrees relative to X.
@@ -322,7 +322,7 @@ This diagram summarizes the key contrast.
 In Z measurement, the amplitude for outcome \(0\) is:
 
 $$
-\langle 0|\psi\rangle = \alpha.
+\langle 0|\psi\rangle = \alpha
 $$
 
 It selects one component.
@@ -332,7 +332,7 @@ In X measurement, the amplitude for outcome \(+\) is:
 $$
 \langle +|\psi\rangle
 =
-\frac{\alpha + \beta}{\sqrt{2}}.
+\frac{\alpha + \beta}{\sqrt{2}}
 $$
 
 It adds components.
@@ -342,7 +342,7 @@ In Y measurement, the amplitude for outcome \(+i\) is:
 $$
 \langle +i|\psi\rangle
 =
-\frac{\alpha - i\beta}{\sqrt{2}}.
+\frac{\alpha - i\beta}{\sqrt{2}}
 $$
 
 It also adds components, but with a phase shift.

@@ -20,15 +20,15 @@ These correspond to different measurement bases.
 The which-slit basis is:
 
 $$
-|L\rangle,
+|L\rangle
 \qquad
-|R\rangle.
+|R\rangle
 $$
 
 The screen-position basis is a set of states:
 
 $$
-|x\rangle,
+|x\rangle
 $$
 
 where \(x\) labels a detector position on the screen.
@@ -43,15 +43,15 @@ Assume the two slits are equally illuminated. A simple state after the slits is:
 
 $$
 |\psi\rangle =
-\frac{|L\rangle + |R\rangle}{\sqrt{2}}.
+\frac{|L\rangle + |R\rangle}{\sqrt{2}}
 $$
 
 If you measure in the which-slit basis, the amplitudes are:
 
 $$
-\langle L|\psi\rangle = \frac{1}{\sqrt{2}},
+\langle L|\psi\rangle = \frac{1}{\sqrt{2}}
 \qquad
-\langle R|\psi\rangle = \frac{1}{\sqrt{2}}.
+\langle R|\psi\rangle = \frac{1}{\sqrt{2}}
 $$
 
 By the Born rule from [Section 2.12](02_math_prerequisites.md#212-the-born-rule):
@@ -60,7 +60,7 @@ $$
 P(L) =
 \left|\frac{1}{\sqrt{2}}\right|^2
 =
-\frac{1}{2},
+\frac{1}{2}
 $$
 
 and:
@@ -69,7 +69,7 @@ $$
 P(R) =
 \left|\frac{1}{\sqrt{2}}\right|^2
 =
-\frac{1}{2}.
+\frac{1}{2}
 $$
 
 There is no interference in this measurement because the alternatives are distinct outcomes. We do not add the left-path amplitude to the right-path amplitude when asking "which slit?"
@@ -88,7 +88,7 @@ $$
 \langle x|L\rangle
 +
 \langle x|R\rangle
-\right).
+\right)
 $$
 
 This expression is the crucial difference.
@@ -101,13 +101,13 @@ The amplitude for outcome \(x\) is a sum of two contributions:
 Each contribution is a complex number. In a simplified wave model:
 
 $$
-\langle x|L\rangle \propto e^{ikr_L(x)},
+\langle x|L\rangle \propto e^{ikr_L(x)}
 $$
 
 and:
 
 $$
-\langle x|R\rangle \propto e^{ikr_R(x)}.
+\langle x|R\rangle \propto e^{ikr_R(x)}
 $$
 
 Here:
@@ -125,7 +125,7 @@ The screen probability is:
 $$
 P(x)
 =
-|\langle x|\psi\rangle|^2.
+|\langle x|\psi\rangle|^2
 $$
 
 Substitute the expression above:
@@ -138,15 +138,15 @@ P(x)
 \langle x|L\rangle
 +
 \langle x|R\rangle
-\right|^2.
+\right|^2
 $$
 
 Let:
 
 $$
-A = \langle x|L\rangle,
+A = \langle x|L\rangle
 \qquad
-B = \langle x|R\rangle.
+B = \langle x|R\rangle
 $$
 
 Then:
@@ -154,7 +154,7 @@ Then:
 $$
 |A+B|^2
 =
-|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B).
+|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B)
 $$
 
 The last term is the interference term.
@@ -162,13 +162,13 @@ The last term is the interference term.
 It can be positive, producing a bright band. It can be negative, producing a dark band. At a dark fringe:
 
 $$
-A + B \approx 0,
+A + B \approx 0
 $$
 
 so:
 
 $$
-P(x) \approx 0.
+P(x) \approx 0
 $$
 
 This is not probability cancellation. It is amplitude cancellation before probability is computed.
@@ -182,7 +182,7 @@ This is not probability cancellation. It is amplitude cancellation before probab
 Compare:
 
 $$
-|e^{i\phi}|^2 = 1.
+|e^{i\phi}|^2 = 1
 $$
 
 No phase dependence.
@@ -200,7 +200,7 @@ In fact:
 $$
 |1 + e^{i\phi}|^2
 =
-2 + 2\cos\phi.
+2 + 2\cos\phi
 $$
 
 So:
@@ -221,22 +221,22 @@ $$
 has the same structure as:
 
 $$
-\frac{|0\rangle + |1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 $$
 
 Now insert a relative phase:
 
 $$
 |\psi\rangle =
-\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}.
+\frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
 If we measure in the Z basis \(\{|0\rangle, |1\rangle\}\), the probabilities are:
 
 $$
-P(0) = \frac{1}{2},
+P(0) = \frac{1}{2}
 \qquad
-P(1) = \frac{1}{2},
+P(1) = \frac{1}{2}
 $$
 
 regardless of \(\phi\).
@@ -247,10 +247,10 @@ But if we measure in the X basis:
 
 $$
 |+\rangle =
-\frac{|0\rangle + |1\rangle}{\sqrt{2}},
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
-\frac{|0\rangle - |1\rangle}{\sqrt{2}},
+\frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
 then the amplitude for \(+\) is:
@@ -258,7 +258,7 @@ then the amplitude for \(+\) is:
 $$
 \langle +|\psi\rangle
 =
-\frac{1 + e^{i\phi}}{2}.
+\frac{1 + e^{i\phi}}{2}
 $$
 
 The probability is:
@@ -269,7 +269,7 @@ P(+) =
 \frac{1 + e^{i\phi}}{2}
 \right|^2
 =
-\cos^2\frac{\phi}{2}.
+\cos^2\frac{\phi}{2}
 $$
 
 At \(\phi = \pi\), this is zero.
