@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="1000" height="540">
+<rect x="0" y="0" width="1000" height="540" fill="#fbfcff" stroke="none" stroke-width="2" rx="0"/>
+
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+  <linearGradient id="screenGlow" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="#dbeafe"/>
+    <stop offset="50%" stop-color="#fef3c7"/>
+    <stop offset="100%" stop-color="#dbeafe"/>
+  </linearGradient>
+</defs>
+
+<text x="500" y="42" fill="#1f2937" font-size="26" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Complex phase is rotation on the unit circle</text>
+<circle cx="325" cy="295" r="145" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+<line x1="148" y1="295" x2="512" y2="295" stroke="#d7dde8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="325" y1="472" x2="325" y2="108" stroke="#d7dde8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="540" y="295" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">real</text>
+<text x="325" y="84" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">imaginary</text>
+<line x1="325" y1="295" x2="432.756" y2="197.976" stroke="#7c3aed" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="432.756" y1="197.976" x2="432.756" y2="295" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/>
+<line x1="325" y1="295" x2="432.756" y2="295" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+<line x1="432.756" y1="295" x2="432.756" y2="197.976" stroke="#0891b2" stroke-width="3" stroke-linecap="round"/>
+<path d="M 380 295 A 55 55 0 0 0 365.8729654012567 258.1978166502628" fill="none" stroke="#d97706" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="405" y="265" fill="#d97706" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">phi</text>
+<text x="378.878" y="319" fill="#2563eb" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">cos(phi)</text>
+<text x="484.756" y="246.488" fill="#0891b2" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">sin(phi)</text>
+<rect x="570" y="170" width="340" height="230" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+<text x="740" y="214" fill="#7c3aed" font-size="25" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Euler formula</text>
+<text x="740" y="265" fill="#1f2937" font-size="23" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">e^(i phi) = cos(phi) + i sin(phi)</text>
+<text x="740" y="322" fill="#64748b" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Changing phi changes direction,</text>
+<text x="740" y="350" fill="#64748b" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">not the length of the vector.</text>
+<text x="740" y="386" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">That direction is quantum phase.</text>
+</svg>

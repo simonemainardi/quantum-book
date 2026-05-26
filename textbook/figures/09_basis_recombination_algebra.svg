@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="1000" height="540">
+<rect x="0" y="0" width="1000" height="540" fill="#fbfcff" stroke="none" stroke-width="2" rx="0"/>
+
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+  <linearGradient id="screenGlow" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="#dbeafe"/>
+    <stop offset="50%" stop-color="#fef3c7"/>
+    <stop offset="100%" stop-color="#dbeafe"/>
+  </linearGradient>
+</defs>
+
+<text x="500" y="40" fill="#1f2937" font-size="26" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Where interference enters the algebra</text>
+<text x="500" y="70" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">A measurement basis either selects one component or recombines components.</text>
+<rect x="60" y="125" width="270" height="265" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+<text x="195" y="161" fill="#2563eb" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z measurement</text>
+<text x="195" y="217" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">&lt;0|psi&gt; = alpha</text>
+<text x="195" y="265" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">selects one component</text>
+<line x1="130" y1="317" x2="260" y2="317" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="195" y="353" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">then square magnitude</text>
+<rect x="365" y="125" width="270" height="265" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+<text x="500" y="161" fill="#16a34a" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">X measurement</text>
+<text x="500" y="217" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">&lt;+|psi&gt; = (alpha + beta)/sqrt(2)</text>
+<text x="500" y="265" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">adds amplitudes</text>
+<line x1="435" y1="317" x2="565" y2="317" stroke="#16a34a" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="500" y="353" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">then square magnitude</text>
+<rect x="670" y="125" width="270" height="265" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+<text x="805" y="161" fill="#7c3aed" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Y measurement</text>
+<text x="805" y="217" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">&lt;+i|psi&gt; = (alpha - i beta)/sqrt(2)</text>
+<text x="805" y="265" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">adds with a phase shift</text>
+<line x1="740" y1="317" x2="870" y2="317" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="805" y="353" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">then square magnitude</text>
+<rect x="170" y="435" width="660" height="62" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+<text x="500" y="466" fill="#1f2937" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">If the amplitude is a sum, |sum|^2 contains cross terms: interference.</text>
+</svg>

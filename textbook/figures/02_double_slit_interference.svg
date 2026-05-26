@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="1000" height="540">
+<rect x="0" y="0" width="1000" height="540" fill="#fbfcff" stroke="none" stroke-width="2" rx="0"/>
+
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+  <linearGradient id="screenGlow" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="#dbeafe"/>
+    <stop offset="50%" stop-color="#fef3c7"/>
+    <stop offset="100%" stop-color="#dbeafe"/>
+  </linearGradient>
+</defs>
+
+<text x="500" y="38" fill="#1f2937" font-size="26" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Double slit: the screen recombines path amplitudes</text>
+<text x="500" y="70" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Dark bands occur where the left-path and right-path complex amplitudes cancel.</text>
+<circle cx="88" cy="280" r="18" fill="#fde68a" stroke="#d97706" stroke-width="3"/>
+<text x="88" y="322" fill="#d97706" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">single photons</text>
+<rect x="245" y="120" width="34" height="330" fill="#111827" stroke="none" stroke-width="2" rx="3"/>
+<rect x="246" y="206" width="32" height="36" fill="#fbfcff" stroke="none" stroke-width="2" rx="2"/>
+<rect x="246" y="318" width="32" height="36" fill="#fbfcff" stroke="none" stroke-width="2" rx="2"/>
+<text x="262" y="184" fill="#ffffff" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">L</text>
+<text x="262" y="376" fill="#ffffff" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">R</text>
+<rect x="845" y="110" width="30" height="350" fill="url(#screenGlow)" stroke="#94a3b8" stroke-width="2" rx="4"/>
+<text x="860" y="490" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">screen</text>
+<rect x="876" y="125" width="8.005" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="143" width="62.272" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="161" width="13.871" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="179" width="23.168" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="197" width="46.794" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="215" width="8.381" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="233" width="75.814" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="251" width="8.113" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="269" width="53.262" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="287" width="18.829" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="305" width="16.969" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="323" width="56.395" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="341" width="8.051" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="359" width="75.26" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="377" width="8.62" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="395" width="43.533" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="413" width="25.634" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<rect x="876" y="431" width="12.623" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
+<path d="M 279 224 C 430 86, 610 96, 845 176" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
+<path d="M 279 336 C 430 268, 610 251, 845 176" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
+<path d="M 279 224 C 430 190, 610 200, 845 280" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
+<path d="M 279 336 C 430 372, 610 355, 845 280" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
+<path d="M 279 224 C 430 296, 610 306, 845 386" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
+<path d="M 279 336 C 430 478, 610 461, 845 386" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
+<text x="460" y="152" fill="#1f2937" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">path basis: |L&gt;, |R&gt;</text>
+<text x="460" y="181" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">which-slit readout gives 1/2 and 1/2</text>
+<text x="595" y="458" fill="#1f2937" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">screen basis: each pixel x adds two complex contributions</text>
+<text x="595" y="490" fill="#7c3aed" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(x) = 1/2 |&lt;x|L&gt; + &lt;x|R&gt;|^2</text>
+<line x1="624" y1="386" x2="828" y2="386" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="610" y="386" fill="#dc2626" font-size="16" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">dark: sum approx 0</text>
+</svg>
