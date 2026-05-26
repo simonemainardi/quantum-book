@@ -24,16 +24,16 @@ That single difference explains why:
 
 The chapters are meant to be read in order at least once:
 
-1. [Physical Principles](01_physical_principles.md)
-2. [Math and Algebra Prerequisites](02_math_prerequisites.md)
-3. [Double Slit and Amplitudes](03_double_slit_and_amplitudes.md)
-4. [Qubits and the Bloch Sphere](04_qubits_and_bloch_sphere.md)
-5. [Measurement Bases](05_measurement_bases.md)
-6. [Gates, Matrices, and Rotations](06_gates_matrices_rotations.md)
-7. [Circuits and Readout](07_circuits_and_readout.md)
-8. [Practical Examples](08_practical_examples.md)
-9. [Worked Labs](09_worked_labs.md)
-10. [Glossary](10_glossary.md)
+1. [Physical Principles](book/01_physical_principles.md)
+2. [Math and Algebra Prerequisites](book/02_math_prerequisites.md)
+3. [Double Slit and Amplitudes](book/03_double_slit_and_amplitudes.md)
+4. [Qubits and the Bloch Sphere](book/04_qubits_and_bloch_sphere.md)
+5. [Measurement Bases](book/05_measurement_bases.md)
+6. [Gates, Matrices, and Rotations](book/06_gates_matrices_rotations.md)
+7. [Circuits and Readout](book/07_circuits_and_readout.md)
+8. [Practical Examples](book/08_practical_examples.md)
+9. [Worked Labs](book/09_worked_labs.md)
+10. [Glossary](book/10_glossary.md)
 
 The math chapter is not an appendix to ignore. It is a toolkit. Later chapters refer back to it whenever a concept is reused:
 

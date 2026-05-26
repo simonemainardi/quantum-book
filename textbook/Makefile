@@ -18,7 +18,7 @@ figures: venv
 
 book: figures
 	mkdir -p dist
-	cat book/00_preface.md \
+	cat README.md \
 	    book/01_physical_principles.md \
 	    book/02_math_prerequisites.md \
 	    book/03_double_slit_and_amplitudes.md \
