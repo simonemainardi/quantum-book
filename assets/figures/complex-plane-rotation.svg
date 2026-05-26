@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="720" viewBox="0 0 1120 720" role="img" aria-label="Complex plane rotation">
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf1"/>
+      <stop offset="0.54" stop-color="#f7efe1"/>
+      <stop offset="1" stop-color="#e9f3f0"/>
+    </linearGradient>
+    <linearGradient id="night" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101927"/>
+      <stop offset="0.55" stop-color="#19323f"/>
+      <stop offset="1" stop-color="#2a4f50"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="44%" r="58%">
+      <stop offset="0" stop-color="#f7d98c" stop-opacity="0.55"/>
+      <stop offset="0.52" stop-color="#0f8b8d" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#101927" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#14202e" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="context-stroke"/>
+    </marker>
+    <style>
+      .title { font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: 54px; font-weight: 700; fill: #14202e; }
+      .h2 { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #14202e; }
+      .label { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: #14202e; }
+      .small { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: #5d6877; }
+      .formula { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 18px; fill: #14202e; }
+      .hair { stroke: rgba(20,32,46,0.16); stroke-width: 1.2; }
+      .axis { stroke: rgba(20,32,46,0.42); stroke-width: 2; }
+    </style>
+    
+  </defs>
+  
+  <rect width="1120" height="720" fill="url(#paper)"/>
+  <text x="62" y="82" class="title">Complex Numbers Are Rotations</text>
+  <text x="66" y="126" class="small">The qubit's phase is an angle on this plane, not an ordinary probability weight.</text>
+  <g transform="translate(0 0)" filter="url(#softShadow)">
+    <rect x="60" y="166" width="1000" height="480" rx="24" fill="#ffffff" fill-opacity="0.82"/>
+  </g>
+  <g>
+    <line x1="230" y1="360" x2="900" y2="360" class="axis" marker-end="url(#arrow)"/>
+    <line x1="560" y1="610" x2="560" y2="130" class="axis" marker-end="url(#arrow)"/>
+    <text x="914" y="366" class="label">real</text>
+    <text x="544" y="116" class="label">imaginary</text>
+    <line x1="560" y1="360" x2="785.0" y2="360.0" class="hair"/><line x1="560" y1="360" x2="767.9" y2="273.9" class="hair"/><line x1="560" y1="360" x2="719.1" y2="200.9" class="hair"/><line x1="560" y1="360" x2="646.1" y2="152.1" class="hair"/><line x1="560" y1="360" x2="560.0" y2="135.0" class="hair"/><line x1="560" y1="360" x2="473.9" y2="152.1" class="hair"/><line x1="560" y1="360" x2="400.9" y2="200.9" class="hair"/><line x1="560" y1="360" x2="352.1" y2="273.9" class="hair"/><line x1="560" y1="360" x2="335.0" y2="360.0" class="hair"/><line x1="560" y1="360" x2="352.1" y2="446.1" class="hair"/><line x1="560" y1="360" x2="400.9" y2="519.1" class="hair"/><line x1="560" y1="360" x2="473.9" y2="567.9" class="hair"/><line x1="560" y1="360" x2="560.0" y2="585.0" class="hair"/><line x1="560" y1="360" x2="646.1" y2="567.9" class="hair"/><line x1="560" y1="360" x2="719.1" y2="519.1" class="hair"/><line x1="560" y1="360" x2="767.9" y2="446.1" class="hair"/>
+    <circle cx="560" cy="360" r="225" fill="none" stroke="#2f6fbb" stroke-width="4" stroke-opacity="0.82"/>
+    <path d="M 646.0 360.0 A 86 86 0 0 0 623.9 302.5" fill="none" stroke="#e76f51" stroke-width="6" stroke-linecap="round"/>
+    <line x1="560.0" y1="360.0" x2="727.2" y2="209.4" stroke="#0f8b8d" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <line x1="727.2" y1="209.4" x2="727.2" y2="360" stroke="#f2b84b" stroke-width="4" stroke-dasharray="8 8"/>
+    <line x1="560" y1="209.4" x2="727.2" y2="209.4" stroke="#e76f51" stroke-width="4" stroke-dasharray="8 8"/>
+    <circle cx="727.2" cy="209.4" r="10" fill="#0f8b8d"/>
+    <text x="678" y="328" class="label">&#952;</text>
+    <text x="674" y="410" class="formula">cos &#952;</text>
+    <text x="743.2" y="219.4" class="formula">e^(i&#952;) = cos &#952; + i sin &#952;</text>
+    <text x="743.2" y="342" class="formula">i sin &#952;</text>
+  </g>
+
+</svg>
