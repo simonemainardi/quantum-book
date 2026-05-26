@@ -20,10 +20,10 @@ prepare -> transform -> maybe change basis -> measure
 
 In equations:
 
-$$
+```math
 |\psi_{\text{out}}\rangle =
 U_n \cdots U_2 U_1 |\psi_{\text{in}}\rangle
-$$
+```
 
 Then measurement converts the final amplitudes into classical outcome probabilities.
 
@@ -33,17 +33,17 @@ The order matters. Measurement too early destroys the phase relationships that l
 
 Many real devices naturally measure something equivalent to the Z basis:
 
-$$
+```math
 \{|0\rangle, |1\rangle\}
-$$
+```
 
 This gives:
 
-$$
+```math
 P(0) = |\alpha|^2
 \qquad
 P(1) = |\beta|^2
-$$
+```
 
 But a state can contain information in phase, which Z readout may not see.
 
@@ -57,21 +57,21 @@ So the practical strategy is:
 
 The X basis is:
 
-$$
+```math
 |+\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
-$$
+```
 
 Hadamard maps:
 
-$$
+```math
 H|+\rangle = |0\rangle
 \qquad
 H|-\rangle = |1\rangle
-$$
+```
 
 Therefore, to measure in X:
 
@@ -86,13 +86,13 @@ This is not a trick. It is how a circuit asks the X-basis question using a Z-bas
 
 The Y basis is:
 
-$$
+```math
 |+i\rangle =
 \frac{|0\rangle + i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
 \frac{|0\rangle - i|1\rangle}{\sqrt{2}}
-$$
+```
 
 To measure in Y, one common circuit is:
 
@@ -116,22 +116,22 @@ Y basis -> S dagger -> X basis -> H -> Z basis
 
 For:
 
-$$
+```math
 |\psi\rangle =
 \frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
-$$
+```
 
 Z measurement gives:
 
-$$
+```math
 P(0) = P(1) = \frac{1}{2}
-$$
+```
 
 No phase dependence.
 
 Apply $H$ first:
 
-$$
+```math
 H|\psi\rangle =
 \frac{1}{2}
 \left[
@@ -139,18 +139,18 @@ H|\psi\rangle =
 +
 (1-e^{i\phi})|1\rangle
 \right]
-$$
+```
 
 Now:
 
-$$
+```math
 P(0) =
 \left|
 \frac{1+e^{i\phi}}{2}
 \right|^2
 =
 \cos^2\frac{\phi}{2}
-$$
+```
 
 The final bit still says 0 or 1. But the frequency of 0 across many repetitions depends on the phase.
 
@@ -164,9 +164,9 @@ Each repetition is often called a shot.
 
 If the true probability is:
 
-$$
+```math
 P(0) = 0.75
-$$
+```
 
 then 1000 shots might produce approximately:
 
@@ -183,37 +183,37 @@ This is why quantum programming outputs histograms and expectation values, not h
 
 For a single qubit, the expectation values of Pauli observables are connected to the Bloch vector:
 
-$$
+```math
 \langle Z\rangle = r_z
-$$
+```
 
-$$
+```math
 \langle X\rangle = r_x
-$$
+```
 
-$$
+```math
 \langle Y\rangle = r_y
-$$
+```
 
 The measurement probabilities are:
 
-$$
+```math
 P(Z=0)=\frac{1+\langle Z\rangle}{2}
 \qquad
 P(Z=1)=\frac{1-\langle Z\rangle}{2}
-$$
+```
 
 Similarly:
 
-$$
+```math
 P(X=+)=\frac{1+\langle X\rangle}{2}
-$$
+```
 
 and:
 
-$$
+```math
 P(Y=+i)=\frac{1+\langle Y\rangle}{2}
-$$
+```
 
 This is why measuring along different axes reconstructs different components of the state.
 
@@ -221,33 +221,33 @@ This is why measuring along different axes reconstructs different components of 
 
 Start with:
 
-$$
+```math
 |0\rangle
-$$
+```
 
 Apply $H$:
 
-$$
+```math
 H|0\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 =
 |+\rangle
-$$
+```
 
 Apply $Z$:
 
-$$
+```math
 Z|+\rangle =
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
 =
 |-\rangle
-$$
+```
 
 Apply $H$ again:
 
-$$
+```math
 H|-\rangle = |1\rangle
-$$
+```
 
 So the circuit:
 
@@ -265,9 +265,9 @@ But if the middle $Z$ were absent:
 
 then:
 
-$$
+```math
 H H |0\rangle = |0\rangle
-$$
+```
 
 so the circuit returns 0 with probability 1.
 

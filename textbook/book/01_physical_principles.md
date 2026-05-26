@@ -8,39 +8,39 @@
 
 In a classical model, if two mutually exclusive ways lead to an event, probabilities add:
 
-$$
+```math
 P = P_1 + P_2
-$$
+```
 
 Since probabilities are nonnegative real numbers, they cannot cancel.
 
 In a quantum model, each alternative contributes a complex amplitude:
 
-$$
+```math
 \psi = \psi_1 + \psi_2
-$$
+```
 
 Only after adding amplitudes do we compute probability:
 
-$$
+```math
 P = |\psi|^2
-$$
+```
 
 That order matters. If
 
-$$
+```math
 \psi_1 = 1
 \qquad
 \psi_2 = -1
-$$
+```
 
 then
 
-$$
+```math
 \psi = \psi_1 + \psi_2 = 0
 \qquad
 P = |\psi|^2 = 0
-$$
+```
 
 Two possible contributions produced an impossible outcome.
 
@@ -72,23 +72,23 @@ This is why the earlier website phrase "programmable interference machine" is st
 
 The cancellation is not:
 
-$$
+```math
 P_1 + P_2 = 0
-$$
+```
 
 That would be impossible if both probabilities are positive.
 
 The cancellation is:
 
-$$
+```math
 \psi_1 + \psi_2 = 0
-$$
+```
 
 Then probability is computed afterward:
 
-$$
+```math
 P = |\psi_1 + \psi_2|^2 = 0
-$$
+```
 
 This distinction is the key to the rest of the book. Later, in [Math and Algebra Prerequisites](02_math_prerequisites.md), we will make precise what complex amplitudes and magnitudes mean. For now, keep the physical sequence in mind:
 
@@ -140,25 +140,25 @@ That fourth lesson is the bridge to qubits.
 
 Use two basis states:
 
-$$
+```math
 |L\rangle = \text{the left path}
 \qquad
 |R\rangle = \text{the right path}
-$$
+```
 
 If the illumination is balanced, the state just after the slits can be approximated by:
 
-$$
+```math
 |\psi\rangle =
 \frac{|L\rangle + |R\rangle}{\sqrt{2}}
-$$
+```
 
 That is the same mathematical pattern as a qubit in a superposition:
 
-$$
+```math
 |\psi\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
-$$
+```
 
 The labels are different, but the structure is the same: two basis alternatives, each with an amplitude.
 
@@ -170,17 +170,17 @@ For this book, we do not need to solve every philosophical question about quantu
 
 Before measurement:
 
-$$
+```math
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle
-$$
+```
 
 At measurement in the computational basis:
 
-$$
+```math
 P(0) = |\alpha|^2
 \qquad
 P(1) = |\beta|^2
-$$
+```
 
 After measurement, the device reports one classical result, either 0 or 1.
 

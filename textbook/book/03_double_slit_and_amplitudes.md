@@ -19,17 +19,17 @@ These correspond to different measurement bases.
 
 The which-slit basis is:
 
-$$
+```math
 |L\rangle
 \qquad
 |R\rangle
-$$
+```
 
 The screen-position basis is a set of states:
 
-$$
+```math
 |x\rangle
-$$
+```
 
 where $x$ labels a detector position on the screen.
 
@@ -41,36 +41,36 @@ The same physical setup can be interrogated in these different ways. The differe
 
 Assume the two slits are equally illuminated. A simple state after the slits is:
 
-$$
+```math
 |\psi\rangle =
 \frac{|L\rangle + |R\rangle}{\sqrt{2}}
-$$
+```
 
 If you measure in the which-slit basis, the amplitudes are:
 
-$$
+```math
 \langle L|\psi\rangle = \frac{1}{\sqrt{2}}
 \qquad
 \langle R|\psi\rangle = \frac{1}{\sqrt{2}}
-$$
+```
 
 By the Born rule from [Section 2.12](02_math_prerequisites.md#212-the-born-rule):
 
-$$
+```math
 P(L) =
 \left|\frac{1}{\sqrt{2}}\right|^2
 =
 \frac{1}{2}
-$$
+```
 
 and:
 
-$$
+```math
 P(R) =
 \left|\frac{1}{\sqrt{2}}\right|^2
 =
 \frac{1}{2}
-$$
+```
 
 There is no interference in this measurement because the alternatives are distinct outcomes. We do not add the left-path amplitude to the right-path amplitude when asking "which slit?"
 
@@ -80,7 +80,7 @@ Now ask where the particle lands on the screen.
 
 The amplitude for landing at position $x$ is:
 
-$$
+```math
 \langle x|\psi\rangle
 =
 \frac{1}{\sqrt{2}}
@@ -89,7 +89,7 @@ $$
 +
 \langle x|R\rangle
 \right)
-$$
+```
 
 This expression is the crucial difference.
 
@@ -100,15 +100,15 @@ The amplitude for outcome $x$ is a sum of two contributions:
 
 Each contribution is a complex number. In a simplified wave model:
 
-$$
+```math
 \langle x|L\rangle \propto e^{ikr_L(x)}
-$$
+```
 
 and:
 
-$$
+```math
 \langle x|R\rangle \propto e^{ikr_R(x)}
-$$
+```
 
 Here:
 
@@ -122,15 +122,15 @@ Different path lengths produce different phases.
 
 The screen probability is:
 
-$$
+```math
 P(x)
 =
 |\langle x|\psi\rangle|^2
-$$
+```
 
 Substitute the expression above:
 
-$$
+```math
 P(x)
 =
 \frac{1}{2}
@@ -139,37 +139,37 @@ P(x)
 +
 \langle x|R\rangle
 \right|^2
-$$
+```
 
 Let:
 
-$$
+```math
 A = \langle x|L\rangle
 \qquad
 B = \langle x|R\rangle
-$$
+```
 
 Then:
 
-$$
+```math
 |A+B|^2
 =
 |A|^2 + |B|^2 + 2\operatorname{Re}(A^*B)
-$$
+```
 
 The last term is the interference term.
 
 It can be positive, producing a bright band. It can be negative, producing a dark band. At a dark fringe:
 
-$$
+```math
 A + B \approx 0
-$$
+```
 
 so:
 
-$$
+```math
 P(x) \approx 0
-$$
+```
 
 This is not probability cancellation. It is amplitude cancellation before probability is computed.
 
@@ -181,27 +181,27 @@ This is not probability cancellation. It is amplitude cancellation before probab
 
 Compare:
 
-$$
+```math
 |e^{i\phi}|^2 = 1
-$$
+```
 
 No phase dependence.
 
 But:
 
-$$
+```math
 |1 + e^{i\phi}|^2
-$$
+```
 
 does depend on $\phi$, because the two terms can point in the same or opposite directions in the complex plane.
 
 In fact:
 
-$$
+```math
 |1 + e^{i\phi}|^2
 =
 2 + 2\cos\phi
-$$
+```
 
 So:
 
@@ -214,30 +214,30 @@ That is exactly the difference between an isolated amplitude and recombined ampl
 
 The double-slit state:
 
-$$
+```math
 \frac{|L\rangle + |R\rangle}{\sqrt{2}}
-$$
+```
 
 has the same structure as:
 
-$$
+```math
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
-$$
+```
 
 Now insert a relative phase:
 
-$$
+```math
 |\psi\rangle =
 \frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
-$$
+```
 
 If we measure in the Z basis $\{|0\rangle, |1\rangle\}$, the probabilities are:
 
-$$
+```math
 P(0) = \frac{1}{2}
 \qquad
 P(1) = \frac{1}{2}
-$$
+```
 
 regardless of $\phi$.
 
@@ -245,32 +245,32 @@ The phase is invisible in that basis.
 
 But if we measure in the X basis:
 
-$$
+```math
 |+\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
-$$
+```
 
 then the amplitude for $+$ is:
 
-$$
+```math
 \langle +|\psi\rangle
 =
 \frac{1 + e^{i\phi}}{2}
-$$
+```
 
 The probability is:
 
-$$
+```math
 P(+) =
 \left|
 \frac{1 + e^{i\phi}}{2}
 \right|^2
 =
 \cos^2\frac{\phi}{2}
-$$
+```
 
 At $\phi = \pi$, this is zero.
 

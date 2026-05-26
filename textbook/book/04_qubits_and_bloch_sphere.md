@@ -8,7 +8,7 @@ The qubit is the simplest quantum information unit. It is not merely a bit that 
 
 The standard basis states are:
 
-$$
+```math
 |0\rangle =
 \begin{pmatrix}
 1 \\
@@ -20,32 +20,32 @@ $$
 0 \\
 1
 \end{pmatrix}
-$$
+```
 
 These are also called the computational basis or Z basis.
 
 A general pure qubit state is:
 
-$$
+```math
 |\psi\rangle =
 \alpha |0\rangle + \beta |1\rangle
-$$
+```
 
 In column-vector form:
 
-$$
+```math
 |\psi\rangle =
 \begin{pmatrix}
 \alpha \\
 \beta
 \end{pmatrix}
-$$
+```
 
 The amplitudes $\alpha$ and $\beta$ are complex numbers, and they must satisfy:
 
-$$
+```math
 |\alpha|^2 + |\beta|^2 = 1
-$$
+```
 
 This is the normalization rule from [Section 2.6](02_math_prerequisites.md#26-vectors).
 
@@ -55,18 +55,18 @@ This is the normalization rule from [Section 2.6](02_math_prerequisites.md#26-ve
 
 If you measure:
 
-$$
+```math
 |\psi\rangle =
 \alpha |0\rangle + \beta |1\rangle
-$$
+```
 
 in the Z basis, the Born rule gives:
 
-$$
+```math
 P(0) = |\alpha|^2
 \qquad
 P(1) = |\beta|^2
-$$
+```
 
 The device returns one classical bit: 0 or 1.
 
@@ -76,24 +76,24 @@ The important engineering point is that a single measurement does not reveal $\a
 
 Any single-qubit pure state can be written, up to an unobservable global phase, as:
 
-$$
+```math
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
 e^{i\phi}\sin\frac{\theta}{2}|1\rangle
-$$
+```
 
 This is the most important formula in the chapter.
 
 The angle $\theta$ controls the Z-basis probabilities:
 
-$$
+```math
 P(0) =
 \cos^2\frac{\theta}{2}
 \qquad
 P(1) =
 \sin^2\frac{\theta}{2}
-$$
+```
 
 The angle $\phi$ is the relative phase between the $|0\rangle$ and $|1\rangle$ components.
 
@@ -107,26 +107,26 @@ That phase may be invisible in Z measurement, but it affects what happens under 
 
 If every amplitude is multiplied by the same phase:
 
-$$
+```math
 |\psi'\rangle =
 e^{i\gamma}|\psi\rangle
-$$
+```
 
 then all measurement probabilities are unchanged:
 
-$$
+```math
 |\langle \phi|\psi'\rangle|^2
 =
 |e^{i\gamma}\langle \phi|\psi\rangle|^2
 =
 |\langle \phi|\psi\rangle|^2
-$$
+```
 
 But the relative phase in:
 
-$$
+```math
 \alpha |0\rangle + e^{i\phi}\beta |1\rangle
-$$
+```
 
 is meaningful, because it changes how the two components recombine.
 
@@ -138,31 +138,31 @@ The six most useful single-qubit reference states are:
 
 Z basis:
 
-$$
+```math
 |0\rangle
 \qquad
 |1\rangle
-$$
+```
 
 X basis:
 
-$$
+```math
 |+\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
-$$
+```
 
 Y basis:
 
-$$
+```math
 |+i\rangle =
 \frac{|0\rangle + i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
 \frac{|0\rangle - i|1\rangle}{\sqrt{2}}
-$$
+```
 
 Pronunciation:
 
@@ -185,32 +185,32 @@ The Bloch sphere is a geometric picture of a single qubit state.
 
 The state:
 
-$$
+```math
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
 e^{i\phi}\sin\frac{\theta}{2}|1\rangle
-$$
+```
 
 corresponds to a point on a sphere with coordinates:
 
-$$
+```math
 r_x = \sin\theta\cos\phi
-$$
+```
 
-$$
+```math
 r_y = \sin\theta\sin\phi
-$$
+```
 
-$$
+```math
 r_z = \cos\theta
-$$
+```
 
 The vector:
 
-$$
+```math
 \vec r = (r_x,r_y,r_z)
-$$
+```
 
 is called the Bloch vector.
 
@@ -225,49 +225,49 @@ This formula is the bridge between:
 
 The poles are:
 
-$$
+```math
 \theta = 0
 \quad\Rightarrow\quad
 |\psi\rangle = |0\rangle
-$$
+```
 
-$$
+```math
 \theta = \pi
 \quad\Rightarrow\quad
 |\psi\rangle \sim |1\rangle
-$$
+```
 
 The equator contains equal Z-basis probabilities:
 
-$$
+```math
 P(0) = P(1) = \frac{1}{2}
-$$
+```
 
 But different equator points have different phases:
 
-$$
+```math
 \phi = 0
 \quad\Rightarrow\quad
 |+\rangle
-$$
+```
 
-$$
+```math
 \phi = \pi
 \quad\Rightarrow\quad
 |-\rangle
-$$
+```
 
-$$
+```math
 \phi = \frac{\pi}{2}
 \quad\Rightarrow\quad
 |+i\rangle
-$$
+```
 
-$$
+```math
 \phi = \frac{3\pi}{2}
 \quad\Rightarrow\quad
 |-i\rangle
-$$
+```
 
 So two states can have identical Z-basis probabilities and still be different quantum states.
 
@@ -277,77 +277,77 @@ This was one of the central points in the original conversation.
 
 Take:
 
-$$
+```math
 \theta = 60^\circ
-$$
+```
 
 Then:
 
-$$
+```math
 \cos\frac{\theta}{2}
 =
 \cos 30^\circ
 =
 \frac{\sqrt{3}}{2}
-$$
+```
 
 and:
 
-$$
+```math
 \sin\frac{\theta}{2}
 =
 \sin 30^\circ
 =
 \frac{1}{2}
-$$
+```
 
 So:
 
-$$
+```math
 P(0) =
 \left(\frac{\sqrt{3}}{2}\right)^2
 =
 \frac{3}{4}
-$$
+```
 
 and:
 
-$$
+```math
 P(1) =
 \left(\frac{1}{2}\right)^2
 =
 \frac{1}{4}
-$$
+```
 
 Those probabilities do not depend on $\phi$.
 
 But the states:
 
-$$
+```math
 \frac{\sqrt{3}}{2}|0\rangle
 +
 \frac{1}{2}|1\rangle
-$$
+```
 
-$$
+```math
 \frac{\sqrt{3}}{2}|0\rangle
 +
 i\frac{1}{2}|1\rangle
-$$
+```
 
-$$
+```math
 \frac{\sqrt{3}}{2}|0\rangle
 -
 \frac{1}{2}|1\rangle
-$$
+```
 
 and:
 
-$$
+```math
 \frac{\sqrt{3}}{2}|0\rangle
 -
 i\frac{1}{2}|1\rangle
-$$
+```
 
 are different states.
 
@@ -379,26 +379,26 @@ This is why the Bloch sphere is so useful for engineers. It turns amplitude alge
 
 A qubit state is:
 
-$$
+```math
 |\psi\rangle =
 \alpha|0\rangle + \beta|1\rangle
-$$
+```
 
 A useful parameterization is:
 
-$$
+```math
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
 e^{i\phi}\sin\frac{\theta}{2}|1\rangle
-$$
+```
 
 The Bloch vector is:
 
-$$
+```math
 \vec r =
 (\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
-$$
+```
 
 Z measurement sees $r_z$. X measurement sees $r_x$. Y measurement sees $r_y$. This is the topic of the next chapter.
 

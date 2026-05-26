@@ -8,25 +8,25 @@ The examples use ordinary Python complex numbers and matrix multiplication.
 
 Compute:
 
-$$
+```math
 \psi_1 = e^{i0}
 \qquad
 \psi_2 = e^{i\pi}
-$$
+```
 
 Since:
 
-$$
+```math
 e^{i0}=1
 \qquad
 e^{i\pi}=-1
-$$
+```
 
 we have:
 
-$$
+```math
 \psi_1+\psi_2 = 0
-$$
+```
 
 Python:
 
@@ -56,28 +56,28 @@ The small numerical residue you may see comes from floating-point precision.
 
 Consider:
 
-$$
+```math
 |\psi\rangle =
 \frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
-$$
+```
 
 The amplitudes are:
 
-$$
+```math
 \alpha = \frac{1}{\sqrt{2}}
 \qquad
 \beta = \frac{e^{i\phi}}{\sqrt{2}}
-$$
+```
 
 Z-basis probabilities:
 
-$$
+```math
 P(0) = |\alpha|^2 = \frac{1}{2}
-$$
+```
 
-$$
+```math
 P(1) = |\beta|^2 = \frac{1}{2}
-$$
+```
 
 Python:
 
@@ -97,27 +97,27 @@ Every line gives the same probabilities.
 
 For the same state:
 
-$$
+```math
 |\psi\rangle =
 \frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
-$$
+```
 
 the X-basis $+$ amplitude is:
 
-$$
+```math
 \langle +|\psi\rangle
 =
 \frac{1 + e^{i\phi}}{2}
-$$
+```
 
 So:
 
-$$
+```math
 P(+) =
 \left|
 \frac{1 + e^{i\phi}}{2}
 \right|^2
-$$
+```
 
 Python:
 
@@ -146,32 +146,32 @@ This is the single-qubit analogue of bright and dark fringes.
 
 Use:
 
-$$
+```math
 |\psi(\theta,\phi)\rangle =
 \cos\frac{\theta}{2}|0\rangle
 +
 e^{i\phi}\sin\frac{\theta}{2}|1\rangle
-$$
+```
 
 with:
 
-$$
+```math
 \theta = 60^\circ
-$$
+```
 
 The Bloch components are:
 
-$$
+```math
 r_x = \sin\theta\cos\phi
-$$
+```
 
-$$
+```math
 r_y = \sin\theta\sin\phi
-$$
+```
 
-$$
+```math
 r_z = \cos\theta
-$$
+```
 
 Python:
 
@@ -208,14 +208,14 @@ figures/08_zxy_measurement_probabilities.svg
 
 Use:
 
-$$
+```math
 H =
 \frac{1}{\sqrt{2}}
 \begin{pmatrix}
 1 & 1 \\
 1 & -1
 \end{pmatrix}
-$$
+```
 
 Python:
 
@@ -337,19 +337,19 @@ dist/quantum-computing-practical-textbook.md
 
 1. For the state
 
-   $$
+   ```math
    |\psi\rangle =
    \frac{|0\rangle - |1\rangle}{\sqrt{2}}
-   $$
+   ```
 
    compute $P(0)$, $P(1)$, $P(+)$, and $P(-)$.
 
 2. For
 
-   $$
+   ```math
    |\psi\rangle =
    \frac{|0\rangle + i|1\rangle}{\sqrt{2}}
-   $$
+   ```
 
    compute $P(+i)$ and $P(-i)$.
 
@@ -359,12 +359,12 @@ dist/quantum-computing-practical-textbook.md
 
 5. Use Python to plot $P(X=+)$ as a function of $\phi$ for:
 
-   $$
+   ```math
    |\psi\rangle =
    \cos\frac{\theta}{2}|0\rangle
    +
    e^{i\phi}\sin\frac{\theta}{2}|1\rangle
-   $$
+   ```
 
    with $\theta = 30^\circ$, $60^\circ$, and $90^\circ$.
 

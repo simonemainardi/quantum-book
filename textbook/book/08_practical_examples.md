@@ -51,31 +51,31 @@ Quantum sensing is often the most physically intuitive application of phase.
 
 Imagine a qubit prepared in an equal superposition:
 
-$$
+```math
 |+\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
-$$
+```
 
 Suppose the environment causes the $|1\rangle$ component to acquire a phase:
 
-$$
+```math
 |\psi\rangle =
 \frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
-$$
+```
 
 The phase $\phi$ may depend on a magnetic field, electric field, acceleration, time, or another physical quantity.
 
 Z measurement alone gives:
 
-$$
+```math
 P(0)=P(1)=\frac{1}{2}
-$$
+```
 
 But applying $H$ before measurement gives:
 
-$$
+```math
 P(0)=\cos^2\frac{\phi}{2}
-$$
+```
 
 So a tiny physical phase shift becomes a measurable change in output frequency.
 
@@ -109,10 +109,10 @@ In a superconducting qubit, $|0\rangle$ and $|1\rangle$ can be two energy levels
 
 The state is still described as:
 
-$$
+```math
 |\psi\rangle =
 \alpha|0\rangle + \beta|1\rangle
-$$
+```
 
 Control pulses change $\alpha$, $\beta$, and their relative phase. Measurement typically distinguishes the two basis states through a coupled readout resonator.
 
@@ -144,19 +144,19 @@ The physical hardware is very different from superconducting circuits, but the v
 
 A photonic qubit can be encoded in polarization:
 
-$$
+```math
 |H\rangle
 \qquad
 |V\rangle
-$$
+```
 
 or in paths/modes:
 
-$$
+```math
 |L\rangle
 \qquad
 |R\rangle
-$$
+```
 
 This connects directly to the double-slit discussion.
 
@@ -187,15 +187,15 @@ In some quantum machine learning approaches, classical data is encoded into quan
 
 For example, a feature value $x$ might determine a rotation:
 
-$$
+```math
 R_z(x)
-$$
+```
 
 or:
 
-$$
+```math
 R_y(x)
-$$
+```
 
 The circuit then entangles, rotates, and measures. The resulting measurement statistics depend on how phases and amplitudes recombine.
 

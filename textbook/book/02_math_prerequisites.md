@@ -23,35 +23,35 @@ Whenever a later chapter says "phase", "basis", "projection", "gate", or "unitar
 
 A complex number has the form:
 
-$$
+```math
 z = a + ib
-$$
+```
 
 where:
 
-$$
+```math
 i^2 = -1
-$$
+```
 
 The number $a$ is the real part. The number $b$ is the imaginary part.
 
 The magnitude is:
 
-$$
+```math
 |z| = \sqrt{a^2 + b^2}
-$$
+```
 
 The squared magnitude is:
 
-$$
+```math
 |z|^2 = a^2 + b^2
-$$
+```
 
 Quantum probabilities come from squared magnitudes:
 
-$$
+```math
 P = |\psi|^2
-$$
+```
 
 This is why a complex amplitude can be negative, imaginary, or phase-shifted, while the final probability remains a nonnegative real number.
 
@@ -64,31 +64,31 @@ You can picture $z = a + ib$ as a point or vector:
 
 For example:
 
-$$
+```math
 1 = 1 + 0i
-$$
+```
 
 points to the right, while
 
-$$
+```math
 i = 0 + 1i
-$$
+```
 
 points upward.
 
 The number
 
-$$
+```math
 -1 = -1 + 0i
-$$
+```
 
 points left.
 
 This matters because amplitudes can cancel as vectors:
 
-$$
+```math
 1 + (-1) = 0
-$$
+```
 
 They can also cancel after rotating through phases, not only by being literally positive and negative real numbers.
 
@@ -98,33 +98,33 @@ The trigonometric functions $\cos\theta$ and $\sin\theta$ are coordinates on the
 
 If a point lies on a circle of radius 1 at angle $\theta$, then:
 
-$$
+```math
 x = \cos\theta
 \qquad
 y = \sin\theta
-$$
+```
 
 The identity:
 
-$$
+```math
 \cos^2\theta + \sin^2\theta = 1
-$$
+```
 
 is the statement that the point remains on the unit circle.
 
 This identity reappears in qubits. A single-qubit state often uses:
 
-$$
+```math
 \cos\frac{\theta}{2}
 \quad\text{and}\quad
 \sin\frac{\theta}{2}
-$$
+```
 
 as amplitude magnitudes. The squared magnitudes add to 1:
 
-$$
+```math
 \cos^2\frac{\theta}{2} + \sin^2\frac{\theta}{2} = 1
-$$
+```
 
 That is exactly what we need for probabilities to sum to 1.
 
@@ -132,17 +132,17 @@ That is exactly what we need for probabilities to sum to 1.
 
 Euler's formula is the bridge between trigonometry and complex phase:
 
-$$
+```math
 e^{i\phi} = \cos\phi + i\sin\phi
-$$
+```
 
 This says that $e^{i\phi}$ is a unit-length complex number at angle $\phi$.
 
 Its magnitude is always 1:
 
-$$
+```math
 |e^{i\phi}| = 1
-$$
+```
 
 So multiplying an amplitude by $e^{i\phi}$ changes its direction in the complex plane without changing its magnitude.
 
@@ -154,15 +154,15 @@ That is phase.
 
 Suppose:
 
-$$
+```math
 \psi = e^{i\phi}
-$$
+```
 
 Then:
 
-$$
+```math
 |\psi|^2 = |e^{i\phi}|^2 = 1
-$$
+```
 
 So if you look only at this one amplitude's magnitude, the phase does not change the probability.
 
@@ -174,11 +174,11 @@ But that phrase is incomplete. Phase may be invisible when measuring one compone
 
 For example:
 
-$$
+```math
 \left|\frac{1 + e^{i\phi}}{2}\right|^2
 =
 \cos^2\frac{\phi}{2}
-$$
+```
 
 At $\phi = 0$, this equals 1. At $\phi = \pi$, this equals 0.
 
@@ -192,7 +192,7 @@ A vector is an ordered list of numbers. In quantum mechanics, those numbers are 
 
 The computational basis states of a qubit are written:
 
-$$
+```math
 |0\rangle =
 \begin{pmatrix}
 1 \\
@@ -204,11 +204,11 @@ $$
 0 \\
 1
 \end{pmatrix}
-$$
+```
 
 A general qubit is:
 
-$$
+```math
 |\psi\rangle =
 \alpha |0\rangle + \beta |1\rangle
 =
@@ -216,15 +216,15 @@ $$
 \alpha \\
 \beta
 \end{pmatrix}
-$$
+```
 
 The coefficients $\alpha$ and $\beta$ are complex amplitudes.
 
 The normalization condition is:
 
-$$
+```math
 |\alpha|^2 + |\beta|^2 = 1
-$$
+```
 
 This condition ensures that measurement probabilities sum to 1.
 
@@ -238,31 +238,31 @@ For qubits, the most important bases are:
 
 The Z basis:
 
-$$
+```math
 |0\rangle
 \qquad
 |1\rangle
-$$
+```
 
 The X basis:
 
-$$
+```math
 |+\rangle =
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \qquad
 |-\rangle =
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
-$$
+```
 
 The Y basis:
 
-$$
+```math
 |+i\rangle =
 \frac{|0\rangle + i|1\rangle}{\sqrt{2}}
 \qquad
 |-i\rangle =
 \frac{|0\rangle - i|1\rangle}{\sqrt{2}}
-$$
+```
 
 Read these as:
 
@@ -279,40 +279,40 @@ An inner product measures overlap between vectors.
 
 For complex vectors, the bra corresponding to a ket is the conjugate transpose. If:
 
-$$
+```math
 |\psi\rangle =
 \begin{pmatrix}
 \alpha \\
 \beta
 \end{pmatrix}
-$$
+```
 
 then:
 
-$$
+```math
 \langle \psi| =
 \begin{pmatrix}
 \alpha^* & \beta^*
 \end{pmatrix}
-$$
+```
 
 The star means complex conjugate:
 
-$$
+```math
 (a + ib)^* = a - ib
-$$
+```
 
 The amplitude for state $|\psi\rangle$ to be found in basis state $|\phi\rangle$ is:
 
-$$
+```math
 \langle \phi|\psi\rangle
-$$
+```
 
 The probability is:
 
-$$
+```math
 P(\phi) = |\langle \phi|\psi\rangle|^2
-$$
+```
 
 This is how we compute measurement probabilities in any basis.
 
@@ -320,39 +320,39 @@ This is how we compute measurement probabilities in any basis.
 
 A matrix is a linear transformation. A single-qubit gate is represented by a $2 \times 2$ matrix:
 
-$$
+```math
 U =
 \begin{pmatrix}
 a & b \\
 c & d
 \end{pmatrix}
-$$
+```
 
 It acts on a state vector:
 
-$$
+```math
 U|\psi\rangle
-$$
+```
 
 For example, if:
 
-$$
+```math
 |\psi\rangle =
 \begin{pmatrix}
 \alpha \\
 \beta
 \end{pmatrix}
-$$
+```
 
 then:
 
-$$
+```math
 U|\psi\rangle =
 \begin{pmatrix}
 a\alpha + b\beta \\
 c\alpha + d\beta
 \end{pmatrix}
-$$
+```
 
 Notice the sums. Matrix multiplication is one place where amplitudes naturally recombine.
 
@@ -364,25 +364,25 @@ Notice the sums. Matrix multiplication is one place where amplitudes naturally r
 
 Suppose:
 
-$$
+```math
 U|0\rangle = a|0\rangle + c|1\rangle
-$$
+```
 
 and:
 
-$$
+```math
 U|1\rangle = b|0\rangle + d|1\rangle
-$$
+```
 
 Then:
 
-$$
+```math
 U =
 \begin{pmatrix}
 a & b \\
 c & d
 \end{pmatrix}
-$$
+```
 
 The first column is $U|0\rangle$. The second column is $U|1\rangle$.
 
@@ -394,9 +394,9 @@ Quantum evolution without measurement is represented by unitary matrices.
 
 A matrix $U$ is unitary if:
 
-$$
+```math
 U^\dagger U = I
-$$
+```
 
 Here $U^\dagger$ is the conjugate transpose of $U$.
 
@@ -406,21 +406,21 @@ The practical meaning is:
 
 If:
 
-$$
+```math
 |\alpha|^2 + |\beta|^2 = 1
-$$
+```
 
 then after applying a unitary gate:
 
-$$
+```math
 |\psi'\rangle = U|\psi\rangle
-$$
+```
 
 the new amplitudes still satisfy:
 
-$$
+```math
 |\alpha'|^2 + |\beta'|^2 = 1
-$$
+```
 
 That is why ordinary gates are reversible. Measurement is the non-unitary step where a classical outcome is produced.
 
@@ -430,24 +430,24 @@ The Born rule is the rule that converts quantum amplitude into probability.
 
 If a state is:
 
-$$
+```math
 |\psi\rangle =
 \alpha |0\rangle + \beta |1\rangle
-$$
+```
 
 then measurement in the Z basis gives:
 
-$$
+```math
 P(0) = |\alpha|^2
 \qquad
 P(1) = |\beta|^2
-$$
+```
 
 More generally, if measuring in a basis containing $|\phi\rangle$:
 
-$$
+```math
 P(\phi) = |\langle \phi|\psi\rangle|^2
-$$
+```
 
 This is the formula that connects all the later examples:
 
