@@ -81,7 +81,7 @@ The cross term can be positive or negative.
 
 ## Gate
 
-A transformation applied to a quantum state. In ideal single-qubit theory, gates are \(2 \times 2\) unitary matrices.
+A transformation applied to a quantum state. In ideal single-qubit theory, gates are $2 \times 2$ unitary matrices.
 
 ## Global Phase
 
@@ -124,7 +124,7 @@ $$
 \langle \phi|\psi\rangle
 $$
 
-Its squared magnitude gives the probability of finding \(|\psi\rangle\) as \(|\phi\rangle\).
+Its squared magnitude gives the probability of finding $|\psi\rangle$ as $|\phi\rangle$.
 
 ## Interference
 
@@ -175,7 +175,7 @@ $$
 |0\rangle + e^{i\phi}|1\rangle
 $$
 
-contains relative phase \(\phi\). Relative phase can affect future measurement probabilities after recombination.
+contains relative phase $\phi$. Relative phase can affect future measurement probabilities after recombination.
 
 ## Shot
 
@@ -239,5 +239,5 @@ $$
 |1\rangle
 $$
 
-It directly reads the component magnitudes \(|\alpha|^2\) and \(|\beta|^2\).
+It directly reads the component magnitudes $|\alpha|^2$ and $|\beta|^2$.
 

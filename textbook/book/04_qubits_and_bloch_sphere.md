@@ -41,7 +41,7 @@ $$
 \end{pmatrix}
 $$
 
-The amplitudes \(\alpha\) and \(\beta\) are complex numbers, and they must satisfy:
+The amplitudes $\alpha$ and $\beta$ are complex numbers, and they must satisfy:
 
 $$
 |\alpha|^2 + |\beta|^2 = 1
@@ -70,7 +70,7 @@ $$
 
 The device returns one classical bit: 0 or 1.
 
-The important engineering point is that a single measurement does not reveal \(\alpha\) and \(\beta\). It samples from a distribution. To estimate probabilities experimentally, you prepare and measure many identical copies of the circuit.
+The important engineering point is that a single measurement does not reveal $\alpha$ and $\beta$. It samples from a distribution. To estimate probabilities experimentally, you prepare and measure many identical copies of the circuit.
 
 ## 4.3 Parameterizing a Qubit
 
@@ -85,7 +85,7 @@ $$
 
 This is the most important formula in the chapter.
 
-The angle \(\theta\) controls the Z-basis probabilities:
+The angle $\theta$ controls the Z-basis probabilities:
 
 $$
 P(0) =
@@ -95,7 +95,7 @@ P(1) =
 \sin^2\frac{\theta}{2}
 $$
 
-The angle \(\phi\) is the relative phase between the \(|0\rangle\) and \(|1\rangle\) components.
+The angle $\phi$ is the relative phase between the $|0\rangle$ and $|1\rangle$ components.
 
 That phase may be invisible in Z measurement, but it affects what happens under later gates or measurements in other bases.
 
@@ -166,16 +166,16 @@ $$
 
 Pronunciation:
 
-- \(|+\rangle\): "ket plus"
-- \(|-\rangle\): "ket minus"
-- \(|+i\rangle\): "ket plus i"
-- \(|-i\rangle\): "ket minus i"
+- $|+\rangle$: "ket plus"
+- $|-\rangle$: "ket minus"
+- $|+i\rangle$: "ket plus i"
+- $|-i\rangle$: "ket minus i"
 
 These are not decorative names. They are the eigenstates of the three measurement axes:
 
-- Z axis: \(|0\rangle\), \(|1\rangle\)
-- X axis: \(|+\rangle\), \(|-\rangle\)
-- Y axis: \(|+i\rangle\), \(|-i\rangle\)
+- Z axis: $|0\rangle$, $|1\rangle$
+- X axis: $|+\rangle$, $|-\rangle$
+- Y axis: $|+i\rangle$, $|-i\rangle$
 
 ![Bloch reference states](../figures/06_bloch_reference_states.svg)
 
@@ -319,7 +319,7 @@ P(1) =
 \frac{1}{4}
 $$
 
-Those probabilities do not depend on \(\phi\).
+Those probabilities do not depend on $\phi$.
 
 But the states:
 
@@ -361,12 +361,12 @@ Z measurement cannot distinguish them. X and Y measurements can.
 
 **Teacher.** No. It is a state-space picture, not a tiny physical ball.
 
-For a superconducting qubit, \(|0\rangle\) and \(|1\rangle\) can correspond to two energy levels of an artificial atom. For an ion qubit, they may correspond to two internal states of an ion. For a photon, they may correspond to polarization states.
+For a superconducting qubit, $|0\rangle$ and $|1\rangle$ can correspond to two energy levels of an artificial atom. For an ion qubit, they may correspond to two internal states of an ion. For a photon, they may correspond to polarization states.
 
 The Bloch sphere does not say the particle is literally located at a point on a sphere. It says the two-level quantum state has:
 
-- a population imbalance, represented by \(r_z\),
-- a relative phase, represented by \(r_x\) and \(r_y\),
+- a population imbalance, represented by $r_z$,
+- a relative phase, represented by $r_x$ and $r_y$,
 - measurement statistics determined by projections onto axes.
 
 This is why the Bloch sphere is so useful for engineers. It turns amplitude algebra into a control picture:
@@ -400,5 +400,5 @@ $$
 (\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
 $$
 
-Z measurement sees \(r_z\). X measurement sees \(r_x\). Y measurement sees \(r_y\). This is the topic of the next chapter.
+Z measurement sees $r_z$. X measurement sees $r_x$. Y measurement sees $r_y$. This is the topic of the next chapter.
 

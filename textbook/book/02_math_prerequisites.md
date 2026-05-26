@@ -33,7 +33,7 @@ $$
 i^2 = -1
 $$
 
-The number \(a\) is the real part. The number \(b\) is the imaginary part.
+The number $a$ is the real part. The number $b$ is the imaginary part.
 
 The magnitude is:
 
@@ -57,10 +57,10 @@ This is why a complex amplitude can be negative, imaginary, or phase-shifted, wh
 
 ## 2.2 The Complex Plane
 
-You can picture \(z = a + ib\) as a point or vector:
+You can picture $z = a + ib$ as a point or vector:
 
-- horizontal coordinate \(a\),
-- vertical coordinate \(b\).
+- horizontal coordinate $a$,
+- vertical coordinate $b$.
 
 For example:
 
@@ -94,9 +94,9 @@ They can also cancel after rotating through phases, not only by being literally 
 
 ## 2.3 Sine and Cosine as Coordinates
 
-The trigonometric functions \(\cos\theta\) and \(\sin\theta\) are coordinates on the unit circle.
+The trigonometric functions $\cos\theta$ and $\sin\theta$ are coordinates on the unit circle.
 
-If a point lies on a circle of radius 1 at angle \(\theta\), then:
+If a point lies on a circle of radius 1 at angle $\theta$, then:
 
 $$
 x = \cos\theta
@@ -136,7 +136,7 @@ $$
 e^{i\phi} = \cos\phi + i\sin\phi
 $$
 
-This says that \(e^{i\phi}\) is a unit-length complex number at angle \(\phi\).
+This says that $e^{i\phi}$ is a unit-length complex number at angle $\phi$.
 
 Its magnitude is always 1:
 
@@ -144,7 +144,7 @@ $$
 |e^{i\phi}| = 1
 $$
 
-So multiplying an amplitude by \(e^{i\phi}\) changes its direction in the complex plane without changing its magnitude.
+So multiplying an amplitude by $e^{i\phi}$ changes its direction in the complex plane without changing its magnitude.
 
 That is phase.
 
@@ -180,7 +180,7 @@ $$
 \cos^2\frac{\phi}{2}
 $$
 
-At \(\phi = 0\), this equals 1. At \(\phi = \pi\), this equals 0.
+At $\phi = 0$, this equals 1. At $\phi = \pi$, this equals 0.
 
 Same magnitude for the individual phase factor, completely different probability after recombination.
 
@@ -218,7 +218,7 @@ $$
 \end{pmatrix}
 $$
 
-The coefficients \(\alpha\) and \(\beta\) are complex amplitudes.
+The coefficients $\alpha$ and $\beta$ are complex amplitudes.
 
 The normalization condition is:
 
@@ -302,7 +302,7 @@ $$
 (a + ib)^* = a - ib
 $$
 
-The amplitude for state \(|\psi\rangle\) to be found in basis state \(|\phi\rangle\) is:
+The amplitude for state $|\psi\rangle$ to be found in basis state $|\phi\rangle$ is:
 
 $$
 \langle \phi|\psi\rangle
@@ -318,7 +318,7 @@ This is how we compute measurement probabilities in any basis.
 
 ## 2.9 Matrices
 
-A matrix is a linear transformation. A single-qubit gate is represented by a \(2 \times 2\) matrix:
+A matrix is a linear transformation. A single-qubit gate is represented by a $2 \times 2$ matrix:
 
 $$
 U =
@@ -384,7 +384,7 @@ c & d
 \end{pmatrix}
 $$
 
-The first column is \(U|0\rangle\). The second column is \(U|1\rangle\).
+The first column is $U|0\rangle$. The second column is $U|1\rangle$.
 
 This will be used repeatedly in [Gates, Matrices, and Rotations](06_gates_matrices_rotations.md).
 
@@ -392,13 +392,13 @@ This will be used repeatedly in [Gates, Matrices, and Rotations](06_gates_matric
 
 Quantum evolution without measurement is represented by unitary matrices.
 
-A matrix \(U\) is unitary if:
+A matrix $U$ is unitary if:
 
 $$
 U^\dagger U = I
 $$
 
-Here \(U^\dagger\) is the conjugate transpose of \(U\).
+Here $U^\dagger$ is the conjugate transpose of $U$.
 
 The practical meaning is:
 
@@ -443,7 +443,7 @@ P(0) = |\alpha|^2
 P(1) = |\beta|^2
 $$
 
-More generally, if measuring in a basis containing \(|\phi\rangle\):
+More generally, if measuring in a basis containing $|\phi\rangle$:
 
 $$
 P(\phi) = |\langle \phi|\psi\rangle|^2
@@ -463,12 +463,12 @@ Keep this compact map nearby:
 
 | Concept | Formula | Meaning |
 |---|---|---|
-| Complex number | \(z=a+ib\) | amplitude with direction and magnitude |
-| Magnitude | \(\lvert z\rvert=\sqrt{a^2+b^2}\) | length in complex plane |
-| Probability | \(P=\lvert\psi\rvert^2\) | squared amplitude magnitude |
-| Phase | \(e^{i\phi}\) | unit rotation in complex plane |
-| Qubit | \(\lvert\psi\rangle=\alpha\lvert0\rangle+\beta\lvert1\rangle\) | two complex amplitudes |
-| Normalization | \(\lvert\alpha\rvert^2+\lvert\beta\rvert^2=1\) | total probability equals 1 |
-| Inner product | \(\langle \phi\vert\psi\rangle\) | amplitude of overlap |
-| Matrix gate | \(U\lvert\psi\rangle\) | linear transformation of amplitudes |
-| Unitary | \(U^\dagger U=I\) | probability-preserving evolution |
+| Complex number | $z=a+ib$ | amplitude with direction and magnitude |
+| Magnitude | $\lvert z\rvert=\sqrt{a^2+b^2}$ | length in complex plane |
+| Probability | $P=\lvert\psi\rvert^2$ | squared amplitude magnitude |
+| Phase | $e^{i\phi}$ | unit rotation in complex plane |
+| Qubit | $\lvert\psi\rangle=\alpha\lvert0\rangle+\beta\lvert1\rangle$ | two complex amplitudes |
+| Normalization | $\lvert\alpha\rvert^2+\lvert\beta\rvert^2=1$ | total probability equals 1 |
+| Inner product | $\langle \phi\vert\psi\rangle$ | amplitude of overlap |
+| Matrix gate | $U\lvert\psi\rangle$ | linear transformation of amplitudes |
+| Unitary | $U^\dagger U=I$ | probability-preserving evolution |

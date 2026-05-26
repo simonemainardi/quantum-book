@@ -167,40 +167,107 @@ def amplitude_vs_probability() -> None:
 
 
 def double_slit() -> None:
+    def mix(a: tuple[int, int, int], b: tuple[int, int, int], t: float) -> str:
+        t = max(0.0, min(1.0, t))
+        return "#" + "".join(f"{round(a[i] * (1 - t) + b[i] * t):02x}" for i in range(3))
+
     body: list[str] = [
-        text(500, 38, "Double slit: the screen recombines path amplitudes", 26, weight=700),
-        text(500, 70, "Dark bands occur where the left-path and right-path complex amplitudes cancel.", 16, MUTED),
-        circle(88, 280, 18, fill="#fde68a", stroke=AMBER, width=3),
-        text(88, 322, "single photons", 15, AMBER, 700),
-        rect(245, 120, 34, 330, fill="#111827", stroke="none", rx=3),
-        rect(246, 206, 32, 36, fill=BG, stroke="none", rx=2),
-        rect(246, 318, 32, 36, fill=BG, stroke="none", rx=2),
-        text(262, 184, "L", 17, "#ffffff", 700),
-        text(262, 376, "R", 17, "#ffffff", 700),
-        rect(845, 110, 30, 350, fill="url(#screenGlow)", stroke="#94a3b8", rx=4),
-        text(860, 490, "screen", 15, MUTED),
+        text(500, 38, "Double slit interference", 28, weight=700),
+        text(500, 70, "Path amplitudes recombine at the screen; bright and dark bands are probability after interference.", 15, MUTED),
+        rect(48, 158, 128, 268, fill="#ffffff", stroke="#d7dde8", rx=8),
+        circle(112, 285, 18, fill="#fef3c7", stroke=AMBER, width=3),
+        circle(112, 285, 5, fill=AMBER, stroke="none"),
+        text(112, 337, "single-photon", 15, AMBER, 700),
+        text(112, 361, "source", 15, AMBER, 700),
     ]
 
-    for y in range(130, 451, 18):
-        rel = (y - 280) / 170
-        intensity = (0.5 + 0.5 * math.cos(8 * math.pi * rel)) ** 2
-        w = 8 + 68 * intensity
-        color = "#f59e0b" if intensity > 0.4 else "#93c5fd"
-        body.append(rect(876, y - 5, w, 10, fill=color, stroke="none", rx=5, opacity=0.88))
+    # Incoming wavefronts.
+    for radius in [42, 74, 106]:
+        body.append(path(
+            f"M {112 + radius} {285 - radius * 0.55} "
+            f"A {radius} {radius * 0.55} 0 0 1 {112 + radius} {285 + radius * 0.55}",
+            stroke="#93c5fd",
+            width=2,
+            opacity=0.58,
+        ))
 
-    pixels = [(845, 176), (845, 280), (845, 386)]
-    for px, py in pixels:
-        body.append(path(f"M 279 224 C 430 {py-90}, 610 {py-80}, {px} {py}", stroke=BLUE, width=2.2, opacity=0.72))
-        body.append(path(f"M 279 336 C 430 {py+92}, 610 {py+75}, {px} {py}", stroke=PURPLE, width=2.2, opacity=0.72))
+    barrier_x, top, bottom = 285, 128, 470
+    slit_l, slit_r = 246, 354
     body += [
-        text(460, 152, "path basis: |L>, |R>", 18, INK, 700),
-        text(460, 181, "which-slit readout gives 1/2 and 1/2", 15, MUTED),
-        text(595, 458, "screen basis: each pixel x adds two complex contributions", 18, INK, 700),
-        text(595, 490, "P(x) = 1/2 |<x|L> + <x|R>|^2", 21, PURPLE, 700),
-        line(624, 386, 828, 386, RED, 2.5, dash="7 7", arrow=True),
-        text(610, 386, "dark: sum approx 0", 16, RED, 700, anchor="end"),
+        rect(barrier_x, top, 30, bottom - top, fill="#111827", stroke="none", rx=4),
+        rect(barrier_x + 1, slit_l - 22, 28, 44, fill=BG, stroke="none", rx=3),
+        rect(barrier_x + 1, slit_r - 22, 28, 44, fill=BG, stroke="none", rx=3),
+        text(barrier_x + 15, 92, "barrier", 15, MUTED, 700),
+        text(barrier_x + 55, slit_l, "L", 18, BLUE, 700, anchor="start"),
+        text(barrier_x + 55, slit_r, "R", 18, PURPLE, 700, anchor="start"),
     ]
-    save("02_double_slit_interference.svg", 1000, 540, body)
+
+    # Outgoing wavefronts from each slit. The two colors deliberately overlap
+    # gently rather than forming a dense mesh.
+    for sx, sy, color in [(barrier_x + 30, slit_l, BLUE), (barrier_x + 30, slit_r, PURPLE)]:
+        for radius in [58, 104, 150, 196, 242, 288]:
+            body.append(path(
+                f"M {sx} {sy - radius} A {radius} {radius} 0 0 1 {sx} {sy + radius}",
+                stroke=color,
+                width=1.8,
+                opacity=0.22,
+            ))
+
+    screen_x, screen_y, screen_w, screen_h = 770, 128, 58, 342
+    body.append(rect(screen_x - 18, screen_y - 10, screen_w + 118, screen_h + 20, fill="#ffffff", stroke="#d7dde8", rx=8))
+    body.append(rect(screen_x, screen_y, screen_w, screen_h, fill="#eff6ff", stroke="#94a3b8", width=2, rx=5))
+
+    # Smooth-ish interference fringe field drawn as narrow horizontal bands.
+    cold = (219, 234, 254)
+    warm = (245, 158, 11)
+    samples: list[tuple[float, float]] = []
+    for i in range(120):
+        y = screen_y + screen_h * i / 119
+        rel = (y - (screen_y + screen_h / 2)) / (screen_h / 2)
+        envelope = math.exp(-0.52 * rel * rel)
+        fringes = 0.5 + 0.5 * math.cos(8.5 * math.pi * rel)
+        intensity = (0.12 + 0.88 * fringes) * envelope
+        samples.append((y, intensity))
+        body.append(rect(
+            screen_x + 2,
+            y - 1.9,
+            screen_w - 4,
+            3.8,
+            fill=mix(cold, warm, intensity),
+            stroke="none",
+            rx=0,
+            opacity=0.96,
+        ))
+
+    axis_x = screen_x + 82
+    body.append(line(axis_x, screen_y, axis_x, screen_y + screen_h, "#cbd5e1", 1.4))
+    points = []
+    for y, intensity in samples:
+        points.append((axis_x + 8 + 68 * intensity, y))
+    body.append(poly(points, stroke=AMBER, width=3.1))
+    body.append(text(axis_x + 48, screen_y - 22, "intensity", 14, AMBER, 700))
+    body.append(text(screen_x + 24, screen_y + screen_h + 26, "screen", 15, MUTED, 700))
+
+    # Two representative paths to one bright and one dark region.
+    bright_y = screen_y + screen_h * 0.5
+    dark_y = screen_y + screen_h * 0.36
+    for target_y, opacity in [(bright_y, 0.88), (dark_y, 0.42)]:
+        body.append(path(f"M {barrier_x + 30} {slit_l} C 470 {slit_l - 36}, 650 {target_y - 58}, {screen_x} {target_y}", stroke=BLUE, width=2.4, opacity=opacity))
+        body.append(path(f"M {barrier_x + 30} {slit_r} C 470 {slit_r + 36}, 650 {target_y + 58}, {screen_x} {target_y}", stroke=PURPLE, width=2.4, opacity=opacity))
+
+    body += [
+        rect(260, 494, 560, 82, fill="#ffffff", stroke="#d7dde8", rx=8),
+        text(540, 518, "screen basis: amplitudes add at each pixel", 16, INK, 700),
+        text(540, 545, "P(x) = 1/2 |<x|L> + <x|R>|^2", 20, PURPLE, 700),
+        text(540, 570, "dark fringe: <x|L> + <x|R> approx 0", 14, RED, 700),
+        text(492, 130, "which-path basis keeps L and R distinct", 16, INK, 700),
+        text(492, 156, "no amplitude sum, so no fringe pattern", 14, MUTED),
+        circle(screen_x + screen_w / 2, bright_y, 6, fill=AMBER, stroke="white", width=2),
+        text(screen_x - 20, bright_y + 24, "bright", 13, AMBER, 700, anchor="end"),
+        circle(screen_x + screen_w / 2, dark_y, 5, fill="#1e3a8a", stroke="white", width=2),
+        text(screen_x - 20, dark_y - 22, "dark", 13, RED, 700, anchor="end"),
+    ]
+    save("02_double_slit_interference.svg", 1000, 620, body)
 
 
 def complex_phase_clock() -> None:

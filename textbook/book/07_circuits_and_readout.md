@@ -75,14 +75,14 @@ $$
 
 Therefore, to measure in X:
 
-1. Apply \(H\).
+1. Apply $H$.
 2. Measure in Z.
 
-The probability of observing 0 after the \(H\) gate equals the original probability of \(X=+\).
+The probability of observing 0 after the $H$ gate equals the original probability of $X=+$.
 
 This is not a trick. It is how a circuit asks the X-basis question using a Z-basis detector.
 
-## 7.4 Measuring Y Using \(S^\dagger\), H, Then Z
+## 7.4 Measuring Y Using $S^\dagger$, H, Then Z
 
 The Y basis is:
 
@@ -96,11 +96,11 @@ $$
 
 To measure in Y, one common circuit is:
 
-1. Apply \(S^\dagger\).
-2. Apply \(H\).
+1. Apply $S^\dagger$.
+2. Apply $H$.
 3. Measure in Z.
 
-The \(S^\dagger\) removes the \(i\)-phase relationship, and \(H\) converts the resulting X-like basis into Z readout.
+The $S^\dagger$ removes the $i$-phase relationship, and $H$ converts the resulting X-like basis into Z readout.
 
 Operationally:
 
@@ -129,7 +129,7 @@ $$
 
 No phase dependence.
 
-Apply \(H\) first:
+Apply $H$ first:
 
 $$
 H|\psi\rangle =
@@ -225,7 +225,7 @@ $$
 |0\rangle
 $$
 
-Apply \(H\):
+Apply $H$:
 
 $$
 H|0\rangle =
@@ -234,7 +234,7 @@ H|0\rangle =
 |+\rangle
 $$
 
-Apply \(Z\):
+Apply $Z$:
 
 $$
 Z|+\rangle =
@@ -243,7 +243,7 @@ Z|+\rangle =
 |-\rangle
 $$
 
-Apply \(H\) again:
+Apply $H$ again:
 
 $$
 H|-\rangle = |1\rangle
@@ -257,7 +257,7 @@ So the circuit:
 
 returns 1 with probability 1.
 
-But if the middle \(Z\) were absent:
+But if the middle $Z$ were absent:
 
 ```text
 |0> -- H -- H -- measure
@@ -271,7 +271,7 @@ $$
 
 so the circuit returns 0 with probability 1.
 
-The only difference is a phase flip in the middle. That phase flip becomes a deterministic output change after recombination by the final \(H\).
+The only difference is a phase flip in the middle. That phase flip becomes a deterministic output change after recombination by the final $H$.
 
 This is a small quantum algorithm in miniature.
 
@@ -285,16 +285,16 @@ H -> phase -> H -> measurement
 
 is analogous to an interferometer:
 
-1. First \(H\): split amplitude into alternatives.
+1. First $H$: split amplitude into alternatives.
 2. Phase operation: change the relative phase.
-3. Second \(H\): recombine alternatives.
+3. Second $H$: recombine alternatives.
 4. Measurement: sample the result.
 
 The double slit has physical paths. The circuit has basis-state paths. The mathematics is the same: relative phase becomes observable only after recombination.
 
 ## 7.10 Practical Readout in Real Hardware
 
-In superconducting devices, readout can be implemented by coupling the qubit to a resonator. The resonator response depends on the qubit state, and classical electronics infer whether the qubit was closer to \(|0\rangle\) or \(|1\rangle\).
+In superconducting devices, readout can be implemented by coupling the qubit to a resonator. The resonator response depends on the qubit state, and classical electronics infer whether the qubit was closer to $|0\rangle$ or $|1\rangle$.
 
 In trapped-ion devices, state-dependent fluorescence can distinguish internal states.
 
@@ -315,5 +315,5 @@ Key points:
 - measuring X or Y can be implemented by rotating first,
 - phase becomes a classical probability bias only after recombination,
 - repeated shots estimate probabilities,
-- a simple \(H\)-phase-\(H\) circuit is the circuit analogue of an interferometer.
+- a simple $H$-phase-$H$ circuit is the circuit analogue of an interferometer.
 

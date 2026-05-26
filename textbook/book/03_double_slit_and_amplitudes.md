@@ -31,7 +31,7 @@ $$
 |x\rangle
 $$
 
-where \(x\) labels a detector position on the screen.
+where $x$ labels a detector position on the screen.
 
 The same physical setup can be interrogated in these different ways. The difference is not cosmetic. It changes whether amplitudes are kept separate or recombined.
 
@@ -78,7 +78,7 @@ There is no interference in this measurement because the alternatives are distin
 
 Now ask where the particle lands on the screen.
 
-The amplitude for landing at position \(x\) is:
+The amplitude for landing at position $x$ is:
 
 $$
 \langle x|\psi\rangle
@@ -93,7 +93,7 @@ $$
 
 This expression is the crucial difference.
 
-The amplitude for outcome \(x\) is a sum of two contributions:
+The amplitude for outcome $x$ is a sum of two contributions:
 
 - one contribution from the left slit,
 - one contribution from the right slit.
@@ -112,9 +112,9 @@ $$
 
 Here:
 
-- \(k\) is the wave number,
-- \(r_L(x)\) is the path length from the left slit to screen position \(x\),
-- \(r_R(x)\) is the path length from the right slit to screen position \(x\).
+- $k$ is the wave number,
+- $r_L(x)$ is the path length from the left slit to screen position $x$,
+- $r_R(x)$ is the path length from the right slit to screen position $x$.
 
 Different path lengths produce different phases.
 
@@ -175,7 +175,7 @@ This is not probability cancellation. It is amplitude cancellation before probab
 
 ## 3.5 The Student's Confusion, Made Precise
 
-**Question.** Earlier we said phase does not affect probability because \(|e^{i\phi}|^2 = 1\). But now phase causes dark and bright fringes. How do both statements coexist?
+**Question.** Earlier we said phase does not affect probability because $|e^{i\phi}|^2 = 1$. But now phase causes dark and bright fringes. How do both statements coexist?
 
 **Teacher.** Phase does not change the squared magnitude of a single isolated unit amplitude. But phase changes the result of a sum.
 
@@ -193,7 +193,7 @@ $$
 |1 + e^{i\phi}|^2
 $$
 
-does depend on \(\phi\), because the two terms can point in the same or opposite directions in the complex plane.
+does depend on $\phi$, because the two terms can point in the same or opposite directions in the complex plane.
 
 In fact:
 
@@ -205,8 +205,8 @@ $$
 
 So:
 
-- if \(\phi = 0\), the result is \(4\),
-- if \(\phi = \pi\), the result is \(0\).
+- if $\phi = 0$, the result is $4$,
+- if $\phi = \pi$, the result is $0$.
 
 That is exactly the difference between an isolated amplitude and recombined amplitudes.
 
@@ -231,7 +231,7 @@ $$
 \frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
-If we measure in the Z basis \(\{|0\rangle, |1\rangle\}\), the probabilities are:
+If we measure in the Z basis $\{|0\rangle, |1\rangle\}$, the probabilities are:
 
 $$
 P(0) = \frac{1}{2}
@@ -239,7 +239,7 @@ P(0) = \frac{1}{2}
 P(1) = \frac{1}{2}
 $$
 
-regardless of \(\phi\).
+regardless of $\phi$.
 
 The phase is invisible in that basis.
 
@@ -253,7 +253,7 @@ $$
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
-then the amplitude for \(+\) is:
+then the amplitude for $+$ is:
 
 $$
 \langle +|\psi\rangle
@@ -272,7 +272,7 @@ P(+) =
 \cos^2\frac{\phi}{2}
 $$
 
-At \(\phi = \pi\), this is zero.
+At $\phi = \pi$, this is zero.
 
 That is single-qubit interference.
 
@@ -311,7 +311,7 @@ The result is:
 0j 0.0
 ```
 
-There were two nonzero contributions. They cancelled because their phases differed by \(\pi\).
+There were two nonzero contributions. They cancelled because their phases differed by $\pi$.
 
 ## 3.9 Summary
 

@@ -36,7 +36,7 @@ This is covered operationally in [Circuits and Readout](07_circuits_and_readout.
 
 ## 5.2 Measurement as Projection
 
-From [Section 2.8](02_math_prerequisites.md#28-inner-products), the amplitude for observing basis state \(|\phi\rangle\) is:
+From [Section 2.8](02_math_prerequisites.md#28-inner-products), the amplitude for observing basis state $|\phi\rangle$ is:
 
 $$
 \langle \phi|\psi\rangle
@@ -130,7 +130,7 @@ $$
 \vec r = (r_x,r_y,r_z)
 $$
 
-For \(\theta = 60^\circ\):
+For $\theta = 60^\circ$:
 
 $$
 \sin\theta =
@@ -220,11 +220,11 @@ P(Z=1) =
 0.25
 $$
 
-This does not depend on \(\phi\).
+This does not depend on $\phi$.
 
 Interpretation:
 
-Z measurement reads the magnitudes of the \(|0\rangle\) and \(|1\rangle\) components. It does not recombine them. Therefore the relative phase between them is not visible.
+Z measurement reads the magnitudes of the $|0\rangle$ and $|1\rangle$ components. It does not recombine them. Therefore the relative phase between them is not visible.
 
 ## 5.6 X Basis: Phase Becomes Cosine
 
@@ -241,20 +241,20 @@ $$
 r_x = \sin\theta\cos\phi
 $$
 
-For \(\theta = 60^\circ\):
+For $\theta = 60^\circ$:
 
 $$
 P(X=+) =
 \frac{1 + 0.866\cos\phi}{2}
 $$
 
-At \(\phi = 0\):
+At $\phi = 0$:
 
 $$
 P(X=+) \approx 0.933
 $$
 
-At \(\phi = \pi\):
+At $\phi = \pi$:
 
 $$
 P(X=+) \approx 0.067
@@ -275,7 +275,7 @@ e^{i\phi}\sin\frac{\theta}{2}
 \right)
 $$
 
-That is a sum. When you square its magnitude, a cross term appears, and that cross term depends on \(\cos\phi\).
+That is a sum. When you square its magnitude, a cross term appears, and that cross term depends on $\cos\phi$.
 
 ## 5.7 Y Basis: Phase Becomes Sine
 
@@ -292,20 +292,20 @@ $$
 r_y = \sin\theta\sin\phi
 $$
 
-For \(\theta = 60^\circ\):
+For $\theta = 60^\circ$:
 
 $$
 P(Y=+i) =
 \frac{1 + 0.866\sin\phi}{2}
 $$
 
-At \(\phi = \frac{\pi}{2}\):
+At $\phi = \frac{\pi}{2}$:
 
 $$
 P(Y=+i) \approx 0.933
 $$
 
-At \(\phi = \frac{3\pi}{2}\):
+At $\phi = \frac{3\pi}{2}$:
 
 $$
 P(Y=+i) \approx 0.067
@@ -319,7 +319,7 @@ This diagram summarizes the key contrast.
 
 ![Basis recombination algebra](../figures/09_basis_recombination_algebra.svg)
 
-In Z measurement, the amplitude for outcome \(0\) is:
+In Z measurement, the amplitude for outcome $0$ is:
 
 $$
 \langle 0|\psi\rangle = \alpha
@@ -327,7 +327,7 @@ $$
 
 It selects one component.
 
-In X measurement, the amplitude for outcome \(+\) is:
+In X measurement, the amplitude for outcome $+$ is:
 
 $$
 \langle +|\psi\rangle
@@ -337,7 +337,7 @@ $$
 
 It adds components.
 
-In Y measurement, the amplitude for outcome \(+i\) is:
+In Y measurement, the amplitude for outcome $+i$ is:
 
 $$
 \langle +i|\psi\rangle

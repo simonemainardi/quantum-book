@@ -41,7 +41,7 @@ The single-qubit circuit:
 H -> phase -> H -> measure
 ```
 
-is the smallest model of this idea. The first \(H\) creates alternatives. The phase operation changes the relative phase. The final \(H\) recombines alternatives so phase becomes a measurable bias.
+is the smallest model of this idea. The first $H$ creates alternatives. The phase operation changes the relative phase. The final $H$ recombines alternatives so phase becomes a measurable bias.
 
 Larger algorithms use higher-dimensional versions of the same idea.
 
@@ -56,14 +56,14 @@ $$
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 $$
 
-Suppose the environment causes the \(|1\rangle\) component to acquire a phase:
+Suppose the environment causes the $|1\rangle$ component to acquire a phase:
 
 $$
 |\psi\rangle =
 \frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
-The phase \(\phi\) may depend on a magnetic field, electric field, acceleration, time, or another physical quantity.
+The phase $\phi$ may depend on a magnetic field, electric field, acceleration, time, or another physical quantity.
 
 Z measurement alone gives:
 
@@ -71,7 +71,7 @@ $$
 P(0)=P(1)=\frac{1}{2}
 $$
 
-But applying \(H\) before measurement gives:
+But applying $H$ before measurement gives:
 
 $$
 P(0)=\cos^2\frac{\phi}{2}
@@ -105,7 +105,7 @@ This is not a separate trick from quantum computing. It is the same basis-change
 
 ## 8.5 Superconducting Qubits
 
-In a superconducting qubit, \(|0\rangle\) and \(|1\rangle\) can be two energy levels of an engineered electrical circuit.
+In a superconducting qubit, $|0\rangle$ and $|1\rangle$ can be two energy levels of an engineered electrical circuit.
 
 The state is still described as:
 
@@ -114,12 +114,12 @@ $$
 \alpha|0\rangle + \beta|1\rangle
 $$
 
-Control pulses change \(\alpha\), \(\beta\), and their relative phase. Measurement typically distinguishes the two basis states through a coupled readout resonator.
+Control pulses change $\alpha$, $\beta$, and their relative phase. Measurement typically distinguishes the two basis states through a coupled readout resonator.
 
 From the viewpoint of this book:
 
 - pulses implement rotations,
-- detuning and phase references affect \(R_z\)-like behavior,
+- detuning and phase references affect $R_z$-like behavior,
 - readout is often Z-like,
 - X and Y information is accessed by pre-rotations.
 
@@ -185,7 +185,7 @@ That is why incompatible bases can expose unwanted measurement.
 
 In some quantum machine learning approaches, classical data is encoded into quantum states by rotations or phases.
 
-For example, a feature value \(x\) might determine a rotation:
+For example, a feature value $x$ might determine a rotation:
 
 $$
 R_z(x)

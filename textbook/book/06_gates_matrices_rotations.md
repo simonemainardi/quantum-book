@@ -1,6 +1,6 @@
 # 6. Gates, Matrices, and Rotations
 
-Quantum gates are transformations of amplitudes. For a single qubit, a gate is a \(2 \times 2\) unitary matrix. On the Bloch sphere, many gates can be understood as rotations.
+Quantum gates are transformations of amplitudes. For a single qubit, a gate is a $2 \times 2$ unitary matrix. On the Bloch sphere, many gates can be understood as rotations.
 
 This chapter connects three languages:
 
@@ -24,13 +24,13 @@ $$
 \end{pmatrix}
 $$
 
-A gate \(U\) produces:
+A gate $U$ produces:
 
 $$
 |\psi'\rangle = U|\psi\rangle
 $$
 
-Because \(U\) is linear:
+Because $U$ is linear:
 
 $$
 U(\alpha|0\rangle + \beta|1\rangle)
@@ -38,7 +38,7 @@ U(\alpha|0\rangle + \beta|1\rangle)
 \alpha U|0\rangle + \beta U|1\rangle
 $$
 
-That is why knowing what a gate does to \(|0\rangle\) and \(|1\rangle\) determines the whole gate.
+That is why knowing what a gate does to $|0\rangle$ and $|1\rangle$ determines the whole gate.
 
 ## 6.2 Building the Matrix from Columns
 
@@ -109,13 +109,13 @@ H|+\rangle = |0\rangle
 H|-\rangle = |1\rangle
 $$
 
-This is why applying \(H\) before Z readout implements X-basis measurement.
+This is why applying $H$ before Z readout implements X-basis measurement.
 
 ## 6.4 Hadamard as Recombination
 
 Hadamard is one of the clearest gates for seeing interference.
 
-Apply \(H\) to:
+Apply $H$ to:
 
 $$
 |\psi\rangle =
@@ -143,27 +143,27 @@ H|\psi\rangle =
 \end{pmatrix}
 $$
 
-The new \(|0\rangle\) amplitude is:
+The new $|0\rangle$ amplitude is:
 
 $$
 \frac{\alpha+\beta}{\sqrt{2}}
 $$
 
-The new \(|1\rangle\) amplitude is:
+The new $|1\rangle$ amplitude is:
 
 $$
 \frac{\alpha-\beta}{\sqrt{2}}
 $$
 
-So \(H\) explicitly creates sums and differences of amplitudes. It is a recombination gate.
+So $H$ explicitly creates sums and differences of amplitudes. It is a recombination gate.
 
-If \(\alpha = 1/\sqrt{2}\) and \(\beta = -1/\sqrt{2}\), then:
+If $\alpha = 1/\sqrt{2}$ and $\beta = -1/\sqrt{2}$, then:
 
 $$
 \alpha+\beta = 0
 $$
 
-and the \(|0\rangle\) output disappears.
+and the $|0\rangle$ output disappears.
 
 ## 6.5 Pauli Gates
 
@@ -201,9 +201,9 @@ X|0\rangle = |1\rangle
 X|1\rangle = |0\rangle
 $$
 
-So \(X\) is the quantum analogue of a bit flip.
+So $X$ is the quantum analogue of a bit flip.
 
-The \(Z\) gate leaves \(|0\rangle\) unchanged and flips the sign of \(|1\rangle\):
+The $Z$ gate leaves $|0\rangle$ unchanged and flips the sign of $|1\rangle$:
 
 $$
 Z(\alpha|0\rangle + \beta|1\rangle)
@@ -213,11 +213,11 @@ $$
 
 This is a phase flip. It does not change Z-basis probabilities, but it changes future interference.
 
-The \(Y\) gate combines bit flip and phase factors.
+The $Y$ gate combines bit flip and phase factors.
 
 ## 6.6 The Phase Gate S
 
-The \(S\) gate is:
+The $S$ gate is:
 
 $$
 S =
@@ -235,7 +235,7 @@ S(\alpha|0\rangle + \beta|1\rangle)
 \alpha|0\rangle + i\beta|1\rangle
 $$
 
-It adds a relative phase of \(\pi/2\) to the \(|1\rangle\) component.
+It adds a relative phase of $\pi/2$ to the $|1\rangle$ component.
 
 Its inverse is:
 
@@ -247,7 +247,7 @@ S^\dagger =
 \end{pmatrix}
 $$
 
-The \(S^\dagger\) gate is used when converting Y-basis information into Z-basis readout.
+The $S^\dagger$ gate is used when converting Y-basis information into Z-basis readout.
 
 ## 6.7 Rotation Gates
 

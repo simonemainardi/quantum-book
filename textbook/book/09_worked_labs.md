@@ -102,7 +102,7 @@ $$
 \frac{|0\rangle + e^{i\phi}|1\rangle}{\sqrt{2}}
 $$
 
-the X-basis \(+\) amplitude is:
+the X-basis $+$ amplitude is:
 
 $$
 \langle +|\psi\rangle
@@ -194,9 +194,9 @@ for phi in [0, math.pi / 2, math.pi, 3 * math.pi / 2]:
 
 Interpretation:
 
-- \(P(Z=0)\) stays at 0.75.
-- \(P(X=+)\) changes with \(\cos\phi\).
-- \(P(Y=+i)\) changes with \(\sin\phi\).
+- $P(Z=0)$ stays at 0.75.
+- $P(X=+)$ changes with $\cos\phi$.
+- $P(Y=+i)$ changes with $\sin\phi$.
 
 This is exactly the plot generated in:
 
@@ -248,11 +248,11 @@ H|0> = [1/sqrt(2), 1/sqrt(2)]
 H|1> = [1/sqrt(2), -1/sqrt(2)]
 ```
 
-Those are \(|+\rangle\) and \(|-\rangle\).
+Those are $|+\rangle$ and $|-\rangle$.
 
 ## 9.6 Lab 6: H-Z-H Interference
 
-Start with \(|0\rangle\).
+Start with $|0\rangle$.
 
 Apply:
 
@@ -301,7 +301,7 @@ P(0) = 0
 P(1) = 1
 ```
 
-The middle \(Z\) gate only changed phase in the computational basis. The final \(H\) converted that phase change into a bit flip.
+The middle $Z$ gate only changed phase in the computational basis. The final $H$ converted that phase change into a bit flip.
 
 This is the practical point of the whole book in one toy circuit.
 
@@ -342,7 +342,7 @@ dist/quantum-computing-practical-textbook.md
    \frac{|0\rangle - |1\rangle}{\sqrt{2}}
    $$
 
-   compute \(P(0)\), \(P(1)\), \(P(+)\), and \(P(-)\).
+   compute $P(0)$, $P(1)$, $P(+)$, and $P(-)$.
 
 2. For
 
@@ -351,13 +351,13 @@ dist/quantum-computing-practical-textbook.md
    \frac{|0\rangle + i|1\rangle}{\sqrt{2}}
    $$
 
-   compute \(P(+i)\) and \(P(-i)\).
+   compute $P(+i)$ and $P(-i)$.
 
-3. Show that \(H^2 = I\).
+3. Show that $H^2 = I$.
 
-4. Show that \(Z|+\rangle = |-\rangle\).
+4. Show that $Z|+\rangle = |-\rangle$.
 
-5. Use Python to plot \(P(X=+)\) as a function of \(\phi\) for:
+5. Use Python to plot $P(X=+)$ as a function of $\phi$ for:
 
    $$
    |\psi\rangle =
@@ -366,13 +366,13 @@ dist/quantum-computing-practical-textbook.md
    e^{i\phi}\sin\frac{\theta}{2}|1\rangle
    $$
 
-   with \(\theta = 30^\circ\), \(60^\circ\), and \(90^\circ\).
+   with $\theta = 30^\circ$, $60^\circ$, and $90^\circ$.
 
 ## 9.9 Answers in Brief
 
-1. For \(|-\rangle\), Z gives \(1/2,1/2\), and X gives \(P(+)=0\), \(P(-)=1\).
-2. For \(|+i\rangle\), Y gives \(P(+i)=1\), \(P(-i)=0\).
-3. \(H^2=I\) by direct matrix multiplication.
-4. \(Z|+\rangle=(|0\rangle-|1\rangle)/\sqrt{2}=|-\rangle\).
-5. Increasing \(\theta\) increases the swing in X-basis probability, because the swing amplitude is \(\sin\theta\).
+1. For $|-\rangle$, Z gives $1/2,1/2$, and X gives $P(+)=0$, $P(-)=1$.
+2. For $|+i\rangle$, Y gives $P(+i)=1$, $P(-i)=0$.
+3. $H^2=I$ by direct matrix multiplication.
+4. $Z|+\rangle=(|0\rangle-|1\rangle)/\sqrt{2}=|-\rangle$.
+5. Increasing $\theta$ increases the swing in X-basis probability, because the swing amplitude is $\sin\theta$.
 

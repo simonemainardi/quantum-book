@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="1000" height="540">
-<rect x="0" y="0" width="1000" height="540" fill="#fbfcff" stroke="none" stroke-width="2" rx="0"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+<rect x="0" y="0" width="1000" height="620" fill="#fbfcff" stroke="none" stroke-width="2" rx="0"/>
 
 <defs>
   <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -12,45 +12,172 @@
   </linearGradient>
 </defs>
 
-<text x="500" y="38" fill="#1f2937" font-size="26" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Double slit: the screen recombines path amplitudes</text>
-<text x="500" y="70" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Dark bands occur where the left-path and right-path complex amplitudes cancel.</text>
-<circle cx="88" cy="280" r="18" fill="#fde68a" stroke="#d97706" stroke-width="3"/>
-<text x="88" y="322" fill="#d97706" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">single photons</text>
-<rect x="245" y="120" width="34" height="330" fill="#111827" stroke="none" stroke-width="2" rx="3"/>
-<rect x="246" y="206" width="32" height="36" fill="#fbfcff" stroke="none" stroke-width="2" rx="2"/>
-<rect x="246" y="318" width="32" height="36" fill="#fbfcff" stroke="none" stroke-width="2" rx="2"/>
-<text x="262" y="184" fill="#ffffff" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">L</text>
-<text x="262" y="376" fill="#ffffff" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">R</text>
-<rect x="845" y="110" width="30" height="350" fill="url(#screenGlow)" stroke="#94a3b8" stroke-width="2" rx="4"/>
-<text x="860" y="490" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">screen</text>
-<rect x="876" y="125" width="8.005" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="143" width="62.272" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="161" width="13.871" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="179" width="23.168" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="197" width="46.794" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="215" width="8.381" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="233" width="75.814" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="251" width="8.113" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="269" width="53.262" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="287" width="18.829" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="305" width="16.969" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="323" width="56.395" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="341" width="8.051" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="359" width="75.26" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="377" width="8.62" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="395" width="43.533" height="10" fill="#f59e0b" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="413" width="25.634" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<rect x="876" y="431" width="12.623" height="10" fill="#93c5fd" stroke="none" stroke-width="2" rx="5" fill-opacity="0.88"/>
-<path d="M 279 224 C 430 86, 610 96, 845 176" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
-<path d="M 279 336 C 430 268, 610 251, 845 176" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
-<path d="M 279 224 C 430 190, 610 200, 845 280" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
-<path d="M 279 336 C 430 372, 610 355, 845 280" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
-<path d="M 279 224 C 430 296, 610 306, 845 386" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
-<path d="M 279 336 C 430 478, 610 461, 845 386" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.72"/>
-<text x="460" y="152" fill="#1f2937" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">path basis: |L&gt;, |R&gt;</text>
-<text x="460" y="181" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">which-slit readout gives 1/2 and 1/2</text>
-<text x="595" y="458" fill="#1f2937" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">screen basis: each pixel x adds two complex contributions</text>
-<text x="595" y="490" fill="#7c3aed" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(x) = 1/2 |&lt;x|L&gt; + &lt;x|R&gt;|^2</text>
-<line x1="624" y1="386" x2="828" y2="386" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="610" y="386" fill="#dc2626" font-size="16" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">dark: sum approx 0</text>
+<text x="500" y="38" fill="#1f2937" font-size="28" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Double slit interference</text>
+<text x="500" y="70" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Path amplitudes recombine at the screen; bright and dark bands are probability after interference.</text>
+<rect x="48" y="158" width="128" height="268" fill="#ffffff" stroke="#d7dde8" stroke-width="2" rx="8"/>
+<circle cx="112" cy="285" r="18" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+<circle cx="112" cy="285" r="5" fill="#d97706" stroke="none" stroke-width="2"/>
+<text x="112" y="337" fill="#d97706" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">single-photon</text>
+<text x="112" y="361" fill="#d97706" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">source</text>
+<path d="M 154 261.9 A 42 23.1 0 0 1 154 308.1" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.58"/>
+<path d="M 186 244.3 A 74 40.7 0 0 1 186 325.7" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.58"/>
+<path d="M 218 226.7 A 106 58.300000000000004 0 0 1 218 343.3" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.58"/>
+<rect x="285" y="128" width="30" height="342" fill="#111827" stroke="none" stroke-width="2" rx="4"/>
+<rect x="286" y="224" width="28" height="44" fill="#fbfcff" stroke="none" stroke-width="2" rx="3"/>
+<rect x="286" y="332" width="28" height="44" fill="#fbfcff" stroke="none" stroke-width="2" rx="3"/>
+<text x="300" y="92" fill="#64748b" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">barrier</text>
+<text x="340" y="246" fill="#2563eb" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">L</text>
+<text x="340" y="354" fill="#7c3aed" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">R</text>
+<path d="M 315 188 A 58 58 0 0 1 315 304" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 142 A 104 104 0 0 1 315 350" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 96 A 150 150 0 0 1 315 396" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 50 A 196 196 0 0 1 315 442" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 4 A 242 242 0 0 1 315 488" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 -42 A 288 288 0 0 1 315 534" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 296 A 58 58 0 0 1 315 412" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 250 A 104 104 0 0 1 315 458" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 204 A 150 150 0 0 1 315 504" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 158 A 196 196 0 0 1 315 550" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 112 A 242 242 0 0 1 315 596" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 315 66 A 288 288 0 0 1 315 642" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<rect x="752" y="118" width="176" height="362" fill="#ffffff" stroke="#d7dde8" stroke-width="2" rx="8"/>
+<rect x="770" y="128" width="58" height="342" fill="#eff6ff" stroke="#94a3b8" stroke-width="2" rx="5"/>
+<rect x="772" y="126.1" width="54" height="3.8" fill="#e4d1ad" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="128.974" width="54" height="3.8" fill="#e7c790" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="131.848" width="54" height="3.8" fill="#e9c077" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="134.722" width="54" height="3.8" fill="#ebbb68" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="137.596" width="54" height="3.8" fill="#ebba65" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="140.47" width="54" height="3.8" fill="#eabe70" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="143.344" width="54" height="3.8" fill="#e8c586" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="146.218" width="54" height="3.8" fill="#e5cea3" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="149.092" width="54" height="3.8" fill="#e2d7c1" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="151.966" width="54" height="3.8" fill="#dfdfda" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="154.839" width="54" height="3.8" fill="#dde3e8" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="157.713" width="54" height="3.8" fill="#dde3e7" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="160.587" width="54" height="3.8" fill="#dfded8" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="163.461" width="54" height="3.8" fill="#e2d6bd" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="166.335" width="54" height="3.8" fill="#e6cb9a" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="169.209" width="54" height="3.8" fill="#eabf76" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="172.083" width="54" height="3.8" fill="#edb658" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="174.957" width="54" height="3.8" fill="#efb046" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="177.831" width="54" height="3.8" fill="#efb043" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="180.705" width="54" height="3.8" fill="#edb451" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="183.579" width="54" height="3.8" fill="#ebbd6d" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="186.453" width="54" height="3.8" fill="#e7c891" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="189.327" width="54" height="3.8" fill="#e3d3b5" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="192.201" width="54" height="3.8" fill="#e0ddd3" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="195.075" width="54" height="3.8" fill="#dee2e4" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="197.949" width="54" height="3.8" fill="#dee2e3" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="200.823" width="54" height="3.8" fill="#e0dcd1" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="203.697" width="54" height="3.8" fill="#e3d2b1" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="206.571" width="54" height="3.8" fill="#e8c588" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="209.445" width="54" height="3.8" fill="#ecb85f" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="212.318" width="54" height="3.8" fill="#f0ae3d" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="215.192" width="54" height="3.8" fill="#f2a729" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="218.066" width="54" height="3.8" fill="#f2a727" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="220.94" width="54" height="3.8" fill="#f0ac38" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="223.814" width="54" height="3.8" fill="#edb658" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="226.688" width="54" height="3.8" fill="#e8c381" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="229.562" width="54" height="3.8" fill="#e4d0ab" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="232.436" width="54" height="3.8" fill="#e0dbcd" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="235.31" width="54" height="3.8" fill="#dee1e0" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="238.184" width="54" height="3.8" fill="#dee1e0" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="241.058" width="54" height="3.8" fill="#e0dacc" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="243.932" width="54" height="3.8" fill="#e4cfa9" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="246.806" width="54" height="3.8" fill="#e9c17c" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="249.68" width="54" height="3.8" fill="#eeb34f" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="252.554" width="54" height="3.8" fill="#f2a82a" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="255.428" width="54" height="3.8" fill="#f4a115" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="258.302" width="54" height="3.8" fill="#f4a114" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="261.176" width="54" height="3.8" fill="#f2a727" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="264.05" width="54" height="3.8" fill="#eeb24b" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="266.924" width="54" height="3.8" fill="#e9c078" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="269.797" width="54" height="3.8" fill="#e4cea5" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="272.671" width="54" height="3.8" fill="#e1daca" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="275.545" width="54" height="3.8" fill="#dee0de" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="278.419" width="54" height="3.8" fill="#dee0de" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="281.293" width="54" height="3.8" fill="#e1daca" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="284.167" width="54" height="3.8" fill="#e5cea5" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="287.041" width="54" height="3.8" fill="#eac076" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="289.915" width="54" height="3.8" fill="#efb148" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="292.789" width="54" height="3.8" fill="#f2a522" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="295.663" width="54" height="3.8" fill="#f59f0e" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="298.537" width="54" height="3.8" fill="#f59f0e" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="301.411" width="54" height="3.8" fill="#f2a522" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="304.285" width="54" height="3.8" fill="#efb148" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="307.159" width="54" height="3.8" fill="#eac076" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="310.033" width="54" height="3.8" fill="#e5cea5" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="312.907" width="54" height="3.8" fill="#e1daca" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="315.781" width="54" height="3.8" fill="#dee0de" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="318.655" width="54" height="3.8" fill="#dee0de" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="321.529" width="54" height="3.8" fill="#e1daca" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="324.403" width="54" height="3.8" fill="#e4cea5" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="327.276" width="54" height="3.8" fill="#e9c078" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="330.15" width="54" height="3.8" fill="#eeb24b" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="333.024" width="54" height="3.8" fill="#f2a727" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="335.898" width="54" height="3.8" fill="#f4a114" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="338.772" width="54" height="3.8" fill="#f4a115" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="341.646" width="54" height="3.8" fill="#f2a82a" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="344.52" width="54" height="3.8" fill="#eeb34f" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="347.394" width="54" height="3.8" fill="#e9c17c" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="350.268" width="54" height="3.8" fill="#e4cfa9" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="353.142" width="54" height="3.8" fill="#e0dacc" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="356.016" width="54" height="3.8" fill="#dee1e0" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="358.89" width="54" height="3.8" fill="#dee1e0" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="361.764" width="54" height="3.8" fill="#e0dbcd" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="364.638" width="54" height="3.8" fill="#e4d0ab" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="367.512" width="54" height="3.8" fill="#e8c381" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="370.386" width="54" height="3.8" fill="#edb658" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="373.26" width="54" height="3.8" fill="#f0ac38" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="376.134" width="54" height="3.8" fill="#f2a727" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="379.008" width="54" height="3.8" fill="#f2a729" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="381.882" width="54" height="3.8" fill="#f0ae3d" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="384.755" width="54" height="3.8" fill="#ecb85f" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="387.629" width="54" height="3.8" fill="#e8c588" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="390.503" width="54" height="3.8" fill="#e3d2b1" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="393.377" width="54" height="3.8" fill="#e0dcd1" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="396.251" width="54" height="3.8" fill="#dee2e3" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="399.125" width="54" height="3.8" fill="#dee2e4" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="401.999" width="54" height="3.8" fill="#e0ddd3" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="404.873" width="54" height="3.8" fill="#e3d3b5" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="407.747" width="54" height="3.8" fill="#e7c891" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="410.621" width="54" height="3.8" fill="#ebbd6d" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="413.495" width="54" height="3.8" fill="#edb451" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="416.369" width="54" height="3.8" fill="#efb043" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="419.243" width="54" height="3.8" fill="#efb046" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="422.117" width="54" height="3.8" fill="#edb658" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="424.991" width="54" height="3.8" fill="#eabf76" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="427.865" width="54" height="3.8" fill="#e6cb9a" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="430.739" width="54" height="3.8" fill="#e2d6bd" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="433.613" width="54" height="3.8" fill="#dfded8" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="436.487" width="54" height="3.8" fill="#dde3e7" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="439.361" width="54" height="3.8" fill="#dde3e8" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="442.234" width="54" height="3.8" fill="#dfdfda" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="445.108" width="54" height="3.8" fill="#e2d7c1" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="447.982" width="54" height="3.8" fill="#e5cea3" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="450.856" width="54" height="3.8" fill="#e8c586" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="453.73" width="54" height="3.8" fill="#eabe70" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="456.604" width="54" height="3.8" fill="#ebba65" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="459.478" width="54" height="3.8" fill="#ebbb68" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="462.352" width="54" height="3.8" fill="#e9c077" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="465.226" width="54" height="3.8" fill="#e7c790" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<rect x="772" y="468.1" width="54" height="3.8" fill="#e4d1ad" stroke="none" stroke-width="2" rx="0" fill-opacity="0.96"/>
+<line x1="852" y1="128" x2="852" y2="470" stroke="#cbd5e1" stroke-width="1.4" stroke-linecap="round"/>
+<polyline points="882.639,128 890.888,130.874 897.825,133.748 902.078,136.622 902.776,139.496 899.738,142.37 893.536,145.244 885.402,148.118 877,150.992 870.099,153.866 866.217,156.739 866.307,159.613 870.544,162.487 878.269,165.361 888.095,168.235 898.175,171.109 906.556,173.983 911.579,176.857 912.219,179.731 908.311,182.605 900.604,185.479 890.63,188.353 880.414,191.227 872.077,194.101 867.404,196.975 867.481,199.849 872.456,202.723 881.491,205.597 892.916,208.471 904.541,211.345 914.096,214.218 919.687,217.092 920.18,219.966 915.448,222.84 906.411,225.714 894.866,228.588 883.143,231.462 873.635,234.336 868.325,237.21 868.377,240.084 873.89,242.958 883.868,245.832 896.405,248.706 909.06,251.58 919.341,254.454 925.205,257.328 925.473,260.202 920.078,263.076 910.079,265.95 897.468,268.824 884.768,271.697 874.533,274.571 868.837,277.445 868.855,280.319 874.622,283.193 885.024,286.067 898.012,288.941 911.015,291.815 921.452,294.689 927.247,297.563 927.247,300.437 921.452,303.311 911.015,306.185 898.012,309.059 885.024,311.933 874.622,314.807 868.855,317.681 868.837,320.555 874.533,323.429 884.768,326.303 897.468,329.176 910.079,332.05 920.078,334.924 925.473,337.798 925.205,340.672 919.341,343.546 909.06,346.42 896.405,349.294 883.868,352.168 873.89,355.042 868.377,357.916 868.325,360.79 873.635,363.664 883.143,366.538 894.866,369.412 906.411,372.286 915.448,375.16 920.18,378.034 919.687,380.908 914.096,383.782 904.541,386.655 892.916,389.529 881.491,392.403 872.456,395.277 867.481,398.151 867.404,401.025 872.077,403.899 880.414,406.773 890.63,409.647 900.604,412.521 908.311,415.395 912.219,418.269 911.579,421.143 906.556,424.017 898.175,426.891 888.095,429.765 878.269,432.639 870.544,435.513 866.307,438.387 866.217,441.261 870.099,444.134 877,447.008 885.402,449.882 893.536,452.756 899.738,455.63 902.776,458.504 902.078,461.378 897.825,464.252 890.888,467.126 882.639,470" fill="none" stroke="#d97706" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="900" y="106" fill="#d97706" font-size="14" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">intensity</text>
+<text x="794" y="496" fill="#64748b" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">screen</text>
+<path d="M 315 246 C 470 210, 650 241.0, 770 299.0" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.88"/>
+<path d="M 315 354 C 470 390, 650 357.0, 770 299.0" fill="none" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.88"/>
+<path d="M 315 246 C 470 210, 650 193.12, 770 251.12" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.42"/>
+<path d="M 315 354 C 470 390, 650 309.12, 770 251.12" fill="none" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.42"/>
+<rect x="260" y="494" width="560" height="82" fill="#ffffff" stroke="#d7dde8" stroke-width="2" rx="8"/>
+<text x="540" y="518" fill="#1f2937" font-size="16" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">screen basis: amplitudes add at each pixel</text>
+<text x="540" y="545" fill="#7c3aed" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(x) = 1/2 |&lt;x|L&gt; + &lt;x|R&gt;|^2</text>
+<text x="540" y="570" fill="#dc2626" font-size="14" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">dark fringe: &lt;x|L&gt; + &lt;x|R&gt; approx 0</text>
+<text x="492" y="130" fill="#1f2937" font-size="16" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">which-path basis keeps L and R distinct</text>
+<text x="492" y="156" fill="#64748b" font-size="14" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">no amplitude sum, so no fringe pattern</text>
+<circle cx="799" cy="299" r="6" fill="#d97706" stroke="white" stroke-width="2"/>
+<text x="750" y="323" fill="#d97706" font-size="13" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">bright</text>
+<circle cx="799" cy="251.12" r="5" fill="#1e3a8a" stroke="white" stroke-width="2"/>
+<text x="750" y="229.12" fill="#dc2626" font-size="13" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">dark</text>
 </svg>
