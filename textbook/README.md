@@ -6,7 +6,7 @@ The book is organized as chapters in `book/*.md`, with reproducible SVG figures 
 
 ## Structure
 
-- `book/00_preface.md` restores the learner/teacher frame of the conversation.
+- `book/README.md` is the book-facing preface that GitHub renders when opening the chapter folder.
 - `book/01_physical_principles.md` through `book/10_glossary.md` contain the textbook chapters.
 - `figures/*.svg` contains generated figures referenced by the chapters.
 - `scripts/build_figures.py` regenerates all figures using only the Python standard library.
