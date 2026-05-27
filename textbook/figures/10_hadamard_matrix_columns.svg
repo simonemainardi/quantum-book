@@ -12,18 +12,18 @@
   </linearGradient>
 </defs>
 
-<text x="500" y="40" fill="#1f2937" font-size="25" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">A gate matrix is built from what the gate does to basis vectors</text>
+<text x="500" y="40" fill="#1f2937" font-size="25" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">A gate matrix is built from what the gate does to basis vectors</text>
 <rect x="62" y="110" width="260" height="310" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <rect x="370" y="110" width="260" height="310" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <rect x="678" y="110" width="260" height="310" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
-<text x="192" y="150" fill="#2563eb" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Input basis</text>
-<text x="500" y="150" fill="#16a34a" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Hadamard action</text>
-<text x="808" y="150" fill="#7c3aed" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Matrix columns</text>
-<text x="192" y="225" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|0&gt; = (1,0)^T</text>
-<text x="192" y="305" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|1&gt; = (0,1)^T</text>
-<text x="500" y="225" fill="#1f2937" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H|0&gt; = (|0&gt; + |1&gt;)/sqrt(2)</text>
-<text x="500" y="305" fill="#1f2937" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H|1&gt; = (|0&gt; - |1&gt;)/sqrt(2)</text>
-<text x="808" y="240" fill="#7c3aed" font-size="19" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H = 1/sqrt(2)</text>
+<text x="192" y="150" fill="#2563eb" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Input basis</text>
+<text x="500" y="150" fill="#16a34a" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Hadamard action</text>
+<text x="808" y="150" fill="#7c3aed" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Matrix columns</text>
+<text x="192" y="225" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|0&gt; = (1,0)^T</text>
+<text x="192" y="305" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|1&gt; = (0,1)^T</text>
+<text x="500" y="225" fill="#1f2937" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H|0&gt; = (|0&gt; + |1&gt;)/sqrt(2)</text>
+<text x="500" y="305" fill="#1f2937" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H|1&gt; = (|0&gt; - |1&gt;)/sqrt(2)</text>
+<text x="808" y="240" fill="#7c3aed" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H = 1/sqrt(2)</text>
 <text x="808" y="285" fill="#1f2937" font-size="27" font-weight="700" font-family="Menlo, Consolas, monospace" text-anchor="middle" dominant-baseline="middle">[ 1   1 ]</text>
 <text x="808" y="326" fill="#1f2937" font-size="27" font-weight="700" font-family="Menlo, Consolas, monospace" text-anchor="middle" dominant-baseline="middle">[ 1  -1 ]</text>
 <line x1="322" y1="230" x2="370" y2="230" stroke="#1f2937" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)"/>
@@ -31,5 +31,5 @@
 <line x1="322" y1="310" x2="370" y2="310" stroke="#1f2937" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="630" y1="310" x2="678" y2="310" stroke="#1f2937" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)"/>
 <rect x="190" y="452" width="620" height="55" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="8"/>
-<text x="500" y="480" fill="#1f2937" font-size="19" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">First output becomes column 1; second output becomes column 2.</text>
+<text x="500" y="480" fill="#1f2937" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">First output becomes column 1; second output becomes column 2.</text>
 </svg>

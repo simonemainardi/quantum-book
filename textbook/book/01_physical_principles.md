@@ -46,7 +46,7 @@ Two possible contributions produced an impossible outcome.
 
 That is the first structural difference between classical and quantum reasoning.
 
-![Amplitudes versus probabilities](../figures/01_amplitudes_vs_probabilities.svg?v=2026-05-27)
+![Amplitudes versus probabilities](../figures/01_amplitudes_vs_probabilities.svg?v=greek-2026-05-27)
 
 ## 1.2 The Core Rule
 
@@ -116,7 +116,7 @@ Quantum mechanically, with no which-slit measurement, the screen shows interfere
 
 The striking point is that each particle is detected as one localized event, but the probability distribution of many such events is shaped by amplitude interference.
 
-![Double slit interference](../figures/02_double_slit_interference.svg)
+![Double slit interference](../figures/02_double_slit_interference.svg?v=greek-2026-05-27)
 
 ## 1.5 What the Double Slit Teaches
 
@@ -198,7 +198,7 @@ In quantum cryptography, measurement disturbance matters. If an eavesdropper mea
 
 In quantum machine learning feature maps, classical data may be encoded into phases and rotations. The later circuit then recombines those amplitudes, making phase relationships observable in measurement statistics.
 
-![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg)
+![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg?v=greek-2026-05-27)
 
 ## 1.9 What Comes Next
 
@@ -216,4 +216,3 @@ Do not treat that chapter as detached algebra. Every piece will be used again:
 - inner products compute amplitudes,
 - matrices represent gates,
 - unitaries preserve total probability.
-

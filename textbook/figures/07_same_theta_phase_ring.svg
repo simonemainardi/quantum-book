@@ -12,34 +12,34 @@
   </linearGradient>
 </defs>
 
-<text x="500" y="40" fill="#1f2937" font-size="25" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Same theta, different phase: same Z probabilities, different states</text>
+<text x="500" y="40" fill="#1f2937" font-size="25" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Same θ, different phase: same Z probabilities, different states</text>
 <circle cx="500" cy="295" r="170" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
 <ellipse cx="500" cy="295" rx="147.224" ry="54.473" fill="none" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7 6"/>
 <line x1="500" y1="295" x2="500" y2="162.4" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="500" y1="295" x2="500" y2="427.6" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="500" y="107" fill="#2563eb" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|0&gt;</text>
-<text x="500" y="485" fill="#dc2626" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|1&gt;</text>
+<text x="500" y="107" fill="#2563eb" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|0&gt;</text>
+<text x="500" y="485" fill="#dc2626" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|1&gt;</text>
 <line x1="500" y1="295" x2="620.724" y2="269.923" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
 <circle cx="620.724" cy="269.923" r="9" fill="#16a34a" stroke="white" stroke-width="2"/>
-<text x="638.724" y="257.923" fill="#16a34a" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">phi = 0</text>
+<text x="638.724" y="257.923" fill="#16a34a" font-size="15" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">φ = 0</text>
 <line x1="500" y1="295" x2="448.471" y2="314.09" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
 <circle cx="448.471" cy="314.09" r="9" fill="#7c3aed" stroke="white" stroke-width="2"/>
-<text x="430.471" y="302.09" fill="#7c3aed" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">phi = pi/2</text>
+<text x="430.471" y="302.09" fill="#7c3aed" font-size="15" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">φ = π/2</text>
 <line x1="500" y1="295" x2="379.276" y2="187.477" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
 <circle cx="379.276" cy="187.477" r="9" fill="#d97706" stroke="white" stroke-width="2"/>
-<text x="361.276" y="175.477" fill="#d97706" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">phi = pi</text>
+<text x="361.276" y="175.477" fill="#d97706" font-size="15" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">φ = π</text>
 <line x1="500" y1="295" x2="551.529" y2="143.31" stroke="#be185d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
 <circle cx="551.529" cy="143.31" r="9" fill="#be185d" stroke="white" stroke-width="2"/>
-<text x="569.529" y="131.31" fill="#be185d" font-size="15" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">phi = 3pi/2</text>
+<text x="569.529" y="131.31" fill="#be185d" font-size="15" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">φ = 3π/2</text>
 <rect x="70" y="154" width="255" height="250" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
-<text x="198" y="188" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">For theta = 60 deg</text>
-<text x="198" y="238" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">cos(theta/2) = sqrt(3)/2</text>
-<text x="198" y="270" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">sin(theta/2) = 1/2</text>
-<text x="198" y="326" fill="#2563eb" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(Z=0) = 0.75</text>
-<text x="198" y="360" fill="#0891b2" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(Z=1) = 0.25</text>
+<text x="198" y="188" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">For θ = 60 deg</text>
+<text x="198" y="238" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">cos(θ/2) = sqrt(3)/2</text>
+<text x="198" y="270" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">sin(θ/2) = 1/2</text>
+<text x="198" y="326" fill="#2563eb" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(Z=0) = 0.75</text>
+<text x="198" y="360" fill="#0891b2" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(Z=1) = 0.25</text>
 <rect x="695" y="160" width="235" height="225" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
-<text x="812" y="196" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Why it matters</text>
-<text x="812" y="250" fill="#64748b" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z cannot see phi</text>
-<text x="812" y="286" fill="#16a34a" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">X reads cos(phi)</text>
-<text x="812" y="322" fill="#7c3aed" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Y reads sin(phi)</text>
+<text x="812" y="196" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Why it matters</text>
+<text x="812" y="250" fill="#64748b" font-size="17" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z cannot see φ</text>
+<text x="812" y="286" fill="#16a34a" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">X reads cos(φ)</text>
+<text x="812" y="322" fill="#7c3aed" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Y reads sin(φ)</text>
 </svg>

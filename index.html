@@ -476,7 +476,7 @@
   </nav>
 
   <header class="hero">
-    <img src="assets/figures/cover-quantum-engineering.svg" alt="" />
+    <img src="assets/figures/cover-quantum-engineering.svg?v=greek-2026-05-27" alt="" />
     <div class="hero-copy">
       <div class="eyebrow">Practical quantum engineering course</div>
       <h1>Quantum Computing for Engineers</h1>
@@ -548,7 +548,7 @@
             </div>
           </div>
           <figure class="figure">
-            <img src="assets/figures/amplitude-interference.svg" alt="Constructive and destructive amplitude interference diagram" />
+            <img src="assets/figures/amplitude-interference.svg?v=greek-2026-05-27" alt="Constructive and destructive amplitude interference diagram" />
             <figcaption>Two alternatives can reinforce or erase each other before any measurement has produced a classical bit.</figcaption>
           </figure>
         </div>
@@ -566,7 +566,7 @@
         </div>
         <div class="figure-grid">
           <figure class="figure">
-            <img src="assets/figures/complex-plane-rotation.svg" alt="Complex plane showing Euler's formula" />
+            <img src="assets/figures/complex-plane-rotation.svg?v=greek-2026-05-27" alt="Complex plane showing Euler's formula" />
             <figcaption>Euler's formula ties a point on the unit circle to cos and sin. Quantum phase lives on this circle.</figcaption>
           </figure>
           <div class="body-copy">
@@ -580,7 +580,7 @@
               </div>
               <div class="equation">
                 <em>Euler</em>
-                e<sup>i theta</sup> = cos(theta) + i sin(theta);
+                e<sup>iθ</sup> = cos θ + i sin θ;
               </div>
               <div class="equation">
                 <em>Magnitude</em>
@@ -607,17 +607,17 @@
         </div>
         <div class="figure-grid">
           <figure class="figure">
-            <img src="assets/figures/bloch-sphere-states.svg" alt="Bloch sphere reference states" />
+            <img src="assets/figures/bloch-sphere-states.svg?v=greek-2026-05-27" alt="Bloch sphere reference states" />
             <figcaption>The six reference states are the poles of the X, Y, and Z measurement axes.</figcaption>
           </figure>
           <figure class="figure">
-            <img src="assets/figures/born-rule-pipeline.svg" alt="Born rule pipeline from state to counts" />
+            <img src="assets/figures/born-rule-pipeline.svg?v=greek-2026-05-27" alt="Born rule pipeline from state to counts" />
             <figcaption>The state is continuous. The measurement output is a discrete sample whose statistics reveal the state only after repeated shots.</figcaption>
           </figure>
         </div>
         <div class="callout">
           <strong>The qubit formula</strong>
-          <p><span class="equation">|psi(theta, phi)&rangle; = cos(theta/2)|0&rangle; + e<sup>i phi</sup> sin(theta/2)|1&rangle;</span></p>
+          <p><span class="equation">|ψ(θ,φ)&rangle; = cos(θ/2)|0&rangle; + e<sup>iφ</sup> sin(θ/2)|1&rangle;</span></p>
         </div>
       </div>
     </section>
@@ -628,7 +628,7 @@
           <div class="chapter-kicker">Interactive</div>
           <div>
             <h2>Phase Looks Invisible Until You Change Basis</h2>
-            <p class="lede">With theta fixed at 60 degrees, the Z measurement probabilities stay fixed. X and Y measurements change because they recombine amplitudes differently.</p>
+            <p class="lede">With θ fixed at 60 degrees, the Z measurement probabilities stay fixed. X and Y measurements change because they recombine amplitudes differently.</p>
           </div>
         </div>
         <div class="lab">
@@ -639,7 +639,7 @@
               <div class="state-vector" id="stateVector"></div>
             </div>
             <div class="control">
-              <label for="phaseSlider">Phase phi: <span class="phase-value" id="phaseValue">0</span></label>
+              <label for="phaseSlider">Phase φ: <span class="phase-value" id="phaseValue">0</span></label>
               <input id="phaseSlider" type="range" min="0" max="4.71238898" value="0" step="0.01" />
             </div>
           </div>
@@ -680,8 +680,8 @@
           </div>
         </div>
         <figure class="figure" style="margin-top:24px">
-          <img src="assets/figures/phase-basis-probabilities.svg" alt="Probability curves for Z X and Y bases as phase changes" />
-          <figcaption>The full curve view: Z is flat for fixed theta, while X follows cos(phi) and Y follows sin(phi).</figcaption>
+          <img src="assets/figures/phase-basis-probabilities.svg?v=greek-2026-05-27" alt="Probability curves for Z X and Y bases as phase changes" />
+          <figcaption>The full curve view: Z is flat for fixed θ, while X follows cos φ and Y follows sin φ.</figcaption>
         </figure>
       </div>
     </section>
@@ -697,7 +697,7 @@
         </div>
         <div class="split">
           <figure class="figure">
-            <img src="assets/figures/quantum-stack.svg" alt="Quantum hardware to applications stack" />
+            <img src="assets/figures/quantum-stack.svg?v=greek-2026-05-27" alt="Quantum hardware to applications stack" />
             <figcaption>Most of the practical work is stack work: calibration, gate synthesis, circuit design, error management, and application framing.</figcaption>
           </figure>
           <div class="body-copy">
@@ -705,7 +705,7 @@
             <ul>
               <li><strong>X</strong> flips the state around the X axis, swapping |0&rangle; and |1&rangle;.</li>
               <li><strong>H</strong> changes between Z and X viewpoints, making interference visible in a different basis.</li>
-              <li><strong>R<sub>z</sub>(phi)</strong>, <strong>R<sub>x</sub>(theta)</strong>, and <strong>R<sub>y</sub>(theta)</strong> are rotations on the Bloch sphere.</li>
+              <li><strong>R<sub>z</sub>(φ)</strong>, <strong>R<sub>x</sub>(θ)</strong>, and <strong>R<sub>y</sub>(θ)</strong> are rotations on the Bloch sphere.</li>
               <li><strong>CNOT</strong> couples qubits, which is where entanglement and multi-qubit algorithms begin.</li>
             </ul>
             <div class="callout">
@@ -735,12 +735,12 @@
           <div class="tile">
             <div class="marker gold"></div>
             <strong>Move around the circle</strong>
-            <p>Compute e<sup>i theta</sup> for theta = 0, pi/2, pi, 3pi/2 and draw each point.</p>
+            <p>Compute e<sup>iθ</sup> for θ = 0, π/2, π, 3π/2 and draw each point.</p>
           </div>
           <div class="tile">
             <div class="marker coral"></div>
             <strong>Change basis</strong>
-            <p>For theta = 60 degrees, calculate Z, X, and Y probabilities for the four phases in the lab.</p>
+            <p>For θ = 60 degrees, calculate Z, X, and Y probabilities for the four phases in the lab.</p>
           </div>
         </div>
       </div>

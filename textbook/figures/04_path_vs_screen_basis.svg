@@ -12,30 +12,30 @@
   </linearGradient>
 </defs>
 
-<text x="500" y="42" fill="#1f2937" font-size="26" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">The same state gives different probabilities in different bases</text>
+<text x="500" y="42" fill="#1f2937" font-size="26" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">The same state gives different probabilities in different bases</text>
 <rect x="52" y="92" width="416" height="386" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <rect x="532" y="92" width="416" height="386" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
-<text x="260" y="126" fill="#2563eb" font-size="22" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Path / Z basis</text>
-<text x="740" y="126" fill="#7c3aed" font-size="22" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Screen / X-like basis</text>
-<text x="260" y="160" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">alternatives stay distinct</text>
-<text x="740" y="160" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">alternatives recombine</text>
+<text x="260" y="126" fill="#2563eb" font-size="22" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Path / Z basis</text>
+<text x="740" y="126" fill="#7c3aed" font-size="22" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Screen / X-like basis</text>
+<text x="260" y="160" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">alternatives stay distinct</text>
+<text x="740" y="160" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">alternatives recombine</text>
 <circle cx="178" cy="260" r="42" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
 <circle cx="342" cy="260" r="42" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
-<text x="178" y="260" fill="#2563eb" font-size="22" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|L&gt;</text>
-<text x="342" y="260" fill="#2563eb" font-size="22" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|R&gt;</text>
+<text x="178" y="260" fill="#2563eb" font-size="22" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|L&gt;</text>
+<text x="342" y="260" fill="#2563eb" font-size="22" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|R&gt;</text>
 <line x1="178" y1="310" x2="178" y2="380" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="342" y1="310" x2="342" y2="380" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="178" y="410" fill="#1f2937" font-size="19" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(L)=1/2</text>
-<text x="342" y="410" fill="#1f2937" font-size="19" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(R)=1/2</text>
-<text x="260" y="452" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">No amplitude sum, no cross term.</text>
+<text x="178" y="410" fill="#1f2937" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(L)=1/2</text>
+<text x="342" y="410" fill="#1f2937" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P(R)=1/2</text>
+<text x="260" y="452" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">No amplitude sum, no cross term.</text>
 <circle cx="612" cy="250" r="38" fill="#f3e8ff" stroke="#7c3aed" stroke-width="3"/>
 <circle cx="612" cy="350" r="38" fill="#f3e8ff" stroke="#7c3aed" stroke-width="3"/>
-<text x="612" y="250" fill="#7c3aed" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|L&gt;</text>
-<text x="612" y="350" fill="#7c3aed" font-size="21" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|R&gt;</text>
+<text x="612" y="250" fill="#7c3aed" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|L&gt;</text>
+<text x="612" y="350" fill="#7c3aed" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|R&gt;</text>
 <circle cx="820" cy="300" r="46" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
-<text x="820" y="300" fill="#d97706" font-size="22" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|x&gt;</text>
+<text x="820" y="300" fill="#d97706" font-size="22" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|x&gt;</text>
 <line x1="650" y1="250" x2="774" y2="292" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="650" y1="350" x2="774" y2="308" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="744" y="400" fill="#1f2937" font-size="19" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">&lt;x|psi&gt; = (&lt;x|L&gt; + &lt;x|R&gt;)/sqrt(2)</text>
-<text x="744" y="434" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">The square of a sum contains interference.</text>
+<text x="744" y="400" fill="#1f2937" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">&lt;x|ψ&gt; = (&lt;x|L&gt; + &lt;x|R&gt;)/sqrt(2)</text>
+<text x="744" y="434" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">The square of a sum contains interference.</text>
 </svg>

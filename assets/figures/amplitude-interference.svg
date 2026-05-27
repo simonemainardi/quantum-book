@@ -23,10 +23,10 @@
     </marker>
     <style>
       .title { font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: 54px; font-weight: 700; fill: #14202e; }
-      .h2 { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #14202e; }
-      .label { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: #14202e; }
-      .small { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: #5d6877; }
-      .formula { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 18px; fill: #14202e; }
+      .h2 { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #14202e; }
+      .label { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: #14202e; }
+      .small { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: #5d6877; }
+      .formula { font-family: Menlo, "DejaVu Sans Mono", "Noto Sans Mono", "SFMono-Regular", Consolas, monospace; font-size: 18px; fill: #14202e; }
       .hair { stroke: rgba(20,32,46,0.16); stroke-width: 1.2; }
       .axis { stroke: rgba(20,32,46,0.42); stroke-width: 2; }
     </style>

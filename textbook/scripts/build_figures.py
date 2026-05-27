@@ -22,6 +22,7 @@ RED = "#dc2626"
 PURPLE = "#7c3aed"
 PINK = "#be185d"
 BG = "#fbfcff"
+TEXT_FONT = 'Inter, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Arial, sans-serif'
 
 
 def fmt(value: float) -> str:
@@ -50,7 +51,7 @@ def tag(name: str, content: str = "", **kwargs: object) -> str:
 
 
 def text(x: float, y: float, value: str, size: int = 20, fill: str = INK,
-         weight: int | str = 500, anchor: str = "middle", family: str = "Inter, Arial, sans-serif") -> str:
+         weight: int | str = 500, anchor: str = "middle", family: str = TEXT_FONT) -> str:
     return tag("text", escape(value), x=fmt(x), y=fmt(y), fill=fill, **{
         "font-size": size,
         "font-weight": weight,
@@ -323,13 +324,13 @@ def complex_phase_clock() -> None:
         line(cx, cy, x, cy, BLUE, 3),
         line(x, cy, x, y, CYAN, 3),
         path(f"M {cx+55} {cy} A 55 55 0 0 0 {cx+55*math.cos(phi)} {cy-55*math.sin(phi)}", stroke=AMBER, width=3),
-        text(cx + 80, cy - 30, "phi", 17, AMBER, 700),
-        text((cx + x) / 2, cy + 24, "cos(phi)", 17, BLUE, 700),
-        text(x + 52, (cy + y) / 2, "sin(phi)", 17, CYAN, 700),
+        text(cx + 80, cy - 30, "φ", 17, AMBER, 700),
+        text((cx + x) / 2, cy + 24, "cos(φ)", 17, BLUE, 700),
+        text(x + 52, (cy + y) / 2, "sin(φ)", 17, CYAN, 700),
         rect(570, 170, 340, 230, fill="#ffffff", stroke="#cbd5e1"),
         text(740, 214, "Euler formula", 25, PURPLE, 700),
-        text(740, 265, "e^(i phi) = cos(phi) + i sin(phi)", 23, INK, 700),
-        text(740, 322, "Changing phi changes direction,", 17, MUTED),
+        text(740, 265, "e^(iφ) = cos(φ) + i sin(φ)", 23, INK, 700),
+        text(740, 322, "Changing φ changes direction,", 17, MUTED),
         text(740, 350, "not the length of the vector.", 17, MUTED),
         text(740, 386, "That direction is quantum phase.", 17, INK, 700),
     ]
@@ -362,7 +363,7 @@ def path_vs_screen_basis() -> None:
         text(820, 300, "|x>", 22, AMBER, 700),
         line(650, 250, 774, 292, PURPLE, 3, arrow=True),
         line(650, 350, 774, 308, PURPLE, 3, arrow=True),
-        text(744, 400, "<x|psi> = (<x|L> + <x|R>)/sqrt(2)", 19, INK, 700),
+        text(744, 400, "<x|ψ> = (<x|L> + <x|R>)/sqrt(2)", 19, INK, 700),
         text(744, 434, "The square of a sum contains interference.", 16, MUTED),
     ]
     save("04_path_vs_screen_basis.svg", 1000, 540, body)
@@ -375,16 +376,16 @@ def qubit_state_vector() -> None:
         rect(540, 110, 390, 330, fill="#ffffff", stroke="#cbd5e1"),
         text(265, 150, "State vector", 23, BLUE, 700),
         text(735, 150, "Born rule", 23, GREEN, 700),
-        text(265, 220, "|psi> = alpha |0> + beta |1>", 26, INK, 700),
-        text(265, 276, "alpha, beta are complex amplitudes", 17, MUTED),
-        text(265, 310, "|alpha|^2 + |beta|^2 = 1", 22, BLUE, 700),
+        text(265, 220, "|ψ> = α |0> + β |1>", 26, INK, 700),
+        text(265, 276, "α, β are complex amplitudes", 17, MUTED),
+        text(265, 310, "|α|^2 + |β|^2 = 1", 22, BLUE, 700),
         text(265, 360, "phase is stored in the relation", 16, MUTED),
-        text(265, 386, "between alpha and beta", 16, MUTED),
+        text(265, 386, "between α and β", 16, MUTED),
         rect(615, 230, 70, 130, fill=BLUE, stroke="none", rx=5, opacity=0.9),
         rect(785, 285, 70, 75, fill=CYAN, stroke="none", rx=5, opacity=0.9),
         line(590, 360, 880, 360, GRID, 2),
-        text(650, 388, "P(0)=|alpha|^2", 17, BLUE, 700),
-        text(820, 388, "P(1)=|beta|^2", 17, CYAN, 700),
+        text(650, 388, "P(0)=|α|^2", 17, BLUE, 700),
+        text(820, 388, "P(1)=|β|^2", 17, CYAN, 700),
         text(735, 440, "Measurement converts amplitudes into probabilities.", 16, MUTED),
     ]
     save("05_qubit_state_vector.svg", 1000, 540, body)
@@ -440,7 +441,7 @@ def same_theta_phase_ring() -> None:
     cx, cy, r = 500, 295, 170
     theta = math.radians(60)
     body: list[str] = [
-        text(500, 40, "Same theta, different phase: same Z probabilities, different states", 25, weight=700),
+        text(500, 40, "Same θ, different phase: same Z probabilities, different states", 25, weight=700),
         circle(cx, cy, r, fill="#ffffff", stroke="#cbd5e1", width=3),
         tag("ellipse", cx=fmt(cx), cy=fmt(cy), rx=fmt(r * math.sin(theta)), ry=fmt(r * math.sin(theta) * 0.37),
             fill="none", stroke=PURPLE, **{"stroke-width": 3, "stroke-dasharray": "7 6"}),
@@ -450,7 +451,7 @@ def same_theta_phase_ring() -> None:
         text(500, 485, "|1>", 17, RED, 700),
     ]
     colors = [GREEN, PURPLE, AMBER, PINK]
-    labels = ["phi = 0", "phi = pi/2", "phi = pi", "phi = 3pi/2"]
+    labels = ["φ = 0", "φ = π/2", "φ = π", "φ = 3π/2"]
     for i, phi in enumerate([0, math.pi / 2, math.pi, 3 * math.pi / 2]):
         x = math.sin(theta) * math.cos(phi)
         y = math.sin(theta) * math.sin(phi)
@@ -462,16 +463,16 @@ def same_theta_phase_ring() -> None:
         body.append(text(px + (18 if px > cx else -18), py - 12, labels[i], 15, colors[i], 700, anchor=anchor))
     body += [
         rect(70, 154, 255, 250, fill="#ffffff", stroke="#cbd5e1"),
-        text(198, 188, "For theta = 60 deg", 21, INK, 700),
-        text(198, 238, "cos(theta/2) = sqrt(3)/2", 16, MUTED),
-        text(198, 270, "sin(theta/2) = 1/2", 16, MUTED),
+        text(198, 188, "For θ = 60 deg", 21, INK, 700),
+        text(198, 238, "cos(θ/2) = sqrt(3)/2", 16, MUTED),
+        text(198, 270, "sin(θ/2) = 1/2", 16, MUTED),
         text(198, 326, "P(Z=0) = 0.75", 20, BLUE, 700),
         text(198, 360, "P(Z=1) = 0.25", 20, CYAN, 700),
         rect(695, 160, 235, 225, fill="#ffffff", stroke="#cbd5e1"),
         text(812, 196, "Why it matters", 21, INK, 700),
-        text(812, 250, "Z cannot see phi", 17, MUTED),
-        text(812, 286, "X reads cos(phi)", 17, GREEN, 700),
-        text(812, 322, "Y reads sin(phi)", 17, PURPLE, 700),
+        text(812, 250, "Z cannot see φ", 17, MUTED),
+        text(812, 286, "X reads cos(φ)", 17, GREEN, 700),
+        text(812, 322, "Y reads sin(φ)", 17, PURPLE, 700),
     ]
     save("07_same_theta_phase_ring.svg", 1000, 540, body)
 
@@ -479,7 +480,7 @@ def same_theta_phase_ring() -> None:
 def probabilities_zxy() -> None:
     width, height = 1000, 620
     body: list[str] = [
-        text(500, 38, "For theta = 60 deg, Z is flat while X and Y reveal phase", 25, weight=700),
+        text(500, 38, "For θ = 60 deg, Z is flat while X and Y reveal phase", 25, weight=700),
     ]
     panels = [
         (70, 95, "Z basis", "P(Z=0)", lambda p: 0.75, BLUE),
@@ -505,10 +506,10 @@ def probabilities_zxy() -> None:
             py = gy + gh * (1 - val)
             points.append((px, py))
         body.append(poly(points, stroke=color, width=3.2))
-        for phi, label in [(0, "0"), (math.pi / 2, "pi/2"), (math.pi, "pi"), (3 * math.pi / 2, "3pi/2"), (2 * math.pi, "2pi")]:
+        for phi, label in [(0, "0"), (math.pi / 2, "π/2"), (math.pi, "π"), (3 * math.pi / 2, "3π/2"), (2 * math.pi, "2π")]:
             px = gx + gw * phi / (2 * math.pi)
             body.append(line(px, gy + gh, px, gy + gh + 5, MUTED, 1.5))
-            if label in ("0", "pi", "2pi"):
+            if label in ("0", "π", "2π"):
                 body.append(text(px, gy + gh + 24, label, 12, MUTED))
         body.append(text(x0 + w / 2, y0 + h - 34, ylabel, 16, color, 700))
     body += [
@@ -525,9 +526,9 @@ def basis_recombination() -> None:
         text(500, 70, "A measurement basis either selects one component or recombines components.", 16, MUTED),
     ]
     cards = [
-        (60, 125, "Z measurement", "<0|psi> = alpha", "selects one component", BLUE),
-        (365, 125, "X measurement", "<+|psi> = (alpha + beta)/sqrt(2)", "adds amplitudes", GREEN),
-        (670, 125, "Y measurement", "<+i|psi> = (alpha - i beta)/sqrt(2)", "adds with a phase shift", PURPLE),
+        (60, 125, "Z measurement", "<0|ψ> = α", "selects one component", BLUE),
+        (365, 125, "X measurement", "<+|ψ> = (α + β)/sqrt(2)", "adds amplitudes", GREEN),
+        (670, 125, "Y measurement", "<+i|ψ> = (α - iβ)/sqrt(2)", "adds with a phase shift", PURPLE),
     ]
     for x, y, title, formula, note, color in cards:
         body += [

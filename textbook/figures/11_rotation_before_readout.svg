@@ -12,35 +12,35 @@
   </linearGradient>
 </defs>
 
-<text x="500" y="40" fill="#1f2937" font-size="25" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Real devices usually read Z; circuits rotate first to read X or Y</text>
-<text x="500" y="70" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">This is how phase information becomes a classical 0/1 bias.</text>
-<text x="130" y="145" fill="#2563eb" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">Measure Z</text>
+<text x="500" y="40" fill="#1f2937" font-size="25" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Real devices usually read Z; circuits rotate first to read X or Y</text>
+<text x="500" y="70" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">This is how phase information becomes a classical 0/1 bias.</text>
+<text x="130" y="145" fill="#2563eb" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">Measure Z</text>
 <line x1="170" y1="145" x2="780" y2="145" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
 <rect x="795" y="111" width="78" height="68" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" rx="8"/>
 <path d="M 817 160 A 18 18 0 0 1 851 160" fill="none" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="834" y1="160" x2="855" y2="135" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round"/>
-<text x="834" y="193" fill="#d97706" font-size="14" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z</text>
-<text x="500" y="200" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">native readout</text>
-<text x="130" y="275" fill="#16a34a" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">Measure X</text>
+<text x="834" y="193" fill="#d97706" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z</text>
+<text x="500" y="200" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">native readout</text>
+<text x="130" y="275" fill="#16a34a" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">Measure X</text>
 <line x1="170" y1="275" x2="780" y2="275" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
 <rect x="262" y="247" width="76" height="56" fill="#ffffff" stroke="#16a34a" stroke-width="2.5" rx="6"/>
-<text x="300" y="275" fill="#16a34a" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H</text>
+<text x="300" y="275" fill="#16a34a" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H</text>
 <rect x="795" y="241" width="78" height="68" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" rx="8"/>
 <path d="M 817 290 A 18 18 0 0 1 851 290" fill="none" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="834" y1="290" x2="855" y2="265" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round"/>
-<text x="834" y="323" fill="#d97706" font-size="14" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z</text>
-<text x="500" y="330" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H maps |+&gt; to |0&gt;</text>
-<text x="130" y="405" fill="#7c3aed" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">Measure Y</text>
+<text x="834" y="323" fill="#d97706" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z</text>
+<text x="500" y="330" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H maps |+&gt; to |0&gt;</text>
+<text x="130" y="405" fill="#7c3aed" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">Measure Y</text>
 <line x1="170" y1="405" x2="780" y2="405" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
 <rect x="262" y="377" width="76" height="56" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5" rx="6"/>
-<text x="300" y="405" fill="#7c3aed" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">S^dagger</text>
+<text x="300" y="405" fill="#7c3aed" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">S^dagger</text>
 <rect x="382" y="377" width="76" height="56" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5" rx="6"/>
-<text x="420" y="405" fill="#7c3aed" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H</text>
+<text x="420" y="405" fill="#7c3aed" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H</text>
 <rect x="795" y="371" width="78" height="68" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" rx="8"/>
 <path d="M 817 420 A 18 18 0 0 1 851 420" fill="none" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="834" y1="420" x2="855" y2="395" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round"/>
-<text x="834" y="453" fill="#d97706" font-size="14" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z</text>
-<text x="500" y="460" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">S^dagger then H maps |+i&gt; to |0&gt;</text>
+<text x="834" y="453" fill="#d97706" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z</text>
+<text x="500" y="460" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">S^dagger then H maps |+i&gt; to |0&gt;</text>
 <rect x="148" y="488" width="704" height="36" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
-<text x="500" y="506" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">The detector is unchanged; only the pre-measurement rotation changes the basis.</text>
+<text x="500" y="506" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">The detector is unchanged; only the pre-measurement rotation changes the basis.</text>
 </svg>

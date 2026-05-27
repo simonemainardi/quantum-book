@@ -51,7 +51,7 @@ So the practical strategy is:
 
 > Rotate the state so the desired information becomes Z-basis population, then perform native readout.
 
-![Rotation before readout](../figures/11_rotation_before_readout.svg)
+![Rotation before readout](../figures/11_rotation_before_readout.svg?v=greek-2026-05-27)
 
 ## 7.3 Measuring X Using H Then Z
 
@@ -316,4 +316,3 @@ Key points:
 - phase becomes a classical probability bias only after recombination,
 - repeated shots estimate probabilities,
 - a simple $H$-phase-$H$ circuit is the circuit analogue of an interferometer.
-

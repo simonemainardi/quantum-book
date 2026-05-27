@@ -68,7 +68,7 @@ c & d
 \end{pmatrix}
 ```
 
-![Hadamard matrix columns](../figures/10_hadamard_matrix_columns.svg)
+![Hadamard matrix columns](../figures/10_hadamard_matrix_columns.svg?v=greek-2026-05-27)
 
 ## 6.3 The Hadamard Gate
 
@@ -374,4 +374,3 @@ The chapter's key points:
 - real hardware gates correspond to physical controls such as pulses and phase references.
 
 Next we put these gates into circuits and connect them to final 0/1 readout.
-

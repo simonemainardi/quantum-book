@@ -187,7 +187,7 @@ P(Y=-i) =
 
 This is what "choosing an axis" means mathematically: you choose which component of the Bloch vector becomes the measurement bias.
 
-![Z X Y measurement probabilities](../figures/08_zxy_measurement_probabilities.svg)
+![Z X Y measurement probabilities](../figures/08_zxy_measurement_probabilities.svg?v=greek-2026-05-27)
 
 ## 5.5 Z Basis: Phase Is Invisible
 
@@ -317,7 +317,7 @@ So Y measurement sees the sine component of phase, shifted by 90 degrees relativ
 
 This diagram summarizes the key contrast.
 
-![Basis recombination algebra](../figures/09_basis_recombination_algebra.svg)
+![Basis recombination algebra](../figures/09_basis_recombination_algebra.svg?v=greek-2026-05-27)
 
 In Z measurement, the amplitude for outcome $0$ is:
 
@@ -381,4 +381,3 @@ The original confusion is resolved as follows:
 - Real hardware can often use one native readout basis plus rotations to implement other measurement bases.
 
 The next chapter shows those rotations and gates as matrices.
-

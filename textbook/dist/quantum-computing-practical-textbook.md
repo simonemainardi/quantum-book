@@ -132,7 +132,7 @@ Two possible contributions produced an impossible outcome.
 
 That is the first structural difference between classical and quantum reasoning.
 
-![Amplitudes versus probabilities](../figures/01_amplitudes_vs_probabilities.svg?v=2026-05-27)
+![Amplitudes versus probabilities](../figures/01_amplitudes_vs_probabilities.svg?v=greek-2026-05-27)
 
 ## 1.2 The Core Rule
 
@@ -202,7 +202,7 @@ Quantum mechanically, with no which-slit measurement, the screen shows interfere
 
 The striking point is that each particle is detected as one localized event, but the probability distribution of many such events is shaped by amplitude interference.
 
-![Double slit interference](../figures/02_double_slit_interference.svg)
+![Double slit interference](../figures/02_double_slit_interference.svg?v=greek-2026-05-27)
 
 ## 1.5 What the Double Slit Teaches
 
@@ -284,7 +284,7 @@ In quantum cryptography, measurement disturbance matters. If an eavesdropper mea
 
 In quantum machine learning feature maps, classical data may be encoded into phases and rotations. The later circuit then recombines those amplitudes, making phase relationships observable in measurement statistics.
 
-![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg)
+![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg?v=greek-2026-05-27)
 
 ## 1.9 What Comes Next
 
@@ -302,7 +302,6 @@ Do not treat that chapter as detached algebra. Every piece will be used again:
 - inner products compute amplitudes,
 - matrices represent gates,
 - unitaries preserve total probability.
-
 # 2. Math and Algebra Prerequisites
 
 This chapter is the mathematical toolkit for the rest of the book. It is deliberately practical. The goal is not abstract elegance for its own sake, but fluency with the objects that quantum mechanics uses every few lines.
@@ -453,7 +452,7 @@ So multiplying an amplitude by $e^{i\phi}$ changes its direction in the complex 
 
 That is phase.
 
-![Complex phase clock](../figures/03_complex_phase_clock.svg)
+![Complex phase clock](../figures/03_complex_phase_clock.svg?v=greek-2026-05-27)
 
 ## 2.5 Why Phase Can Be Invisible
 
@@ -901,7 +900,7 @@ where $x$ labels a detector position on the screen.
 
 The same physical setup can be interrogated in these different ways. The difference is not cosmetic. It changes whether amplitudes are kept separate or recombined.
 
-![Path basis versus screen basis](../figures/04_path_vs_screen_basis.svg)
+![Path basis versus screen basis](../figures/04_path_vs_screen_basis.svg?v=greek-2026-05-27)
 
 ## 3.2 Which-Slit Measurement
 
@@ -1190,7 +1189,6 @@ The double slit is the physical template for quantum computation:
 - phase becomes visible only through a measurement basis or circuit that recombines amplitudes.
 
 The next chapter introduces the qubit as the simplest engineered system that contains this logic.
-
 # 4. Qubits and the Bloch Sphere
 
 The qubit is the simplest quantum information unit. It is not merely a bit that is "both 0 and 1." A better engineering definition is:
@@ -1242,7 +1240,7 @@ The amplitudes $\alpha$ and $\beta$ are complex numbers, and they must satisfy:
 
 This is the normalization rule from [Section 2.6](02_math_prerequisites.md#26-vectors).
 
-![Qubit state vector](../figures/05_qubit_state_vector.svg)
+![Qubit state vector](../figures/05_qubit_state_vector.svg?v=greek-2026-05-27)
 
 ## 4.2 Measurement in the Z Basis
 
@@ -1370,7 +1368,7 @@ These are not decorative names. They are the eigenstates of the three measuremen
 - X axis: $|+\rangle$, $|-\rangle$
 - Y axis: $|+i\rangle$, $|-i\rangle$
 
-![Bloch reference states](../figures/06_bloch_reference_states.svg)
+![Bloch reference states](../figures/06_bloch_reference_states.svg?v=greek-2026-05-27)
 
 ## 4.6 The Bloch Sphere
 
@@ -1546,7 +1544,7 @@ are different states.
 
 Z measurement cannot distinguish them. X and Y measurements can.
 
-![Same theta phase ring](../figures/07_same_theta_phase_ring.svg)
+![Same theta phase ring](../figures/07_same_theta_phase_ring.svg?v=greek-2026-05-27)
 
 ## 4.9 Physical Meaning
 
@@ -1594,7 +1592,6 @@ The Bloch vector is:
 ```
 
 Z measurement sees $r_z$. X measurement sees $r_x$. Y measurement sees $r_y$. This is the topic of the next chapter.
-
 # 5. Measurement Bases
 
 This chapter resolves the central conceptual tension of the conversation:
@@ -1784,7 +1781,7 @@ P(Y=-i) =
 
 This is what "choosing an axis" means mathematically: you choose which component of the Bloch vector becomes the measurement bias.
 
-![Z X Y measurement probabilities](../figures/08_zxy_measurement_probabilities.svg)
+![Z X Y measurement probabilities](../figures/08_zxy_measurement_probabilities.svg?v=greek-2026-05-27)
 
 ## 5.5 Z Basis: Phase Is Invisible
 
@@ -1914,7 +1911,7 @@ So Y measurement sees the sine component of phase, shifted by 90 degrees relativ
 
 This diagram summarizes the key contrast.
 
-![Basis recombination algebra](../figures/09_basis_recombination_algebra.svg)
+![Basis recombination algebra](../figures/09_basis_recombination_algebra.svg?v=greek-2026-05-27)
 
 In Z measurement, the amplitude for outcome $0$ is:
 
@@ -1978,7 +1975,6 @@ The original confusion is resolved as follows:
 - Real hardware can often use one native readout basis plus rotations to implement other measurement bases.
 
 The next chapter shows those rotations and gates as matrices.
-
 # 6. Gates, Matrices, and Rotations
 
 Quantum gates are transformations of amplitudes. For a single qubit, a gate is a $2 \times 2$ unitary matrix. On the Bloch sphere, many gates can be understood as rotations.
@@ -2049,7 +2045,7 @@ c & d
 \end{pmatrix}
 ```
 
-![Hadamard matrix columns](../figures/10_hadamard_matrix_columns.svg)
+![Hadamard matrix columns](../figures/10_hadamard_matrix_columns.svg?v=greek-2026-05-27)
 
 ## 6.3 The Hadamard Gate
 
@@ -2355,7 +2351,6 @@ The chapter's key points:
 - real hardware gates correspond to physical controls such as pulses and phase references.
 
 Next we put these gates into circuits and connect them to final 0/1 readout.
-
 # 7. Circuits and Readout
 
 A quantum circuit is a sequence of operations applied to quantum states, followed by measurement. The useful part of the circuit usually happens before measurement, while amplitudes are still free to interfere.
@@ -2409,7 +2404,7 @@ So the practical strategy is:
 
 > Rotate the state so the desired information becomes Z-basis population, then perform native readout.
 
-![Rotation before readout](../figures/11_rotation_before_readout.svg)
+![Rotation before readout](../figures/11_rotation_before_readout.svg?v=greek-2026-05-27)
 
 ## 7.3 Measuring X Using H Then Z
 
@@ -2674,7 +2669,6 @@ Key points:
 - phase becomes a classical probability bias only after recombination,
 - repeated shots estimate probabilities,
 - a simple $H$-phase-$H$ circuit is the circuit analogue of an interferometer.
-
 # 8. Practical Examples
 
 The conversation asked for practical perspective, not only formal quantum mechanics. This chapter connects the same amplitude-and-phase ideas to real technology.
@@ -2695,7 +2689,7 @@ interpret the classical results
 
 The physical platform changes. The logic remains.
 
-![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg)
+![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg?v=greek-2026-05-27)
 
 ## 8.2 Quantum Algorithms as Engineered Interference
 
@@ -2912,7 +2906,6 @@ The same ideas reappear across applications:
 The unifying question is always:
 
 > What information is stored in amplitude or phase, and what transformation will make it visible in measurement statistics?
-
 # 9. Worked Labs
 
 This chapter gives small calculations you can reproduce without a quantum SDK. The point is to make the algebra tangible.

@@ -49,7 +49,7 @@ The amplitudes $\alpha$ and $\beta$ are complex numbers, and they must satisfy:
 
 This is the normalization rule from [Section 2.6](02_math_prerequisites.md#26-vectors).
 
-![Qubit state vector](../figures/05_qubit_state_vector.svg)
+![Qubit state vector](../figures/05_qubit_state_vector.svg?v=greek-2026-05-27)
 
 ## 4.2 Measurement in the Z Basis
 
@@ -177,7 +177,7 @@ These are not decorative names. They are the eigenstates of the three measuremen
 - X axis: $|+\rangle$, $|-\rangle$
 - Y axis: $|+i\rangle$, $|-i\rangle$
 
-![Bloch reference states](../figures/06_bloch_reference_states.svg)
+![Bloch reference states](../figures/06_bloch_reference_states.svg?v=greek-2026-05-27)
 
 ## 4.6 The Bloch Sphere
 
@@ -353,7 +353,7 @@ are different states.
 
 Z measurement cannot distinguish them. X and Y measurements can.
 
-![Same theta phase ring](../figures/07_same_theta_phase_ring.svg)
+![Same theta phase ring](../figures/07_same_theta_phase_ring.svg?v=greek-2026-05-27)
 
 ## 4.9 Physical Meaning
 
@@ -401,4 +401,3 @@ The Bloch vector is:
 ```
 
 Z measurement sees $r_z$. X measurement sees $r_x$. Y measurement sees $r_y$. This is the topic of the next chapter.
-

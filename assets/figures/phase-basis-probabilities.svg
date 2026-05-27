@@ -23,10 +23,10 @@
     </marker>
     <style>
       .title { font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: 54px; font-weight: 700; fill: #14202e; }
-      .h2 { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #14202e; }
-      .label { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: #14202e; }
-      .small { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: #5d6877; }
-      .formula { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 18px; fill: #14202e; }
+      .h2 { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #14202e; }
+      .label { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: #14202e; }
+      .small { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: #5d6877; }
+      .formula { font-family: Menlo, "DejaVu Sans Mono", "Noto Sans Mono", "SFMono-Regular", Consolas, monospace; font-size: 18px; fill: #14202e; }
       .hair { stroke: rgba(20,32,46,0.16); stroke-width: 1.2; }
       .axis { stroke: rgba(20,32,46,0.42); stroke-width: 2; }
     </style>
@@ -35,7 +35,7 @@
   
   <rect width="1200" height="760" fill="url(#paper)"/>
   <text x="62" y="74" class="title">Same State, Three Measurement Bases</text>
-  <text x="66" y="116" class="small">theta = 60 degrees. Z ignores phase; X and Y reveal it as interference.</text>
+  <text x="66" y="116" class="small">θ = 60 degrees. Z ignores phase; X and Y reveal it as interference.</text>
   <g filter="url(#softShadow)"><rect x="50" y="138" width="1100" height="558" rx="24" fill="#fffdfa" fill-opacity="0.88"/></g>
   
     <text x="98" y="156" class="h2">Z basis</text>
@@ -71,6 +71,6 @@
     <text x="1076" y="550" class="label" fill="#0f8b8d">P(+i)</text>
     <text x="1076" y="590" class="label" fill="#e76f51">P(-i)</text>
 
-  <text x="538" y="720" class="small">phi phase angle</text>
+  <text x="538" y="720" class="small">φ phase angle</text>
 
 </svg>

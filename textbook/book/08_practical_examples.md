@@ -18,7 +18,7 @@ interpret the classical results
 
 The physical platform changes. The logic remains.
 
-![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg)
+![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg?v=greek-2026-05-27)
 
 ## 8.2 Quantum Algorithms as Engineered Interference
 
@@ -235,4 +235,3 @@ The same ideas reappear across applications:
 The unifying question is always:
 
 > What information is stored in amplitude or phase, and what transformation will make it visible in measurement statistics?
-

@@ -12,40 +12,40 @@
   </linearGradient>
 </defs>
 
-<text x="500" y="40" fill="#1f2937" font-size="25" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Practical quantum technologies use the same amplitude-and-phase logic</text>
+<text x="500" y="40" fill="#1f2937" font-size="25" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Practical quantum technologies use the same amplitude-and-phase logic</text>
 <rect x="105" y="145" width="230" height="132" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <circle cx="139" cy="183" r="18" fill="#2563eb" stroke="none" stroke-width="2" fill-opacity="0.9"/>
-<text x="173" y="183" fill="#2563eb" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Algorithms</text>
-<text x="220" y="228" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Amplify useful amplitudes;</text>
-<text x="220" y="253" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">cancel wrong branches.</text>
+<text x="173" y="183" fill="#2563eb" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Algorithms</text>
+<text x="220" y="228" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Amplify useful amplitudes;</text>
+<text x="220" y="253" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">cancel wrong branches.</text>
 <rect x="365" y="145" width="230" height="132" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <circle cx="399" cy="183" r="18" fill="#16a34a" stroke="none" stroke-width="2" fill-opacity="0.9"/>
-<text x="433" y="183" fill="#16a34a" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Sensing</text>
-<text x="480" y="228" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Tiny phase shifts become</text>
-<text x="480" y="253" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">measurable probability shifts.</text>
+<text x="433" y="183" fill="#16a34a" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Sensing</text>
+<text x="480" y="228" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Tiny phase shifts become</text>
+<text x="480" y="253" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">measurable probability shifts.</text>
 <rect x="625" y="145" width="230" height="132" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <circle cx="659" cy="183" r="18" fill="#7c3aed" stroke="none" stroke-width="2" fill-opacity="0.9"/>
-<text x="693" y="183" fill="#7c3aed" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Cryptography</text>
-<text x="740" y="228" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Measurement disturbance</text>
-<text x="740" y="253" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">becomes a security signal.</text>
+<text x="693" y="183" fill="#7c3aed" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Cryptography</text>
+<text x="740" y="228" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Measurement disturbance</text>
+<text x="740" y="253" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">becomes a security signal.</text>
 <rect x="105" y="345" width="230" height="132" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <circle cx="139" cy="383" r="18" fill="#d97706" stroke="none" stroke-width="2" fill-opacity="0.9"/>
-<text x="173" y="383" fill="#d97706" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Hardware</text>
-<text x="220" y="428" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Pulses implement rotations;</text>
-<text x="220" y="453" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">readout is often Z-like.</text>
+<text x="173" y="383" fill="#d97706" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Hardware</text>
+<text x="220" y="428" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Pulses implement rotations;</text>
+<text x="220" y="453" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">readout is often Z-like.</text>
 <rect x="365" y="345" width="230" height="132" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <circle cx="399" cy="383" r="18" fill="#be185d" stroke="none" stroke-width="2" fill-opacity="0.9"/>
-<text x="433" y="383" fill="#be185d" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Feature maps</text>
-<text x="480" y="428" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Data can be encoded as</text>
-<text x="480" y="453" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">phases before interference.</text>
+<text x="433" y="383" fill="#be185d" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Feature maps</text>
+<text x="480" y="428" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Data can be encoded as</text>
+<text x="480" y="453" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">phases before interference.</text>
 <rect x="625" y="345" width="230" height="132" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <circle cx="659" cy="383" r="18" fill="#0891b2" stroke="none" stroke-width="2" fill-opacity="0.9"/>
-<text x="693" y="383" fill="#0891b2" font-size="20" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Circuits</text>
-<text x="740" y="428" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Gates arrange recombination</text>
-<text x="740" y="453" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">before the final measurement.</text>
+<text x="693" y="383" fill="#0891b2" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Circuits</text>
+<text x="740" y="428" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Gates arrange recombination</text>
+<text x="740" y="453" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">before the final measurement.</text>
 <line x1="850" y1="180" x2="910" y2="270" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="850" y1="410" x2="910" y2="320" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
 <circle cx="920" cy="295" r="50" fill="#ecfeff" stroke="#0891b2" stroke-width="3"/>
-<text x="920" y="284" fill="#0891b2" font-size="16" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">same</text>
-<text x="920" y="310" fill="#0891b2" font-size="16" font-weight="700" font-family="Inter, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">math</text>
+<text x="920" y="284" fill="#0891b2" font-size="16" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">same</text>
+<text x="920" y="310" fill="#0891b2" font-size="16" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">math</text>
 </svg>

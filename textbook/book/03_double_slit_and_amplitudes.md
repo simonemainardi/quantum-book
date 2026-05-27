@@ -35,7 +35,7 @@ where $x$ labels a detector position on the screen.
 
 The same physical setup can be interrogated in these different ways. The difference is not cosmetic. It changes whether amplitudes are kept separate or recombined.
 
-![Path basis versus screen basis](../figures/04_path_vs_screen_basis.svg)
+![Path basis versus screen basis](../figures/04_path_vs_screen_basis.svg?v=greek-2026-05-27)
 
 ## 3.2 Which-Slit Measurement
 

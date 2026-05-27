@@ -23,10 +23,10 @@
     </marker>
     <style>
       .title { font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: 54px; font-weight: 700; fill: #14202e; }
-      .h2 { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #14202e; }
-      .label { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: #14202e; }
-      .small { font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: #5d6877; }
-      .formula { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 18px; fill: #14202e; }
+      .h2 { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #14202e; }
+      .label { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: #14202e; }
+      .small { font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: #5d6877; }
+      .formula { font-family: Menlo, "DejaVu Sans Mono", "Noto Sans Mono", "SFMono-Regular", Consolas, monospace; font-size: 18px; fill: #14202e; }
       .hair { stroke: rgba(20,32,46,0.16); stroke-width: 1.2; }
       .axis { stroke: rgba(20,32,46,0.42); stroke-width: 2; }
     </style>
@@ -51,11 +51,11 @@
     <line x1="727.2" y1="209.4" x2="727.2" y2="360" stroke="#f2b84b" stroke-width="4" stroke-dasharray="8 8"/>
     <line x1="560" y1="209.4" x2="727.2" y2="209.4" stroke="#e76f51" stroke-width="4" stroke-dasharray="8 8"/>
     <circle cx="727.2" cy="209.4" r="10" fill="#0f8b8d"/>
-    <text x="678" y="328" class="label">theta</text>
-    <text x="674" y="410" class="formula">cos(theta)</text>
-    <text x="743.2" y="219.4" class="formula">e^(i theta)</text>
-    <text x="743.2" y="251.4" class="formula">= cos(theta) + i sin(theta)</text>
-    <text x="743.2" y="342" class="formula">i sin(theta)</text>
+    <text x="678" y="328" class="label">θ</text>
+    <text x="674" y="410" class="formula">cos θ</text>
+    <text x="743.2" y="219.4" class="formula">e^(iθ)</text>
+    <text x="743.2" y="251.4" class="formula">= cos θ + i sin θ</text>
+    <text x="743.2" y="342" class="formula">i sin θ</text>
   </g>
 
 </svg>

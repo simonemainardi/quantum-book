@@ -79,10 +79,10 @@ def svg(width, height, title, body, extra_defs=""):
     </marker>
     <style>
       .title {{ font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: 54px; font-weight: 700; fill: {INK}; }}
-      .h2 {{ font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: {INK}; }}
-      .label {{ font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: {INK}; }}
-      .small {{ font-family: Avenir Next, Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: {MUTED}; }}
-      .formula {{ font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 18px; fill: {INK}; }}
+      .h2 {{ font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: {INK}; }}
+      .label {{ font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 19px; fill: {INK}; }}
+      .small {{ font-family: Avenir Next, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", Segoe UI, Helvetica, Arial, sans-serif; font-size: 15px; fill: {MUTED}; }}
+      .formula {{ font-family: Menlo, "DejaVu Sans Mono", "Noto Sans Mono", "SFMono-Regular", Consolas, monospace; font-size: 18px; fill: {INK}; }}
       .hair {{ stroke: rgba(20,32,46,0.16); stroke-width: 1.2; }}
       .axis {{ stroke: rgba(20,32,46,0.42); stroke-width: 2; }}
     </style>
@@ -163,11 +163,11 @@ def complex_plane():
     <line x1="{px:.1f}" y1="{py:.1f}" x2="{px:.1f}" y2="{cy}" stroke="{GOLD}" stroke-width="4" stroke-dasharray="8 8"/>
     <line x1="{cx}" y1="{py:.1f}" x2="{px:.1f}" y2="{py:.1f}" stroke="{CORAL}" stroke-width="4" stroke-dasharray="8 8"/>
     <circle cx="{px:.1f}" cy="{py:.1f}" r="10" fill="{TEAL}"/>
-    <text x="{cx+118}" y="{cy-32}" class="label">theta</text>
-    <text x="{cx+114}" y="{cy+50}" class="formula">cos(theta)</text>
-    <text x="{px+16:.1f}" y="{py+10:.1f}" class="formula">e^(i theta)</text>
-    <text x="{px+16:.1f}" y="{py+42:.1f}" class="formula">= cos(theta) + i sin(theta)</text>
-    <text x="{px+16:.1f}" y="{cy-18}" class="formula">i sin(theta)</text>
+    <text x="{cx+118}" y="{cy-32}" class="label">θ</text>
+    <text x="{cx+114}" y="{cy+50}" class="formula">cos θ</text>
+    <text x="{px+16:.1f}" y="{py+10:.1f}" class="formula">e^(iθ)</text>
+    <text x="{px+16:.1f}" y="{py+42:.1f}" class="formula">= cos θ + i sin θ</text>
+    <text x="{px+16:.1f}" y="{cy-18}" class="formula">i sin θ</text>
   </g>
 '''
     return svg(1120, 720, "Complex plane rotation", body)
@@ -220,15 +220,15 @@ def born_rule():
   <text x="115" y="252" class="h2">State</text>
   <text x="529" y="252" class="h2">Square</text>
   <text x="943" y="252" class="h2">Sample</text>
-  <text x="115" y="305" class="formula">|psi&gt; =</text>
-  <text x="115" y="344" class="formula">alpha|0&gt; + beta|1&gt;</text>
-  <text x="115" y="390" class="formula">alpha = 0.866</text>
-  <text x="115" y="429" class="formula">beta = 0.500 e^(i phi)</text>
+  <text x="115" y="305" class="formula">|ψ&gt; =</text>
+  <text x="115" y="344" class="formula">α|0&gt; + β|1&gt;</text>
+  <text x="115" y="390" class="formula">α = 0.866</text>
+  <text x="115" y="429" class="formula">β = 0.500 e^(iφ)</text>
   {arrow(392, 360, 466, 360, CORAL, 6)}
   {arrow(806, 360, 880, 360, CORAL, 6)}
-  <text x="529" y="315" class="formula">P(0) = |alpha|^2</text>
+  <text x="529" y="315" class="formula">P(0) = |α|^2</text>
   <text x="529" y="350" class="formula">= 0.75</text>
-  <text x="529" y="398" class="formula">P(1) = |beta|^2</text>
+  <text x="529" y="398" class="formula">P(1) = |β|^2</text>
   <text x="529" y="433" class="formula">= 0.25</text>
   <rect x="958" y="270" width="76" height="180" fill="{TEAL}"/>
   <rect x="1076" y="390" width="76" height="60" fill="{GOLD}"/>
@@ -280,7 +280,7 @@ def bloch_sphere():
   <text x="62" y="74" class="title">The Bloch Sphere Reference States</text>
   <text x="66" y="116" class="small">One pure qubit is a direction. Measurement projects that direction onto an axis.</text>
   {''.join(panels)}
-  <text x="80" y="704" class="formula">|psi(theta, phi)&gt; = cos(theta/2)|0&gt; + e^(i phi) sin(theta/2)|1&gt;</text>
+  <text x="80" y="704" class="formula">|ψ(θ,φ)&gt; = cos(θ/2)|0&gt; + e^(iφ) sin(θ/2)|1&gt;</text>
 '''
     return svg(1200, 760, "Bloch sphere reference states", body)
 
@@ -317,10 +317,10 @@ def phase_probabilities():
     body = f'''
   <rect width="1200" height="760" fill="url(#paper)"/>
   <text x="62" y="74" class="title">Same State, Three Measurement Bases</text>
-  <text x="66" y="116" class="small">theta = 60 degrees. Z ignores phase; X and Y reveal it as interference.</text>
+  <text x="66" y="116" class="small">θ = 60 degrees. Z ignores phase; X and Y reveal it as interference.</text>
   <g filter="url(#softShadow)"><rect x="50" y="138" width="1100" height="558" rx="24" fill="#fffdfa" fill-opacity="0.88"/></g>
   {''.join(panels)}
-  <text x="538" y="720" class="small">phi phase angle</text>
+  <text x="538" y="720" class="small">φ phase angle</text>
 '''
     return svg(1200, 760, "Phase probabilities in Z X and Y bases", body)
 

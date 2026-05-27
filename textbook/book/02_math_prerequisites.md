@@ -148,7 +148,7 @@ So multiplying an amplitude by $e^{i\phi}$ changes its direction in the complex 
 
 That is phase.
 
-![Complex phase clock](../figures/03_complex_phase_clock.svg)
+![Complex phase clock](../figures/03_complex_phase_clock.svg?v=greek-2026-05-27)
 
 ## 2.5 Why Phase Can Be Invisible
 
