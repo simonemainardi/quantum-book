@@ -1,6 +1,6 @@
 # 10. Glossary
 
-This glossary is meant to be read as a conversational index. Each definition points back to the pressure points of the book: what evolves before measurement, what is observed after measurement, and what transformations make hidden phase visible.
+This glossary is meant to be read as a conversational index, not a replacement for the chapters. Each definition points back to the pressure points of the book: what evolves before measurement, what is observed after measurement, and what transformations make hidden phase visible.
 
 ## Amplitude
 

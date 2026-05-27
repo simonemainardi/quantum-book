@@ -10,6 +10,8 @@ This chapter keeps that question in front of us. The aim is not to decorate clas
 
 The word "complex" will become precise in [Chapter 2](02_math_prerequisites.md). For now, use a physical picture: an amplitude is like an arrow contribution. It has a size and a direction. Directions can line up, oppose, or sit at angles. That is why amplitudes can cancel while probabilities cannot.
 
+If you have seen phasors in signals or AC circuits, the feeling is similar: you do not only keep a strength; you also keep a phase. The detector will not show you the phasor directly, but the phasor determines what survives when contributions are combined.
+
 ## 1.1 The Engineer's Starting Point
 
 **Question.** I know how classical systems behave. A bit is 0 or 1. A probability is a positive number. Why does quantum computing need a different language?
@@ -71,6 +73,8 @@ P = |\psi|^2 = 0
 Two possible contributions produced an impossible outcome.
 
 That is the first structural difference between classical and quantum reasoning.
+
+Read the next figure from left to right. The left side is already in probability-land, so the bars only add upward. The right side is still in amplitude-land, so direction matters before the final probability is computed.
 
 ![Amplitudes versus probabilities](../figures/01_amplitudes_vs_probabilities.svg?v=greek-2026-05-27)
 
@@ -148,6 +152,8 @@ Quantum mechanically, with no which-slit measurement, the screen shows interfere
 
 The striking point is that each particle is detected as one localized event, but the probability distribution of many such events is shaped by amplitude interference.
 
+Do not picture a tiny classical pellet secretly choosing a slit while a separate wave draws the pattern. The operational statement is more careful: when the experiment does not record which slit was taken, the model assigns amplitudes to the alternatives and combines them before predicting the screen probabilities.
+
 So the experiment has two layers at once:
 
 - one run gives one dot on the screen,
@@ -209,6 +215,8 @@ The labels are different, but the structure is the same: two basis alternatives,
 
 This is why the double slit is not just a historical curiosity. It is the physical prototype for the amplitude logic used by qubits and circuits.
 
+The rest of the book is essentially this move repeated with more control: replace the two literal slits by two engineered basis states, replace the screen by a chosen measurement, and replace fixed path lengths by gates you can program.
+
 ## 1.7 The Measurement Problem We Actually Need
 
 For this book, we do not need to solve every philosophical question about quantum measurement. We need the operational rule used by quantum engineering:
@@ -232,6 +240,12 @@ After measurement, the device reports one classical result, either 0 or 1.
 The phase information that existed in the quantum state is generally destroyed by that readout. That is why useful quantum programs delay measurement until the end, after gates have arranged the amplitudes.
 
 This is not because measurement is morally bad or philosophically forbidden. It is because measurement turns the amplitude-level calculation into a classical sample. Once that happens, the later gates no longer have phase relationships to use.
+
+So the practical question is never simply "what is the qubit?" It is:
+
+```text
+what amplitude information is still alive, and what will the next operation do with it?
+```
 
 ## 1.8 Practical Engineering Relevance
 

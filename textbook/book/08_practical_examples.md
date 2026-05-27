@@ -6,6 +6,8 @@ The goal is not to survey every quantum technology. The goal is to show how the 
 
 The practical thread is this: a real device does not give us a private view of amplitudes. It gives us control knobs, noise, calibration, pulses, detectors, and count histograms. The theory is useful when it tells us how those knobs steer amplitudes before the counts appear.
 
+So the examples below should not be read as a catalog of buzzwords. Read each one as a translation exercise: where are the amplitudes, what physical process changes their phase, and what measurement makes the change visible?
+
 ## 8.1 The Common Pattern
 
 Across quantum computing, sensing, cryptography, and feature-map style quantum machine learning, the recurring pattern is:
@@ -55,6 +57,8 @@ Larger algorithms use higher-dimensional versions of the same idea.
 
 For example, in Grover-style search, the details become multi-qubit and geometric, but the story is still amplitude steering: mark useful structure with phase, then use transformations that make the useful amplitude grow relative to the rest.
 
+That sentence is intentionally modest. It does not claim that every problem becomes easy. It says that when a quantum algorithm helps, the help comes through a carefully arranged amplitude landscape, not through reading all answers at once.
+
 ## 8.3 Quantum Sensing
 
 Quantum sensing is often the most physically intuitive application of phase.
@@ -74,6 +78,8 @@ Suppose the environment causes the $|1\rangle$ component to acquire a phase:
 ```
 
 The phase $\phi$ may depend on a magnetic field, electric field, acceleration, time, or another physical quantity.
+
+This is where the physical world enters the math. The environment has written a tiny change into relative phase, and the experimenter's job is to choose a pulse sequence that converts that hidden phase into a count difference.
 
 Z measurement alone gives:
 
@@ -183,6 +189,8 @@ This makes photonics a helpful mental bridge: the paths can be literal optical p
 ## 8.8 Quantum Cryptography
 
 Quantum cryptography uses measurement disturbance and basis choice.
+
+This is the same basis lesson in a security setting. If someone asks the wrong quantum question, they may not merely learn the wrong answer; they may change the state in a way that later statistics reveal.
 
 A simplified intuition:
 

@@ -14,6 +14,8 @@ The learner's practical question underneath all three languages is simple:
 
 The answer is: it linearly mixes amplitudes while preserving total probability. The matrix tells you exactly how.
 
+The previous chapter changed the measurement question by changing basis before readout. This chapter shows the operations that make those basis changes possible. A gate is not a label placed on a wire; it is a rule for moving amplitude from old coordinates into new ones.
+
 ## 6.1 A Gate Is a Linear Map
 
 From [Section 2.9](02_math_prerequisites.md#29-matrices), a matrix acts on a vector by linear combination.
@@ -227,6 +229,8 @@ This is the same pattern again: a phase operation can look like "nothing happene
 
 The $Y$ gate combines bit flip and phase factors.
 
+Do not worry if $Y$ feels less intuitive than $X$ and $Z$ at first. In practice, the key point is that it mixes the two earlier ideas: it swaps the basis states and adds phase factors, so it participates in both population movement and phase control.
+
 ## 6.6 The Phase Gate S
 
 The $S$ gate is:
@@ -260,6 +264,8 @@ S^\dagger =
 ```
 
 The $S^\dagger$ gate is used when converting Y-basis information into Z-basis readout.
+
+In the language of Chapter 5, $S$ and $S^\dagger$ are phase-reference tools. They do not merely decorate the state with an $i$; they change which later recombinations will be constructive or destructive.
 
 ## 6.7 Rotation Gates
 
@@ -314,6 +320,8 @@ e^{-i\theta/2} & 0 \\
 These gates rotate the Bloch vector around the X, Y, and Z axes.
 
 The notation $e^{-i\theta X/2}$ is compact, but its practical meaning is simple: choose an axis, choose an angle, and move the state around the Bloch sphere while preserving total probability.
+
+This is one of those places where the algebra is denser than the idea. The dense notation matters for calculation, but the first mental image should be a calibrated rotation command.
 
 ## 6.8 Rotations Have Physical Meaning
 

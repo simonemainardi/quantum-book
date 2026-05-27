@@ -6,6 +6,8 @@ The qubit is the simplest quantum information unit. It is not merely a bit that 
 
 This chapter keeps one guardrail in place: whenever a phrase sounds mystical, translate it back into amplitudes, phase, basis, and measurement statistics.
 
+The previous chapter used two slits as the two alternatives. This chapter replaces the slits with two controllable labels, $|0\rangle$ and $|1\rangle$. That is the whole shift: the logic is still two alternatives with amplitudes, but now the alternatives are the states of an engineered two-level system.
+
 ## 4.1 The Computational Basis
 
 The standard basis states are:
@@ -88,6 +90,11 @@ e^{i\phi}\sin\frac{\theta}{2}|1\rangle
 ```
 
 This is the most important formula in the chapter.
+
+Read it as a compact control panel:
+
+- $\theta$ sets how much probability can appear in $|0\rangle$ versus $|1\rangle$ if you read in Z;
+- $\phi$ sets the relative phase that later gates or non-Z measurements can reveal.
 
 The angle $\theta$ controls the Z-basis probabilities:
 
@@ -197,6 +204,8 @@ In the figure, each colored line is one basis axis. The two endpoints of the sam
 
 The X, Y, and Z axes themselves are mutually perpendicular directions on the Bloch sphere. A state from one axis is not generally orthogonal to a state from another axis: for example, $|0\rangle$ and $|+\rangle$ have overlap $1/\sqrt{2}$, which is why measuring $|+\rangle$ in the Z basis gives a 50/50 result.
 
+This sentence is worth slowing down over. Opposite endpoints of the same axis are mutually exclusive answers to one measurement question. Points from different axes are different questions, so they can overlap.
+
 ## 4.6 The Bloch Sphere
 
 The Bloch sphere is a geometric picture of a single qubit state.
@@ -290,6 +299,8 @@ But different equator points have different phases:
 ```
 
 So two states can have identical Z-basis probabilities and still be different quantum states.
+
+That is not a philosophical technicality. It is exactly why phase control is useful: two states that look identical to one detector can behave differently after the next gate.
 
 ## 4.8 Same Theta, Different Phi
 

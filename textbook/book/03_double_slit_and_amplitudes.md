@@ -4,6 +4,12 @@ The double-slit experiment is where the physical and mathematical stories meet.
 
 In [Chapter 1](01_physical_principles.md), we introduced it as a physical fact: particles fired one at a time still build an interference pattern. In [Chapter 2](02_math_prerequisites.md), we introduced complex amplitudes, inner products, and squared magnitudes. Now we combine them.
 
+Keep one diagnostic question active throughout the chapter:
+
+```text
+Are the alternatives being distinguished, or are they being allowed to meet at the same answer?
+```
+
 The soul of this chapter is the learner's apparent contradiction:
 
 > You told me phase can be invisible. But the double slit says phase can make an outcome disappear. Which one is true?
@@ -81,6 +87,8 @@ P(R) =
 There is no interference in this measurement because the alternatives are distinct outcomes. We do not add the left-path amplitude to the right-path amplitude when asking "which slit?"
 
 **Teacher's pause.** This is the first time basis choice becomes physical. The which-slit basis prevents the two alternatives from arriving at the same answer. No shared answer means no amplitude sum, and no amplitude sum means no interference term.
+
+In learner language: the experiment has been forced to answer "left or right?" before the two contributions can cooperate or cancel at the screen.
 
 ## 3.3 Screen-Position Measurement
 
@@ -304,6 +312,8 @@ This is why the double slit belongs in a practical quantum computing book. It te
 > Are these alternatives being kept separate, or are they being recombined before measurement?
 
 That one question will explain many circuit diagrams later.
+
+For a circuit engineer, this is the bridge: a basis state can play the role of a path. A gate can play the role of a recombining optical element. The measurement basis decides which recombination is visible in the final counts.
 
 ## 3.7 The Practical Lesson
 

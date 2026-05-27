@@ -8,6 +8,8 @@ The reason is not mysterious. A measurement basis determines which amplitudes ar
 
 In the original discussion, this is where the teacher slowed down and computed the same family of states three ways: Z, X, and Y. That repetition is the point. You are not learning three unrelated measurement tricks. You are watching the same hidden phase become visible from different angles.
 
+The previous chapter gave the Bloch sphere as a map of the state. This chapter asks how to interrogate that map. Z, X, and Y are not decorations on the sphere; they are different experimental questions.
+
 ## 5.1 What "Measuring in a Basis" Means
 
 **Question.** If real hardware eventually returns 0 or 1, why do people say "measure in X" or "measure in Y"?
@@ -81,6 +83,8 @@ The same state can give different distributions in these bases.
 
 This is the place to stop and notice the shift in language. A measurement basis is not a camera angle on a pre-existing classical bit. It is a choice of which quantum alternatives are allowed to interfere into the final answers.
 
+So projection is not a passive lookup. It is the calculation of how much of the prepared state lines up with the answer you decided to test.
+
 ## 5.3 A State with Fixed Theta and Changing Phi
 
 Use the state from the original discussion:
@@ -122,6 +126,8 @@ So:
 The magnitudes are fixed. Only the relative phase changes.
 
 This was chosen deliberately. If the Z probabilities change, it is too easy to think phase is just another way of changing population. Here the populations are fixed, so any change in X or Y must come from recombination of phase.
+
+That makes this example a diagnostic tool. If a later histogram changes while the Z histogram stays fixed, the change is coming from phase-sensitive readout rather than from a different amount of $|0\rangle$ or $|1\rangle$.
 
 ## 5.4 Bloch-Vector Bridge
 

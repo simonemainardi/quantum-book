@@ -14,6 +14,13 @@ This book is allowed to be conversational because the conversation is where the 
 
 The book should feel like a good lecture where the student keeps asking the right uncomfortable question and the teacher keeps returning to the physical meaning until the algebra stops feeling detached.
 
+It is also a book about keeping two truths in view at the same time:
+
+- before measurement, the useful object is an amplitude, which behaves like a directed arrow;
+- after measurement, the only thing you see is classical data, built from repeated counts.
+
+Much of the difficulty of quantum computing is learning not to collapse those two truths into one vague sentence. The book keeps them separate on purpose.
+
 ## The Contract
 
 Every important idea should pass three tests:
@@ -23,6 +30,13 @@ Every important idea should pass three tests:
 3. **Readout test.** What changes in the measured counts?
 
 If an explanation cannot pass all three tests, it is not yet practical enough for this book.
+
+Beside every formula, keep asking:
+
+- What are the alternatives or basis states?
+- Which amplitudes are being kept separate?
+- Which amplitudes are being recombined?
+- What would change in the final histogram?
 
 ## The Learner's Hat
 
@@ -86,6 +100,8 @@ The math chapter is not an appendix. It is the toolkit you will keep reaching fo
 - matrices represent gates,
 - unitary transformations preserve total probability,
 - the Born rule turns amplitudes into experimental statistics.
+
+The first read should be linear. Later, the book becomes a map: when a chapter says "phase", return to complex numbers and Euler's formula; when it says "basis", return to vectors and inner products; when it says "readout", return to the Born rule and shots.
 
 ## The One Idea to Carry
 

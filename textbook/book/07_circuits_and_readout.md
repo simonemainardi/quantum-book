@@ -12,6 +12,8 @@ This chapter connects the earlier ideas:
 
 The learner's question here was direct: if everything ends as 0 or 1, why did we spend so much effort on phase and basis? The answer is that the final 0/1 counts are the readout of an interference process that happened before the measurement.
 
+The previous chapters taught the pieces separately: amplitudes, bases, gates, and rotations. A circuit is the sentence that puts those words in order.
+
 ## 7.1 The Circuit Pattern
 
 Most introductory single-qubit circuits follow this structure:
@@ -39,6 +41,8 @@ measurement cashes it out into classical data.
 ```
 
 Once you cash it out, the later part of the circuit is no longer manipulating the same coherent amplitudes.
+
+This is the discipline of circuit design: keep information quantum while it needs to interfere, then deliberately convert it to classical data only when the useful bias has been created.
 
 ## 7.2 Native Z Readout
 
@@ -121,6 +125,8 @@ Operationally:
 Y basis -> S dagger -> X basis -> H -> Z basis
 ```
 
+That line is easy to skim, but it is the whole hardware trick: if the detector is fixed, move the state instead of replacing the detector.
+
 ## 7.5 Why Final Rotations Reveal Phase
 
 **Question.** If the hardware always gives 0 or 1, what is the point of saying phase was measured?
@@ -193,6 +199,8 @@ then 1000 shots might produce approximately:
 with statistical fluctuation.
 
 This is why quantum programming outputs histograms and expectation values, not hidden amplitudes directly.
+
+A histogram is not a disappointing substitute for the state. It is the experimental footprint left by the state after the chosen circuit has turned amplitude relationships into count frequencies.
 
 ## 7.7 Expectation Values
 

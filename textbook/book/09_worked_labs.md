@@ -10,6 +10,8 @@ Treat these labs as a replay of the conversation, not as programming exercises d
 - Can phase be invisible in Z but visible in X?
 - Can one matrix turn a phase difference into a bit difference?
 
+The labs are deliberately small because the first practical skill is not running a large framework. It is predicting what should happen before software or hardware hides the mechanism.
+
 ## 9.1 Lab 1: Perfect Amplitude Cancellation
 
 Compute:

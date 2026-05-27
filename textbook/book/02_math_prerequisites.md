@@ -2,6 +2,8 @@
 
 This chapter is the mathematical toolkit for the rest of the book. It is deliberately practical. The goal is not abstract elegance for its own sake, but fluency with the objects that quantum mechanics uses every few lines.
 
+The previous chapter used the arrow picture. This chapter gives that picture coordinates. When the notation starts to feel heavier, translate it back into the same story: arrows have lengths, arrows have directions, arrows can be added, and squared lengths become probabilities.
+
 The core objects are:
 
 - complex numbers,
@@ -30,6 +32,8 @@ So this chapter is a repair bench. Every tool here has a job later:
 - unitaries explain why gates preserve total probability.
 
 When the later chapters refer back here, the intent is not to interrupt the physics. It is to keep the physics honest.
+
+You do not need to love every symbol on first contact. You do need to know what job it performs in the signal chain from amplitude to observed count.
 
 ## 2.1 Complex Numbers
 
@@ -233,6 +237,8 @@ This is the algebraic heart of interference.
 
 A vector is an ordered list of numbers. In quantum mechanics, those numbers are often complex.
 
+This is the first place where the arrow picture becomes a state description. A single amplitude is one arrow. A qubit state is a pair of arrows, one attached to the $|0\rangle$ alternative and one attached to the $|1\rangle$ alternative.
+
 The computational basis states of a qubit are written:
 
 ```math
@@ -270,6 +276,8 @@ The normalization condition is:
 ```
 
 This condition ensures that measurement probabilities sum to 1.
+
+The state vector is therefore not a list of two probabilities. It is a list of two amplitude coordinates from which probabilities can later be computed.
 
 ## 2.7 Basis
 
@@ -493,6 +501,8 @@ c\alpha + d\beta
 ```
 
 Notice the sums. Matrix multiplication is one place where amplitudes naturally recombine.
+
+This is why matrices are not just a notation tax. They are the machinery that takes the two stored amplitude arrows, mixes them, and produces new arrows for the next step of the circuit.
 
 ## 2.10 How a Gate Becomes a Matrix
 
