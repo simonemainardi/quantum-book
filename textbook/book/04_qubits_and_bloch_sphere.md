@@ -185,6 +185,18 @@ These are not decorative names. They are the eigenstates of the three measuremen
 
 ![Bloch reference states](../figures/06_bloch_reference_states.svg?v=greek-2026-05-27)
 
+In the figure, each colored line is one basis axis. The two endpoints of the same axis are orthogonal states:
+
+```math
+\langle 0|1\rangle = 0
+\qquad
+\langle +|-\rangle = 0
+\qquad
+\langle +i|-i\rangle = 0
+```
+
+The X, Y, and Z axes themselves are mutually perpendicular directions on the Bloch sphere. A state from one axis is not generally orthogonal to a state from another axis: for example, $|0\rangle$ and $|+\rangle$ have overlap $1/\sqrt{2}$, which is why measuring $|+\rangle$ in the Z basis gives a 50/50 result.
+
 ## 4.6 The Bloch Sphere
 
 The Bloch sphere is a geometric picture of a single qubit state.

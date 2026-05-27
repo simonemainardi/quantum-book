@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="1000" height="540">
-<rect x="0" y="0" width="1000" height="540" fill="#fbfcff" stroke="none" stroke-width="2" rx="0"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+<rect x="0" y="0" width="1000" height="620" fill="#fbfcff" stroke="none" stroke-width="2" rx="0"/>
 
 <defs>
   <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -12,45 +12,47 @@
   </linearGradient>
 </defs>
 
-<text x="500" y="40" fill="#1f2937" font-size="26" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Bloch sphere reference states</text>
-<text x="500" y="70" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z reveals magnitude imbalance; X and Y reveal relative phase.</text>
-<circle cx="500" cy="295" r="170" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
-<ellipse cx="500" cy="295" rx="170" ry="62.9" fill="none" stroke="#d7dde8" stroke-width="2"/>
-<ellipse cx="500" cy="295" rx="62.9" ry="170" fill="none" stroke="#d7dde8" stroke-width="2" transform="rotate(-27 500 295)"/>
-<line x1="500" y1="295" x2="500" y2="162.4" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="516" y="150.4" fill="#64748b" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">+Z</text>
-<line x1="500" y1="295" x2="500" y2="427.6" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="516" y="439.6" fill="#64748b" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">-Z</text>
-<line x1="500" y1="295" x2="639.4" y2="342.6" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="655.4" y="354.6" fill="#64748b" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">+X</text>
-<line x1="500" y1="295" x2="360.6" y2="247.4" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="344.6" y="235.4" fill="#64748b" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">-X</text>
-<line x1="500" y1="295" x2="440.5" y2="393.6" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="424.5" y="405.6" fill="#64748b" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">+Y</text>
-<line x1="500" y1="295" x2="559.5" y2="196.4" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="575.5" y="184.4" fill="#64748b" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">-Y</text>
-<circle cx="500" cy="162.4" r="9" fill="#2563eb" stroke="white" stroke-width="2"/>
-<text x="520" y="162.4" fill="#2563eb" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">|0&gt;</text>
-<circle cx="500" cy="427.6" r="9" fill="#dc2626" stroke="white" stroke-width="2"/>
-<text x="520" y="427.6" fill="#dc2626" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">|1&gt;</text>
-<circle cx="639.4" cy="342.6" r="9" fill="#16a34a" stroke="white" stroke-width="2"/>
-<text x="659.4" y="342.6" fill="#16a34a" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">|+&gt;</text>
-<circle cx="360.6" cy="247.4" r="9" fill="#d97706" stroke="white" stroke-width="2"/>
-<text x="340.6" y="247.4" fill="#d97706" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">|-&gt;</text>
-<circle cx="440.5" cy="393.6" r="9" fill="#7c3aed" stroke="white" stroke-width="2"/>
-<text x="420.5" y="393.6" fill="#7c3aed" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">|+i&gt;</text>
-<circle cx="559.5" cy="196.4" r="9" fill="#be185d" stroke="white" stroke-width="2"/>
-<text x="579.5" y="196.4" fill="#be185d" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">|-i&gt;</text>
-<rect x="60" y="150" width="230" height="260" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
-<text x="175" y="182" fill="#1f2937" font-size="22" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Three bases</text>
-<text x="175" y="235" fill="#2563eb" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z: |0&gt;, |1&gt;</text>
-<text x="175" y="280" fill="#16a34a" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">X: |+&gt;, |-&gt;</text>
-<text x="175" y="325" fill="#7c3aed" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Y: |+i&gt;, |-i&gt;</text>
-<text x="175" y="382" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">|+i&gt; is 'ket plus i'</text>
-<rect x="725" y="155" width="215" height="250" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
-<text x="832" y="188" fill="#1f2937" font-size="21" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Practical readout</text>
-<text x="832" y="242" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">hardware often</text>
-<text x="832" y="270" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">measures Z</text>
-<text x="832" y="322" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">measure X/Y by</text>
-<text x="832" y="350" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">rotating first</text>
+<text x="500" y="38" fill="#1f2937" font-size="26" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Bloch sphere reference states</text>
+<text x="500" y="68" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Opposite endpoints are orthogonal states.</text>
+<text x="500" y="94" fill="#64748b" font-size="16" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">X, Y, and Z are perpendicular measurement axes.</text>
+<rect x="35" y="118" width="340" height="390" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+<text x="205" y="154" fill="#1f2937" font-size="22" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">How to read it</text>
+<text x="205" y="202" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">One basis = one axis</text>
+<text x="205" y="234" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">opposite endpoints are</text>
+<text x="205" y="258" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">orthogonal measurement answers</text>
+<text x="205" y="304" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Basis pairs</text>
+<text x="205" y="338" fill="#2563eb" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Z: |0&gt;, |1&gt;</text>
+<text x="205" y="372" fill="#16a34a" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">X: |+&gt;, |-&gt;</text>
+<text x="205" y="406" fill="#7c3aed" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Y: |+i&gt;, |-i&gt;</text>
+<text x="205" y="456" fill="#1f2937" font-size="15" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">&lt;0|1&gt; = &lt;+|-&gt; = &lt;+i|-i&gt; = 0</text>
+<text x="205" y="482" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Axes X, Y, Z are perpendicular.</text>
+<circle cx="620" cy="325" r="160" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+<ellipse cx="620" cy="325" rx="160" ry="59.2" fill="none" stroke="#d7dde8" stroke-width="2"/>
+<ellipse cx="620" cy="325" rx="59.2" ry="160" fill="none" stroke="#d7dde8" stroke-width="2" transform="rotate(-27 620 325)"/>
+<ellipse cx="620" cy="325" rx="59.2" ry="160" fill="none" stroke="#d7dde8" stroke-width="1.5" transform="rotate(63 620 325)"/>
+<line x1="620" y1="449.8" x2="620" y2="200.2" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+<line x1="488.8" y1="280.2" x2="751.2" y2="369.8" stroke="#16a34a" stroke-width="5" stroke-linecap="round"/>
+<line x1="676" y1="232.2" x2="564" y2="417.8" stroke="#7c3aed" stroke-width="5" stroke-linecap="round"/>
+<circle cx="620" cy="325" r="5" fill="#1f2937" stroke="white" stroke-width="1.5"/>
+<line x1="620" y1="200.2" x2="602" y2="164.2" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="620" cy="200.2" r="10" fill="#2563eb" stroke="white" stroke-width="3"/>
+<text x="594" y="164.2" fill="#2563eb" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">|0&gt;</text>
+<line x1="620" y1="449.8" x2="638" y2="487.8" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="620" cy="449.8" r="10" fill="#dc2626" stroke="white" stroke-width="3"/>
+<text x="646" y="487.8" fill="#dc2626" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">|1&gt;</text>
+<line x1="751.2" y1="369.8" x2="769.2" y2="375.8" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="751.2" cy="369.8" r="10" fill="#16a34a" stroke="white" stroke-width="3"/>
+<text x="777.2" y="375.8" fill="#16a34a" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">|+&gt;</text>
+<line x1="488.8" y1="280.2" x2="470.8" y2="270.2" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="488.8" cy="280.2" r="10" fill="#d97706" stroke="white" stroke-width="3"/>
+<text x="462.8" y="270.2" fill="#d97706" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">|-&gt;</text>
+<line x1="564" y1="417.8" x2="542" y2="461.8" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="564" cy="417.8" r="10" fill="#7c3aed" stroke="white" stroke-width="3"/>
+<text x="534" y="461.8" fill="#7c3aed" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">|+i&gt;</text>
+<line x1="676" y1="232.2" x2="698" y2="190.2" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="676" cy="232.2" r="10" fill="#be185d" stroke="white" stroke-width="3"/>
+<text x="706" y="190.2" fill="#be185d" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">|-i&gt;</text>
+<text x="500" y="552" fill="#1f2937" font-size="15" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">The dots are the basis states; the colored lines are the measurement axes.</text>
+<text x="500" y="580" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">States on different axes are not generally orthogonal.</text>
+<text x="500" y="604" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">For example, |0&gt; and |+&gt; have 50/50 overlap.</text>
 </svg>

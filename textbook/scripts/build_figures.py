@@ -396,45 +396,69 @@ def sphere_project(cx: float, cy: float, r: float, x: float, y: float, z: float)
 
 
 def bloch_reference_states() -> None:
-    cx, cy, r = 500, 295, 170
-    states = {
-        "|0>": (0, 0, 1, BLUE),
-        "|1>": (0, 0, -1, RED),
-        "|+>": (1, 0, 0, GREEN),
-        "|->": (-1, 0, 0, AMBER),
-        "|+i>": (0, 1, 0, PURPLE),
-        "|-i>": (0, -1, 0, PINK),
+    cx, cy, r = 620, 325, 160
+
+    axes = [
+        ("Z basis", "|0>", "|1>", (0, 0, 1), (0, 0, -1), BLUE, RED),
+        ("X basis", "|+>", "|->", (1, 0, 0), (-1, 0, 0), GREEN, AMBER),
+        ("Y basis", "|+i>", "|-i>", (0, 1, 0), (0, -1, 0), PURPLE, PINK),
+    ]
+
+    labels = {
+        "|0>": (-26, -36, "end"),
+        "|1>": (26, 38, "start"),
+        "|+>": (26, 6, "start"),
+        "|->": (-26, -10, "end"),
+        "|+i>": (-30, 44, "end"),
+        "|-i>": (30, -42, "start"),
     }
+
     body: list[str] = [
-        text(500, 40, "Bloch sphere reference states", 26, weight=700),
-        text(500, 70, "Z reveals magnitude imbalance; X and Y reveal relative phase.", 16, MUTED),
+        text(500, 38, "Bloch sphere reference states", 26, weight=700),
+        text(500, 68, "Opposite endpoints are orthogonal states.", 16, MUTED),
+        text(500, 94, "X, Y, and Z are perpendicular measurement axes.", 16, MUTED),
+        rect(35, 118, 340, 390, fill="#ffffff", stroke="#cbd5e1"),
+        text(205, 154, "How to read it", 22, INK, 700),
+        text(205, 202, "One basis = one axis", 17, INK, 700),
+        text(205, 234, "opposite endpoints are", 15, MUTED),
+        text(205, 258, "orthogonal measurement answers", 15, MUTED),
+        text(205, 304, "Basis pairs", 17, INK, 700),
+        text(205, 338, "Z: |0>, |1>", 18, BLUE, 700),
+        text(205, 372, "X: |+>, |->", 18, GREEN, 700),
+        text(205, 406, "Y: |+i>, |-i>", 18, PURPLE, 700),
+        text(205, 456, "<0|1> = <+|-> = <+i|-i> = 0", 15, INK, 700),
+        text(205, 482, "Axes X, Y, Z are perpendicular.", 15, MUTED),
         circle(cx, cy, r, fill="#ffffff", stroke="#cbd5e1", width=3),
         tag("ellipse", cx=fmt(cx), cy=fmt(cy), rx=fmt(r), ry=fmt(r * 0.37), fill="none", stroke=GRID, **{"stroke-width": 2}),
         tag("ellipse", cx=fmt(cx), cy=fmt(cy), rx=fmt(r * 0.37), ry=fmt(r), fill="none", stroke=GRID, **{"stroke-width": 2, "transform": f"rotate(-27 {cx} {cy})"}),
+        tag("ellipse", cx=fmt(cx), cy=fmt(cy), rx=fmt(r * 0.37), ry=fmt(r), fill="none", stroke=GRID, **{"stroke-width": 1.5, "transform": f"rotate(63 {cx} {cy})"}),
     ]
-    for label, vec in [("+Z", (0, 0, 1)), ("-Z", (0, 0, -1)), ("+X", (1, 0, 0)), ("-X", (-1, 0, 0)), ("+Y", (0, 1, 0)), ("-Y", (0, -1, 0))]:
-        px, py = sphere_project(cx, cy, r, *vec)
-        body.append(line(cx, cy, px, py, "#94a3b8", 2, arrow=True))
-        body.append(text(px + (16 if px >= cx else -16), py + (12 if py >= cy else -12), label, 14, MUTED, 700, anchor="start" if px >= cx else "end"))
-    for label, (x, y, z, color) in states.items():
-        px, py = sphere_project(cx, cy, r, x, y, z)
-        body.append(circle(px, py, 9, fill=color, stroke="white", width=2))
-        body.append(text(px + (20 if px >= cx else -20), py, label, 17, color, 700, anchor="start" if px >= cx else "end"))
+
+    # Draw axes first and state dots second so arrowheads cannot cover endpoints.
+    for basis, pos_label, neg_label, pos_vec, neg_vec, pos_color, neg_color in axes:
+        x1, y1 = sphere_project(cx, cy, r, *neg_vec)
+        x2, y2 = sphere_project(cx, cy, r, *pos_vec)
+        axis_color = pos_color if basis != "Z basis" else BLUE
+        body.append(line(x1, y1, x2, y2, axis_color, 5))
+
+    body.append(circle(cx, cy, 5, fill=INK, stroke="white", width=1.5))
+
+    for _, pos_label, neg_label, pos_vec, neg_vec, pos_color, neg_color in axes:
+        for label, vec, color in [(pos_label, pos_vec, pos_color), (neg_label, neg_vec, neg_color)]:
+            px, py = sphere_project(cx, cy, r, *vec)
+            dx, dy, anchor = labels[label]
+            lx, ly = px + dx, py + dy
+            leader_end_x = lx - 8 if anchor == "start" else lx + 8
+            body.append(line(px, py, leader_end_x, ly, "#94a3b8", 1.5))
+            body.append(circle(px, py, 10, fill=color, stroke="white", width=3))
+            body.append(text(lx, ly, label, 18, color, 700, anchor=anchor))
+
     body += [
-        rect(60, 150, 230, 260, fill="#ffffff", stroke="#cbd5e1"),
-        text(175, 182, "Three bases", 22, INK, 700),
-        text(175, 235, "Z: |0>, |1>", 19, BLUE, 700),
-        text(175, 280, "X: |+>, |->", 19, GREEN, 700),
-        text(175, 325, "Y: |+i>, |-i>", 19, PURPLE, 700),
-        text(175, 382, "|+i> is 'ket plus i'", 15, MUTED),
-        rect(725, 155, 215, 250, fill="#ffffff", stroke="#cbd5e1"),
-        text(832, 188, "Practical readout", 21, INK, 700),
-        text(832, 242, "hardware often", 16, MUTED),
-        text(832, 270, "measures Z", 16, MUTED),
-        text(832, 322, "measure X/Y by", 16, MUTED),
-        text(832, 350, "rotating first", 16, MUTED),
+        text(500, 552, "The dots are the basis states; the colored lines are the measurement axes.", 15, INK, 700),
+        text(500, 580, "States on different axes are not generally orthogonal.", 15, MUTED),
+        text(500, 604, "For example, |0> and |+> have 50/50 overlap.", 15, MUTED),
     ]
-    save("06_bloch_reference_states.svg", 1000, 540, body)
+    save("06_bloch_reference_states.svg", 1000, 620, body)
 
 
 def same_theta_phase_ring() -> None:
