@@ -129,41 +129,77 @@ def save(name: str, width: int, height: int, body: list[str]) -> None:
 
 
 def amplitude_vs_probability() -> None:
+    def filled_arrow(x1: float, y: float, x2: float, color: str, width: float = 7) -> str:
+        direction = 1 if x2 >= x1 else -1
+        head = 13
+        body_end = x2 - direction * head
+        points = [
+            (x2, y),
+            (body_end, y - 7),
+            (body_end, y + 7),
+        ]
+        return "\n".join([
+            line(x1, y, body_end, y, color, width),
+            tag("polygon", points=" ".join(f"{fmt(x)},{fmt(py)}" for x, py in points),
+                fill=color, stroke="none"),
+        ])
+
+    def probability_bar(x: float, base: float, height: float, color: str,
+                        label: str, value: str) -> list[str]:
+        return [
+            rect(x, base - height, 70, height, fill=color, stroke="none", rx=5, opacity=0.9),
+            text(x + 35, base + 24, label, 16, INK, 700),
+            text(x + 35, base - height - 20, value, 17, color, 700),
+        ]
+
     body: list[str] = [
-        text(500, 42, "Probabilities add after alternatives are distinguished; amplitudes add before measurement", 24, weight=700),
-        rect(54, 92, 405, 390, fill="#ffffff", stroke="#cbd5e1"),
-        rect(541, 92, 405, 390, fill="#ffffff", stroke="#cbd5e1"),
-        text(256, 124, "Classical probability", 22, BLUE, 700),
-        text(744, 124, "Quantum amplitude", 22, PURPLE, 700),
-        text(256, 164, "positive numbers cannot cancel", 17, MUTED),
-        text(744, 164, "signed/phase vectors can cancel", 17, MUTED),
+        text(500, 42, "Classical Probabilities vs Quantum Amplitudes", 28, weight=700),
+        text(500, 75, "Classical adds nonnegative probabilities. Quantum adds directed amplitudes, then squares.", 17, MUTED),
+        rect(44, 106, 428, 426, fill="#ffffff", stroke="#cbd5e1"),
+        rect(528, 106, 428, 426, fill="#ffffff", stroke="#cbd5e1"),
+        text(258, 138, "Classical probability", 24, BLUE, 700),
+        text(258, 168, "numbers are already probabilities", 16, MUTED),
+        text(742, 138, "Quantum amplitude", 24, PURPLE, 700),
+        text(742, 168, "arrows can reinforce or cancel", 16, MUTED),
     ]
 
-    x0, y0 = 130, 390
-    for i, (label, h, color) in enumerate([("P1", 110, BLUE), ("P2", 110, CYAN), ("P total", 220, GREEN)]):
-        x = x0 + i * 100
-        body.append(rect(x, y0 - h, 54, h, fill=color, stroke="none", rx=5, opacity=0.92))
-        body.append(text(x + 27, y0 + 22, label, 16, INK))
-        body.append(text(x + 27, y0 - h - 18, f"{h/220:.1f}", 16, color, 700))
+    base = 408
+    body += probability_bar(112, base, 82, BLUE, "P1", "0.25")
+    body += probability_bar(216, base, 82, CYAN, "P2", "0.25")
+    body += probability_bar(340, base, 164, GREEN, "P total", "0.50")
     body += [
-        line(106, y0, 395, y0, GRID, 2),
-        text(256, 440, "0.5 + 0.5 = 1.0", 24, GREEN, 700),
-        text(256, 466, "No dark fringe is possible from probability addition alone.", 15, MUTED),
+        line(90, base, 434, base, GRID, 2),
+        text(199, 344, "+", 30, MUTED, 700),
+        text(306, 344, "=", 30, MUTED, 700),
+        text(258, 474, "P total = P1 + P2", 22, GREEN, 700),
+        text(258, 500, "Distinguish the alternatives first:", 15, MUTED),
+        text(258, 520, "then probabilities add as positive weights.", 15, MUTED),
     ]
 
-    cx, cy = 745, 330
+    # Same amplitude magnitudes, two different relative phases.
+    for y, label, label_color in [(254, "In phase", GREEN), (384, "Opposite phase", RED)]:
+        body += [
+            text(562, y - 44, label, 18, label_color, 700, anchor="start"),
+            line(618, y, 858, y, GRID, 2),
+        ]
+
     body += [
-        line(cx - 145, cy, cx + 145, cy, GRID, 2),
-        line(cx, cy + 95, cx, cy - 95, GRID, 2),
-        line(cx, cy, cx + 102, cy, BLUE, 4, arrow=True),
-        line(cx + 102, cy, cx, cy, RED, 4, arrow=True),
-        circle(cx, cy, 5, fill=INK, stroke="none"),
-        text(cx + 58, cy - 24, "psi1 = 1", 16, BLUE, 700),
-        text(cx + 60, cy + 30, "psi2 = -1", 16, RED, 700),
-        text(cx, 440, "psi1 + psi2 = 0", 24, PURPLE, 700),
-        text(cx, 466, "P = |psi|^2 = 0", 18, INK, 700),
+        filled_arrow(628, 254, 714, BLUE),
+        filled_arrow(714, 254, 800, CYAN),
+        filled_arrow(628, 287, 800, GREEN, 8),
+        text(850, 246, "0.5 + 0.5 = 1.0", 17, INK, 700, anchor="end"),
+        text(850, 277, "P = |1.0|^2 = 1.0", 17, GREEN, 700, anchor="end"),
+        text(620, 318, "add amplitudes first", 15, MUTED, anchor="start"),
+        filled_arrow(628, 384, 714, BLUE),
+        filled_arrow(714, 384, 628, RED),
+        circle(628, 417, 8, fill=PURPLE, stroke="none"),
+        text(850, 376, "0.5 + (-0.5) = 0", 17, INK, 700, anchor="end"),
+        text(850, 407, "P = |0|^2 = 0", 17, PURPLE, 700, anchor="end"),
+        text(620, 448, "cancellation happens before squaring", 15, MUTED, anchor="start"),
+        rect(94, 560, 812, 42, fill="#f8fafc", stroke="#cbd5e1", rx=7),
+        text(500, 581, "Real takeaway: phase lets equal-strength paths reinforce or cancel.", 17, INK, 700),
     ]
-    save("01_amplitudes_vs_probabilities.svg", 1000, 540, body)
+    save("01_amplitudes_vs_probabilities.svg", 1000, 620, body)
 
 
 def double_slit() -> None:
