@@ -132,7 +132,7 @@ Two possible contributions produced an impossible outcome.
 
 That is the first structural difference between classical and quantum reasoning.
 
-![Amplitudes versus probabilities](../figures/01_amplitudes_vs_probabilities.svg)
+![Amplitudes versus probabilities](../figures/01_amplitudes_vs_probabilities.svg?v=2026-05-27)
 
 ## 1.2 The Core Rule
 
