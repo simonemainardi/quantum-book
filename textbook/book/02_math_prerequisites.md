@@ -254,6 +254,71 @@ The X basis:
 \frac{|0\rangle - |1\rangle}{\sqrt{2}}
 ```
 
+Why those formulas?
+
+First, the X-basis states are still being written using the Z-basis coordinates $|0\rangle$ and $|1\rangle$. That is like describing a rotated pair of axes using the old horizontal and vertical coordinates.
+
+The raw vector
+
+```math
+|0\rangle + |1\rangle
+=
+\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}
+```
+
+has squared length:
+
+```math
+1^2 + 1^2 = 2
+```
+
+So it is too long to be a normalized quantum state. We divide by $\sqrt{2}$ because:
+
+```math
+\left|\frac{1}{\sqrt{2}}\right|^2
++
+\left|\frac{1}{\sqrt{2}}\right|^2
+=
+\frac{1}{2} + \frac{1}{2}
+=
+1
+```
+
+That is why the denominator is $\sqrt{2}$, not $2$. Amplitudes are squared to become probabilities.
+
+Second, the two basis states must be mutually exclusive measurement answers. Mathematically, that means they must be orthogonal:
+
+```math
+\langle +|-\rangle
+=
+\frac{1}{2}(1 - 1)
+=
+0
+```
+
+The plus state and minus state contain the same Z-basis magnitudes, but their relative sign is different. That relative sign is a phase difference. Measuring in the X basis asks:
+
+```text
+Is the state aligned with |+> or with |->?
+```
+
+It is not asking whether the state is $|0\rangle$ or $|1\rangle$.
+
+You can also reverse the equations:
+
+```math
+|0\rangle =
+\frac{|+\rangle + |-\rangle}{\sqrt{2}}
+\qquad
+|1\rangle =
+\frac{|+\rangle - |-\rangle}{\sqrt{2}}
+```
+
+So neither basis is more real than the other. They are two coordinate systems for the same two-dimensional state space.
+
 The Y basis:
 
 ```math
@@ -263,6 +328,28 @@ The Y basis:
 |-i\rangle =
 \frac{|0\rangle - i|1\rangle}{\sqrt{2}}
 ```
+
+The Y basis follows the same pattern as the X basis, except the relative phase is $\pm i$ instead of $\pm 1$. Multiplication by $i$ is a 90-degree phase rotation. So the Y basis is another pair of normalized, orthogonal axes:
+
+```math
+|+i\rangle =
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1 \\
+i
+\end{pmatrix}
+\qquad
+|-i\rangle =
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1 \\
+-i
+\end{pmatrix}
+```
+
+The important idea is:
+
+> A measurement basis is a choice of questions. The basis vectors are the possible answers to that question.
 
 Read these as:
 
