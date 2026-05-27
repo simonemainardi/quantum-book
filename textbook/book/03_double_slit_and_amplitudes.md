@@ -154,7 +154,7 @@ Then:
 ```math
 |A+B|^2
 =
-|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B)
+|A|^2 + |B|^2 + 2\mathrm{Re}(A^*B)
 ```
 
 The last term is the interference term.
@@ -324,4 +324,3 @@ The double slit is the physical template for quantum computation:
 - phase becomes visible only through a measurement basis or circuit that recombines amplitudes.
 
 The next chapter introduces the qubit as the simplest engineered system that contains this logic.
-

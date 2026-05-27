@@ -1020,7 +1020,7 @@ Then:
 ```math
 |A+B|^2
 =
-|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B)
+|A|^2 + |B|^2 + 2\mathrm{Re}(A^*B)
 ```
 
 The last term is the interference term.
@@ -3367,7 +3367,7 @@ The interference term that appears when squaring a sum:
 ```math
 |A+B|^2
 =
-|A|^2 + |B|^2 + 2\operatorname{Re}(A^*B)
+|A|^2 + |B|^2 + 2\mathrm{Re}(A^*B)
 ```
 
 The cross term can be positive or negative.
@@ -3533,4 +3533,3 @@ The computational basis:
 ```
 
 It directly reads the component magnitudes $|\alpha|^2$ and $|\beta|^2$.
-
