@@ -45,6 +45,8 @@ Wearing the teacher's hat, the job is not to make quantum mechanics sound mystic
 complex amplitude -> phase -> recombination -> squared magnitude -> observed probability
 ```
 
+At the start, do not worry if "complex amplitude" is not yet formal. The first picture is simpler: an amplitude is an arrow-like contribution, and probability is the squared length of the final arrow after the relevant contributions have been added.
+
 The same idea appears as:
 
 - two paths in the double slit,

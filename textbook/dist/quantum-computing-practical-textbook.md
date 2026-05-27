@@ -45,6 +45,8 @@ Wearing the teacher's hat, the job is not to make quantum mechanics sound mystic
 complex amplitude -> phase -> recombination -> squared magnitude -> observed probability
 ```
 
+At the start, do not worry if "complex amplitude" is not yet formal. The first picture is simpler: an amplitude is an arrow-like contribution, and probability is the squared length of the final arrow after the relevant contributions have been added.
+
 The same idea appears as:
 
 - two paths in the double slit,
@@ -105,6 +107,8 @@ The original learner did not begin by asking for a definition of a qubit. The fi
 
 This chapter keeps that question in front of us. The aim is not to decorate classical probability with quantum vocabulary. The aim is to identify the new object that quantum theory asks us to track before measurement: the complex amplitude.
 
+The word "complex" will become precise in [Chapter 2](02_math_prerequisites.md). For now, use a physical picture: an amplitude is like an arrow contribution. It has a size and a direction. Directions can line up, oppose, or sit at angles. That is why amplitudes can cancel while probabilities cannot.
+
 ## 1.1 The Engineer's Starting Point
 
 **Question.** I know how classical systems behave. A bit is 0 or 1. A probability is a positive number. Why does quantum computing need a different language?
@@ -118,6 +122,22 @@ P = P_1 + P_2
 ```
 
 Since probabilities are nonnegative real numbers, they cannot cancel.
+
+Before writing the quantum formula, pause on the word **amplitude**.
+
+For the first pass through the idea, think:
+
+```text
+amplitude = arrow-like contribution
+```
+
+The arrow's length says how strong the contribution is. The arrow's direction is its phase. A complex number is the algebraic way to store that arrow on a plane.
+
+Probability is not the arrow itself. Probability is obtained after the relevant arrows have been added:
+
+```text
+probability = squared length of the final arrow
+```
 
 In a quantum model, each alternative contributes a complex amplitude:
 
@@ -158,7 +178,7 @@ That is the first structural difference between classical and quantum reasoning.
 Quantum theory has many formalisms, but for this book we begin with the rule that carries most of the intuition:
 
 1. A quantum system has a state.
-2. The state contains complex amplitudes.
+2. The state contains amplitudes: arrow-like quantities with size and phase.
 3. Evolution changes amplitudes smoothly and reversibly, as long as we are not measuring.
 4. Measurement converts amplitudes into probabilities.
 5. After measurement, the result is classical.
@@ -248,6 +268,8 @@ Third, phase matters. The left-path and right-path contributions arrive at a giv
 
 Fourth, measurement basis matters. Asking "which slit?" and asking "which screen position?" are different questions. They correspond to different ways of extracting classical information from the same quantum state.
 
+Here "basis" just means the set of answers a measurement is prepared to distinguish. The which-slit basis has answers "left" and "right." The screen-position basis has answers "this pixel", "that pixel", and so on.
+
 That fourth lesson is the bridge to qubits.
 
 **Learner's checkpoint.** If the pattern changes when you ask "which slit?", the particle was not simply carrying a hidden classical answer that you uncovered. The experimental question changed the quantum situation.
@@ -265,6 +287,8 @@ Use two basis states:
 \qquad
 |R\rangle = \text{the right path}
 ```
+
+For now, a basis state simply means one clean alternative in the description we have chosen. Here the alternatives are the two paths. Later, for a qubit, the alternatives will be $|0\rangle$ and $|1\rangle$.
 
 If the illumination is balanced, the state just after the slits can be approximated by:
 
@@ -320,6 +344,8 @@ In quantum cryptography, measurement disturbance matters. If an eavesdropper mea
 
 In quantum machine learning feature maps, classical data may be encoded into phases and rotations. The later circuit then recombines those amplitudes, making phase relationships observable in measurement statistics.
 
+That last example is more advanced, so keep only the pattern for now: information is written into amplitudes or phase, transformed, and finally read out as statistics.
+
 ![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg?v=greek-2026-05-27)
 
 ## 1.9 What Comes Next
@@ -328,7 +354,7 @@ The physical story gives us the target:
 
 > Understand how amplitudes, phase, basis, and measurement interact.
 
-The next chapter builds the math needed to say that precisely. It covers complex numbers, sine and cosine, Euler's formula, vectors, inner products, matrices, and unitary transformations.
+The next chapter builds the math needed to say that precisely. It covers complex numbers, sine and cosine, Euler's formula, vectors, inner products, matrices, and probability-preserving transformations called unitaries.
 
 Do not treat that chapter as detached algebra. Every piece will be used again:
 
@@ -377,6 +403,8 @@ When the later chapters refer back here, the intent is not to interrupt the phys
 **Question.** Why do quantum amplitudes use complex numbers instead of ordinary real numbers?
 
 **Teacher.** Because quantum states need a built-in notion of phase, and phase is naturally represented as rotation in the complex plane.
+
+Here "complex" does not mean complicated. It means a number with two coordinates: one horizontal, one vertical. That two-coordinate form is exactly what lets an amplitude behave like an arrow instead of only like a positive weight.
 
 A complex number has the form:
 
@@ -1069,6 +1097,8 @@ and:
 ```math
 \langle x|R\rangle \propto e^{ikr_R(x)}
 ```
+
+Read $e^{ikr}$ as a compact phase clock. The distance $r$ changes how far the arrow has rotated when it reaches the screen. If the two path lengths rotate the arrows into alignment, the spot is bright. If they rotate them into opposition, the spot is dark.
 
 Here:
 
@@ -2423,6 +2453,8 @@ R_z(\theta) =
 e^{-i\theta Z/2}
 ```
 
+If the exponential notation feels sudden, do not let it interrupt the story. Here it is compact notation for "the operation generated by this axis." The matrices below are the concrete version you can multiply by a state vector.
+
 Their matrices are:
 
 ```math
@@ -2733,6 +2765,8 @@ This is why quantum programming outputs histograms and expectation values, not h
 ## 7.7 Expectation Values
 
 For a single qubit, the expectation values of Pauli observables are connected to the Bloch vector:
+
+An observable is a measurable quantity. A Pauli observable is the idealized question "what is the state biased toward along this axis?" So $\langle Z\rangle$, $\langle X\rangle$, and $\langle Y\rangle$ are not hidden labels on one shot. They are averages estimated from many repeated measurements.
 
 ```math
 \langle Z\rangle = r_z
@@ -3072,6 +3106,8 @@ That is why incompatible bases can expose unwanted measurement.
 ## 8.9 Quantum Feature Maps
 
 In some quantum machine learning approaches, classical data is encoded into quantum states by rotations or phases.
+
+The phrase "feature map" means a data-to-state recipe: take ordinary input numbers and use them to choose gates. The result is a quantum state whose amplitudes and phases now depend on the data.
 
 For example, a feature value $x$ might determine a rotation:
 
@@ -3528,7 +3564,7 @@ This glossary is meant to be read as a conversational index. Each definition poi
 
 ## Amplitude
 
-A complex number associated with a possible outcome or contribution. Probabilities are computed from squared magnitudes of amplitudes.
+A complex, arrow-like number associated with a possible outcome or contribution. Amplitudes can add or cancel before measurement. Probabilities are computed from squared magnitudes of the final amplitudes.
 
 ## Basis
 

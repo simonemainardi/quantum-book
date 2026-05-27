@@ -198,6 +198,8 @@ This is why quantum programming outputs histograms and expectation values, not h
 
 For a single qubit, the expectation values of Pauli observables are connected to the Bloch vector:
 
+An observable is a measurable quantity. A Pauli observable is the idealized question "what is the state biased toward along this axis?" So $\langle Z\rangle$, $\langle X\rangle$, and $\langle Y\rangle$ are not hidden labels on one shot. They are averages estimated from many repeated measurements.
+
 ```math
 \langle Z\rangle = r_z
 ```

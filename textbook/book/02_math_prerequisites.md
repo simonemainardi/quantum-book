@@ -37,6 +37,8 @@ When the later chapters refer back here, the intent is not to interrupt the phys
 
 **Teacher.** Because quantum states need a built-in notion of phase, and phase is naturally represented as rotation in the complex plane.
 
+Here "complex" does not mean complicated. It means a number with two coordinates: one horizontal, one vertical. That two-coordinate form is exactly what lets an amplitude behave like an arrow instead of only like a positive weight.
+
 A complex number has the form:
 
 ```math

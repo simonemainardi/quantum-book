@@ -154,8 +154,8 @@ def amplitude_vs_probability() -> None:
         ]
 
     body: list[str] = [
-        text(500, 42, "Classical Probabilities vs Quantum Amplitudes", 28, weight=700),
-        text(500, 75, "Classical adds nonnegative probabilities. Quantum adds directed amplitudes, then squares.", 17, MUTED),
+        text(500, 42, "Probabilities vs Amplitudes", 28, weight=700),
+        text(500, 75, "Classical adds weights. Quantum adds arrows first, then squares the result.", 17, MUTED),
         rect(44, 106, 428, 426, fill="#ffffff", stroke="#cbd5e1"),
         rect(528, 106, 428, 426, fill="#ffffff", stroke="#cbd5e1"),
         text(258, 138, "Classical probability", 24, BLUE, 700),
@@ -177,28 +177,30 @@ def amplitude_vs_probability() -> None:
         text(258, 520, "then probabilities add as positive weights.", 15, MUTED),
     ]
 
-    # Same amplitude magnitudes, two different relative phases.
-    for y, label, label_color in [(254, "In phase", GREEN), (384, "Opposite phase", RED)]:
-        body += [
-            text(562, y - 44, label, 18, label_color, 700, anchor="start"),
-            line(618, y, 858, y, GRID, 2),
-        ]
-
     body += [
-        filled_arrow(628, 254, 714, BLUE),
-        filled_arrow(714, 254, 800, CYAN),
-        filled_arrow(628, 287, 800, GREEN, 8),
-        text(850, 246, "0.5 + 0.5 = 1.0", 17, INK, 700, anchor="end"),
-        text(850, 277, "P = |1.0|^2 = 1.0", 17, GREEN, 700, anchor="end"),
-        text(620, 318, "add amplitudes first", 15, MUTED, anchor="start"),
-        filled_arrow(628, 384, 714, BLUE),
-        filled_arrow(714, 384, 628, RED),
-        circle(628, 417, 8, fill=PURPLE, stroke="none"),
-        text(850, 376, "0.5 + (-0.5) = 0", 17, INK, 700, anchor="end"),
-        text(850, 407, "P = |0|^2 = 0", 17, PURPLE, 700, anchor="end"),
-        text(620, 448, "cancellation happens before squaring", 15, MUTED, anchor="start"),
+        text(742, 204, "Constructive", 19, GREEN, 700),
+        text(742, 228, "same direction", 14, MUTED),
+        filled_arrow(595, 258, 700, BLUE),
+        text(582, 258, "A1", 14, BLUE, 700, anchor="end"),
+        filled_arrow(595, 292, 700, CYAN),
+        text(582, 292, "A2", 14, CYAN, 700, anchor="end"),
+        text(724, 276, "+", 20, MUTED, 700),
+        filled_arrow(772, 276, 914, GREEN, 9),
+        text(914, 246, "sum arrow", 14, GREEN, 700, anchor="end"),
+        text(742, 330, "P = |A1 + A2|^2 is large", 17, GREEN, 700),
+
+        text(742, 384, "Destructive", 19, RED, 700),
+        text(742, 408, "opposite directions", 14, MUTED),
+        filled_arrow(595, 438, 700, BLUE),
+        text(582, 438, "A1", 14, BLUE, 700, anchor="end"),
+        filled_arrow(700, 472, 595, RED),
+        text(582, 472, "A2", 14, RED, 700, anchor="end"),
+        text(724, 455, "+", 20, MUTED, 700),
+        circle(838, 455, 9, fill=PURPLE, stroke="white", width=2),
+        text(860, 455, "zero final arrow", 14, PURPLE, 700, anchor="start"),
+        text(742, 508, "P = |A1 + A2|^2 = 0", 17, PURPLE, 700),
         rect(94, 560, 812, 42, fill="#f8fafc", stroke="#cbd5e1", rx=7),
-        text(500, 581, "Real takeaway: phase lets equal-strength paths reinforce or cancel.", 17, INK, 700),
+        text(500, 581, "Real takeaway: cancellation happens before probability is computed.", 17, INK, 700),
     ]
     save("01_amplitudes_vs_probabilities.svg", 1000, 620, body)
 

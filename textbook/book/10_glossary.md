@@ -4,7 +4,7 @@ This glossary is meant to be read as a conversational index. Each definition poi
 
 ## Amplitude
 
-A complex number associated with a possible outcome or contribution. Probabilities are computed from squared magnitudes of amplitudes.
+A complex, arrow-like number associated with a possible outcome or contribution. Amplitudes can add or cancel before measurement. Probabilities are computed from squared magnitudes of the final amplitudes.
 
 ## Basis
 

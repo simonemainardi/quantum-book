@@ -118,6 +118,8 @@ and:
 \langle x|R\rangle \propto e^{ikr_R(x)}
 ```
 
+Read $e^{ikr}$ as a compact phase clock. The distance $r$ changes how far the arrow has rotated when it reaches the screen. If the two path lengths rotate the arrows into alignment, the spot is bright. If they rotate them into opposition, the spot is dark.
+
 Here:
 
 - $k$ is the wave number,

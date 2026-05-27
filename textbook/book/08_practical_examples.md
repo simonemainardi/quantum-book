@@ -201,6 +201,8 @@ That is why incompatible bases can expose unwanted measurement.
 
 In some quantum machine learning approaches, classical data is encoded into quantum states by rotations or phases.
 
+The phrase "feature map" means a data-to-state recipe: take ordinary input numbers and use them to choose gates. The result is a quantum state whose amplitudes and phases now depend on the data.
+
 For example, a feature value $x$ might determine a rotation:
 
 ```math

@@ -8,6 +8,8 @@ The original learner did not begin by asking for a definition of a qubit. The fi
 
 This chapter keeps that question in front of us. The aim is not to decorate classical probability with quantum vocabulary. The aim is to identify the new object that quantum theory asks us to track before measurement: the complex amplitude.
 
+The word "complex" will become precise in [Chapter 2](02_math_prerequisites.md). For now, use a physical picture: an amplitude is like an arrow contribution. It has a size and a direction. Directions can line up, oppose, or sit at angles. That is why amplitudes can cancel while probabilities cannot.
+
 ## 1.1 The Engineer's Starting Point
 
 **Question.** I know how classical systems behave. A bit is 0 or 1. A probability is a positive number. Why does quantum computing need a different language?
@@ -21,6 +23,22 @@ P = P_1 + P_2
 ```
 
 Since probabilities are nonnegative real numbers, they cannot cancel.
+
+Before writing the quantum formula, pause on the word **amplitude**.
+
+For the first pass through the idea, think:
+
+```text
+amplitude = arrow-like contribution
+```
+
+The arrow's length says how strong the contribution is. The arrow's direction is its phase. A complex number is the algebraic way to store that arrow on a plane.
+
+Probability is not the arrow itself. Probability is obtained after the relevant arrows have been added:
+
+```text
+probability = squared length of the final arrow
+```
 
 In a quantum model, each alternative contributes a complex amplitude:
 
@@ -61,7 +79,7 @@ That is the first structural difference between classical and quantum reasoning.
 Quantum theory has many formalisms, but for this book we begin with the rule that carries most of the intuition:
 
 1. A quantum system has a state.
-2. The state contains complex amplitudes.
+2. The state contains amplitudes: arrow-like quantities with size and phase.
 3. Evolution changes amplitudes smoothly and reversibly, as long as we are not measuring.
 4. Measurement converts amplitudes into probabilities.
 5. After measurement, the result is classical.
@@ -151,6 +169,8 @@ Third, phase matters. The left-path and right-path contributions arrive at a giv
 
 Fourth, measurement basis matters. Asking "which slit?" and asking "which screen position?" are different questions. They correspond to different ways of extracting classical information from the same quantum state.
 
+Here "basis" just means the set of answers a measurement is prepared to distinguish. The which-slit basis has answers "left" and "right." The screen-position basis has answers "this pixel", "that pixel", and so on.
+
 That fourth lesson is the bridge to qubits.
 
 **Learner's checkpoint.** If the pattern changes when you ask "which slit?", the particle was not simply carrying a hidden classical answer that you uncovered. The experimental question changed the quantum situation.
@@ -168,6 +188,8 @@ Use two basis states:
 \qquad
 |R\rangle = \text{the right path}
 ```
+
+For now, a basis state simply means one clean alternative in the description we have chosen. Here the alternatives are the two paths. Later, for a qubit, the alternatives will be $|0\rangle$ and $|1\rangle$.
 
 If the illumination is balanced, the state just after the slits can be approximated by:
 
@@ -223,6 +245,8 @@ In quantum cryptography, measurement disturbance matters. If an eavesdropper mea
 
 In quantum machine learning feature maps, classical data may be encoded into phases and rotations. The later circuit then recombines those amplitudes, making phase relationships observable in measurement statistics.
 
+That last example is more advanced, so keep only the pattern for now: information is written into amplitudes or phase, transformed, and finally read out as statistics.
+
 ![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg?v=greek-2026-05-27)
 
 ## 1.9 What Comes Next
@@ -231,7 +255,7 @@ The physical story gives us the target:
 
 > Understand how amplitudes, phase, basis, and measurement interact.
 
-The next chapter builds the math needed to say that precisely. It covers complex numbers, sine and cosine, Euler's formula, vectors, inner products, matrices, and unitary transformations.
+The next chapter builds the math needed to say that precisely. It covers complex numbers, sine and cosine, Euler's formula, vectors, inner products, matrices, and probability-preserving transformations called unitaries.
 
 Do not treat that chapter as detached algebra. Every piece will be used again:
 

@@ -12,8 +12,8 @@
   </linearGradient>
 </defs>
 
-<text x="500" y="42" fill="#1f2937" font-size="28" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Classical Probabilities vs Quantum Amplitudes</text>
-<text x="500" y="75" fill="#64748b" font-size="17" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Classical adds nonnegative probabilities. Quantum adds directed amplitudes, then squares.</text>
+<text x="500" y="42" fill="#1f2937" font-size="28" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Probabilities vs Amplitudes</text>
+<text x="500" y="75" fill="#64748b" font-size="17" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Classical adds weights. Quantum adds arrows first, then squares the result.</text>
 <rect x="44" y="106" width="428" height="426" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <rect x="528" y="106" width="428" height="426" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
 <text x="258" y="138" fill="#2563eb" font-size="24" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Classical probability</text>
@@ -35,27 +35,31 @@
 <text x="258" y="474" fill="#16a34a" font-size="22" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P total = P1 + P2</text>
 <text x="258" y="500" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Distinguish the alternatives first:</text>
 <text x="258" y="520" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">then probabilities add as positive weights.</text>
-<text x="562" y="210" fill="#16a34a" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">In phase</text>
-<line x1="618" y1="254" x2="858" y2="254" stroke="#d7dde8" stroke-width="2" stroke-linecap="round"/>
-<text x="562" y="340" fill="#dc2626" font-size="18" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">Opposite phase</text>
-<line x1="618" y1="384" x2="858" y2="384" stroke="#d7dde8" stroke-width="2" stroke-linecap="round"/>
-<line x1="628" y1="254" x2="701" y2="254" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
-<polygon points="714,254 701,247 701,261" fill="#2563eb" stroke="none"/>
-<line x1="714" y1="254" x2="787" y2="254" stroke="#0891b2" stroke-width="7" stroke-linecap="round"/>
-<polygon points="800,254 787,247 787,261" fill="#0891b2" stroke="none"/>
-<line x1="628" y1="287" x2="787" y2="287" stroke="#16a34a" stroke-width="8" stroke-linecap="round"/>
-<polygon points="800,287 787,280 787,294" fill="#16a34a" stroke="none"/>
-<text x="850" y="246" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">0.5 + 0.5 = 1.0</text>
-<text x="850" y="277" fill="#16a34a" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">P = |1.0|^2 = 1.0</text>
-<text x="620" y="318" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">add amplitudes first</text>
-<line x1="628" y1="384" x2="701" y2="384" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
-<polygon points="714,384 701,377 701,391" fill="#2563eb" stroke="none"/>
-<line x1="714" y1="384" x2="641" y2="384" stroke="#dc2626" stroke-width="7" stroke-linecap="round"/>
-<polygon points="628,384 641,377 641,391" fill="#dc2626" stroke="none"/>
-<circle cx="628" cy="417" r="8" fill="#7c3aed" stroke="none" stroke-width="2"/>
-<text x="850" y="376" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">0.5 + (-0.5) = 0</text>
-<text x="850" y="407" fill="#7c3aed" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">P = |0|^2 = 0</text>
-<text x="620" y="448" fill="#64748b" font-size="15" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">cancellation happens before squaring</text>
+<text x="742" y="204" fill="#16a34a" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Constructive</text>
+<text x="742" y="228" fill="#64748b" font-size="14" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">same direction</text>
+<line x1="595" y1="258" x2="687" y2="258" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
+<polygon points="700,258 687,251 687,265" fill="#2563eb" stroke="none"/>
+<text x="582" y="258" fill="#2563eb" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">A1</text>
+<line x1="595" y1="292" x2="687" y2="292" stroke="#0891b2" stroke-width="7" stroke-linecap="round"/>
+<polygon points="700,292 687,285 687,299" fill="#0891b2" stroke="none"/>
+<text x="582" y="292" fill="#0891b2" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">A2</text>
+<text x="724" y="276" fill="#64748b" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">+</text>
+<line x1="772" y1="276" x2="901" y2="276" stroke="#16a34a" stroke-width="9" stroke-linecap="round"/>
+<polygon points="914,276 901,269 901,283" fill="#16a34a" stroke="none"/>
+<text x="914" y="246" fill="#16a34a" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">sum arrow</text>
+<text x="742" y="330" fill="#16a34a" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P = |A1 + A2|^2 is large</text>
+<text x="742" y="384" fill="#dc2626" font-size="19" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Destructive</text>
+<text x="742" y="408" fill="#64748b" font-size="14" font-weight="500" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">opposite directions</text>
+<line x1="595" y1="438" x2="687" y2="438" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
+<polygon points="700,438 687,431 687,445" fill="#2563eb" stroke="none"/>
+<text x="582" y="438" fill="#2563eb" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">A1</text>
+<line x1="700" y1="472" x2="608" y2="472" stroke="#dc2626" stroke-width="7" stroke-linecap="round"/>
+<polygon points="595,472 608,465 608,479" fill="#dc2626" stroke="none"/>
+<text x="582" y="472" fill="#dc2626" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">A2</text>
+<text x="724" y="455" fill="#64748b" font-size="20" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">+</text>
+<circle cx="838" cy="455" r="9" fill="#7c3aed" stroke="white" stroke-width="2"/>
+<text x="860" y="455" fill="#7c3aed" font-size="14" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">zero final arrow</text>
+<text x="742" y="508" fill="#7c3aed" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">P = |A1 + A2|^2 = 0</text>
 <rect x="94" y="560" width="812" height="42" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="7"/>
-<text x="500" y="581" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Real takeaway: phase lets equal-strength paths reinforce or cancel.</text>
+<text x="500" y="581" fill="#1f2937" font-size="17" font-weight="700" font-family="Inter, &quot;Noto Sans&quot;, &quot;DejaVu Sans&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">Real takeaway: cancellation happens before probability is computed.</text>
 </svg>
