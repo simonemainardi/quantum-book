@@ -85,6 +85,6 @@
         <text x="907.4" y="662.0" class="label">|-i&gt;</text>
       </g>
     
-  <text x="80" y="704" class="formula">|&#968;(&#952;,&#966;)&gt; = cos(&#952;/2)|0&gt; + e^(i&#966;) sin(&#952;/2)|1&gt;</text>
+  <text x="80" y="704" class="formula">|psi(theta, phi)&gt; = cos(theta/2)|0&gt; + e^(i phi) sin(theta/2)|1&gt;</text>
 
 </svg>

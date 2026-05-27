@@ -44,13 +44,16 @@
   <text x="115" y="252" class="h2">State</text>
   <text x="529" y="252" class="h2">Square</text>
   <text x="943" y="252" class="h2">Sample</text>
-  <text x="115" y="322" class="formula">|&#968;&gt; = &#945;|0&gt; + &#946;|1&gt;</text>
-  <text x="115" y="371" class="formula">&#945; = 0.866</text>
-  <text x="115" y="410" class="formula">&#946; = 0.500 e^(i&#966;)</text>
+  <text x="115" y="305" class="formula">|psi&gt; =</text>
+  <text x="115" y="344" class="formula">alpha|0&gt; + beta|1&gt;</text>
+  <text x="115" y="390" class="formula">alpha = 0.866</text>
+  <text x="115" y="429" class="formula">beta = 0.500 e^(i phi)</text>
   <line x1="392.0" y1="360.0" x2="466.0" y2="360.0" stroke="#e76f51" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
   <line x1="806.0" y1="360.0" x2="880.0" y2="360.0" stroke="#e76f51" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
-  <text x="529" y="322" class="formula">P(0) = |&#945;|^2 = 0.75</text>
-  <text x="529" y="371" class="formula">P(1) = |&#946;|^2 = 0.25</text>
+  <text x="529" y="315" class="formula">P(0) = |alpha|^2</text>
+  <text x="529" y="350" class="formula">= 0.75</text>
+  <text x="529" y="398" class="formula">P(1) = |beta|^2</text>
+  <text x="529" y="433" class="formula">= 0.25</text>
   <rect x="958" y="270" width="76" height="180" fill="#0f8b8d"/>
   <rect x="1076" y="390" width="76" height="60" fill="#f2b84b"/>
   <line x1="938" y1="450" x2="1178" y2="450" stroke="#14202e" stroke-width="3"/>

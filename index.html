@@ -580,7 +580,7 @@
               </div>
               <div class="equation">
                 <em>Euler</em>
-                e<sup>i&theta;</sup> = cos &theta; + i sin &theta;
+                e<sup>i theta</sup> = cos(theta) + i sin(theta);
               </div>
               <div class="equation">
                 <em>Magnitude</em>
@@ -617,7 +617,7 @@
         </div>
         <div class="callout">
           <strong>The qubit formula</strong>
-          <p><span class="equation">|&psi;(&theta;,&phi;)&rangle; = cos(&theta;/2)|0&rangle; + e<sup>i&phi;</sup> sin(&theta;/2)|1&rangle;</span></p>
+          <p><span class="equation">|psi(theta, phi)&rangle; = cos(theta/2)|0&rangle; + e<sup>i phi</sup> sin(theta/2)|1&rangle;</span></p>
         </div>
       </div>
     </section>
@@ -628,7 +628,7 @@
           <div class="chapter-kicker">Interactive</div>
           <div>
             <h2>Phase Looks Invisible Until You Change Basis</h2>
-            <p class="lede">With &theta; fixed at 60 degrees, the Z measurement probabilities stay fixed. X and Y measurements change because they recombine amplitudes differently.</p>
+            <p class="lede">With theta fixed at 60 degrees, the Z measurement probabilities stay fixed. X and Y measurements change because they recombine amplitudes differently.</p>
           </div>
         </div>
         <div class="lab">
@@ -639,7 +639,7 @@
               <div class="state-vector" id="stateVector"></div>
             </div>
             <div class="control">
-              <label for="phaseSlider">Phase &phi;: <span class="phase-value" id="phaseValue">0</span></label>
+              <label for="phaseSlider">Phase phi: <span class="phase-value" id="phaseValue">0</span></label>
               <input id="phaseSlider" type="range" min="0" max="4.71238898" value="0" step="0.01" />
             </div>
           </div>
@@ -681,7 +681,7 @@
         </div>
         <figure class="figure" style="margin-top:24px">
           <img src="assets/figures/phase-basis-probabilities.svg" alt="Probability curves for Z X and Y bases as phase changes" />
-          <figcaption>The full curve view: Z is flat for fixed &theta;, while X follows cos &phi; and Y follows sin &phi;.</figcaption>
+          <figcaption>The full curve view: Z is flat for fixed theta, while X follows cos(phi) and Y follows sin(phi).</figcaption>
         </figure>
       </div>
     </section>
@@ -705,7 +705,7 @@
             <ul>
               <li><strong>X</strong> flips the state around the X axis, swapping |0&rangle; and |1&rangle;.</li>
               <li><strong>H</strong> changes between Z and X viewpoints, making interference visible in a different basis.</li>
-              <li><strong>R<sub>z</sub>(&phi;)</strong>, <strong>R<sub>x</sub>(&theta;)</strong>, and <strong>R<sub>y</sub>(&theta;)</strong> are rotations on the Bloch sphere.</li>
+              <li><strong>R<sub>z</sub>(phi)</strong>, <strong>R<sub>x</sub>(theta)</strong>, and <strong>R<sub>y</sub>(theta)</strong> are rotations on the Bloch sphere.</li>
               <li><strong>CNOT</strong> couples qubits, which is where entanglement and multi-qubit algorithms begin.</li>
             </ul>
             <div class="callout">
@@ -735,12 +735,12 @@
           <div class="tile">
             <div class="marker gold"></div>
             <strong>Move around the circle</strong>
-            <p>Compute e<sup>i&theta;</sup> for &theta; = 0, &pi;/2, &pi;, 3&pi;/2 and draw each point.</p>
+            <p>Compute e<sup>i theta</sup> for theta = 0, pi/2, pi, 3pi/2 and draw each point.</p>
           </div>
           <div class="tile">
             <div class="marker coral"></div>
             <strong>Change basis</strong>
-            <p>For &theta; = 60 degrees, calculate Z, X, and Y probabilities for the four phases in the lab.</p>
+            <p>For theta = 60 degrees, calculate Z, X, and Y probabilities for the four phases in the lab.</p>
           </div>
         </div>
       </div>
