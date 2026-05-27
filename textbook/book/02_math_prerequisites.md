@@ -15,6 +15,22 @@ The core objects are:
 
 Whenever a later chapter says "phase", "basis", "projection", "gate", or "unitary", it is using material from this chapter.
 
+## 2.0 Why This Math Is Here
+
+The learner's request was not "teach me abstract linear algebra." It was "I understand math, but remind me of the pieces that make quantum understandable."
+
+So this chapter is a repair bench. Every tool here has a job later:
+
+- complex numbers carry phase,
+- sine and cosine describe rotations,
+- vectors hold amplitudes,
+- bases define the possible answers to a measurement,
+- inner products compute the amplitude of an answer,
+- matrices describe gates,
+- unitaries explain why gates preserve total probability.
+
+When the later chapters refer back here, the intent is not to interrupt the physics. It is to keep the physics honest.
+
 ## 2.1 Complex Numbers
 
 **Question.** Why do quantum amplitudes use complex numbers instead of ordinary real numbers?
@@ -92,6 +108,15 @@ This matters because amplitudes can cancel as vectors:
 
 They can also cancel after rotating through phases, not only by being literally positive and negative real numbers.
 
+Here is the first small mental picture to keep:
+
+```text
+amplitude = arrow
+probability = squared length of the final arrow
+```
+
+Two arrows pointing in the same direction make a longer arrow. Two arrows pointing in opposite directions can leave no arrow at all. The detector does not see the individual arrows; it sees the squared length after the arrows have been added.
+
 ## 2.3 Sine and Cosine as Coordinates
 
 The trigonometric functions $\cos\theta$ and $\sin\theta$ are coordinates on the unit circle.
@@ -127,6 +152,20 @@ as amplitude magnitudes. The squared magnitudes add to 1:
 ```
 
 That is exactly what we need for probabilities to sum to 1.
+
+The half-angle is not a typographical flourish. It is what makes a full trip from the north pole to the south pole of the Bloch sphere correspond to changing the probability from all $|0\rangle$ to all $|1\rangle$:
+
+```math
+\theta = 0
+\Rightarrow
+P(0)=1
+```
+
+```math
+\theta = \pi
+\Rightarrow
+P(1)=1
+```
 
 ## 2.4 Euler's Formula
 
@@ -186,6 +225,8 @@ Same magnitude for the individual phase factor, completely different probability
 
 This is the algebraic heart of interference.
 
+**Teacher's pause.** The safe sentence is not "phase never affects probability." The safe sentence is "phase does not affect the probability of one isolated amplitude, but it can affect probability when amplitudes are recombined before squaring."
+
 ## 2.6 Vectors
 
 A vector is an ordered list of numbers. In quantum mechanics, those numbers are often complex.
@@ -233,6 +274,8 @@ This condition ensures that measurement probabilities sum to 1.
 A basis is a set of reference vectors used to describe a state.
 
 The same vector can be described in different bases, just as the same physical direction in space can be described using north/east coordinates or using rotated axes.
+
+This is where the learner's practical instinct matters. A basis is not merely notation. In quantum mechanics, a basis is tied to the question a measurement is asking.
 
 For qubits, the most important bases are:
 
@@ -402,6 +445,12 @@ P(\phi) = |\langle \phi|\psi\rangle|^2
 ```
 
 This is how we compute measurement probabilities in any basis.
+
+Read $\langle \phi|\psi\rangle$ as a question:
+
+> How much of $|\psi\rangle$ points in the $|\phi\rangle$ direction?
+
+The answer is an amplitude, not yet a probability. Only after taking the squared magnitude do we get the probability for that measurement answer.
 
 ## 2.9 Matrices
 

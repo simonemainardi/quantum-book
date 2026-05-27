@@ -4,6 +4,8 @@ The qubit is the simplest quantum information unit. It is not merely a bit that 
 
 > A qubit is a two-dimensional quantum state whose coordinates are complex amplitudes.
 
+This chapter keeps one guardrail in place: whenever a phrase sounds mystical, translate it back into amplitudes, phase, basis, and measurement statistics.
+
 ## 4.1 The Computational Basis
 
 The standard basis states are:
@@ -72,6 +74,8 @@ The device returns one classical bit: 0 or 1.
 
 The important engineering point is that a single measurement does not reveal $\alpha$ and $\beta$. It samples from a distribution. To estimate probabilities experimentally, you prepare and measure many identical copies of the circuit.
 
+So when a circuit diagram says a qubit is in state $|\psi\rangle$, do not imagine the measurement display will print that state. The display prints one classical result. The state is inferred from patterns across repeated preparations, measurements in chosen bases, and the circuit model that connects them.
+
 ## 4.3 Parameterizing a Qubit
 
 Any single-qubit pure state can be written, up to an unobservable global phase, as:
@@ -98,6 +102,8 @@ P(1) =
 The angle $\phi$ is the relative phase between the $|0\rangle$ and $|1\rangle$ components.
 
 That phase may be invisible in Z measurement, but it affects what happens under later gates or measurements in other bases.
+
+**Learner's checkpoint.** At fixed $\theta$, the Z-basis probabilities are fixed. Changing $\phi$ can still change the state because it changes how the two components will interfere later.
 
 ## 4.4 Global Phase versus Relative Phase
 
@@ -221,6 +227,8 @@ This formula is the bridge between:
 - geometric axes,
 - measurement probabilities.
 
+If $\theta$ feels like "how much $|0\rangle$ versus $|1\rangle$" and $\phi$ feels like "which way the relative phase points around the equator," you have the right first picture. The Bloch vector packages those two feelings into coordinates that predict measurement statistics.
+
 ## 4.7 Reading the Bloch Sphere
 
 The poles are:
@@ -274,6 +282,8 @@ So two states can have identical Z-basis probabilities and still be different qu
 ## 4.8 Same Theta, Different Phi
 
 This was one of the central points in the original conversation.
+
+The reason it mattered is practical: if you only look at $P(0)$ and $P(1)$, you can miss information stored in phase. A quantum circuit can carry that information forward and reveal it only after a later rotation.
 
 Take:
 
@@ -354,6 +364,10 @@ are different states.
 Z measurement cannot distinguish them. X and Y measurements can.
 
 ![Same theta phase ring](../figures/07_same_theta_phase_ring.svg?v=greek-2026-05-27)
+
+The engineering lesson is blunt: a measurement that is blind to the difference is not evidence that the difference is absent. It is evidence that you asked a question that cannot see it.
+
+This is exactly what happens in real experiments. If phase information matters, the circuit must rotate or recombine the state before readout. Otherwise, the histogram can look boring while the state still carries useful structure.
 
 ## 4.9 Physical Meaning
 

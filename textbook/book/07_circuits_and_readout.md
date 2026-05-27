@@ -10,6 +10,8 @@ This chapter connects the earlier ideas:
 - rotations,
 - final readout.
 
+The learner's question here was direct: if everything ends as 0 or 1, why did we spend so much effort on phase and basis? The answer is that the final 0/1 counts are the readout of an interference process that happened before the measurement.
+
 ## 7.1 The Circuit Pattern
 
 Most introductory single-qubit circuits follow this structure:
@@ -28,6 +30,15 @@ U_n \cdots U_2 U_1 |\psi_{\text{in}}\rangle
 Then measurement converts the final amplitudes into classical outcome probabilities.
 
 The order matters. Measurement too early destroys the phase relationships that later gates would have used.
+
+If you want a practical rule of thumb:
+
+```text
+unitary gates keep the calculation quantum;
+measurement cashes it out into classical data.
+```
+
+Once you cash it out, the later part of the circuit is no longer manipulating the same coherent amplitudes.
 
 ## 7.2 Native Z Readout
 
@@ -81,6 +92,8 @@ Therefore, to measure in X:
 The probability of observing 0 after the $H$ gate equals the original probability of $X=+$.
 
 This is not a trick. It is how a circuit asks the X-basis question using a Z-basis detector.
+
+In hardware language, the detector may be fixed, but the pre-measurement rotation changes what the detector's 0 and 1 mean.
 
 ## 7.4 Measuring Y Using $S^\dagger$, H, Then Z
 
@@ -155,6 +168,8 @@ P(0) =
 The final bit still says 0 or 1. But the frequency of 0 across many repetitions depends on the phase.
 
 That is the circuit version of the double-slit screen.
+
+**Learner's checkpoint.** The phase was never printed directly. It changed the probability distribution after the final recombination. In the lab, that means phase becomes a difference in counts.
 
 ## 7.6 Shots and Statistics
 
@@ -274,6 +289,8 @@ so the circuit returns 0 with probability 1.
 The only difference is a phase flip in the middle. That phase flip becomes a deterministic output change after recombination by the final $H$.
 
 This is a small quantum algorithm in miniature.
+
+It is worth feeling how strange and practical that is. The middle operation did not change the immediate Z probabilities of the superposition, yet it changed the final answer from certainly 0 to certainly 1 after recombination.
 
 ## 7.9 Circuit as an Interferometer
 

@@ -6,6 +6,8 @@ This chapter resolves the central conceptual tension of the conversation:
 
 The reason is not mysterious. A measurement basis determines which amplitudes are selected and which amplitudes are recombined before squaring.
 
+In the original discussion, this is where the teacher slowed down and computed the same family of states three ways: Z, X, and Y. That repetition is the point. You are not learning three unrelated measurement tricks. You are watching the same hidden phase become visible from different angles.
+
 ## 5.1 What "Measuring in a Basis" Means
 
 **Question.** If real hardware eventually returns 0 or 1, why do people say "measure in X" or "measure in Y"?
@@ -33,6 +35,8 @@ Measuring in the Y basis means asking:
 The physical detector may still report a bit, but by applying a rotation before measurement, we can make that bit correspond to a different basis.
 
 This is covered operationally in [Circuits and Readout](07_circuits_and_readout.md). Here we focus on the probability formulas.
+
+**Teacher's pause.** "Measure in X" does not mean the lab screen prints a plus sign instead of a 0. It means the circuit has been arranged so that a final 0 corresponds to the original state being aligned with $|+\rangle$.
 
 ## 5.2 Measurement as Projection
 
@@ -75,6 +79,8 @@ P(-i) = |\langle -i|\psi\rangle|^2
 
 The same state can give different distributions in these bases.
 
+This is the place to stop and notice the shift in language. A measurement basis is not a camera angle on a pre-existing classical bit. It is a choice of which quantum alternatives are allowed to interfere into the final answers.
+
 ## 5.3 A State with Fixed Theta and Changing Phi
 
 Use the state from the original discussion:
@@ -114,6 +120,8 @@ So:
 ```
 
 The magnitudes are fixed. Only the relative phase changes.
+
+This was chosen deliberately. If the Z probabilities change, it is too easy to think phase is just another way of changing population. Here the populations are fixed, so any change in X or Y must come from recombination of phase.
 
 ## 5.4 Bloch-Vector Bridge
 
@@ -189,6 +197,8 @@ This is what "choosing an axis" means mathematically: you choose which component
 
 ![Z X Y measurement probabilities](../figures/08_zxy_measurement_probabilities.svg?v=greek-2026-05-27)
 
+Read the figure like an engineer debugging a signal path: Z is blind to the changing phase here, X sees the cosine part, and Y sees the sine part. Same state family, different readout question.
+
 ## 5.5 Z Basis: Phase Is Invisible
 
 In Z measurement:
@@ -225,6 +235,15 @@ This does not depend on $\phi$.
 Interpretation:
 
 Z measurement reads the magnitudes of the $|0\rangle$ and $|1\rangle$ components. It does not recombine them. Therefore the relative phase between them is not visible.
+
+If you ran this experiment with many shots, the Z histogram would keep returning approximately:
+
+```text
+0: 75%
+1: 25%
+```
+
+for every value of $\phi$ in this example. That flatness is not a failure of quantum theory. It is the signature of asking a phase-blind question.
 
 ## 5.6 X Basis: Phase Becomes Cosine
 
@@ -277,6 +296,8 @@ e^{i\phi}\sin\frac{\theta}{2}
 
 That is a sum. When you square its magnitude, a cross term appears, and that cross term depends on $\cos\phi$.
 
+In count language, the same prepared states that looked identical in Z now produce different X histograms. The phase has not become a new output label. It has become a bias in how often the ordinary outcomes occur.
+
 ## 5.7 Y Basis: Phase Becomes Sine
 
 For Y measurement:
@@ -312,6 +333,8 @@ P(Y=+i) \approx 0.067
 ```
 
 So Y measurement sees the sine component of phase, shifted by 90 degrees relative to X.
+
+Together, X and Y are like two phase-sensitive probes in quadrature: one sees the cosine part of the relative phase, the other sees the sine part. This is why both axes matter when reconstructing or controlling a qubit.
 
 ## 5.8 Where Interference Hides in the Algebra
 

@@ -4,6 +4,12 @@ The double-slit experiment is where the physical and mathematical stories meet.
 
 In [Chapter 1](01_physical_principles.md), we introduced it as a physical fact: particles fired one at a time still build an interference pattern. In [Chapter 2](02_math_prerequisites.md), we introduced complex amplitudes, inner products, and squared magnitudes. Now we combine them.
 
+The soul of this chapter is the learner's apparent contradiction:
+
+> You told me phase can be invisible. But the double slit says phase can make an outcome disappear. Which one is true?
+
+Both are true, and the difference is whether the measurement separates alternatives or recombines them.
+
 ## 3.1 Two Questions, Two Bases
 
 **Question.** I see why the double slit has interference, but I am confused by this: sometimes phase seems invisible, and sometimes phase changes probabilities. Which is it?
@@ -74,6 +80,8 @@ P(R) =
 
 There is no interference in this measurement because the alternatives are distinct outcomes. We do not add the left-path amplitude to the right-path amplitude when asking "which slit?"
 
+**Teacher's pause.** This is the first time basis choice becomes physical. The which-slit basis prevents the two alternatives from arriving at the same answer. No shared answer means no amplitude sum, and no amplitude sum means no interference term.
+
 ## 3.3 Screen-Position Measurement
 
 Now ask where the particle lands on the screen.
@@ -117,6 +125,10 @@ Here:
 - $r_R(x)$ is the path length from the right slit to screen position $x$.
 
 Different path lengths produce different phases.
+
+This is the physical origin of the algebra. The left-path contribution and right-path contribution are not merely two labels. They are wave-like contributions that arrive with different phase angles because the distances are different.
+
+At one screen position, the two arrows line up. At another, they point against each other. The particle still lands as a dot, but the chance of a dot at each position is governed by those arrow sums.
 
 ## 3.4 The Cross Term
 
@@ -210,6 +222,13 @@ So:
 
 That is exactly the difference between an isolated amplitude and recombined amplitudes.
 
+This is the line that should dissolve the contradiction:
+
+```text
+phase is invisible when you square one arrow;
+phase is visible when you add arrows and then square.
+```
+
 ## 3.6 The Same Pattern in a Qubit
 
 The double-slit state:
@@ -275,6 +294,14 @@ P(+) =
 At $\phi = \pi$, this is zero.
 
 That is single-qubit interference.
+
+The notation changed from paths to qubit states, but the emotional point is the same: the phase was not visible when we asked one question, and it became visible when we asked a question that added the components.
+
+This is why the double slit belongs in a practical quantum computing book. It teaches the habit of asking:
+
+> Are these alternatives being kept separate, or are they being recombined before measurement?
+
+That one question will explain many circuit diagrams later.
 
 ## 3.7 The Practical Lesson
 

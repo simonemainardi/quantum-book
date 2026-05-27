@@ -1,5 +1,7 @@
 # 10. Glossary
 
+This glossary is meant to be read as a conversational index. Each definition points back to the pressure points of the book: what evolves before measurement, what is observed after measurement, and what transformations make hidden phase visible.
+
 ## Amplitude
 
 A complex number associated with a possible outcome or contribution. Probabilities are computed from squared magnitudes of amplitudes.

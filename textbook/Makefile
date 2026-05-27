@@ -18,7 +18,8 @@ figures: venv
 
 book: figures
 	mkdir -p dist
-	cat README.md \
+	awk 'FNR == 1 && NR != 1 { print "" } { print }' \
+	    book/00_preface.md \
 	    book/01_physical_principles.md \
 	    book/02_math_prerequisites.md \
 	    book/03_double_slit_and_amplitudes.md \

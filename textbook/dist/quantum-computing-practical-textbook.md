@@ -2,89 +2,108 @@
 
 ## Preface
 
-This book is written for an engineer who wants to understand quantum computing from the inside, not as a list of mystical slogans and not as a pile of formalism detached from physical meaning.
+This book began as a conversation between a curious engineer and a teacher.
 
-The original learning goal was precise:
+The engineer did not ask for a list of quantum facts. The request was more precise and more human:
 
 > I understand math, but I need a recap of the fundamental concepts, such as complex numbers, cosine, and sine. Start from the physical principles of quantum: interference that can cancel while probabilities do not. Then introduce qubits, transformations, and circuits. I want the math needed to describe quantum, and I want real examples behind the technology and its applicability.
 
-So the book follows that route.
+That request is the spine of the book.
 
-It does not begin with "a qubit is both 0 and 1." That phrase is too loose to be useful. Instead, it begins with the physical fact that quantum systems do not add probabilities first. They add **amplitudes** first. Those amplitudes can have signs and phases. They can reinforce or cancel. Only after measurement do we square magnitudes and obtain probabilities.
+This book is allowed to be conversational because the conversation is where the understanding lives. A clean formula matters, but the moment before the formula matters too: the moment where something seems contradictory, where the classical intuition protests, where the engineer asks, "What would I actually observe?"
 
-That single difference explains why:
+The book should feel like a good lecture where the student keeps asking the right uncomfortable question and the teacher keeps returning to the physical meaning until the algebra stops feeling detached.
 
-- a double-slit experiment has dark fringes,
-- a qubit can have an invisible phase,
-- a basis change can make that phase visible,
-- a quantum circuit is mostly a way of arranging interference before readout,
-- real devices often measure only one native basis, then use rotations to expose the information we want.
+## The Contract
+
+Every important idea should pass three tests:
+
+1. **Physical test.** What does this correspond to in an experiment or device?
+2. **Algebra test.** What is the exact formula that describes it?
+3. **Readout test.** What changes in the measured counts?
+
+If an explanation cannot pass all three tests, it is not yet practical enough for this book.
+
+## The Learner's Hat
+
+Wearing the learner's hat, the important questions are not decorative. They are the engine of the course:
+
+- If probabilities are positive, how can quantum effects cancel?
+- If phase does not change $|e^{i\phi}|^2$, how can phase create a dark fringe?
+- If a real device only returns 0 or 1, what does it mean to measure in X or Y?
+- If two states have the same $P(0)$ and $P(1)$, in what sense are they different?
+- How does the elegant ket notation become the concrete $2 \times 2$ matrices used in circuits?
+- What is physically happening in real hardware when a "rotation" is applied?
+
+These are the questions of someone who does not want slogans. They want to know where the moving parts are.
+
+## The Teacher's Hat
+
+Wearing the teacher's hat, the job is not to make quantum mechanics sound mystical. The job is to repeat one deep idea in enough representations that it becomes usable:
+
+```text
+complex amplitude -> phase -> recombination -> squared magnitude -> observed probability
+```
+
+The same idea appears as:
+
+- two paths in the double slit,
+- two coordinates in a qubit,
+- two arrows in the complex plane,
+- two columns in a matrix,
+- two branches of a circuit before final readout,
+- two experimental count bins after many shots.
+
+Whenever the book returns to the same idea, that is intentional. Quantum intuition is not built by hearing the sentence once. It is built by seeing the same mechanism survive translation from physics to algebra to circuit diagrams to hardware.
+
+The teacher's promise is to avoid hiding behind words like "weird", "mysterious", or "spooky" when a careful amplitude calculation will do. Quantum mechanics is strange, but the strangeness has structure.
 
 ## How to Read This Book
 
-The chapters are meant to be read in order at least once:
+Read the chapters in order the first time:
 
-1. [Physical Principles](book/01_physical_principles.md)
-2. [Math and Algebra Prerequisites](book/02_math_prerequisites.md)
-3. [Double Slit and Amplitudes](book/03_double_slit_and_amplitudes.md)
-4. [Qubits and the Bloch Sphere](book/04_qubits_and_bloch_sphere.md)
-5. [Measurement Bases](book/05_measurement_bases.md)
-6. [Gates, Matrices, and Rotations](book/06_gates_matrices_rotations.md)
-7. [Circuits and Readout](book/07_circuits_and_readout.md)
-8. [Practical Examples](book/08_practical_examples.md)
-9. [Worked Labs](book/09_worked_labs.md)
-10. [Glossary](book/10_glossary.md)
+1. [Physical Principles](01_physical_principles.md)
+2. [Math and Algebra Prerequisites](02_math_prerequisites.md)
+3. [Double Slit and Amplitudes](03_double_slit_and_amplitudes.md)
+4. [Qubits and the Bloch Sphere](04_qubits_and_bloch_sphere.md)
+5. [Measurement Bases](05_measurement_bases.md)
+6. [Gates, Matrices, and Rotations](06_gates_matrices_rotations.md)
+7. [Circuits and Readout](07_circuits_and_readout.md)
+8. [Practical Examples](08_practical_examples.md)
+9. [Worked Labs](09_worked_labs.md)
+10. [Glossary](10_glossary.md)
 
-The math chapter is not an appendix to ignore. It is a toolkit. Later chapters refer back to it whenever a concept is reused:
+The math chapter is not an appendix. It is the toolkit you will keep reaching for:
 
-- complex numbers and phases,
-- Euler's formula,
-- vectors and bases,
-- inner products,
-- matrices,
-- unitary transformations,
-- the Born rule.
+- complex numbers explain phase,
+- sine and cosine explain rotations,
+- Euler's formula connects oscillation with complex amplitudes,
+- vectors explain states,
+- bases explain questions,
+- inner products compute overlaps,
+- matrices represent gates,
+- unitary transformations preserve total probability,
+- the Born rule turns amplitudes into experimental statistics.
 
-## The Style of the Book
+## The One Idea to Carry
 
-The book keeps the rhythm of a good tutorial conversation. Many sections begin with a question in the voice of the learner, followed by a teacher's answer. This is deliberate. The goal is not only to state the correct equations, but to resolve the conceptual pressure points that came up in the original discussion:
+Do not begin with "a qubit is both 0 and 1." That phrase is too loose to do engineering work.
 
-- If phase does not affect ordinary probability, how can it create interference?
-- If all measurements return classical 0/1 bits, why talk about measuring in X or Y?
-- If a qubit has the same `P(0)` and `P(1)`, how can it still be a different state?
-- How does a ket become a column vector?
-- How does a gate become a matrix?
-- What does "measurement is choosing an axis" mean physically?
+Begin here instead:
 
-## Reproducible Figures
+> A quantum computer is a programmable interference machine. It stores complex amplitudes, transforms them with probability-preserving operations, and arranges the final measurement so useful amplitude has been reinforced while unwanted amplitude has been cancelled.
 
-Every chart and diagram used by the chapters is generated locally.
-
-Run:
-
-```bash
-make figures
-```
-
-The figure generator uses only the Python standard library and writes SVG files into `figures/`.
-
-To assemble all chapters into one Markdown file:
-
-```bash
-make book
-```
-
-The assembled output appears at:
-
-```text
-dist/quantum-computing-practical-textbook.md
-```
-
-## One Sentence Summary
-
-A quantum computer is a programmable interference machine: it stores complex amplitudes, transforms them with unitary operations, and arranges the final measurement so useful amplitude has been reinforced while unwanted amplitude has been cancelled.
+Everything else in the book is a careful unpacking of that sentence.
 
 # 1. Physical Principles
+
+## 1.0 Conversation Thread
+
+The original learner did not begin by asking for a definition of a qubit. The first pressure point was more basic:
+
+> Probabilities do not cancel. But quantum interference can cancel. What, exactly, is cancelling?
+
+This chapter keeps that question in front of us. The aim is not to decorate classical probability with quantum vocabulary. The aim is to identify the new object that quantum theory asks us to track before measurement: the complex amplitude.
 
 ## 1.1 The Engineer's Starting Point
 
@@ -148,7 +167,9 @@ The engineering version is:
 
 > Design transformations so the amplitude of useful outcomes is large and the amplitude of unwanted outcomes is small.
 
-This is why the earlier website phrase "programmable interference machine" is still correct, but it was not enough. To understand it, we must unpack what interference means physically and algebraically.
+This is why the phrase "programmable interference machine" is correct, but it is not enough by itself. It only becomes useful when you can say what is interfering, when it is allowed to interfere, and how the final measurement turns that interference into ordinary counts.
+
+**Teacher's pause.** A probability is what you can estimate after repeated measurements. An amplitude is the bookkeeping object that evolves before measurement. Mixing those two levels is the fastest way to become confused.
 
 ## 1.3 Probabilities Do Not Interfere; Amplitudes Do
 
@@ -182,6 +203,10 @@ This distinction is the key to the rest of the book. Later, in [Math and Algebra
 alternatives -> amplitudes -> add amplitudes -> square magnitude -> probability
 ```
 
+If you are wearing the engineer's hat, read that line as a signal chain. Before measurement, the system carries complex-valued signals. The circuit or physical setup combines them. The detector sees only the squared magnitude of the result.
+
+That is why quantum mechanics feels slippery at first: the thing we manipulate is not the thing we finally observe.
+
 ## 1.4 The Double-Slit Experiment
 
 The double-slit experiment is the cleanest physical example.
@@ -202,6 +227,13 @@ Quantum mechanically, with no which-slit measurement, the screen shows interfere
 
 The striking point is that each particle is detected as one localized event, but the probability distribution of many such events is shaped by amplitude interference.
 
+So the experiment has two layers at once:
+
+- one run gives one dot on the screen,
+- many runs reveal a wave-like pattern of probabilities.
+
+This is exactly the rhythm of quantum computing later: one circuit shot returns one bit string, but many shots reveal the probability pattern created by the amplitudes.
+
 ![Double slit interference](../figures/02_double_slit_interference.svg?v=greek-2026-05-27)
 
 ## 1.5 What the Double Slit Teaches
@@ -217,6 +249,8 @@ Third, phase matters. The left-path and right-path contributions arrive at a giv
 Fourth, measurement basis matters. Asking "which slit?" and asking "which screen position?" are different questions. They correspond to different ways of extracting classical information from the same quantum state.
 
 That fourth lesson is the bridge to qubits.
+
+**Learner's checkpoint.** If the pattern changes when you ask "which slit?", the particle was not simply carrying a hidden classical answer that you uncovered. The experimental question changed the quantum situation.
 
 ## 1.6 From Double Slit to Qubits
 
@@ -272,6 +306,8 @@ After measurement, the device reports one classical result, either 0 or 1.
 
 The phase information that existed in the quantum state is generally destroyed by that readout. That is why useful quantum programs delay measurement until the end, after gates have arranged the amplitudes.
 
+This is not because measurement is morally bad or philosophically forbidden. It is because measurement turns the amplitude-level calculation into a classical sample. Once that happens, the later gates no longer have phase relationships to use.
+
 ## 1.8 Practical Engineering Relevance
 
 The same physical principle drives multiple quantum technologies.
@@ -302,6 +338,7 @@ Do not treat that chapter as detached algebra. Every piece will be used again:
 - inner products compute amplitudes,
 - matrices represent gates,
 - unitaries preserve total probability.
+
 # 2. Math and Algebra Prerequisites
 
 This chapter is the mathematical toolkit for the rest of the book. It is deliberately practical. The goal is not abstract elegance for its own sake, but fluency with the objects that quantum mechanics uses every few lines.
@@ -318,6 +355,22 @@ The core objects are:
 - probability from squared magnitude.
 
 Whenever a later chapter says "phase", "basis", "projection", "gate", or "unitary", it is using material from this chapter.
+
+## 2.0 Why This Math Is Here
+
+The learner's request was not "teach me abstract linear algebra." It was "I understand math, but remind me of the pieces that make quantum understandable."
+
+So this chapter is a repair bench. Every tool here has a job later:
+
+- complex numbers carry phase,
+- sine and cosine describe rotations,
+- vectors hold amplitudes,
+- bases define the possible answers to a measurement,
+- inner products compute the amplitude of an answer,
+- matrices describe gates,
+- unitaries explain why gates preserve total probability.
+
+When the later chapters refer back here, the intent is not to interrupt the physics. It is to keep the physics honest.
 
 ## 2.1 Complex Numbers
 
@@ -396,6 +449,15 @@ This matters because amplitudes can cancel as vectors:
 
 They can also cancel after rotating through phases, not only by being literally positive and negative real numbers.
 
+Here is the first small mental picture to keep:
+
+```text
+amplitude = arrow
+probability = squared length of the final arrow
+```
+
+Two arrows pointing in the same direction make a longer arrow. Two arrows pointing in opposite directions can leave no arrow at all. The detector does not see the individual arrows; it sees the squared length after the arrows have been added.
+
 ## 2.3 Sine and Cosine as Coordinates
 
 The trigonometric functions $\cos\theta$ and $\sin\theta$ are coordinates on the unit circle.
@@ -431,6 +493,20 @@ as amplitude magnitudes. The squared magnitudes add to 1:
 ```
 
 That is exactly what we need for probabilities to sum to 1.
+
+The half-angle is not a typographical flourish. It is what makes a full trip from the north pole to the south pole of the Bloch sphere correspond to changing the probability from all $|0\rangle$ to all $|1\rangle$:
+
+```math
+\theta = 0
+\Rightarrow
+P(0)=1
+```
+
+```math
+\theta = \pi
+\Rightarrow
+P(1)=1
+```
 
 ## 2.4 Euler's Formula
 
@@ -490,6 +566,8 @@ Same magnitude for the individual phase factor, completely different probability
 
 This is the algebraic heart of interference.
 
+**Teacher's pause.** The safe sentence is not "phase never affects probability." The safe sentence is "phase does not affect the probability of one isolated amplitude, but it can affect probability when amplitudes are recombined before squaring."
+
 ## 2.6 Vectors
 
 A vector is an ordered list of numbers. In quantum mechanics, those numbers are often complex.
@@ -537,6 +615,8 @@ This condition ensures that measurement probabilities sum to 1.
 A basis is a set of reference vectors used to describe a state.
 
 The same vector can be described in different bases, just as the same physical direction in space can be described using north/east coordinates or using rotated axes.
+
+This is where the learner's practical instinct matters. A basis is not merely notation. In quantum mechanics, a basis is tied to the question a measurement is asking.
 
 For qubits, the most important bases are:
 
@@ -707,6 +787,12 @@ P(\phi) = |\langle \phi|\psi\rangle|^2
 
 This is how we compute measurement probabilities in any basis.
 
+Read $\langle \phi|\psi\rangle$ as a question:
+
+> How much of $|\psi\rangle$ points in the $|\phi\rangle$ direction?
+
+The answer is an amplitude, not yet a probability. Only after taking the squared magnitude do we get the probability for that measurement answer.
+
 ## 2.9 Matrices
 
 A matrix is a linear transformation. A single-qubit gate is represented by a $2 \times 2$ matrix:
@@ -863,11 +949,18 @@ Keep this compact map nearby:
 | Inner product | $\langle \phi\vert\psi\rangle$ | amplitude of overlap |
 | Matrix gate | $U\lvert\psi\rangle$ | linear transformation of amplitudes |
 | Unitary | $U^\dagger U=I$ | probability-preserving evolution |
+
 # 3. Double Slit and Amplitudes
 
 The double-slit experiment is where the physical and mathematical stories meet.
 
 In [Chapter 1](01_physical_principles.md), we introduced it as a physical fact: particles fired one at a time still build an interference pattern. In [Chapter 2](02_math_prerequisites.md), we introduced complex amplitudes, inner products, and squared magnitudes. Now we combine them.
+
+The soul of this chapter is the learner's apparent contradiction:
+
+> You told me phase can be invisible. But the double slit says phase can make an outcome disappear. Which one is true?
+
+Both are true, and the difference is whether the measurement separates alternatives or recombines them.
 
 ## 3.1 Two Questions, Two Bases
 
@@ -939,6 +1032,8 @@ P(R) =
 
 There is no interference in this measurement because the alternatives are distinct outcomes. We do not add the left-path amplitude to the right-path amplitude when asking "which slit?"
 
+**Teacher's pause.** This is the first time basis choice becomes physical. The which-slit basis prevents the two alternatives from arriving at the same answer. No shared answer means no amplitude sum, and no amplitude sum means no interference term.
+
 ## 3.3 Screen-Position Measurement
 
 Now ask where the particle lands on the screen.
@@ -982,6 +1077,10 @@ Here:
 - $r_R(x)$ is the path length from the right slit to screen position $x$.
 
 Different path lengths produce different phases.
+
+This is the physical origin of the algebra. The left-path contribution and right-path contribution are not merely two labels. They are wave-like contributions that arrive with different phase angles because the distances are different.
+
+At one screen position, the two arrows line up. At another, they point against each other. The particle still lands as a dot, but the chance of a dot at each position is governed by those arrow sums.
 
 ## 3.4 The Cross Term
 
@@ -1075,6 +1174,13 @@ So:
 
 That is exactly the difference between an isolated amplitude and recombined amplitudes.
 
+This is the line that should dissolve the contradiction:
+
+```text
+phase is invisible when you square one arrow;
+phase is visible when you add arrows and then square.
+```
+
 ## 3.6 The Same Pattern in a Qubit
 
 The double-slit state:
@@ -1141,6 +1247,14 @@ At $\phi = \pi$, this is zero.
 
 That is single-qubit interference.
 
+The notation changed from paths to qubit states, but the emotional point is the same: the phase was not visible when we asked one question, and it became visible when we asked a question that added the components.
+
+This is why the double slit belongs in a practical quantum computing book. It teaches the habit of asking:
+
+> Are these alternatives being kept separate, or are they being recombined before measurement?
+
+That one question will explain many circuit diagrams later.
+
 ## 3.7 The Practical Lesson
 
 Quantum computing does not need a literal pair of slits. It needs the same logical structure:
@@ -1189,11 +1303,14 @@ The double slit is the physical template for quantum computation:
 - phase becomes visible only through a measurement basis or circuit that recombines amplitudes.
 
 The next chapter introduces the qubit as the simplest engineered system that contains this logic.
+
 # 4. Qubits and the Bloch Sphere
 
 The qubit is the simplest quantum information unit. It is not merely a bit that is "both 0 and 1." A better engineering definition is:
 
 > A qubit is a two-dimensional quantum state whose coordinates are complex amplitudes.
+
+This chapter keeps one guardrail in place: whenever a phrase sounds mystical, translate it back into amplitudes, phase, basis, and measurement statistics.
 
 ## 4.1 The Computational Basis
 
@@ -1263,6 +1380,8 @@ The device returns one classical bit: 0 or 1.
 
 The important engineering point is that a single measurement does not reveal $\alpha$ and $\beta$. It samples from a distribution. To estimate probabilities experimentally, you prepare and measure many identical copies of the circuit.
 
+So when a circuit diagram says a qubit is in state $|\psi\rangle$, do not imagine the measurement display will print that state. The display prints one classical result. The state is inferred from patterns across repeated preparations, measurements in chosen bases, and the circuit model that connects them.
+
 ## 4.3 Parameterizing a Qubit
 
 Any single-qubit pure state can be written, up to an unobservable global phase, as:
@@ -1289,6 +1408,8 @@ P(1) =
 The angle $\phi$ is the relative phase between the $|0\rangle$ and $|1\rangle$ components.
 
 That phase may be invisible in Z measurement, but it affects what happens under later gates or measurements in other bases.
+
+**Learner's checkpoint.** At fixed $\theta$, the Z-basis probabilities are fixed. Changing $\phi$ can still change the state because it changes how the two components will interfere later.
 
 ## 4.4 Global Phase versus Relative Phase
 
@@ -1412,6 +1533,8 @@ This formula is the bridge between:
 - geometric axes,
 - measurement probabilities.
 
+If $\theta$ feels like "how much $|0\rangle$ versus $|1\rangle$" and $\phi$ feels like "which way the relative phase points around the equator," you have the right first picture. The Bloch vector packages those two feelings into coordinates that predict measurement statistics.
+
 ## 4.7 Reading the Bloch Sphere
 
 The poles are:
@@ -1465,6 +1588,8 @@ So two states can have identical Z-basis probabilities and still be different qu
 ## 4.8 Same Theta, Different Phi
 
 This was one of the central points in the original conversation.
+
+The reason it mattered is practical: if you only look at $P(0)$ and $P(1)$, you can miss information stored in phase. A quantum circuit can carry that information forward and reveal it only after a later rotation.
 
 Take:
 
@@ -1546,6 +1671,10 @@ Z measurement cannot distinguish them. X and Y measurements can.
 
 ![Same theta phase ring](../figures/07_same_theta_phase_ring.svg?v=greek-2026-05-27)
 
+The engineering lesson is blunt: a measurement that is blind to the difference is not evidence that the difference is absent. It is evidence that you asked a question that cannot see it.
+
+This is exactly what happens in real experiments. If phase information matters, the circuit must rotate or recombine the state before readout. Otherwise, the histogram can look boring while the state still carries useful structure.
+
 ## 4.9 Physical Meaning
 
 **Question.** What does the Bloch sphere mean physically? Is it a real sphere inside the hardware?
@@ -1592,6 +1721,7 @@ The Bloch vector is:
 ```
 
 Z measurement sees $r_z$. X measurement sees $r_x$. Y measurement sees $r_y$. This is the topic of the next chapter.
+
 # 5. Measurement Bases
 
 This chapter resolves the central conceptual tension of the conversation:
@@ -1599,6 +1729,8 @@ This chapter resolves the central conceptual tension of the conversation:
 > Phase can be invisible in one measurement basis and visible in another.
 
 The reason is not mysterious. A measurement basis determines which amplitudes are selected and which amplitudes are recombined before squaring.
+
+In the original discussion, this is where the teacher slowed down and computed the same family of states three ways: Z, X, and Y. That repetition is the point. You are not learning three unrelated measurement tricks. You are watching the same hidden phase become visible from different angles.
 
 ## 5.1 What "Measuring in a Basis" Means
 
@@ -1627,6 +1759,8 @@ Measuring in the Y basis means asking:
 The physical detector may still report a bit, but by applying a rotation before measurement, we can make that bit correspond to a different basis.
 
 This is covered operationally in [Circuits and Readout](07_circuits_and_readout.md). Here we focus on the probability formulas.
+
+**Teacher's pause.** "Measure in X" does not mean the lab screen prints a plus sign instead of a 0. It means the circuit has been arranged so that a final 0 corresponds to the original state being aligned with $|+\rangle$.
 
 ## 5.2 Measurement as Projection
 
@@ -1669,6 +1803,8 @@ P(-i) = |\langle -i|\psi\rangle|^2
 
 The same state can give different distributions in these bases.
 
+This is the place to stop and notice the shift in language. A measurement basis is not a camera angle on a pre-existing classical bit. It is a choice of which quantum alternatives are allowed to interfere into the final answers.
+
 ## 5.3 A State with Fixed Theta and Changing Phi
 
 Use the state from the original discussion:
@@ -1708,6 +1844,8 @@ So:
 ```
 
 The magnitudes are fixed. Only the relative phase changes.
+
+This was chosen deliberately. If the Z probabilities change, it is too easy to think phase is just another way of changing population. Here the populations are fixed, so any change in X or Y must come from recombination of phase.
 
 ## 5.4 Bloch-Vector Bridge
 
@@ -1783,6 +1921,8 @@ This is what "choosing an axis" means mathematically: you choose which component
 
 ![Z X Y measurement probabilities](../figures/08_zxy_measurement_probabilities.svg?v=greek-2026-05-27)
 
+Read the figure like an engineer debugging a signal path: Z is blind to the changing phase here, X sees the cosine part, and Y sees the sine part. Same state family, different readout question.
+
 ## 5.5 Z Basis: Phase Is Invisible
 
 In Z measurement:
@@ -1819,6 +1959,15 @@ This does not depend on $\phi$.
 Interpretation:
 
 Z measurement reads the magnitudes of the $|0\rangle$ and $|1\rangle$ components. It does not recombine them. Therefore the relative phase between them is not visible.
+
+If you ran this experiment with many shots, the Z histogram would keep returning approximately:
+
+```text
+0: 75%
+1: 25%
+```
+
+for every value of $\phi$ in this example. That flatness is not a failure of quantum theory. It is the signature of asking a phase-blind question.
 
 ## 5.6 X Basis: Phase Becomes Cosine
 
@@ -1871,6 +2020,8 @@ e^{i\phi}\sin\frac{\theta}{2}
 
 That is a sum. When you square its magnitude, a cross term appears, and that cross term depends on $\cos\phi$.
 
+In count language, the same prepared states that looked identical in Z now produce different X histograms. The phase has not become a new output label. It has become a bias in how often the ordinary outcomes occur.
+
 ## 5.7 Y Basis: Phase Becomes Sine
 
 For Y measurement:
@@ -1906,6 +2057,8 @@ P(Y=+i) \approx 0.067
 ```
 
 So Y measurement sees the sine component of phase, shifted by 90 degrees relative to X.
+
+Together, X and Y are like two phase-sensitive probes in quadrature: one sees the cosine part of the relative phase, the other sees the sine part. This is why both axes matter when reconstructing or controlling a qubit.
 
 ## 5.8 Where Interference Hides in the Algebra
 
@@ -1975,6 +2128,7 @@ The original confusion is resolved as follows:
 - Real hardware can often use one native readout basis plus rotations to implement other measurement bases.
 
 The next chapter shows those rotations and gates as matrices.
+
 # 6. Gates, Matrices, and Rotations
 
 Quantum gates are transformations of amplitudes. For a single qubit, a gate is a $2 \times 2$ unitary matrix. On the Bloch sphere, many gates can be understood as rotations.
@@ -1984,6 +2138,12 @@ This chapter connects three languages:
 - ket notation,
 - matrices,
 - geometric rotations.
+
+The learner's practical question underneath all three languages is simple:
+
+> If a gate is written as a symbol in a circuit, what does it actually do to the amplitudes?
+
+The answer is: it linearly mixes amplitudes while preserving total probability. The matrix tells you exactly how.
 
 ## 6.1 A Gate Is a Linear Map
 
@@ -2016,6 +2176,8 @@ U(\alpha|0\rangle + \beta|1\rangle)
 ```
 
 That is why knowing what a gate does to $|0\rangle$ and $|1\rangle$ determines the whole gate.
+
+This is a comforting fact for an engineer: you do not need to memorize what a gate does to every possible superposition. If you know its action on the basis states and you trust linearity, the action on every superposition follows.
 
 ## 6.2 Building the Matrix from Columns
 
@@ -2142,6 +2304,8 @@ If $\alpha = 1/\sqrt{2}$ and $\beta = -1/\sqrt{2}$, then:
 
 and the $|0\rangle$ output disappears.
 
+**Teacher's pause.** This is the double slit in circuit clothing. Hadamard is not magic; it is a controlled way of making amplitudes meet in the same output coordinate.
+
 ## 6.5 Pauli Gates
 
 The Pauli gates are:
@@ -2189,6 +2353,8 @@ Z(\alpha|0\rangle + \beta|1\rangle)
 ```
 
 This is a phase flip. It does not change Z-basis probabilities, but it changes future interference.
+
+This is the same pattern again: a phase operation can look like "nothing happened" if you immediately measure in Z. But if a later gate recombines amplitudes, that hidden sign can become a deterministic change in the output.
 
 The $Y$ gate combines bit flip and phase factors.
 
@@ -2276,6 +2442,8 @@ e^{-i\theta/2} & 0 \\
 
 These gates rotate the Bloch vector around the X, Y, and Z axes.
 
+The notation $e^{-i\theta X/2}$ is compact, but its practical meaning is simple: choose an axis, choose an angle, and move the state around the Bloch sphere while preserving total probability.
+
 ## 6.8 Rotations Have Physical Meaning
 
 **Question.** Are these rotations just math, or do they correspond to real hardware controls?
@@ -2291,6 +2459,8 @@ For example:
 - virtual Z rotations can often be implemented by updating a phase reference rather than physically pulsing the qubit.
 
 The Bloch sphere is therefore not just a teaching picture. It is also a control picture.
+
+This is the engineering payoff of the geometry. A rotation on the page corresponds to a calibrated control action in the device, even though the sphere itself is a state-space diagram rather than a physical ball.
 
 ## 6.9 Unitarity and Probability Conservation
 
@@ -2351,6 +2521,7 @@ The chapter's key points:
 - real hardware gates correspond to physical controls such as pulses and phase references.
 
 Next we put these gates into circuits and connect them to final 0/1 readout.
+
 # 7. Circuits and Readout
 
 A quantum circuit is a sequence of operations applied to quantum states, followed by measurement. The useful part of the circuit usually happens before measurement, while amplitudes are still free to interfere.
@@ -2362,6 +2533,8 @@ This chapter connects the earlier ideas:
 - gates,
 - rotations,
 - final readout.
+
+The learner's question here was direct: if everything ends as 0 or 1, why did we spend so much effort on phase and basis? The answer is that the final 0/1 counts are the readout of an interference process that happened before the measurement.
 
 ## 7.1 The Circuit Pattern
 
@@ -2381,6 +2554,15 @@ U_n \cdots U_2 U_1 |\psi_{\text{in}}\rangle
 Then measurement converts the final amplitudes into classical outcome probabilities.
 
 The order matters. Measurement too early destroys the phase relationships that later gates would have used.
+
+If you want a practical rule of thumb:
+
+```text
+unitary gates keep the calculation quantum;
+measurement cashes it out into classical data.
+```
+
+Once you cash it out, the later part of the circuit is no longer manipulating the same coherent amplitudes.
 
 ## 7.2 Native Z Readout
 
@@ -2434,6 +2616,8 @@ Therefore, to measure in X:
 The probability of observing 0 after the $H$ gate equals the original probability of $X=+$.
 
 This is not a trick. It is how a circuit asks the X-basis question using a Z-basis detector.
+
+In hardware language, the detector may be fixed, but the pre-measurement rotation changes what the detector's 0 and 1 mean.
 
 ## 7.4 Measuring Y Using $S^\dagger$, H, Then Z
 
@@ -2508,6 +2692,8 @@ P(0) =
 The final bit still says 0 or 1. But the frequency of 0 across many repetitions depends on the phase.
 
 That is the circuit version of the double-slit screen.
+
+**Learner's checkpoint.** The phase was never printed directly. It changed the probability distribution after the final recombination. In the lab, that means phase becomes a difference in counts.
 
 ## 7.6 Shots and Statistics
 
@@ -2628,6 +2814,8 @@ The only difference is a phase flip in the middle. That phase flip becomes a det
 
 This is a small quantum algorithm in miniature.
 
+It is worth feeling how strange and practical that is. The middle operation did not change the immediate Z probabilities of the superposition, yet it changed the final answer from certainly 0 to certainly 1 after recombination.
+
 ## 7.9 Circuit as an Interferometer
 
 The circuit:
@@ -2669,11 +2857,14 @@ Key points:
 - phase becomes a classical probability bias only after recombination,
 - repeated shots estimate probabilities,
 - a simple $H$-phase-$H$ circuit is the circuit analogue of an interferometer.
+
 # 8. Practical Examples
 
 The conversation asked for practical perspective, not only formal quantum mechanics. This chapter connects the same amplitude-and-phase ideas to real technology.
 
 The goal is not to survey every quantum technology. The goal is to show how the book's core ideas reappear in practical settings.
+
+The practical thread is this: a real device does not give us a private view of amplitudes. It gives us control knobs, noise, calibration, pulses, detectors, and count histograms. The theory is useful when it tells us how those knobs steer amplitudes before the counts appear.
 
 ## 8.1 The Common Pattern
 
@@ -2690,6 +2881,10 @@ interpret the classical results
 The physical platform changes. The logic remains.
 
 ![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg?v=greek-2026-05-27)
+
+When reading the examples below, keep asking the same practical question:
+
+> Where is the information stored before readout, and what operation makes it visible?
 
 ## 8.2 Quantum Algorithms as Engineered Interference
 
@@ -2715,6 +2910,10 @@ H -> phase -> H -> measure
 is the smallest model of this idea. The first $H$ creates alternatives. The phase operation changes the relative phase. The final $H$ recombines alternatives so phase becomes a measurable bias.
 
 Larger algorithms use higher-dimensional versions of the same idea.
+
+**Teacher's pause.** This is why the one-qubit examples are not toys to discard. They are the smallest circuit diagrams in which the central mechanism is visible without hiding it under many qubits.
+
+For example, in Grover-style search, the details become multi-qubit and geometric, but the story is still amplitude steering: mark useful structure with phase, then use transformations that make the useful amplitude grow relative to the rest.
 
 ## 8.3 Quantum Sensing
 
@@ -2774,6 +2973,8 @@ The waiting period lets the qubit acquire a phase relative to the control refere
 
 This is not a separate trick from quantum computing. It is the same basis-change logic applied for sensing and calibration.
 
+In the language of the earlier chapters: nature writes information into $\phi$, and the experimenter chooses rotations that make $\phi$ show up in $P(0)$ and $P(1)$.
+
 ## 8.5 Superconducting Qubits
 
 In a superconducting qubit, $|0\rangle$ and $|1\rangle$ can be two energy levels of an engineered electrical circuit.
@@ -2795,6 +2996,8 @@ From the viewpoint of this book:
 - X and Y information is accessed by pre-rotations.
 
 The math in Chapters 4 through 7 is therefore directly connected to laboratory control.
+
+If you have worked with classical control systems, the analogy is not perfect, but the instinct helps: pulses are not decorative commands. They are calibrated interventions that move the system through a state space so that the final measurement has the bias you intended.
 
 ## 8.6 Trapped Ions
 
@@ -2834,6 +3037,8 @@ This connects directly to the double-slit discussion.
 Optical elements such as beam splitters and phase shifters perform transformations analogous to gates. Detectors then measure output modes.
 
 A beam splitter is an especially physical version of "split and recombine amplitudes." It is the optical cousin of the Hadamard-like operation.
+
+This makes photonics a helpful mental bridge: the paths can be literal optical paths, the phase shifter can be a real optical element, and the detectors count output modes. The qubit circuit notation is more abstract, but the amplitude logic is the same.
 
 ## 8.8 Quantum Cryptography
 
@@ -2893,6 +3098,8 @@ The ideal math in this book is the starting model, not the whole engineering sta
 
 However, without the ideal model, the engineering details have no structure. You need to understand amplitudes, phase, basis, gates, and readout before noise models and error correction can make sense.
 
+That is the practical humility to keep: the clean model is not the finished machine, but it is the map that tells you what the machine is trying to preserve.
+
 ## 8.11 Summary
 
 The same ideas reappear across applications:
@@ -2906,11 +3113,18 @@ The same ideas reappear across applications:
 The unifying question is always:
 
 > What information is stored in amplitude or phase, and what transformation will make it visible in measurement statistics?
+
 # 9. Worked Labs
 
 This chapter gives small calculations you can reproduce without a quantum SDK. The point is to make the algebra tangible.
 
 The examples use ordinary Python complex numbers and matrix multiplication.
+
+Treat these labs as a replay of the conversation, not as programming exercises detached from the book. Each lab answers a specific doubt:
+
+- Can two nonzero amplitudes really sum to zero?
+- Can phase be invisible in Z but visible in X?
+- Can one matrix turn a phase difference into a bit difference?
 
 ## 9.1 Lab 1: Perfect Amplitude Cancellation
 
@@ -2960,6 +3174,8 @@ approximately 0.0
 
 The small numerical residue you may see comes from floating-point precision.
 
+What you should feel: the zero did not come from deleting a path. It came from adding two valid contributions with opposite phase.
+
 ## 9.2 Lab 2: Phase Invisible in Z
 
 Consider:
@@ -3000,6 +3216,8 @@ for phi in [0, math.pi / 2, math.pi, 3 * math.pi / 2]:
 ```
 
 Every line gives the same probabilities.
+
+What you should feel: Z measurement is blind to this phase, even though the state is changing.
 
 ## 9.3 Lab 3: Phase Visible in X
 
@@ -3049,6 +3267,8 @@ phi = 3pi/2   -> P(+) = 1/2
 ```
 
 This is the single-qubit analogue of bright and dark fringes.
+
+What you should feel: the same phase that was invisible in Lab 2 becomes visible once the X-basis calculation adds the two components.
 
 ## 9.4 Lab 4: Theta 60 Degrees in Z, X, and Y
 
@@ -3112,6 +3332,8 @@ This is exactly the plot generated in:
 figures/08_zxy_measurement_probabilities.svg
 ```
 
+What you should feel: Z, X, and Y are not three unrelated calculations. They are three different probes of the same Bloch vector.
+
 ## 9.5 Lab 5: Hadamard as a Matrix
 
 Use:
@@ -3157,6 +3379,8 @@ H|1> = [1/sqrt(2), -1/sqrt(2)]
 ```
 
 Those are $|+\rangle$ and $|-\rangle$.
+
+What you should feel: the matrix columns are not arbitrary numbers. They are the images of the basis states.
 
 ## 9.6 Lab 6: H-Z-H Interference
 
@@ -3212,6 +3436,8 @@ P(1) = 1
 The middle $Z$ gate only changed phase in the computational basis. The final $H$ converted that phase change into a bit flip.
 
 This is the practical point of the whole book in one toy circuit.
+
+What you should feel: a phase that looked hidden became a certain classical outcome because the circuit recombined amplitudes before measuring.
 
 ## 9.7 Lab 7: Rebuild the Figures
 
@@ -3285,6 +3511,8 @@ dist/quantum-computing-practical-textbook.md
 5. Increasing $\theta$ increases the swing in X-basis probability, because the swing amplitude is $\sin\theta$.
 
 # 10. Glossary
+
+This glossary is meant to be read as a conversational index. Each definition points back to the pressure points of the book: what evolves before measurement, what is observed after measurement, and what transformations make hidden phase visible.
 
 ## Amplitude
 

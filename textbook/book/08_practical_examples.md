@@ -4,6 +4,8 @@ The conversation asked for practical perspective, not only formal quantum mechan
 
 The goal is not to survey every quantum technology. The goal is to show how the book's core ideas reappear in practical settings.
 
+The practical thread is this: a real device does not give us a private view of amplitudes. It gives us control knobs, noise, calibration, pulses, detectors, and count histograms. The theory is useful when it tells us how those knobs steer amplitudes before the counts appear.
+
 ## 8.1 The Common Pattern
 
 Across quantum computing, sensing, cryptography, and feature-map style quantum machine learning, the recurring pattern is:
@@ -19,6 +21,10 @@ interpret the classical results
 The physical platform changes. The logic remains.
 
 ![Practical quantum technology examples](../figures/12_practical_quantum_technology.svg?v=greek-2026-05-27)
+
+When reading the examples below, keep asking the same practical question:
+
+> Where is the information stored before readout, and what operation makes it visible?
 
 ## 8.2 Quantum Algorithms as Engineered Interference
 
@@ -44,6 +50,10 @@ H -> phase -> H -> measure
 is the smallest model of this idea. The first $H$ creates alternatives. The phase operation changes the relative phase. The final $H$ recombines alternatives so phase becomes a measurable bias.
 
 Larger algorithms use higher-dimensional versions of the same idea.
+
+**Teacher's pause.** This is why the one-qubit examples are not toys to discard. They are the smallest circuit diagrams in which the central mechanism is visible without hiding it under many qubits.
+
+For example, in Grover-style search, the details become multi-qubit and geometric, but the story is still amplitude steering: mark useful structure with phase, then use transformations that make the useful amplitude grow relative to the rest.
 
 ## 8.3 Quantum Sensing
 
@@ -103,6 +113,8 @@ The waiting period lets the qubit acquire a phase relative to the control refere
 
 This is not a separate trick from quantum computing. It is the same basis-change logic applied for sensing and calibration.
 
+In the language of the earlier chapters: nature writes information into $\phi$, and the experimenter chooses rotations that make $\phi$ show up in $P(0)$ and $P(1)$.
+
 ## 8.5 Superconducting Qubits
 
 In a superconducting qubit, $|0\rangle$ and $|1\rangle$ can be two energy levels of an engineered electrical circuit.
@@ -124,6 +136,8 @@ From the viewpoint of this book:
 - X and Y information is accessed by pre-rotations.
 
 The math in Chapters 4 through 7 is therefore directly connected to laboratory control.
+
+If you have worked with classical control systems, the analogy is not perfect, but the instinct helps: pulses are not decorative commands. They are calibrated interventions that move the system through a state space so that the final measurement has the bias you intended.
 
 ## 8.6 Trapped Ions
 
@@ -163,6 +177,8 @@ This connects directly to the double-slit discussion.
 Optical elements such as beam splitters and phase shifters perform transformations analogous to gates. Detectors then measure output modes.
 
 A beam splitter is an especially physical version of "split and recombine amplitudes." It is the optical cousin of the Hadamard-like operation.
+
+This makes photonics a helpful mental bridge: the paths can be literal optical paths, the phase shifter can be a real optical element, and the detectors count output modes. The qubit circuit notation is more abstract, but the amplitude logic is the same.
 
 ## 8.8 Quantum Cryptography
 
@@ -221,6 +237,8 @@ Real devices have:
 The ideal math in this book is the starting model, not the whole engineering stack.
 
 However, without the ideal model, the engineering details have no structure. You need to understand amplitudes, phase, basis, gates, and readout before noise models and error correction can make sense.
+
+That is the practical humility to keep: the clean model is not the finished machine, but it is the map that tells you what the machine is trying to preserve.
 
 ## 8.11 Summary
 

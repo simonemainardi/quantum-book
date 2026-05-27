@@ -8,6 +8,12 @@ This chapter connects three languages:
 - matrices,
 - geometric rotations.
 
+The learner's practical question underneath all three languages is simple:
+
+> If a gate is written as a symbol in a circuit, what does it actually do to the amplitudes?
+
+The answer is: it linearly mixes amplitudes while preserving total probability. The matrix tells you exactly how.
+
 ## 6.1 A Gate Is a Linear Map
 
 From [Section 2.9](02_math_prerequisites.md#29-matrices), a matrix acts on a vector by linear combination.
@@ -39,6 +45,8 @@ U(\alpha|0\rangle + \beta|1\rangle)
 ```
 
 That is why knowing what a gate does to $|0\rangle$ and $|1\rangle$ determines the whole gate.
+
+This is a comforting fact for an engineer: you do not need to memorize what a gate does to every possible superposition. If you know its action on the basis states and you trust linearity, the action on every superposition follows.
 
 ## 6.2 Building the Matrix from Columns
 
@@ -165,6 +173,8 @@ If $\alpha = 1/\sqrt{2}$ and $\beta = -1/\sqrt{2}$, then:
 
 and the $|0\rangle$ output disappears.
 
+**Teacher's pause.** This is the double slit in circuit clothing. Hadamard is not magic; it is a controlled way of making amplitudes meet in the same output coordinate.
+
 ## 6.5 Pauli Gates
 
 The Pauli gates are:
@@ -212,6 +222,8 @@ Z(\alpha|0\rangle + \beta|1\rangle)
 ```
 
 This is a phase flip. It does not change Z-basis probabilities, but it changes future interference.
+
+This is the same pattern again: a phase operation can look like "nothing happened" if you immediately measure in Z. But if a later gate recombines amplitudes, that hidden sign can become a deterministic change in the output.
 
 The $Y$ gate combines bit flip and phase factors.
 
@@ -299,6 +311,8 @@ e^{-i\theta/2} & 0 \\
 
 These gates rotate the Bloch vector around the X, Y, and Z axes.
 
+The notation $e^{-i\theta X/2}$ is compact, but its practical meaning is simple: choose an axis, choose an angle, and move the state around the Bloch sphere while preserving total probability.
+
 ## 6.8 Rotations Have Physical Meaning
 
 **Question.** Are these rotations just math, or do they correspond to real hardware controls?
@@ -314,6 +328,8 @@ For example:
 - virtual Z rotations can often be implemented by updating a phase reference rather than physically pulsing the qubit.
 
 The Bloch sphere is therefore not just a teaching picture. It is also a control picture.
+
+This is the engineering payoff of the geometry. A rotation on the page corresponds to a calibrated control action in the device, even though the sphere itself is a state-space diagram rather than a physical ball.
 
 ## 6.9 Unitarity and Probability Conservation
 

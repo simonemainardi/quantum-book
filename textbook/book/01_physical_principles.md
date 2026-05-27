@@ -1,5 +1,13 @@
 # 1. Physical Principles
 
+## 1.0 Conversation Thread
+
+The original learner did not begin by asking for a definition of a qubit. The first pressure point was more basic:
+
+> Probabilities do not cancel. But quantum interference can cancel. What, exactly, is cancelling?
+
+This chapter keeps that question in front of us. The aim is not to decorate classical probability with quantum vocabulary. The aim is to identify the new object that quantum theory asks us to track before measurement: the complex amplitude.
+
 ## 1.1 The Engineer's Starting Point
 
 **Question.** I know how classical systems behave. A bit is 0 or 1. A probability is a positive number. Why does quantum computing need a different language?
@@ -62,7 +70,9 @@ The engineering version is:
 
 > Design transformations so the amplitude of useful outcomes is large and the amplitude of unwanted outcomes is small.
 
-This is why the earlier website phrase "programmable interference machine" is still correct, but it was not enough. To understand it, we must unpack what interference means physically and algebraically.
+This is why the phrase "programmable interference machine" is correct, but it is not enough by itself. It only becomes useful when you can say what is interfering, when it is allowed to interfere, and how the final measurement turns that interference into ordinary counts.
+
+**Teacher's pause.** A probability is what you can estimate after repeated measurements. An amplitude is the bookkeeping object that evolves before measurement. Mixing those two levels is the fastest way to become confused.
 
 ## 1.3 Probabilities Do Not Interfere; Amplitudes Do
 
@@ -96,6 +106,10 @@ This distinction is the key to the rest of the book. Later, in [Math and Algebra
 alternatives -> amplitudes -> add amplitudes -> square magnitude -> probability
 ```
 
+If you are wearing the engineer's hat, read that line as a signal chain. Before measurement, the system carries complex-valued signals. The circuit or physical setup combines them. The detector sees only the squared magnitude of the result.
+
+That is why quantum mechanics feels slippery at first: the thing we manipulate is not the thing we finally observe.
+
 ## 1.4 The Double-Slit Experiment
 
 The double-slit experiment is the cleanest physical example.
@@ -116,6 +130,13 @@ Quantum mechanically, with no which-slit measurement, the screen shows interfere
 
 The striking point is that each particle is detected as one localized event, but the probability distribution of many such events is shaped by amplitude interference.
 
+So the experiment has two layers at once:
+
+- one run gives one dot on the screen,
+- many runs reveal a wave-like pattern of probabilities.
+
+This is exactly the rhythm of quantum computing later: one circuit shot returns one bit string, but many shots reveal the probability pattern created by the amplitudes.
+
 ![Double slit interference](../figures/02_double_slit_interference.svg?v=greek-2026-05-27)
 
 ## 1.5 What the Double Slit Teaches
@@ -131,6 +152,8 @@ Third, phase matters. The left-path and right-path contributions arrive at a giv
 Fourth, measurement basis matters. Asking "which slit?" and asking "which screen position?" are different questions. They correspond to different ways of extracting classical information from the same quantum state.
 
 That fourth lesson is the bridge to qubits.
+
+**Learner's checkpoint.** If the pattern changes when you ask "which slit?", the particle was not simply carrying a hidden classical answer that you uncovered. The experimental question changed the quantum situation.
 
 ## 1.6 From Double Slit to Qubits
 
@@ -185,6 +208,8 @@ P(1) = |\beta|^2
 After measurement, the device reports one classical result, either 0 or 1.
 
 The phase information that existed in the quantum state is generally destroyed by that readout. That is why useful quantum programs delay measurement until the end, after gates have arranged the amplitudes.
+
+This is not because measurement is morally bad or philosophically forbidden. It is because measurement turns the amplitude-level calculation into a classical sample. Once that happens, the later gates no longer have phase relationships to use.
 
 ## 1.8 Practical Engineering Relevance
 

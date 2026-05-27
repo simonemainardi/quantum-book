@@ -4,6 +4,12 @@ This chapter gives small calculations you can reproduce without a quantum SDK. T
 
 The examples use ordinary Python complex numbers and matrix multiplication.
 
+Treat these labs as a replay of the conversation, not as programming exercises detached from the book. Each lab answers a specific doubt:
+
+- Can two nonzero amplitudes really sum to zero?
+- Can phase be invisible in Z but visible in X?
+- Can one matrix turn a phase difference into a bit difference?
+
 ## 9.1 Lab 1: Perfect Amplitude Cancellation
 
 Compute:
@@ -52,6 +58,8 @@ approximately 0.0
 
 The small numerical residue you may see comes from floating-point precision.
 
+What you should feel: the zero did not come from deleting a path. It came from adding two valid contributions with opposite phase.
+
 ## 9.2 Lab 2: Phase Invisible in Z
 
 Consider:
@@ -92,6 +100,8 @@ for phi in [0, math.pi / 2, math.pi, 3 * math.pi / 2]:
 ```
 
 Every line gives the same probabilities.
+
+What you should feel: Z measurement is blind to this phase, even though the state is changing.
 
 ## 9.3 Lab 3: Phase Visible in X
 
@@ -141,6 +151,8 @@ phi = 3pi/2   -> P(+) = 1/2
 ```
 
 This is the single-qubit analogue of bright and dark fringes.
+
+What you should feel: the same phase that was invisible in Lab 2 becomes visible once the X-basis calculation adds the two components.
 
 ## 9.4 Lab 4: Theta 60 Degrees in Z, X, and Y
 
@@ -204,6 +216,8 @@ This is exactly the plot generated in:
 figures/08_zxy_measurement_probabilities.svg
 ```
 
+What you should feel: Z, X, and Y are not three unrelated calculations. They are three different probes of the same Bloch vector.
+
 ## 9.5 Lab 5: Hadamard as a Matrix
 
 Use:
@@ -249,6 +263,8 @@ H|1> = [1/sqrt(2), -1/sqrt(2)]
 ```
 
 Those are $|+\rangle$ and $|-\rangle$.
+
+What you should feel: the matrix columns are not arbitrary numbers. They are the images of the basis states.
 
 ## 9.6 Lab 6: H-Z-H Interference
 
@@ -304,6 +320,8 @@ P(1) = 1
 The middle $Z$ gate only changed phase in the computational basis. The final $H$ converted that phase change into a bit flip.
 
 This is the practical point of the whole book in one toy circuit.
+
+What you should feel: a phase that looked hidden became a certain classical outcome because the circuit recombined amplitudes before measuring.
 
 ## 9.7 Lab 7: Rebuild the Figures
 
@@ -375,4 +393,3 @@ dist/quantum-computing-practical-textbook.md
 3. $H^2=I$ by direct matrix multiplication.
 4. $Z|+\rangle=(|0\rangle-|1\rangle)/\sqrt{2}=|-\rangle$.
 5. Increasing $\theta$ increases the swing in X-basis probability, because the swing amplitude is $\sin\theta$.
-
